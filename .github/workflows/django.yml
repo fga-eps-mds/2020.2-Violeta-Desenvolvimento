@@ -9,7 +9,9 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs:
+      using: 'docker'
+      image: 'api/Dockerfile'
     strategy:
       max-parallel: 4
       matrix:
