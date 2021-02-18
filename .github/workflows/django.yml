@@ -44,4 +44,4 @@ jobs:
         python api/manage.py test
     - name: Run linter
       run: |
-        flake8 /api
+        flake8 api/
