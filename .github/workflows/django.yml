@@ -24,7 +24,6 @@ jobs:
       run: sudo apt-get install python-dev libpq-dev
     - name: Install Dependencies
       run: |
-        sudo apt-get install -y ca-certificates gcc postgresql-dev musl-dev libffi-dev
         python -m pip install --upgrade pip
         pip install -r api/requirements.txt
     - name: Run Tests
