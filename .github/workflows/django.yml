@@ -27,6 +27,9 @@ jobs:
         sudo echo "127.0.0.1   db" | sudo tee -a /etc/hosts
         python -m pip install --upgrade pip
         pip install -r api/requirements.txt
+    - uses: harmon758/postgresql-action@v1
+      with:
+        postgresql version: '11'
     - name: Run Tests
       run: |
         python api/manage.py test
