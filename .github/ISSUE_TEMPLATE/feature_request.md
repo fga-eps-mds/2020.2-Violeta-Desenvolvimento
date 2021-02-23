@@ -6,15 +6,14 @@ labels: ''
 assignees: ''
 
 ---
+# História de Usuário
+Eu como [usuário], quero [descrição objetiva da feature], então [complemento da descrição do que tem que ser feito]
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+# Etapas de desenvolvimento:
+- [ ] Etapa 1;
+- [ ] Etapa 2;
+- [ ] Etapa N;
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
-
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+# Observações
+Observação sobre o que foi proposto. Aqui tem que ser anexado links e/ou imagens para
+apoio a issue proposta.
