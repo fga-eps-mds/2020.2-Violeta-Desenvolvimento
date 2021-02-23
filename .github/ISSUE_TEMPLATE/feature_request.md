@@ -1,8 +1,8 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: ''
-labels: ''
+title: '[Número da issue]_Nome_Da_Issue'
+labels: 'backlog'
 assignees: ''
 
 ---
