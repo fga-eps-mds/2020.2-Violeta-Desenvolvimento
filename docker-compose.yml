@@ -1,5 +1,9 @@
 version: '3'
 
+networks:
+  services:
+    driver: bridge
+
 services:
   db: 
     image: postgres
@@ -10,17 +14,63 @@ services:
       POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
+    networks:
+      - services
     ports:
       - "5432:5432"
 
-  django:
-    build: ./api
-    container_name: django
+  questionario:
+    build: ./questionario
+    container_name: questionario
     command: ash docker-entrypoint.sh
     volumes:
-      - ./api:/api
+      - ./questionario:/questionario
     ports:
-      - "8000:8000"
+      - "8001:8001"
+    networks:
+      - services
+    depends_on:
+      - db
+      - frontend
+
+  frases:
+    build: ./frases
+    container_name: frases
+    command: ash docker-entrypoint.sh
+    volumes:
+      - ./frases:/frases
+    ports:
+      - "8002:8002"
+    networks:
+      - services
+    depends_on:
+      - db
+      - frontend
+
+  depoimentos:
+    build: ./depoimentos
+    container_name: depoimentos
+    command: ash docker-entrypoint.sh
+    volumes:
+      - ./depoimentos:/depoimentos
+    ports:
+      - "8003:8003"
+    networks:
+      - services
+    depends_on:
+      - db
+      - frontend
+
+  autenticador:
+    build: ./autenticador
+    container_name: autenticador
+    command: ash docker-entrypoint.sh
+    volumes:
+      - ./autenticador:/autenticador
+    ports:
+      - "8004:8004"
+    networks:
+      - services
     depends_on:
       - db
       - frontend
@@ -33,3 +83,5 @@ services:
       - ./frontend:/home/frontend
     ports:
       - "3000:3000"
+    networks:
+      - services
