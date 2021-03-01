@@ -21,3 +21,6 @@ se for a primeira vez que roda o projeto execute `docker-compose up --build`;
 
 ## Parando projeto
 Para parar o projeto basta apertar "ctrl + c" e executar o comando `docker-compose down`;
+
+## Observação
+Lembre de sempre subir os serviços antes de tentar utiliza-los
