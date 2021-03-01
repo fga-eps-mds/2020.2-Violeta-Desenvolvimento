@@ -1,4 +1,6 @@
 # EPS-2020-2-G5-Desenvolvimento
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=alert_status)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=fga-eps-mds_Violeta-Desenvolvimento)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
 
 ## Requisitos
 1. Ter instalado o [docker](https://docs.docker.com/get-docker/) e o [docker-compose](https://docs.docker.com/compose/install/) nas máquinas.
