@@ -12,11 +12,9 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Depoimento',
-            fields=[
-                ('id_depoimento', models.AutoField(primary_key=True, serialize=False)),
-                ('aprovado', models.BooleanField(default=False)),
-                ('ds_depoimento', models.TextField()),
-            ],
-        ),
-    ]
+            name='Depoimento', fields=[
+                ('id_depoimento', models.AutoField(
+                    primary_key=True, serialize=False)),
+                ('aprovado', models.BooleanField(
+                        default=False)), ('ds_depoimento',
+                                          models.TextField()), ], ), ]

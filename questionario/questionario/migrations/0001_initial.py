@@ -16,7 +16,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='CategoriaViolencia',
             fields=[
-                ('id_categoria', models.AutoField(primary_key=True, serialize=False)),
+                ('id_categoria', models.AutoField(primary_key=True,
+                                                  serialize=False)),
                 ('nome_categoria', models.CharField(max_length=200)),
                 ('ds_categoria', models.TextField()),
             ],
@@ -24,13 +25,15 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='ContatoQuestionario',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True, primary_key=True,
+                                        serialize=False, verbose_name='ID')),
             ],
         ),
         migrations.CreateModel(
             name='ContatoViolencia',
             fields=[
-                ('id_contato', models.AutoField(primary_key=True, serialize=False)),
+                ('id_contato', models.AutoField(primary_key=True,
+                                                serialize=False)),
                 ('nome_contato', models.CharField(max_length=200)),
                 ('numero_contato', models.CharField(max_length=50)),
                 ('ds_contato', models.TextField()),
@@ -39,19 +42,27 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Questionario',
             fields=[
-                ('id_questionario', models.AutoField(primary_key=True, serialize=False)),
-                ('arvore_decisao', django.contrib.postgres.fields.jsonb.JSONField()),
-                ('categoria_violencia', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='questionario.CategoriaViolencia')),
+                ('id_questionario', models.AutoField(primary_key=True,
+                                                     serialize=False)),
+                ('arvore_decisao',
+                 django.contrib.postgres.fields.jsonb.JSONField()),
+                ('categoria_violencia', models.ForeignKey(
+                    on_delete=django.db.models.deletion.CASCADE,
+                    to='questionario.CategoriaViolencia')),
             ],
         ),
         migrations.AddField(
             model_name='contatoquestionario',
             name='contato_fk',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='questionario.ContatoViolencia'),
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE,
+                to='questionario.ContatoViolencia'),
         ),
         migrations.AddField(
             model_name='contatoquestionario',
             name='questionario_fk',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='questionario.Questionario'),
+            field=models.ForeignKey(
+                on_delete=django.db.models.deletion.CASCADE,
+                to='questionario.Questionario'),
         ),
     ]
