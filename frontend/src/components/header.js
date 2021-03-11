@@ -9,7 +9,7 @@ const Header=()=>{
   return(
     <header>
       <div class="violeta-header">
-        <a href="#home" id="icon-home" ><img src={iconVioleta}/></a>
+        <a href="#home" id="icon-home" ><img src={iconVioleta}/> <p>violeta</p></a>
         <nav class="menu header-menu">
           <ul>
             <li><img class="icon-menu" src={iconQuestionario}/><a href="#questionario" class="violeta-bar-item violeta-btn">Questionário</a></li>
