@@ -1,48 +1,46 @@
-#conteudo{
-    max-height: 230px;
-    padding-top: 170px ;
-    padding-left: 110px;
-
+#conteudo {
+  max-height: 230px;
+  padding-top: 170px;
+  padding-left: 110px;
 }
-#conteudo h1{
-    font-size: 36px;
-    margin-bottom: 30px;
-}
-
-#conteudo p{
-    font-size: 14px;
-    text-align: left;
-    color: black;
-    margin-bottom: 50px;
+#conteudo h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-#conteudo span{
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #f57029;
+#conteudo p {
+  font-size: 14px;
+  text-align: left;
+  color: black;
+  margin-bottom: 50px;
 }
 
-#conteudo a{
-    background-color: #472f4c;
-    color: white;
-    width: 250px;
-    height: 55px;
-    padding: 15px 10px;
-    border-radius: 2px;
+#conteudo span {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #f57029;
 }
 
-#conteudo a:active{
-    background-color: rgba(71, 47, 76, 0.3);
+#conteudo a {
+  background-color: #472f4c;
+  color: white;
+  width: 250px;
+  height: 55px;
+  padding: 15px 10px;
+  border-radius: 2px;
 }
 
-#home{
-    flex: 1;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 600px;
-    background-image: url(../images/backgroundHomeDesktop.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    
+#conteudo a:active {
+  background-color: rgba(71, 47, 76, 0.3);
+}
+
+#home {
+  flex: 1;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 600px;
+  background-image: url(../images/backgroundHomeDesktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }

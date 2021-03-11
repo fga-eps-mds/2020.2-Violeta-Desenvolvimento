@@ -54,14 +54,13 @@ ul {
   align-items: center;
 }
 
-#icon-home p{
-  position:;
+#icon-home p {
+  position: center;
   float: right;
   color: white;
   text-transform: uppercase;
   font-size: 34px;
   margin-left: 15px;
-  
 }
 
 .violeta-header {
@@ -102,7 +101,7 @@ ul {
 /* FOOTER */
 .violeta-footer {
   position: relative;
-  
+
   bottom: 0;
   width: 100%;
   height: 125px;
