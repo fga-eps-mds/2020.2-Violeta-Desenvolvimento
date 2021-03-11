@@ -4,7 +4,7 @@ import iconIMP from '../images/iconIMP.png';
 
 const Footer = ()=>{
   return(
-    <footer class="violeta-center violeta-roxo violeta-footer" id="footer">
+    <footer class="violeta-footer" id="footer">
       <div class="container">
         <nav class="menu">
           <ul>

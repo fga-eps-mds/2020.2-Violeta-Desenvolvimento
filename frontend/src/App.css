@@ -101,26 +101,15 @@ ul {
 
 /* FOOTER */
 .violeta-footer {
-  position: fixed;
-  left: 0;
+  position: relative;
+  
   bottom: 0;
   width: 100%;
   height: 125px;
   background-color: #116fbf;
   color: white;
   text-align: center;
-}
-
-.violeta-footer-item {
-  padding: 16px;
-}
-
-#footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   background-color: #472f4c;
-  
 }
 
 .container {
@@ -144,6 +133,7 @@ ul {
   list-style: none;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .menu ul li {
