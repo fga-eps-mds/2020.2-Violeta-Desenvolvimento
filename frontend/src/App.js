@@ -3,7 +3,9 @@ import logo from './images/iconVioleta.svg';
 import './App.css';
 import Header from './components/header';
 import Home from './components/home';
+import Questionario from './components/questionario'
 import Footer from './components/footer'
+
 
 class App extends Component {
   render() {
@@ -11,7 +13,7 @@ class App extends Component {
       <div>
         <Header/>
         <Home/>
-        <Footer/>
+        <Questionario/>
       </div>
     );
   }
