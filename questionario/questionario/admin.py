@@ -1,3 +1,7 @@
-# from django.contrib import admin
+from django.contrib import admin
+from .models import CategoriaViolencia, ContatoViolencia, Questionario, ContatoQuestionario
 
-# Register your models here.
+admin.site.register(CategoriaViolencia)
+admin.site.register(ContatoViolencia)
+admin.site.register(Questionario)
+admin.site.register(ContatoQuestionario)
