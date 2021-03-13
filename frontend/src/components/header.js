@@ -1,53 +1,29 @@
 import React from 'react';
-import iconVioleta from '../images/iconVioleta.png';
-import iconQuestionario from '../images/iconQuestionario.png';
-import iconGrafico from '../images/iconGrafico.png';
-import iconDepoimento from '../images/iconDepoimento.png';
-import iconProfissionais from '../images/iconProfissionais.png';
+import iconVioleta from '../images/logo.png';
+
+import '../css/header.css';
 
 const Header = () => (
-    <header>
-        <div class="violeta-header">
-            <a href="#home" id="icon-home">
-                <img src={iconVioleta} /> <p>violeta</p>
-            </a>
-            <nav class="menu header-menu">
+    <header class="menu-bg">
+        <div class="menu">
+            <div class="menu-logo">
+                <a href="#home">
+                    <img id="logo" src={iconVioleta} />
+                </a>
+            </div>
+            <nav class="menu-nav">
                 <ul>
                     <li>
-                        <img class="icon-menu" src={iconQuestionario} />
-                        <a
-                            href="#questionario"
-                            class="violeta-bar-item violeta-btn"
-                        >
-                            Questionário
-                        </a>
+                        <a href="#sobre">Questionário</a>
                     </li>
                     <li>
-                        <img class="icon-menu" src={iconDepoimento} />
-                        <a
-                            href="#depoimentos"
-                            class="violeta-bar-item violeta-btn"
-                        >
-                            Depoimentos
-                        </a>
+                        <a href="#produto">Depoimentos</a>
                     </li>
                     <li>
-                        <img class="icon-menu" src={iconGrafico} />
-                        <a
-                            href="#graficos"
-                            class="violeta-bar-item violeta-btn"
-                        >
-                            Gráficos
-                        </a>
+                        <a href="#preco">Gráficos</a>
                     </li>
                     <li>
-                        <img class="icon-menu" src={iconProfissionais} />
-                        <a
-                            href="#profissionais"
-                            class="violeta-bar-item violeta-btn"
-                        >
-                            Profissionais
-                        </a>
+                        <a href="#qualidade">Profissionais</a>
                     </li>
                 </ul>
             </nav>

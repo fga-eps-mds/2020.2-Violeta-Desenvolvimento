@@ -1,0 +1,63 @@
+.menu-bg {
+  background: #472f4c;
+  position: fixed;
+  top: 0;
+}
+
+.menu {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+}
+
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+nav ul li a{
+  margin-left: 10px;
+}
+
+.menu-nav ul li:nth-child(1){
+  background: url('../images/iconQuestionario.png') no-repeat left center;
+  padding: 5px 10px 5px 10px;
+  margin: 0;
+  vertical-align: middle;
+}
+.menu-nav ul li:nth-child(2){
+  background: url('../images/iconDepoimento.png') no-repeat left center;
+  padding: 5px 10px 5px 10px;
+  margin: 0;
+  vertical-align: middle;
+}
+.menu-nav ul li:nth-child(3){
+  background: url('../images/iconGrafico.png') no-repeat left center;
+  padding: 5px 10px 5px 10px;
+  margin: 0;
+  vertical-align: middle;
+}
+.menu-nav ul li:nth-child(4){
+  background: url('../images/iconProfissionais.png') no-repeat left center;
+  padding: 5px 10px 5px 10px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.menu-nav a {
+  font-size: 0.9375em;
+  display: block;
+  padding: 10px;
+}
+
+.menu-nav a:hover {
+  color: #122ab2;
+}

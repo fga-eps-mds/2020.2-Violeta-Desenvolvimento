@@ -1,11 +1,12 @@
 import React from 'react';
 import iconGit from '../images/iconGit.png';
 import iconIMP from '../images/iconIMP.png';
+import '../css/footer.css';
 
 const Footer = () => (
     <footer class="violeta-footer" id="footer">
-        <div class="container">
-            <nav class="menu">
+        <div class="container-footer">
+            <nav class="footer-banner">
                 <ul>
                     <li>
                         <img src={iconGit} />

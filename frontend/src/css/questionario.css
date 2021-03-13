@@ -29,7 +29,7 @@
   font-size: 18px;
   border: none;
 }
-#container {
+#container-questionario {
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
@@ -57,4 +57,23 @@
   border: solid 1px;
   margin-top: 10px;
   margin-bottom: 10px;
+  background-color: #feefe8;
+}
+
+@media (max-width: 739px){
+  #img-formulario{
+    display: none;
+  }
+  #questionario p{
+    display: none;
+  }
+  .input-formulario{
+    width: 2,25em;
+    height: 1.25em;
+    font-size: 20px;
+  }
+  #titulo h1 {
+    padding-top: 40px;
+  }
+
 }

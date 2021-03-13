@@ -7,7 +7,7 @@ const Questionario = () => (
         <div id="titulo">
             <h1>Questionário</h1>
         </div>
-        <div id="container">
+        <div id="container-questionario">
             <div id="formulario">
                 <p>
                     Sofreu violência física? Seja de modo que ofenda sua

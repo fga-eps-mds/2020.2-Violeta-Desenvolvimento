@@ -3,8 +3,8 @@ import '../css/home.css';
 
 const Home = () => (
     <section id="home">
-        <div id="conteudo">
-            <h1>Você não está sozinha!</h1>
+        <div id="container">
+            <h1 id="title">Você não está sozinha!</h1>
             <p>
                 Em caso de abuso ou agressão, <span>DENUNCIE</span>
                 !<br />
@@ -15,7 +15,7 @@ const Home = () => (
                 abuso, responda o questionário.
                 <br />
             </p>
-            <a id="btn-questionario">Responda o Questionário</a>
+            <button id="btn">Responda o Questionário</button>
         </div>
     </section>
 );
