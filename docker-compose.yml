@@ -81,6 +81,7 @@ services:
     command: npm start build
     volumes:
       - ./frontend:/home/frontend
+      - /home/frontend/node_modules
     ports:
       - "3000:3000"
     networks:
