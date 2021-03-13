@@ -1,3 +1,4 @@
+
 #home {
   flex: 1;
   flex-wrap: wrap;
@@ -7,6 +8,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-top: 60px;
 }
 
 #container {
@@ -64,5 +66,9 @@
   #container p{
     font-size: 12px;
   }
+  #home {
+    margin-top: 50px;
+  }
+
 
 }

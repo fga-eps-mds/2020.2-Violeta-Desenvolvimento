@@ -64,12 +64,17 @@
   #img-formulario{
     display: none;
   }
+  #btn-formulario {
+    margin-top: 180px;
+  }
+  #questionario {
+    padding: 0 40px;   
+  }
   #questionario p{
     display: none;
   }
   .input-formulario{
-    width: 2,25em;
-    height: 1.25em;
+    width: 100%;
     font-size: 20px;
   }
   #titulo h1 {
