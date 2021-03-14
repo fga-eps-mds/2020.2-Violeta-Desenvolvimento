@@ -32,16 +32,16 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
     - name: psycopg2 prerequisites
-      run: sudo apt-get install python-dev libpq-dev
+      run: sudo apt-get install python3-dev libpq-dev
     - name: Install Dependencies
       run: |
         sudo echo "127.0.0.1   db" | sudo tee -a /etc/hosts
-        python -m pip install --upgrade pip
-        pip install -r frases/requirements.txt
-        pip install flake8
+        python3 -m pip3 install --upgrade pip
+        pip3 install -r frases/requirements.txt
+        pip3 install flake8
     - name: Run Tests
       run: |
-        python frases/manage.py test
+        python3 frases/manage.py test
     - name: Run linter
       run: |
         flake8 frases/
