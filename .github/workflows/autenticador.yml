@@ -36,7 +36,8 @@ jobs:
     - name: Install Dependencies
       run: |
         sudo echo "127.0.0.1   db" | sudo tee -a /etc/hosts
-        python3 -m pip3 install --upgrade pip
+        sudo apt-get install python3-pip
+        python3 -m pip3 install --upgrade pip3
         pip3 install -r autenticador/requirements.txt
         pip3 install flake8
     - name: Run Tests
