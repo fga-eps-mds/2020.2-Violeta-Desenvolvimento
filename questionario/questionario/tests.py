@@ -1,10 +1,12 @@
 import json
 from rest_framework.test import APITestCase
 from rest_framework import status
-from django.urls import reverse
 from .models import (CategoriaViolencia, ContatoViolencia,
                      Questionario, ContatoQuestionario)
-from .serializers import *
+from .serializers import (CategoriaViolenciaSerializer,
+                          ContatoViolenciaSerializer,
+                          QuestionarioSerializer,
+                          ContatoQuestionarioSerializer)
 
 
 class CategoriaViolenciaTestCase(APITestCase):
