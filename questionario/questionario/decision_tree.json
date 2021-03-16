@@ -1,0 +1,174 @@
+[
+    {
+        "arvore_decisao":
+        {
+            "label": null,
+            "question": "Já foi ameaçada?",
+            "children": [
+                {
+                    "label": "Sim",
+                    "question": "Essa ameaça foi física?",
+                    "children": [
+                        {
+                            "label": "Sim",
+                            "question": "Foi concretizada?",
+                            "children": [
+                                {
+                                    "label": "Sim",
+                                    "question": "Qual das opções abaixo se aproxima mais?",
+                                    "children": [
+                                        {
+                                            "label": "Atirar objetos",
+                                            "question": null,
+                                            "children": null
+                                        },
+                                        {
+                                            "label": "Sacudir e apertar os braços",
+                                            "question": null,
+                                            "children": null
+                                        },
+                                        {
+                                            "label": "Estrangulamento ou sufocamento",
+                                            "question": null,
+                                            "children": null
+                                        },
+                                        {
+                                            "label": "Lesões com objetos cortantes ou perfurantes",
+                                            "question": null,
+                                            "children": null
+                                        },
+                                        {
+                                            "label": "Ferimentos causados por queimaduras ou armas de fogo",
+                                            "question": null,
+                                            "children": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "categoria_violencia": 9
+    },
+    {
+        "arvore_decisao": 
+        {
+            "label": null,
+            "question": "Já foi ameaçada?",
+            "children": [
+            {
+                "label": "Sim",
+                "question": "Essa ameaça foi física?",
+                "children": [
+                    {
+                        "label": "Sim",
+                        "question": "Foi concretizada?",
+                        "children": [
+                            {
+                                "label": "Não",
+                                "question": null,
+                                "children": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+        },
+        "categoria_violencia": 11
+    },
+    {
+        "arvore_decisao":
+        {
+            "label": null,
+            "question": "Já foi ameaçada?",
+            "children": [
+            {
+                "label": "Sim",
+                "question": "Essa ameaça foi física?",
+                "children": [
+                    {
+                        "label": "Não",
+                        "question": "Essa ameaça envolve algum ato sobre seu corpo contra sua vontade?",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "question": "Foi concretizada?",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "question": "Qual das opções abaixo se aproxima mais?",
+                                        "children": [
+                                            {
+                                                "label": "Estupro",
+                                                "question": null,
+                                                "children": null
+                                            },
+                                            {
+                                                "label": "Te obrigar a fazer atos sexuais que causam desconforto ou repulsa",
+                                                "question": null,
+                                                "children": null
+                                            },
+                                            {
+                                                "label": "Impedir o uso de métodos contraceptivos te forçar a abortar",
+                                                "question": null,
+                                                "children": null
+                                            },
+                                            {
+                                                "label": "Forçar matrimônio, gravidez ou prostituição por meio de coação, chantagem, suborno ou manipulação",
+                                                "question": null,
+                                                "children": null
+                                            },
+                                            {
+                                                "label": "Te limitar ou anular o exercício dos direitos sexuais e reprodutivos",
+                                                "question": null,
+                                                "children": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+        },
+        "categoria_violencia": 8
+    },
+    {
+        "arvore_decisao":
+        {
+            "label": null,
+            "question": "Já foi ameaçada?",
+            "children": [
+                {
+                    "label": "Sim",
+                    "question": "Essa ameaça foi física?",
+                    "children": [
+                        {
+                            "label": "Não",
+                            "question": "Essa ameaça envolve algum ato sobre seu corpo contra sua vontade?",
+                            "children": [
+                                {
+                                    "label": "Sim",
+                                    "question": "Foi concretizada?",
+                                    "children": [
+                                        {
+                                            "label": "Não",
+                                            "question": null,
+                                            "children": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "categoria_violencia": 11
+    }
+]
