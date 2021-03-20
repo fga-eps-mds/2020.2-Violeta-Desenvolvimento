@@ -49,7 +49,7 @@
                 }
             ]
         },
-        "categoria_violencia": 9
+        "categoria_violencia": 2
     },
     {
         "arvore_decisao": {
@@ -75,7 +75,7 @@
                 }
             ]
         },
-        "categoria_violencia": 11
+        "categoria_violencia": 3
     },
     {
         "arvore_decisao": {
@@ -99,7 +99,7 @@
                                             "question": "Qual das opções abaixo se aproxima mais?",
                                             "children": [
                                                 {
-                                                    "label": "Estupro",
+                                                    "label": "Te obrigar a fazer ato sexual sem o seu consentimento",
                                                     "question": null,
                                                     "children": null
                                                 },
@@ -133,7 +133,7 @@
                 }
             ]
         },
-        "categoria_violencia": 8
+        "categoria_violencia": 4
     },
     {
         "arvore_decisao": {
@@ -165,7 +165,7 @@
                 }
             ]
         },
-        "categoria_violencia": 11
+        "categoria_violencia": 3
     },
     {
         "arvore_decisao": {
@@ -184,11 +184,6 @@
                                     "label": "Sim",
                                     "question": null,
                                     "children": null
-                                },
-                                {
-                                    "label": "Não",
-                                    "question": null,
-                                    "children": null
                                 }
                             ]
                         },
@@ -198,11 +193,6 @@
                             "children": [
                                 {
                                     "label": "Sim",
-                                    "question": null,
-                                    "children": null
-                                },
-                                {
-                                    "label": "Não",
                                     "question": null,
                                     "children": null
                                 }
@@ -216,11 +206,6 @@
                                     "label": "Sim",
                                     "question": null,
                                     "children": null
-                                },
-                                {
-                                    "label": "Não",
-                                    "question": null,
-                                    "children": null
                                 }
                             ]
                         },
@@ -230,11 +215,6 @@
                             "children": [
                                 {
                                     "label": "Sim",
-                                    "question": null,
-                                    "children": null
-                                },
-                                {
-                                    "label": "Não",
                                     "question": null,
                                     "children": null
                                 }
@@ -248,11 +228,6 @@
                                     "label": "Sim",
                                     "question": null,
                                     "children": null
-                                },
-                                {
-                                    "label": "Não",
-                                    "question": null,
-                                    "children": null
                                 }
                             ]
                         },
@@ -262,11 +237,6 @@
                             "children": [
                                 {
                                     "label": "Sim",
-                                    "question": null,
-                                    "children": null
-                                },
-                                {
-                                    "label": "Não",
                                     "question": null,
                                     "children": null
                                 }
@@ -281,7 +251,7 @@
                 }
             ]
         },
-        "categoria_violencia": 11
+        "categoria_violencia": 3
     },
     {
         "arvore_decisao": {
@@ -343,7 +313,7 @@
                 }
             ]
         },
-        "categoria_violencia": 11
+        "categoria_violencia": 3
     },
     {
         "arvore_decisao": {
@@ -405,7 +375,7 @@
                 }
             ]
         },
-        "categoria_violencia": 10
+        "categoria_violencia": 6
     },
     {
         "arvore_decisao": {
@@ -462,6 +432,6 @@
                 }
             ]
         },
-        "categoria_violencia": 9
+        "categoria_violencia": 2
     }
 ]
