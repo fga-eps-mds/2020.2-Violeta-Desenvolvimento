@@ -24,3 +24,8 @@ Para parar o projeto basta apertar "ctrl + c" e executar o comando `docker-compo
 
 ## Observação
 Lembre de sempre subir os serviços antes de tentar utiliza-los
+
+## Carregar dados do banco
+Para carregar os dados do questionário, utilize o comando `docker-compose exec questionario python manage.py loaddata db.json`;
+
+Caso seja necessário exportar dados questionário para um arquivo json, execute o comando `docker-compose exec questionario python manage.py dumpdata > db.json`
