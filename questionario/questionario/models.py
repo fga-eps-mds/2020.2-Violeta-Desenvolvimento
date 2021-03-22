@@ -11,6 +11,7 @@ class CategoriaViolencia(models.Model):
             id_categoria: Identificador único da categoria;
             nome_categoria: Nome da categoria;
             ds_categoria: Descrição da categoria;
+            vitimas_categoria: Contador de ocorrências do questionário;
     """
     id_categoria = models.AutoField(primary_key=True)
 
@@ -21,6 +22,8 @@ class CategoriaViolencia(models.Model):
     ds_categoria = models.TextField(null=False,
                                     blank=False)
 
+    vitimas_categoria = models.IntegerField(default=0)
+    
     def __str__(self):
         return self.nome_categoria
 
