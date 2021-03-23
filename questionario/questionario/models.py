@@ -2,6 +2,13 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 
 
+class CadastroProfissionais(models.Model):
+    nome_profissional  = models.CharField(max_length=30)
+    id_profissional = models.AutoField(primary_key=True)
+
+    def __str__(self):
+        return self.nome_profissional
+
 class SalvarDados(models.Model):
     nome_violencia = models.CharField(max_length=30)
     id = models.AutoField(primary_key=True)
@@ -18,12 +25,8 @@ class CategoriaViolencia(models.Model):
         Campos:
             id_categoria: Identificador único da categoria;
             nome_categoria: Nome da categoria;
-<<<<<<< HEAD
-            ds_categoria: Descrição da categoria;;
-=======
             ds_categoria: Descrição da categoria;
             vitimas_categoria: Contador de ocorrências do questionário;
->>>>>>> b213d889a92ea993a8ed175dda34dd362dc30d35
     """
     id_categoria = models.AutoField(primary_key=True)
 
@@ -106,3 +109,4 @@ class ContatoQuestionario(models.Model):
 
     def __str__(self):
         return str(self.contato_fk) + " | " + str(self.questionario_fk)
+
