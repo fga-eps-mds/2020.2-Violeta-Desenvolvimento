@@ -5,7 +5,8 @@ from django.contrib.postgres.fields import JSONField
 class CadastroProfissionais(models.Model):
     nome_profissional  = models.CharField(max_length=30)
     id_profissional = models.AutoField(primary_key=True)
-
+    area = models.CharField(max_length=30)
+    
     def __str__(self):
         return self.nome_profissional
 
