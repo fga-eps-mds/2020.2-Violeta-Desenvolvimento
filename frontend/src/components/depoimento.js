@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/depoimento.css';
+import { Carousel } from 'react-responsive-carousel';
 
 class Depoimento extends React.Component {
     state = {
@@ -18,29 +19,27 @@ class Depoimento extends React.Component {
     }
 
     render() {
-        console.log(this.state.depoimentos);
         return (
-            <section>
-                <div id="carousel__container">
-                    <h1 id="titulo">Depoimentos</h1>
-                    <section class="carousel">
-                        <ul class="carousel__viewport">
-                            {this.state.depoimentos.map((depoimento) =>
-                                depoimento.aprovado === true ? (
-                                    <li
-                                        id="carousel__slide"
-                                        tabIndex="0"
-                                        class="carousel__slide"
-                                    >
-                                        <p>{depoimento.ds_depoimento}</p>
-                                    </li>
-                                ) : null
-                            )}
-                        </ul>
-                    </section>
-                </div>
-            </section>
+            <div id="depoimento-container">
+                <h1 id="titulo-depoimento">Depoimentos</h1>
+                <Carousel>
+                    {this.state.depoimentos.map((depoimento) =>
+                        depoimento.aprovado === false ? (
+                            <p class="ds-depoimento" id="ds_depoimento">
+                                nao deveria aparecer
+                            </p>
+                        ) : (
+                            <div>
+                                <p class="ds-depoimento" id="ds_depoimento">
+                                    {depoimento.ds_depoimento}
+                                </p>
+                            </div>
+                        )
+                    )}
+                </Carousel>
+            </div>
         );
     }
 }
+
 export default Depoimento;
