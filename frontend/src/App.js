@@ -4,6 +4,7 @@ import Header from './components/header';
 import Home from './components/home';
 import Questionario from './components/questionario';
 import Footer from './components/footer';
+import Profissionais from './components/profissionais';
 
 class App extends Component {
     render() {
@@ -12,6 +13,7 @@ class App extends Component {
                 <Header />
                 <Home />
                 <Questionario />
+                <Profissionais />
                 <Footer />
             </div>
         );

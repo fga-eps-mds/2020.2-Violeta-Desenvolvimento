@@ -1,0 +1,100 @@
+.profissionais{
+    background-color: #ECE3EE;
+    width: 100%;
+    height: 800px;
+    font-family: Roboto;
+    font-style: normal;
+}
+#container-title{
+    padding-left: 25px;
+    padding-top: 145px;
+}
+#title{
+    font-size: 36px;
+}
+#description{
+    font-size: 16px;
+}
+/* BOX-CONTATO */
+.box-contact{
+    background-color: #F9B18A;
+    max-width: 400px;
+    max-height: 140px;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+#box-contact-logo{
+    background-color: #A174AA;
+    width: 130px;
+    height: 140px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+#box-contact-text{
+    padding-left: 10px;
+    float: left;
+}
+#box-contact-name{
+    font-size: 14px;
+    padding-bottom: 13px;
+}
+#box-contact-description{
+    font-size: 14px;
+}
+/* NAV */
+.list-nav-profissionais{
+    display: inline-flex;
+    list-style: none;
+}
+.list-nav-profissionais:hover{
+   
+}
+#button-nav-ongs{
+    background-color: #764E7E;
+    height: 50px;
+    width: 165px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 18px;
+    border-width: 0px 2px 0px 0px;
+    border-color: #FEF9FF;
+    color: #FEF9FF;
+}
+#button-nav-ongs:hover{
+    cursor: pointer;
+}
+#button-nav-ongs:active{
+    background-color: #472F4C;
+    border: none;
+}
+#button-nav{
+    background-color: #764E7E;
+    height: 50px;
+    width: 165px;
+    font-size: 18px;
+    border-width: 0px 2px 0px 0px;
+    border-color: #FEF9FF;
+    color: #FEF9FF;
+}
+#button-nav:hover{
+    cursor: pointer;
+}
+#button-nav:active{
+    background-color: #472F4C;
+    border: none;
+}
+#button-nav-teste{
+    background-color: #764E7E;
+    height: 50px;
+    width: 165px;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 18px;
+    border: none;
+    color: #FEF9FF;
+}
+#button-nav-teste:hover{
+    cursor: pointer;
+}
+#button-nav-teste:active{
+    background-color: #472F4C;
+    border: none;
+}
