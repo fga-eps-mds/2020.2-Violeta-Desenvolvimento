@@ -12,3 +12,6 @@ build:
 
 run:
   questionario: ash docker-entrypoint.sh
+  autenticador: ash docker-entrypoint.sh
+  depoimentos: ash docker-entrypoint.sh
+  frases: ash docker-entrypoint.sh
