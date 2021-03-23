@@ -1,0 +1,23 @@
+setup:
+  addons:
+  - plan: heroku-postgresql
+    as: DATABASE
+
+build:
+  docker:
+    questionario: questionario/Dockerfile
+    #    autenticador: autenticador/Dockerfile
+    #depoimentos: depoimentos/Dockerfile
+    #frases: frases/Dockerfile
+  config:
+    DB_NAME: d3ur0ugdaudnch
+    DB_USER: xuxuiezhbunfve
+    DB_PASSWORD: 43175c335bedefc68bf2119da830478225d5de67e649fb00662adf2c9a5f26ee
+    DB_HOST: ec2-54-205-183-19.compute-1.amazonaws.com
+    DB_PORT: 5432
+
+run:
+  questionario: ash docker-entrypoint.sh
+  #autenticador: ash docker-entrypoint.sh
+  #depoimentos: ash docker-entrypoint.sh
+  #frases: ash docker-entrypoint.sh
