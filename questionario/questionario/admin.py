@@ -1,7 +1,8 @@
 from django.contrib import admin
-from .models import (CategoriaViolencia, ContatoViolencia, Questionario,
+from .models import (SalvarDados, CategoriaViolencia, ContatoViolencia, Questionario,
                      ContatoQuestionario)
 
+admin.site.register(SalvarDados)
 admin.site.register(CategoriaViolencia)
 admin.site.register(ContatoViolencia)
 admin.site.register(Questionario)

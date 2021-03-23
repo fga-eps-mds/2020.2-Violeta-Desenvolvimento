@@ -2,6 +2,14 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 
 
+class SalvarDados(models.Model):
+    nome_violencia = models.CharField(max_length=30)
+    id = models.AutoField(primary_key=True)
+    """contador = models.IntegerField(default=0)"""
+
+    def __str__(self):
+        return self.nome_violencia
+
 class CategoriaViolencia(models.Model):
     """
         Legenda:
@@ -10,7 +18,7 @@ class CategoriaViolencia(models.Model):
         Campos:
             id_categoria: Identificador único da categoria;
             nome_categoria: Nome da categoria;
-            ds_categoria: Descrição da categoria;
+            ds_categoria: Descrição da categoria;;
     """
     id_categoria = models.AutoField(primary_key=True)
 

@@ -1,7 +1,12 @@
 from rest_framework import serializers
-from .models import (CategoriaViolencia, ContatoViolencia, Questionario,
+from .models import (SalvarDados, CategoriaViolencia, ContatoViolencia, Questionario,
                      ContatoQuestionario)
 
+
+class SalvarDadosSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SalvarDados
+        fields = '__all__'
 
 class CategoriaViolenciaSerializer(serializers.ModelSerializer):
     class Meta:
