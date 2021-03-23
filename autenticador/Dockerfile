@@ -11,3 +11,4 @@ RUN apk add --no-cache --virtual .build-deps \
 COPY requirements.txt /autenticador/
 RUN pip install -r requirements.txt
 COPY . /autenticador/
+EXPOSE 8001
