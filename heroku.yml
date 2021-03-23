@@ -1,0 +1,14 @@
+setup:
+  addons:
+  - plan: heroku-postgresql
+    as: DATABASE
+ 
+build:
+  docker:
+    questionario: questionario/Dockerfile
+    autenticador: autenticador/Dockerfile
+    depoimentos: depoimentos/Dockerfile
+    frases: frases/Dockerfile
+
+run:
+  questionario: ash docker-entrypoint.sh
