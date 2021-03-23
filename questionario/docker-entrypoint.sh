@@ -8,4 +8,4 @@ until nc -z $1 $2 ; do
 done
 }
 
-exec python3 manage.py runserver 0.0.0.0:8001
+exec python3 manage.py runserver 0.0.0.0:80

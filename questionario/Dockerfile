@@ -11,3 +11,4 @@ RUN apk add --no-cache --virtual .build-deps \
 COPY requirements.txt /questionario/
 RUN pip install -r requirements.txt
 COPY . /questionario/
+EXPOSE 80
