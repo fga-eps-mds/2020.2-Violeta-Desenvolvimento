@@ -13,7 +13,6 @@ class Depoimento extends React.Component {
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ depoimentos: result });
-                console.log(this.state.result);
             })
             .catch((error) => this.setState({ error }));
     }
