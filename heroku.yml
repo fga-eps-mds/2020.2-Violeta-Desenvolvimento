@@ -6,9 +6,9 @@ setup:
 build:
   docker:
     questionario: questionario/Dockerfile
-    autenticador: autenticador/Dockerfile
-    depoimentos: depoimentos/Dockerfile
-    frases: frases/Dockerfile
+    #    autenticador: autenticador/Dockerfile
+    #depoimentos: depoimentos/Dockerfile
+    #frases: frases/Dockerfile
   config:
     DB_NAME: snfhdxjtjtawds
     DB_USER: dfh04qjaoq0i26
@@ -18,6 +18,6 @@ build:
 
 run:
   questionario: ash docker-entrypoint.sh
-  autenticador: ash docker-entrypoint.sh
-  depoimentos: ash docker-entrypoint.sh
-  frases: ash docker-entrypoint.sh
+  #autenticador: ash docker-entrypoint.sh
+  #depoimentos: ash docker-entrypoint.sh
+  #frases: ash docker-entrypoint.sh
