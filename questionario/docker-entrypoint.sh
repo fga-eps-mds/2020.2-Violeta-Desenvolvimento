@@ -8,4 +8,6 @@ until nc -z $1 $2 ; do
 done
 }
 
-exec python3 manage.py runserver 0.0.0.0:80
+wait_ready db 5432
+wait_ready frontend 3000
+exec python3 manage.py runserver 0.0.0.0:8001
