@@ -25,6 +25,12 @@ services:
     command: ash docker-entrypoint.sh
     volumes:
       - ./questionario:/questionario
+    environment:
+      DB_NAME: postgres
+      DB_USER: postgres
+      DB_PASSWORD: password
+      DB_HOST: db
+      DB_PORT: 5432
     ports:
       - "8001:8001"
     networks:
