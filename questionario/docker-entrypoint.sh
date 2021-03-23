@@ -8,5 +8,4 @@ until nc -z $1 $2 ; do
 done
 }
 
-wait_ready db $DB_HOST $DB_PORT
 exec python3 manage.py runserver 0.0.0.0:8001
