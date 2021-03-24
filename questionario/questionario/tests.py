@@ -1,12 +1,59 @@
 import json
 from rest_framework.test import APITestCase
+from django.test import SimpleTestCase
+from django.urls import reverse
 from rest_framework import status
-from .models import (CategoriaViolencia, ContatoViolencia,
+from .models import (CadProfissionais, CategoriaViolencia, ContatoViolencia,
                      Questionario, ContatoQuestionario)
-from .serializers import (CategoriaViolenciaSerializer,
+from .serializers import (CadProfissionaisSerializer, CategoriaViolenciaSerializer,
                           ContatoViolenciaSerializer,
                           QuestionarioSerializer,
                           ContatoQuestionarioSerializer)
+
+class CadProfissionaisTestCase(APITestCase):
+
+    def setUp(self):
+        self.cat1 = CadProfissionais.objects.create(
+            nome_profissional='TESTE', ds_profissional='TESTE')
+
+    def testPost(self):
+        data = {
+            'nome_profissional': 'NOME TESTE',
+            'ds_profissional': 'DS TESTE' 
+        }
+        response = self.client.post('/api/cadastrar-profissionais/', data)
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+    def testGet(self):
+        # get API response
+        response = self.client.get('/api/cadastrar-profissionais/')
+        # get data from DB
+        posts = CadProfissionais.objects.all()
+        # convert it to JSON
+        serializer = CadProfissionaisSerializer(posts, many=True)
+        # check the status
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data, serializer.data)
+
+
+    def testPut(self):
+        data = {    
+            'id_profissional': self.cat1.id_profissional,
+            'nome_profissional': 'NOME MODIFICADO',
+            'ds_profissional': 'DS MODIFICADO'
+
+        }
+        endereco = '/api/cadastrar-profissionais/' + \
+            str(self.cat1.id_profissional) + '/'
+        response = self.client.put(endereco, data)
+        serializer = CadProfissionaisSerializer(data)
+        self.assertEqual(response.data, serializer.data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def testDelete(self):
+        response = self.client.delete(
+            '/api/cadastrar-profissionais/' + str(self.cat1.id_profissional) + '/')
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
 class CategoriaViolenciaTestCase(APITestCase):

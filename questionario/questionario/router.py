@@ -2,7 +2,7 @@ from . import viewsets
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register('cadastro-profissionais', viewsets.CadastroProfissionaisViewset)
+router.register('cadastrar-profissionais', viewsets.CadProfissionaisViewset)
 router.register('contador', viewsets.SalvarDadosViewset)
 router.register('categoria-violencia', viewsets.CategoriaViolenciaViewset)
 router.register('contato-violencia', viewsets.ContatoViolenciaViewset)
