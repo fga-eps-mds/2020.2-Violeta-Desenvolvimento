@@ -50,9 +50,6 @@
 .carousel .control-next.control-arrow {
     right: 0;
 }
-.carousel-root {
-    outline: none;
-}
 
 .carousel {
     position: relative;
@@ -117,7 +114,6 @@
 }
 .carousel .slider-wrapper.axis-horizontal .slider .slide {
     flex-direction: column;
-    flex-flow: column;
 }
 .carousel .slider-wrapper.axis-vertical {
     -ms-box-orient: horizontal;
@@ -179,12 +175,13 @@
     height: 790px;
 }
 
-#titulo-depoimento{
+#title-depoimento{
     font-size: 36px;
     margin-top: 120px;
 }
 
 .carousel-root{
+    outline: none;
     margin-top: 70px;
     height: 305px;
     width: 1260px;
@@ -205,7 +202,7 @@
     height: 16.625rem;
     width: 21.25rem;
   }
-  #titulo-depoimento{
+  #title-depoimento{
       font-size: 2rem;
       margin-top: 2.25rem;
   }

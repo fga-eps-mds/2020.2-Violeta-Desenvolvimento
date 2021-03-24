@@ -20,7 +20,7 @@ class Depoimento extends React.Component {
     render() {
         return (
             <div id="depoimento-container">
-                <h1 id="titulo-depoimento">Depoimentos</h1>
+                <h1 id="title-depoimento">Depoimentos</h1>
                 <Carousel>
                     {this.state.depoimentos.map((depoimento) => (
                         <div>

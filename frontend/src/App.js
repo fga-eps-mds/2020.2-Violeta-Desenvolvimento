@@ -15,8 +15,8 @@ class App extends Component {
                 <Home />
                 <Questionario />
                 <Depoimento />
-                <Footer />
                 <CadastrarDepoimento />
+                <Footer />
             </div>
         );
     }
