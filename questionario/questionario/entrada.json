@@ -37,7 +37,7 @@
                 "question": "Qual das opções abaixo se aproxima mais? (Relatar situação)",
                 "children": [
                     {
-                        "label": "Pai",
+                        "label": "filho/filha",
                         "question": "Esse acontecimento é usadao contra você como ameaça ou chantagem?",
                         "children": [
                             {
@@ -68,7 +68,7 @@
                                     "question": "Qual das opções abaixo se aproxima mais?",
                                     "children": [
                                         {
-                                            "label": "Sacudir e apertar os braços",
+                                            "label": "Atirar objetos",
                                             "question": null,
                                             "children": null
                                         }
