@@ -4,7 +4,7 @@ from .models import Questionario
 from django.views.decorators.http import require_http_methods
 
 
-@require_http_methods(["GET"])
+@require_http_methods(["POST"])
 def analisa_fluxos(request):
     arquivo = open('questionario/entrada.json')
     entrada = json.load(arquivo)
@@ -16,10 +16,10 @@ def analisa_fluxos(request):
             bda = quest.arvore_decisao
             dic_db = {}
             dic_in = {}
-            while(bda['question'] is not None):
+            while bda['question'] is not None:
                 dic_db[bda['question']] = bda['children'][0]['label']
                 bda = bda['children'][0]
-            while(ent['question'] is not None):
+            while ent['question'] is not None:
                 dic_in[ent['question']] = ent['children'][0]['label']
                 ent = ent['children'][0]
             if dic_db == dic_in:
