@@ -9,7 +9,7 @@ class Depoimento extends React.Component {
     };
 
     componentDidMount() {
-        fetch('http://localhost:8003/api/depoimento/')
+        fetch('http://localhost:8003/api/external-depoimento/')
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ depoimentos: result });
@@ -22,19 +22,13 @@ class Depoimento extends React.Component {
             <div id="depoimento-container">
                 <h1 id="titulo-depoimento">Depoimentos</h1>
                 <Carousel>
-                    {this.state.depoimentos.map((depoimento) =>
-                        depoimento.aprovado === false ? (
+                    {this.state.depoimentos.map((depoimento) => (
+                        <div>
                             <p class="ds-depoimento" id="ds_depoimento">
-                                nao deveria aparecer
+                                {depoimento.ds_depoimento}
                             </p>
-                        ) : (
-                            <div>
-                                <p class="ds-depoimento" id="ds_depoimento">
-                                    {depoimento.ds_depoimento}
-                                </p>
-                            </div>
-                        )
-                    )}
+                        </div>
+                    ))}
                 </Carousel>
             </div>
         );
