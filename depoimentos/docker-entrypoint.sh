@@ -11,5 +11,4 @@ done
 }
 
 wait_ready db $POSTGRES_PORT
-wait_ready frontend $FRONTEND_PORT
 exec python3 manage.py runserver 0.0.0.0:8003
