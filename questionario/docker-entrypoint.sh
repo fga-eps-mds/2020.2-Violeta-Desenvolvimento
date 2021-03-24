@@ -9,4 +9,7 @@ done
 }
 
 wait_ready db 5432
+exec python3 manage.py makemigrations
+exec python3 manage.py migrate
+exec python3 manage.py loaddata db.json
 exec python3 manage.py runserver 0.0.0.0:8001
