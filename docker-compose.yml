@@ -7,7 +7,7 @@ networks:
 services:
   db: 
     image: postgres
-    container_name: db
+    container_name: postgres_db
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -19,6 +19,16 @@ services:
     ports:
       - "5432:5432"
 
+  frontend:
+    container_name: frontend
+    build: ./frontend
+    volumes:
+      - './frontend:/frontend'
+      - '/frontend/node_modules'
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
   questionario:
     build: ./questionario
     container_name: questionario
@@ -29,7 +39,7 @@ services:
       DB_NAME: postgres
       DB_USER: postgres
       DB_PASSWORD: password
-      DB_HOST: db
+      DB_HOST: postgres_db
       DB_PORT: 5432
     ports:
       - "8001:8001"
@@ -81,13 +91,18 @@ services:
       - db
       - frontend
 
-  frontend:
-    container_name: frontend
-    build: ./frontend
-    volumes:
-      - './frontend:/frontend'
-      - '/frontend/node_modules'
+  nginx:
+    image: nginx:1.15-alpine
     ports:
-      - '3000:3000'
-    environment:
-      - NODE_ENV=development
+      - "80:80"
+      - "443:443"
+    restart: unless-stopped
+    volumes:
+      - ./configs/nginx.conf:/etc/nginx/conf.d/default.conf
+      - /etc/letsencrypt:/etc/letsencrypt
+    links:
+      - "questionario"
+      - "frontend"
+      - "frases"
+      - "depoimentos"
+      - "autenticador"
