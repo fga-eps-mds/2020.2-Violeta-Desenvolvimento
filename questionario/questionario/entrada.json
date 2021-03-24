@@ -1,0 +1,83 @@
+[
+    {
+        "label": null,
+        "question": "Já foi ameaçada?",
+        "children": [
+            {
+                "label": "Sim",
+                "question": "Essa ameaça foi física?",
+                "children": [
+                    {
+                        "label": "Sim",
+                        "question": "Foi concretizada?",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "question": "Qual das opções abaixo se aproxima mais?",
+                                "children": [
+                                    {
+                                        "label": "Ferimentos causados por queimaduras ou armas de fogo",
+                                        "question": null,
+                                        "children": null
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "label": null,
+        "question": "Alguém próximo a você se feriu de alguma forma?",
+        "children": [
+            {
+                "label": "Sim",
+                "question": "Qual das opções abaixo se aproxima mais? (Relatar situação)",
+                "children": [
+                    {
+                        "label": "filho/filha",
+                        "question": "Esse acontecimento é usadao contra você como ameaça ou chantagem?",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "question": null,
+                                "children": null
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "label": null,
+            "question": "Já foi acusada indevidamente, por traição ou mentiras?",
+            "children": [
+                {
+                    "label": "Sim",
+                    "question": "Isso lhe causou algum constrangimento como xingamentos, humilhações e/ou exposições?",
+                    "children": [
+                        {
+                            "label": "Sim",
+                            "question": "Esse acontecimento foi usado como justificativa para algum tipo de agressão física?",
+                            "children": [
+                                {
+                                    "label": "Sim",
+                                    "question": "Qual das opções abaixo se aproxima mais?",
+                                    "children": [
+                                        {
+                                            "label": "Atirar objetos",
+                                            "question": null,
+                                            "children": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+    }
+]
