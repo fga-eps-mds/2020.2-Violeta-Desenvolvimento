@@ -5,7 +5,7 @@ import Home from './components/home';
 import Questionario from './components/questionario';
 import Depoimento from './components/depoimento';
 import Footer from './components/footer';
-// import CadastrarDepoimento from './components/cadastrarDepoimento';
+import CadastrarDepoimento from './components/cadastrarDepoimento';
 
 class App extends Component {
     render() {
@@ -16,7 +16,7 @@ class App extends Component {
                 <Questionario />
                 <Depoimento />
                 <Footer />
-                {/* <CadastrarDepoimento /> */}
+                <CadastrarDepoimento />
             </div>
         );
     }
