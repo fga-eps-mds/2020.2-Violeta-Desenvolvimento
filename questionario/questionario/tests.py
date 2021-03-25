@@ -10,7 +10,10 @@ from .serializers import (CadProfissionaisSerializer, CategoriaViolenciaSerializ
                           QuestionarioSerializer,
                           ContatoQuestionarioSerializer)
 
+
 class CadProfissionaisTestCase(APITestCase):
+
+    str_url = '/api/cadastrar-profissionais/'
 
     def setUp(self):
         self.cat1 = CadProfissionais.objects.create(
@@ -19,14 +22,14 @@ class CadProfissionaisTestCase(APITestCase):
     def testPost(self):
         data = {
             'nome_profissional': 'NOME TESTE',
-            'ds_profissional': 'DS TESTE' 
+            'ds_profissional': 'DS TESTE'
         }
-        response = self.client.post('/api/cadastrar-profissionais/', data)
+        response = self.client.post(self.str_url, data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
         # get API response
-        response = self.client.get('/api/cadastrar-profissionais/')
+        response = self.client.get(self.str_url)
         # get data from DB
         posts = CadProfissionais.objects.all()
         # convert it to JSON
@@ -35,15 +38,14 @@ class CadProfissionaisTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data, serializer.data)
 
-
     def testPut(self):
-        data = {    
+        data = {
             'id_profissional': self.cat1.id_profissional,
             'nome_profissional': 'NOME MODIFICADO',
             'ds_profissional': 'DS MODIFICADO'
 
         }
-        endereco = '/api/cadastrar-profissionais/' + \
+        endereco = self.str_url + \
             str(self.cat1.id_profissional) + '/'
         response = self.client.put(endereco, data)
         serializer = CadProfissionaisSerializer(data)
@@ -52,7 +54,7 @@ class CadProfissionaisTestCase(APITestCase):
 
     def testDelete(self):
         response = self.client.delete(
-            '/api/cadastrar-profissionais/' + str(self.cat1.id_profissional) + '/')
+            self.str_url + str(self.cat1.id_profissional) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 

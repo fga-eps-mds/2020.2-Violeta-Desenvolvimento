@@ -4,14 +4,16 @@ from .models import (CadProfissionais, SalvarDados, CategoriaViolencia, ContatoV
 
 
 class CadProfissionaisSerializer(serializers.ModelSerializer):
-    class Meta: 
+    class Meta:
         model = CadProfissionais
         fields = '__all__'
+
 
 class SalvarDadosSerializer(serializers.ModelSerializer):
     class Meta:
         model = SalvarDados
         fields = '__all__'
+
 
 class CategoriaViolenciaSerializer(serializers.ModelSerializer):
     class Meta:

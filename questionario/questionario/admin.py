@@ -3,7 +3,6 @@ from .models import (CadProfissionais, SalvarDados, CategoriaViolencia, ContatoV
                      ContatoQuestionario)
 
 admin.site.register(CadProfissionais)
-#admin.site.register(CadastroProfissionais)
 admin.site.register(SalvarDados)
 admin.site.register(CategoriaViolencia)
 admin.site.register(ContatoViolencia)
