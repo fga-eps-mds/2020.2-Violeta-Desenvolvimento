@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/depoimento.css';
 import { Carousel } from 'react-responsive-carousel';
-import womanTexting from '../images/womanTexting.svg';
+import CadastrarDepoimento from './cadastrarDepoimento';
 
 window.onload = function () {
     const modalRequest = document.getElementById('depoimento-modal-request');
@@ -29,19 +29,6 @@ window.onload = function () {
     btnConfirm.onclick = function () {
         modalConfirm.style.display = 'none';
     };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target === modalRequest) {
-            modalRequest.style.display = 'none';
-        }
-    };
-
-    window.onclick = function (event) {
-        if (event.target === modalConfirm) {
-            modalConfirm.style.display = 'none';
-        }
-    };
 };
 
 class Depoimento extends React.Component {
@@ -52,7 +39,7 @@ class Depoimento extends React.Component {
             depoimentos: [],
             error: '',
         };
-        this.changeHandler = this.changeHandler.bind(this);
+        // this.changeHandler = this.changeHandler.bind(this);
         // this.submitForm = this.submitForm.bind(this);
     }
 
@@ -64,34 +51,6 @@ class Depoimento extends React.Component {
                 this.setState({ depoimentos: result });
             })
             .catch((error) => this.setState({ error }));
-    }
-
-    changeHandler(event) {
-        this.setState({
-            [event.target.name]: event.target.value,
-        });
-    }
-
-    // Submit Form
-    submitForm(event) {
-        fetch('http://localhost:8003/api/depoimento/', {
-            method: 'POST',
-            body: JSON.stringify(this.state),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        })
-            .then((response) => {
-                if (response.status >= 200 && response.status < 300) {
-                    console.log(response);
-                    // window.location.reload();
-                    return response;
-                }
-                console.log('Somthing happened wrong');
-                return response;
-            })
-            .catch((err) => err);
-        event.preventDefault();
     }
 
     render() {
@@ -108,9 +67,10 @@ class Depoimento extends React.Component {
                             </div>
                         ))}
                     </Carousel>
-                    <button id="depoimento-enviar">Cadastrar Depoimento</button>
+                    <CadastrarDepoimento />
+                    {/* <button id="depoimento-enviar">Cadastrar Depoimento</button> */}
                 </div>
-                <div
+                {/* <div
                     id="depoimento-modal-request"
                     class="depoimento-modal-request"
                 >
@@ -119,24 +79,18 @@ class Depoimento extends React.Component {
                             Cadastre seu depoimento
                         </h1>
                         <div id="depoimento-input-container">
-                            <form
-                                id="dsDepoimento"
-                                value={this.state.ds_depoimento}
-                                name="ds_depoimento"
-                                onChange={this.changeHandler}
-                                class="input-formulario"
-                            >
-                                <textarea
-                                    id="depoimento-input"
-                                    placeholder="Digite seu depoimento aqui..."
-                                ></textarea>
-                            </form>
+                                                        <textarea
+                                id="depoimento-input"
+                                value={this.ds_depoimento}
+                                placeholder="Digite seu depoimento aqui..."
+                            ></textarea>
+                            
                         </div>
                         <button
                             id="depoimento-modal-submit"
                             type="submit"
                             form="dsDepoimento"
-                            onClick={this.submitForm}
+                            // onClick={this.AddDepoimento}
                         >
                             Cadastrar Depoimento
                         </button>
@@ -164,7 +118,7 @@ class Depoimento extends React.Component {
                             Voltar para depoimentos
                         </button>
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     }

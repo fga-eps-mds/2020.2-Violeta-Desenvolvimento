@@ -16,6 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from depoimento.router import router
+# from depoimento.viewsets import (DepoimentoViewset, ExternalDepoimentoViewset)
+# from drf_yasg.views import get_schema_view
+# from drf_yasg import openapi
+
+# schema_view = get_schema_view(
+#     openapi.Info(
+#         title="Text API",
+#         default_version='v0',
+#         description="Main Text Flow",
+#     ),
+#     public=True,
+#     permission_classes=('AllowAny',),
+# )
 
 urlpatterns = [
     path('admin/', admin.site.urls),

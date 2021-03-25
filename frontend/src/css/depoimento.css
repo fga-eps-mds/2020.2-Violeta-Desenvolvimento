@@ -5,11 +5,6 @@
 .control-prev:after {
     content: url('../images/arrowPrevDesktop.svg') !important;
 }
-/* .depoimento-text {
-    height: 305px;
-    margin: auto 32px;
-    align-self: center center;
-} */
 
 .slide.selected {
     align-items: center;
@@ -30,6 +25,7 @@
     border: 0;
     font-size: 32px;
     cursor: pointer;
+    z-index: 0;
 }
 .carousel .control-arrow:before,
 .carousel.carousel-slider .control-arrow:before {
@@ -80,6 +76,7 @@
     position: relative;
     margin: 0;
     overflow: hidden;
+    z-index: 0;
 }
 .carousel.carousel-slider .control-arrow {
     top: 0;
@@ -87,7 +84,6 @@
     font-size: 26px;
     bottom: 0;
     margin-top: 0;
-    /* padding: 5px; */
 }
 .carousel.carousel-slider .control-arrow:hover {
     background: rgba(161, 116, 170, 0.3);
@@ -157,7 +153,6 @@
 .carousel .slide iframe {
     display: inline-block;
     width: calc(100% - 80px);
-    /* margin: 0 40px 40px; */
     border: 0;
 }
 
@@ -193,146 +188,7 @@
     width: 1060px;
     z-index: -1;
 }
-/*---------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------*/
-#depoimento-enviar {
-    margin-top: 5rem;
-    border: none;
-    background-color: #472f4c;
-    color: white;
-    width: 18.125rem;
-    height: 2.5rem;
-    border-radius: 2px;
-}
 
-.depoimento-modal-request {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 6.25rem; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
-}
-
-.depoimento-modal-confirm {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 6.25rem; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.depoimento-modal-content {
-    background-color: #ffda85;
-    margin: auto;
-    padding: auto;
-    width: 75rem;
-    height: 39.5rem;
-}
-
-#depoimento-modal-title {
-    padding-top: 2rem;
-    font-size: 1.5rem;
-    align-self: center;
-    text-align: center;
-}
-
-#depoimento-modal-submit {
-    border: none;
-    background-color: #472f4c;
-    color: white;
-    width: 18.125rem;
-    height: 2.5rem;
-    border-radius: 2px;
-    position: relative;
-    float: right;
-    margin-right: 3rem;
-    margin-top: 2rem;
-}
-
-#depoimento-confirm-close {
-    border: none;
-    background-color: #472f4c;
-    color: white;
-    width: 18.125rem;
-    height: 2.5rem;
-    border-radius: 2px;
-    position: fixed;
-}
-
-#depoimento-confirm-container {
-    display: flex;
-    margin: auto;
-    background-color: white;
-    border-radius: 1rem;
-    width: 70rem;
-    height: 26.25rem;
-}
-
-#depoimento-btn-voltar {
-    border: none;
-    background-color: #472f4c;
-    color: white;
-    width: 18.125rem;
-    height: 2.5rem;
-    border-radius: 2px;
-    position: relative;
-    float: right;
-    margin-right: 3rem;
-    margin-top: 2rem;
-}
-
-#womanTexting {
-    padding: 1rem;
-}
-
-#depoimento-confirm-message {
-    bottom: -10px;
-    font-size: 1.125rem;
-    width: 32.5rem;
-    height: 8.75rem;
-    background-color: #764e7e;
-    border-radius: 1rem;
-    padding: 1.9rem 2.8125rem;
-    position: relative;
-    bottom: -60%;
-    color: white;
-}
-
-#depoimento-input {
-    resize: none;
-    font-size: 1rem;
-    margin: 2rem 2rem 0 2rem;
-    width: 70rem;
-    height: 26.25rem;
-    padding: 0.5rem;
-    border-radius: 1rem;
-}
-
-#depoimento-confirm-close {
-    border: none;
-    background-color: #472f4c;
-    color: white;
-    width: 18.125rem;
-    height: 2.5rem;
-    border-radius: 2px;
-    position: relative;
-    float: right;
-    margin-right: 2.5rem;
-    margin-top: 2rem;
-}
-/*---------------------------------------------------------------------------------------------------------------------------------------*/
-/*---------------------------------------------------------------------------------------------------------------------------------------*/
 @media (max-width: 739px) {
     .ds_depoimento {
         width: 17.625rem;
@@ -371,78 +227,4 @@
         align-items: center;
         height: 14.25rem;
     }
-
-    .depoimento-modal-content {
-        width: 100%;
-        height: 75%;
-    }
-
-    #depoimento-modal-submit {
-        width: 14rem;
-        height: 2.5rem;
-        margin: 2rem 5.5rem 0 5.5rem;
-        text-align: center;
-    }
-
-    #depoimento-confirm-close {
-        width: 9rem;
-        height: 1.25rem;
-        position: fixed;
-    }
-
-    #depoimento-confirm-container {
-        width: 80%;
-        height: 25rem;
-        flex-direction: column;
-        margin-top: 2rem;
-    }
-
-    #depoimento-btn-voltar {
-        width: 14rem;
-        height: 2.5rem;
-        margin: 2rem 5.5rem 0 5.5rem;
-        text-align: center;
-    }
-
-    #depoimento-confirm-message {
-        font-size: .8rem;
-        text-align: left;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: 1rem;
-        width: 16rem;
-        height: auto;
-        padding: 1rem;
-        position: relative;
-        bottom: 0;
-        color: white;
-    }
-
-    #depoimento-input {
-        width: 80%;
-        height: 20rem;
-        margin: 2rem 2rem 0 2.75rem;
-        
-    }
-
-    #depoimento-confirm-close {
-        width: 14rem;
-        height: 2.5rem;
-        margin: 0;
-        margin-top: 1rem;
-        margin-right: 5.5rem;
-        margin-left: 5.5rem;
-        position: relative;
-        float: right;
-    }
-    #depoimento-enviar {
-        margin-top: 1rem;
-        width: 14rem;
-        height: 2.5rem;
-    }
-
-    #womanTexting{
-        padding: 0.75rem;
-    }
-    
 }
