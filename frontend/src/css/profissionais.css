@@ -6,14 +6,23 @@
     font-style: normal;
 }
 #container-title{
+    max-height: max-content;
+    max-width: 450px;
     padding-left: 25px;
     padding-top: 145px;
+    position: absolute;
 }
 #title{
     font-size: 36px;
 }
 #description{
     font-size: 16px;
+}
+/* CONTAINER-PROFISSIONAIS */
+#container-profissionais{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 /* BOX-CONTATO */
 .box-contact{
@@ -22,6 +31,8 @@
     max-height: 140px;
     border-radius: 10px;
     margin-left: 25px;
+    flex: 1;
+    margin-top: 370px;
 }
 #box-contact-logo{
     background-color: #A174AA;
@@ -29,25 +40,28 @@
     height: 140px;
     border-radius: 10px;
     margin-right: 10px;
+    z-index: -1;
 }
 #box-contact-text{
-    padding-left: 10px;
-    float: left;
+    width: max-content; /* 250px */
+    padding-top: 20px;
+    position: relative;
+    left: 140px;
+    font-size: 14px;
 }
 #box-contact-name{
-    font-size: 14px;
     padding-bottom: 13px;
-}
-#box-contact-description{
-    font-size: 14px;
 }
 /* NAV */
 .list-nav-profissionais{
     display: inline-flex;
     list-style: none;
+    float: right;
 }
-.list-nav-profissionais:hover{
-   
+.nav-profissionais{
+    flex: 1;
+    margin-top: 260px;
+    margin-right: 25px;
 }
 #button-nav-ongs{
     background-color: #764E7E;
@@ -97,4 +111,15 @@
 #button-nav-teste:active{
     background-color: #472F4C;
     border: none;
+}
+/* PAGINATION */
+.pagination{
+    margin-right: 55px;
+}
+.pagination a{
+    color: black;
+    font-size: 14px;
+    display: inline;
+    padding: 8px 23px;
+    flex: 1;
 }
