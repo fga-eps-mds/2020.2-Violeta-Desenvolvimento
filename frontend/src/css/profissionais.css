@@ -115,6 +115,8 @@
 /* PAGINATION */
 .pagination{
     margin-right: 55px;
+    width: max-content;
+    height: max-content;
 }
 .pagination a{
     color: black;
