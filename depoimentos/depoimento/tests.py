@@ -1,11 +1,12 @@
-import json
 from rest_framework.test import APITestCase
 from rest_framework import status
 from .models import (Depoimento)
 from .serializers import (DepoimentoSerializer, ExternalDepoimentoSerializer)
 
+
 urlE = '/api/external-depoimento/'
 url = '/api/depoimento/'
+
 
 class DepoimentoTestCase(APITestCase):
     def setUp(self):

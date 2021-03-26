@@ -1,5 +1,4 @@
 from rest_framework import viewsets
-from rest_framework import serializers
 from depoimento.models import (Depoimento)
 from depoimento.serializers import (ExternalDepoimentoSerializer,
                                     DepoimentoSerializer,)
@@ -11,9 +10,10 @@ class DepoimentoViewset(viewsets.ModelViewSet):
     queryset = Depoimento.objects.all()
     serializer_class = DepoimentoSerializer
 
-    @swagger_auto_schema(request_body=DepoimentoSerializer,
-                         response={200: DepoimentoSerializer},
-                         operation_description="Lista detalhada de todos os depoimentos")
+    @swagger_auto_schema(
+        request_body=DepoimentoSerializer,
+        response={200: DepoimentoSerializer},
+        operation_description="Lista detalhada de todos os depoimentos")
     def perform_create(self, serializer):
         serializer.save()
 
