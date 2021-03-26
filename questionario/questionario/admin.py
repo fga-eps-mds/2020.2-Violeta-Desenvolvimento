@@ -1,6 +1,11 @@
 from django.contrib import admin
-from .models import (CadProfissionais, SalvarDados, CategoriaViolencia, ContatoViolencia, Questionario,
-                     ContatoQuestionario)
+from .models import (
+    CadProfissionais,
+    SalvarDados,
+    CategoriaViolencia,
+    ContatoViolencia,
+    Questionario,
+    ContatoQuestionario)
 
 admin.site.register(CadProfissionais)
 admin.site.register(SalvarDados)

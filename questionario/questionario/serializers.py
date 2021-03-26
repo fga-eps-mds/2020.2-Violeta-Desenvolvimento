@@ -1,6 +1,11 @@
 from rest_framework import serializers
-from .models import (CadProfissionais, SalvarDados, CategoriaViolencia, ContatoViolencia, Questionario,
-                     ContatoQuestionario)
+from .models import (
+    CadProfissionais,
+    SalvarDados,
+    CategoriaViolencia,
+    ContatoViolencia,
+    Questionario,
+    ContatoQuestionario)
 
 
 class CadProfissionaisSerializer(serializers.ModelSerializer):

@@ -15,7 +15,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('nome_profissional', models.CharField(max_length=30)),
                 ('ds_profissional', models.TextField()),
-                ('id_profissional', models.AutoField(primary_key=True, serialize=False)),
+                ('id_profissional', models.AutoField(primary_key=True,
+                                                     serialize=False)),
             ],
         ),
     ]

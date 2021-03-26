@@ -1,6 +1,5 @@
 from rest_framework import viewsets
 from . import models
-from .models import SalvarDados
 from . import serializers
 
 
