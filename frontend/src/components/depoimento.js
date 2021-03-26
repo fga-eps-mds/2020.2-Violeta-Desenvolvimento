@@ -39,8 +39,6 @@ class Depoimento extends React.Component {
             depoimentos: [],
             error: '',
         };
-        // this.changeHandler = this.changeHandler.bind(this);
-        // this.submitForm = this.submitForm.bind(this);
     }
 
     // Get Depoimentos
@@ -68,57 +66,7 @@ class Depoimento extends React.Component {
                         ))}
                     </Carousel>
                     <CadastrarDepoimento />
-                    {/* <button id="depoimento-enviar">Cadastrar Depoimento</button> */}
                 </div>
-                {/* <div
-                    id="depoimento-modal-request"
-                    class="depoimento-modal-request"
-                >
-                    <div class="depoimento-modal-content">
-                        <h1 id="depoimento-modal-title">
-                            Cadastre seu depoimento
-                        </h1>
-                        <div id="depoimento-input-container">
-                                                        <textarea
-                                id="depoimento-input"
-                                value={this.ds_depoimento}
-                                placeholder="Digite seu depoimento aqui..."
-                            ></textarea>
-                            
-                        </div>
-                        <button
-                            id="depoimento-modal-submit"
-                            type="submit"
-                            form="dsDepoimento"
-                            // onClick={this.AddDepoimento}
-                        >
-                            Cadastrar Depoimento
-                        </button>
-                        <button id="depoimento-btn-voltar">Voltar</button>
-                    </div>
-                </div>
-
-                <div
-                    id="depoimento-modal-confirm"
-                    class="depoimento-modal-confirm"
-                >
-                    <div class="depoimento-modal-content">
-                        <h1 id="depoimento-modal-title">
-                            Depoimento cadastrado com suscesso!
-                        </h1>
-                        <div id="depoimento-confirm-container">
-                            <img src={womanTexting} id="womanTexting" />
-                            <p id="depoimento-confirm-message">
-                                Obrigada pela contribuição! Seu depoimento
-                                ajudará muitas mulheres na luta contra violência
-                                e nos ajudará a fortelecer essa rede de apoio.
-                            </p>
-                        </div>
-                        <button id="depoimento-confirm-close">
-                            Voltar para depoimentos
-                        </button>
-                    </div>
-                </div> */}
             </div>
         );
     }

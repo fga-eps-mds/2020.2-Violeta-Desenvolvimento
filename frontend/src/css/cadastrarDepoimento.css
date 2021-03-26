@@ -65,16 +65,6 @@
   margin-top: 2rem;
 }
 
-#depoimento-confirm-close {
-  border: none;
-  background-color: #472f4c;
-  color: white;
-  width: 18.125rem;
-  height: 2.5rem;
-  border-radius: 2px;
-  position: fixed;
-}
-
 #depoimento-confirm-container {
   display: flex;
   margin: auto;
@@ -110,7 +100,6 @@
   border-radius: 1rem;
   padding: 1.9rem 2.8125rem;
   position: relative;
-  bottom: -60%;
   color: white;
 }
 
@@ -148,12 +137,6 @@
     height: 2.5rem;
     margin: 2rem 5.5rem 0 5.5rem;
     text-align: center;
-}
-
-#depoimento-confirm-close {
-    width: 9rem;
-    height: 1.25rem;
-    position: fixed;
 }
 
 #depoimento-confirm-container {
@@ -201,6 +184,7 @@
     position: relative;
     float: right;
 }
+
 #depoimento-enviar {
     margin-top: 1rem;
     width: 14rem;

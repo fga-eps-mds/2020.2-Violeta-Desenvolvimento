@@ -38,15 +38,15 @@ class DepoimentoTestCase(APITestCase):
             'aprovado': True,
             'ds_depoimento': 'Agora é verdadeiro'
         }
-        ulrID1 = url + str(self.depoimento1.id_depoimento) + '/'
-        response = self.client.put(ulrID1, data)
+        urlId1 = url + str(self.depoimento1.id_depoimento) + '/'
+        response = self.client.put(urlId1, data)
         serializer = DepoimentoSerializer(data_serializer)
         self.assertEqual(response.data, serializer.data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def testDelete(self):
-        urlID2 = url + str(self.depoimento1.id_depoimento) + '/'
-        response = self.client.delete(urlID2)
+        urlId2 = url + str(self.depoimento1.id_depoimento) + '/'
+        response = self.client.delete(urlId2)
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
@@ -79,13 +79,13 @@ class ExternalDepoimentoTestCase(APITestCase):
             'id_depoimento': self.depoimento2.id_depoimento,
             'ds_depoimento': 'Ainda é verdadeiro'
         }
-        ulrID1 = urlE + str(self.depoimento2.id_depoimento) + '/'
-        response = self.client.put(ulrID1, data)
+        urlId1 = urlE + str(self.depoimento2.id_depoimento) + '/'
+        response = self.client.put(urlId1, data)
         serializer = ExternalDepoimentoSerializer(data_serializer)
         self.assertEqual(response.data, serializer.data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def testDelete(self):
-        urlID2 = urlE + str(self.depoimento2.id_depoimento) + '/'
-        response = self.client.delete(urlID2)
+        urlId2 = urlE + str(self.depoimento2.id_depoimento) + '/'
+        response = self.client.delete(urlId2)
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
