@@ -90,7 +90,7 @@ class Questionario(models.Model):
                                blank=False)
 
     def __str__(self):
-        return str(self.id_questionario) + " | " + self.categoria_violencia
+        return str(self.id_questionario) + " | " + str(self.categoria_violencia)
 
 
 class ContatoQuestionario(models.Model):
