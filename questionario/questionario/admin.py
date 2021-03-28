@@ -1,9 +1,8 @@
 from django.contrib import admin
-from .models import (CadastroProfissionais, SalvarDados, CategoriaViolencia, ContatoViolencia, Questionario,
+from .models import (CadProfissionais, CategoriaViolencia, ContatoViolencia, Questionario,
                      ContatoQuestionario)
 
-admin.site.register(CadastroProfissionais)
-admin.site.register(SalvarDados)
+admin.site.register(CadProfissionais)
 admin.site.register(CategoriaViolencia)
 admin.site.register(ContatoViolencia)
 admin.site.register(Questionario)

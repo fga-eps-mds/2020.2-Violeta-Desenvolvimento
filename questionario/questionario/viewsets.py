@@ -1,18 +1,11 @@
 from rest_framework import viewsets
 from . import models 
-from .models import SalvarDados
 from . import serializers
-"""from .serializers import SalvarDadosSerializer
-from .serializers import CadastroProfissionaisSerializer"""
 
-class CadastroProfissionaisViewset(viewsets.ModelViewSet):
-    queryset = models.CadastroProfissionais.objects.all()
-    serializer_class = serializers.CadastroProfissionaisSerializer
-
-class SalvarDadosViewset(viewsets.ModelViewSet):
-    queryset = models.SalvarDados.objects.all()
-    serializer_class = serializers.SalvarDadosSerializer
-
+class CadProfissionaisViewset(viewsets.ModelViewSet):
+    queryset = models.CadProfissionais.objects.all()
+    serializer_class = serializers.CadProfissionaisSerializer
+    
 class CategoriaViolenciaViewset(viewsets.ModelViewSet):
     queryset = models.CategoriaViolencia.objects.all()
     serializer_class = serializers.CategoriaViolenciaSerializer

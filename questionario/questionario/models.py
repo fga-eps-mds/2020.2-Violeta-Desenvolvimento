@@ -2,20 +2,13 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 
 
-class CadastroProfissionais(models.Model):
+class CadProfissionais(models.Model):
     nome_profissional  = models.CharField(max_length=30)
+    ds_profissional= models.TextField(null=False, blank=False)
     id_profissional = models.AutoField(primary_key=True)
-
+     
     def __str__(self):
         return self.nome_profissional
-
-class SalvarDados(models.Model):
-    nome_violencia = models.CharField(max_length=30)
-    id = models.AutoField(primary_key=True)
-    """contador = models.IntegerField(default=0)"""
-
-    def __str__(self):
-        return self.nome_violencia
 
 class CategoriaViolencia(models.Model):
     """
