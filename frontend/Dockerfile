@@ -1,9 +1,12 @@
-FROM node:alpine as builder
-WORKDIR '/home/frontend/'
-COPY package*.json ./
-RUN npm install -g npm@7.6.1
-RUN npm install --cache /tmp/
-COPY . .
-RUN npm run build
-RUN rm -r /home/frontend/node_modules/.cache
-RUN chmod -R 777 *
+# Imagem de Origem
+FROM node:13-alpine
+# Diretório de trabalho(é onde a aplicação ficará dentro do container).
+WORKDIR /frontend
+# Adicionando `/app/node_modules/.bin` para o $PATH
+ENV PATH /frontend/node_modules/.bin:$PATH
+# Instalando dependências da aplicação e armazenando em cache.
+COPY package.json /frontend/package.json
+RUN npm install --silent
+RUN npm install react-scripts@3.3.1 -g --silent
+# Inicializa a aplicação
+CMD ["npm", "start"]
