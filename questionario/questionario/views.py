@@ -17,10 +17,12 @@ def analisa_fluxos(request):
             dic_db = {}
             dic_in = {}
             while bda['question'] is not None:
-                dic_db[bda['question'].lower()] = bda['children'][0]['label'].lower()
+                dic_db[bda['question'].lower(
+                )] = bda['children'][0]['label'].lower()
                 bda = bda['children'][0]
             while ent['question'] is not None:
-                dic_in[ent['question'].lower()] = ent['children'][0]['label'].lower()
+                dic_in[ent['question'].lower(
+                )] = ent['children'][0]['label'].lower()
                 ent = ent['children'][0]
             if dic_db == dic_in:
                 resultado.append(str(quest.categoria_violencia))

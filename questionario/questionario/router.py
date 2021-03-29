@@ -1,4 +1,4 @@
-from . import viewsets, views
+from . import viewsets
 from rest_framework import routers
 
 
