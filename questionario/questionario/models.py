@@ -33,7 +33,7 @@ class CategoriaViolencia(models.Model):
     vitimas_categoria = models.IntegerField(default=0)
     
     def __str__(self):
-        return self.nome_categoria
+        return self.ds_categoria + " | " + str(self.qtd_contador)
 
 
 class ContatoViolencia(models.Model):
