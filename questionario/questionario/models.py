@@ -48,6 +48,10 @@ class ContatoViolencia(models.Model):
     ds_contato = models.TextField(null=False,
                                   blank=False)
 
+    category = models.TextField(null=False,
+                                blank=False,
+                                default="Ongs")
+
     def __str__(self):
         return self.nome_contato
 
