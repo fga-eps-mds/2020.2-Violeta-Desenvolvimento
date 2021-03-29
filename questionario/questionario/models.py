@@ -73,7 +73,7 @@ class Questionario(models.Model):
 
     def __str__(self):
         return str(self.id_questionario) + " | " + str(
-        self.categoria_violencia)
+            self.categoria_violencia)
 
 
 class ContatoQuestionario(models.Model):
