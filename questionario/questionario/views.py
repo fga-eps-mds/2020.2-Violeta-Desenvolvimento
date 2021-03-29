@@ -10,17 +10,19 @@ def analisa_fluxos(request):
     entrada = json.load(arquivo)
     quests = Questionario.objects.all()
     resultado = []
-    for i in range(3):
+    for i in range(4):
         for quest in quests:
             ent = entrada[i]
             bda = quest.arvore_decisao
             dic_db = {}
             dic_in = {}
             while bda['question'] is not None:
-                dic_db[bda['question']] = bda['children'][0]['label']
+                dic_db[bda['question'].lower(
+                )] = bda['children'][0]['label'].lower()
                 bda = bda['children'][0]
             while ent['question'] is not None:
-                dic_in[ent['question']] = ent['children'][0]['label']
+                dic_in[ent['question'].lower(
+                )] = ent['children'][0]['label'].lower()
                 ent = ent['children'][0]
             if dic_db == dic_in:
                 resultado.append(str(quest.categoria_violencia))
