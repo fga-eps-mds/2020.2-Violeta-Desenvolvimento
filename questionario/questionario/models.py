@@ -2,6 +2,24 @@ from django.db import models
 from django.contrib.postgres.fields import JSONField
 
 
+class CadProfissionais(models.Model):
+    nome_profissional = models.CharField(max_length=30)
+    ds_profissional = models.TextField(null=False, blank=False)
+    id_profissional = models.AutoField(primary_key=True)
+
+    def __str__(self):
+        return self.nome_profissional
+
+class LevantamentoViolencia(models.Model):
+    id_contador = models.AutoField(primary_key=True)
+    ds_categoria = models.TextField(null=False,
+                                    blank=False)
+                                    
+    vitimas_categoria = models.IntegerField(default=0)
+
+    def __str__(self):
+        return str(self.ds_categoria) + " | " + str(self.vitimas_categoria)
+
 class CategoriaViolencia(models.Model):
     """
         Legenda:
@@ -11,7 +29,6 @@ class CategoriaViolencia(models.Model):
             id_categoria: Identificador único da categoria;
             nome_categoria: Nome da categoria;
             ds_categoria: Descrição da categoria;
-            vitimas_categoria: Contador de ocorrências do questionário;
     """
     id_categoria = models.AutoField(primary_key=True)
 
@@ -22,8 +39,6 @@ class CategoriaViolencia(models.Model):
     ds_categoria = models.TextField(null=False,
                                     blank=False)
 
-    vitimas_categoria = models.IntegerField(default=0)
-    
     def __str__(self):
         return self.nome_categoria
 
@@ -75,7 +90,8 @@ class Questionario(models.Model):
                                blank=False)
 
     def __str__(self):
-        return str(self.id_questionario) + " | " + self.categoria_violencia
+        return str(self.id_questionario) + " | " + str(
+            self.categoria_violencia)
 
 
 class ContatoQuestionario(models.Model):

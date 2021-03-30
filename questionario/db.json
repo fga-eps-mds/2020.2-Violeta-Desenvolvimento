@@ -1,0 +1,1422 @@
+[
+    {
+        "model": "questionario.categoriaviolencia",
+        "pk": 2,
+        "fields": {
+            "nome_categoria": "VIOL\u00caNCIA F\u00cdSICA",
+            "ds_categoria": "Entendida como qualquer conduta que ofenda a integridade ou sa\u00fade corporal da mulher."
+        }
+    },
+    {
+        "model": "questionario.categoriaviolencia",
+        "pk": 3,
+        "fields": {
+            "nome_categoria": "VIOL\u00caNCIA PSICOL\u00d3GICA",
+            "ds_categoria": "\u00c9 considerada qualquer conduta que: cause dano emocional e diminui\u00e7\u00e3o da autoestima; prejudique e perturbe o pleno desenvolvimento da mulher; ou vise degradar ou controlar suas a\u00e7\u00f5es, comportamentos, cren\u00e7as e decis\u00f5es."
+        }
+    },
+    {
+        "model": "questionario.categoriaviolencia",
+        "pk": 4,
+        "fields": {
+            "nome_categoria": "VIOL\u00caNCIA SEXUAL",
+            "ds_categoria": "Trata-se de qualquer conduta que constranja a presenciar, a manter ou a participar de rela\u00e7\u00e3o sexual n\u00e3o desejada mediante intimida\u00e7\u00e3o, amea\u00e7a, coa\u00e7\u00e3o ou uso da for\u00e7a."
+        }
+    },
+    {
+        "model": "questionario.categoriaviolencia",
+        "pk": 5,
+        "fields": {
+            "nome_categoria": "VIOL\u00caNCIA PATRIMONIAL",
+            "ds_categoria": "Entendida como qualquer conduta que configure reten\u00e7\u00e3o, subtra\u00e7\u00e3o, destrui\u00e7\u00e3o parcial ou total de seus objetos, instrumentos de trabalho, documentos pessoais, bens, valores e direitos ou recursos econ\u00f4micos, incluindo os destinados a satisfazer suas necessidades."
+        }
+    },
+    {
+        "model": "questionario.categoriaviolencia",
+        "pk": 6,
+        "fields": {
+            "nome_categoria": "VIOL\u00caNCIA MORAL",
+            "ds_categoria": "\u00c9 considerada qualquer conduta que configure cal\u00fania, difama\u00e7\u00e3o ou inj\u00faria."
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 10,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Atirar objetos",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Foi concretizada?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 11,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Sacudir e apertar os bra\u00e7os",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Foi concretizada?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 12,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Perder a capacidade de respirar",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Foi concretizada?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 13,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Les\u00f5es com objetos cortantes ou perfurantes",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Foi concretizada?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 14,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Ferimentos causados por queimaduras ou armas de fogo",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Foi concretizada?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 15,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "N\u00e3o",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Foi concretizada?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 16,
+        "fields": {
+            "categoria_violencia": 4,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "N\u00e3o",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Sim",
+                                                "children": [
+                                                    {
+                                                        "label": "Rela\u00e7\u00e3o sexual sem sua autoriza\u00e7\u00e3o ou contra sua vontade",
+                                                        "children": null,
+                                                        "question": null
+                                                    }
+                                                ],
+                                                "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                            }
+                                        ],
+                                        "question": "Foi concretizada?"
+                                    }
+                                ],
+                                "question": "Essa amea\u00e7a envolve algum ato sobre seu corpo contra sua vontade?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 17,
+        "fields": {
+            "categoria_violencia": 4,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "N\u00e3o",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Sim",
+                                                "children": [
+                                                    {
+                                                        "label": "Te obrigar a fazer atos sexuais que causam desconforto ou desprezo",
+                                                        "children": null,
+                                                        "question": null
+                                                    }
+                                                ],
+                                                "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                            }
+                                        ],
+                                        "question": "Foi concretizada?"
+                                    }
+                                ],
+                                "question": "Essa amea\u00e7a envolve algum ato sobre seu corpo contra sua vontade?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 18,
+        "fields": {
+            "categoria_violencia": 4,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "N\u00e3o",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Sim",
+                                                "children": [
+                                                    {
+                                                        "label": "Impedir o uso de m\u00e9todos contraceptivos ou te for\u00e7ar a abortar",
+                                                        "children": null,
+                                                        "question": null
+                                                    }
+                                                ],
+                                                "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                            }
+                                        ],
+                                        "question": "Foi concretizada?"
+                                    }
+                                ],
+                                "question": "Essa amea\u00e7a envolve algum ato sobre seu corpo contra sua vontade?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 19,
+        "fields": {
+            "categoria_violencia": 4,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "N\u00e3o",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Sim",
+                                                "children": [
+                                                    {
+                                                        "label": "For\u00e7ar matrim\u00f4nio, gravidez ou prostitui\u00e7\u00e3o por meio de amea\u00e7a, chantagem, suborno ou manipula\u00e7\u00e3o",
+                                                        "children": null,
+                                                        "question": null
+                                                    }
+                                                ],
+                                                "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                            }
+                                        ],
+                                        "question": "Foi concretizada?"
+                                    }
+                                ],
+                                "question": "Essa amea\u00e7a envolve algum ato sobre seu corpo contra sua vontade?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 20,
+        "fields": {
+            "categoria_violencia": 4,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "N\u00e3o",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Sim",
+                                                "children": [
+                                                    {
+                                                        "label": "Te limitar ou anular o exerc\u00edcio dos direitos sexuais e reprodutivos",
+                                                        "children": null,
+                                                        "question": null
+                                                    }
+                                                ],
+                                                "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                            }
+                                        ],
+                                        "question": "Foi concretizada?"
+                                    }
+                                ],
+                                "question": "Essa amea\u00e7a envolve algum ato sobre seu corpo contra sua vontade?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 21,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "N\u00e3o",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "N\u00e3o",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Foi concretizada?"
+                                    }
+                                ],
+                                "question": "Essa amea\u00e7a envolve algum ato sobre seu corpo contra sua vontade?"
+                            }
+                        ],
+                        "question": "Essa amea\u00e7a foi f\u00edsica?"
+                    }
+                ],
+                "question": "J\u00e1 foi amea\u00e7ada?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 22,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "filho/filha",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Esse acontecimento \u00e9 usado contra voc\u00ea como amea\u00e7a ou chantagem?"
+                            }
+                        ],
+                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                    }
+                ],
+                "question": "Algu\u00e9m pr\u00f3ximo a voc\u00ea se feriu de alguma forma?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 23,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "m\u00e3e",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Esse acontecimento \u00e9 usado contra voc\u00ea como amea\u00e7a ou chantagem?"
+                            }
+                        ],
+                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                    }
+                ],
+                "question": "Algu\u00e9m pr\u00f3ximo a voc\u00ea se feriu de alguma forma?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 24,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "pai",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Esse acontecimento \u00e9 usado contra voc\u00ea como amea\u00e7a ou chantagem?"
+                            }
+                        ],
+                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                    }
+                ],
+                "question": "Algu\u00e9m pr\u00f3ximo a voc\u00ea se feriu de alguma forma?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 25,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "av\u00f3s",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Esse acontecimento \u00e9 usado contra voc\u00ea como amea\u00e7a ou chantagem?"
+                            }
+                        ],
+                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                    }
+                ],
+                "question": "Algu\u00e9m pr\u00f3ximo a voc\u00ea se feriu de alguma forma?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 26,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "sogra/sogro",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Esse acontecimento \u00e9 usado contra voc\u00ea como amea\u00e7a ou chantagem?"
+                            }
+                        ],
+                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                    }
+                ],
+                "question": "Algu\u00e9m pr\u00f3ximo a voc\u00ea se feriu de alguma forma?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 27,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "outros",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Esse acontecimento \u00e9 usado contra voc\u00ea como amea\u00e7a ou chantagem?"
+                            }
+                        ],
+                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                    }
+                ],
+                "question": "Algu\u00e9m pr\u00f3ximo a voc\u00ea se feriu de alguma forma?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 28,
+        "fields": {
+            "categoria_violencia": 6,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Atirar objetos",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 29,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Atirar objetos",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 30,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Atirar objetos",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 31,
+        "fields": {
+            "categoria_violencia": 6,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Sacudir e apertar os bra\u00e7os",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 32,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Sacudir e apertar os bra\u00e7os",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 33,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Sacudir e apertar os bra\u00e7os",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 34,
+        "fields": {
+            "categoria_violencia": 6,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Perder a capacidade de respirar",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 35,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Perder a capacidade de respirar",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 36,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Perder a capacidade de respirar",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 37,
+        "fields": {
+            "categoria_violencia": 6,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Les\u00f5es com objetos cortantes ou perfurantes",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 38,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Les\u00f5es com objetos cortantes ou perfurantes",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 39,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Les\u00f5es com objetos cortantes ou perfurantes",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 40,
+        "fields": {
+            "categoria_violencia": 6,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Ferimentos causados por queimaduras ou armas de fogo",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 41,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Ferimentos causados por queimaduras ou armas de fogo",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 42,
+        "fields": {
+            "categoria_violencia": 2,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": [
+                                            {
+                                                "label": "Ferimentos causados por queimaduras ou armas de fogo",
+                                                "children": null,
+                                                "question": null
+                                            }
+                                        ],
+                                        "question": "Qual das op\u00e7\u00f5es abaixo se aproxima mais?"
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 43,
+        "fields": {
+            "categoria_violencia": 6,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "N\u00e3o",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 44,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "N\u00e3o",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Esse acontecimento foi usado como justificativa para algum tipo de agress\u00e3o f\u00edsica?"
+                            }
+                        ],
+                        "question": "Isso lhe causou algum constrangimento como xingamentos, humilha\u00e7\u00f5es e/ou exposi\u00e7\u00f5es?"
+                    }
+                ],
+                "question": "J\u00e1 foi acusada indevidamente, por trai\u00e7\u00e3o ou mentiras?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 45,
+        "fields": {
+            "categoria_violencia": 5,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Isso se deu por alguma acusa\u00e7\u00e3o contra seu car\u00e1ter ou humilha\u00e7\u00e3o?"
+                            }
+                        ],
+                        "question": "J\u00e1 destruiu ou escondeu seus documentos pessoais?"
+                    }
+                ],
+                "question": "Seu parceiro te impediu, em algum momento, de usar seus bens pessoais?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 46,
+        "fields": {
+            "categoria_violencia": 6,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Isso se deu por alguma acusa\u00e7\u00e3o contra seu car\u00e1ter ou humilha\u00e7\u00e3o?"
+                            }
+                        ],
+                        "question": "J\u00e1 destruiu ou escondeu seus documentos pessoais?"
+                    }
+                ],
+                "question": "Seu parceiro te impediu, em algum momento, de usar seus bens pessoais?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 47,
+        "fields": {
+            "categoria_violencia": 3,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "Sim",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Isso se deu por alguma acusa\u00e7\u00e3o contra seu car\u00e1ter ou humilha\u00e7\u00e3o?"
+                            }
+                        ],
+                        "question": "J\u00e1 destruiu ou escondeu seus documentos pessoais?"
+                    }
+                ],
+                "question": "Seu parceiro te impediu, em algum momento, de usar seus bens pessoais?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 48,
+        "fields": {
+            "categoria_violencia": 5,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "Sim",
+                                "children": [
+                                    {
+                                        "label": "N\u00e3o",
+                                        "children": null,
+                                        "question": null
+                                    }
+                                ],
+                                "question": "Isso se deu por alguma acusa\u00e7\u00e3o contra seu car\u00e1ter ou humilha\u00e7\u00e3o?"
+                            }
+                        ],
+                        "question": "J\u00e1 destruiu ou escondeu seus documentos pessoais?"
+                    }
+                ],
+                "question": "Seu parceiro te impediu, em algum momento, de usar seus bens pessoais?"
+            }
+        }
+    },
+    {
+        "model": "questionario.questionario",
+        "pk": 49,
+        "fields": {
+            "categoria_violencia": 5,
+            "arvore_decisao": {
+                "label": null,
+                "children": [
+                    {
+                        "label": "Sim",
+                        "children": [
+                            {
+                                "label": "N\u00e3o",
+                                "children": null,
+                                "question": null
+                            }
+                        ],
+                        "question": "J\u00e1 destruiu ou escondeu seus documentos pessoais?"
+                    }
+                ],
+                "question": "Seu parceiro te impediu, em algum momento, de usar seus bens pessoais?"
+            }
+        }
+    }
+]

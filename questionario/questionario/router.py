@@ -3,6 +3,8 @@ from rest_framework import routers
 
 
 router = routers.DefaultRouter()
+router.register('vitimas-categoria', viewsets.LevantamentoViolenciaViewset)
+router.register('cadastrar-profissionais', viewsets.CadProfissionaisViewset)
 router.register('categoria-violencia', viewsets.CategoriaViolenciaViewset)
 router.register('contato-violencia', viewsets.ContatoViolenciaViewset)
 router.register('questionario', viewsets.QuestionarioViewset)
