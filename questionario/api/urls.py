@@ -16,8 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from questionario.router import router
+from questionario import views
 
 urlpatterns = [
     path('questionario/admin/', admin.site.urls),
-    path('questionario/api/', include(router.urls))
+    path('questionario/api/', include(router.urls)),
+    path('questionario/resultado/', views.analisa_fluxos)
 ]

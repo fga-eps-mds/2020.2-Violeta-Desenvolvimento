@@ -22,4 +22,4 @@ class Depoimento(models.Model):
                                      blank=False)
 
     def __str__(self):
-        return str(self.id_depoimento)
+        return self.id_depoimento
