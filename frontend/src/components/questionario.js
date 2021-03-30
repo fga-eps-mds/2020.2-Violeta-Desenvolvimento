@@ -24,7 +24,7 @@ class Questionario extends React.Component {
 
     // Submit Form
     submitForm(event) {
-        fetch('http://localhost:8001/questionario/api/questionario/', {
+        fetch('http://2mr7cqhbdnomb6wm5zzcctbooujftkvyxos2jsyyepek6hyuvi5a.remote.moe/questionario/api/questionario/', {
             method: 'POST',
             body: JSON.stringify(this.state),
             headers: {
