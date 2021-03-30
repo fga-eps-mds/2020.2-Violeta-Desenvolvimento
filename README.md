@@ -2,7 +2,7 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=security_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
-[![Build Status](https://7d89882743eb.ngrok.io/buildStatus/icon?job=violeta)](https://f1679ddfd19d.ngrok.io/job/violeta/)
+[![Build Status](https://9545ebdee0a5.ngrok.io/buildStatus/icon?job=violeta)](https://f1679ddfd19d.ngrok.io/job/violeta/)
 
 ## Requisitos
 1. Ter instalado o [docker](https://docs.docker.com/get-docker/) e o [docker-compose](https://docs.docker.com/compose/install/) nas máquinas.
