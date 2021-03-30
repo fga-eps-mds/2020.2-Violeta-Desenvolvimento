@@ -43,7 +43,7 @@ class Depoimento extends React.Component {
 
     // Get Depoimentos
     componentDidMount() {
-        fetch('http://localhost:8003/api/external-depoimento/')
+        fetch('http://localhost:8003/depoimentos/api/external-depoimento/')
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ depoimentos: result });
