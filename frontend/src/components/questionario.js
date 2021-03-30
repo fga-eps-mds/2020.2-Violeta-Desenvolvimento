@@ -24,13 +24,16 @@ class Questionario extends React.Component {
 
     // Submit Form
     submitForm(event) {
-        fetch('http://2mr7cqhbdnomb6wm5zzcctbooujftkvyxos2jsyyepek6hyuvi5a.remote.moe/questionario/api/questionario/', {
-            method: 'POST',
-            body: JSON.stringify(this.state),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        }).then((response) => response.json());
+        fetch(
+            'http://2mr7cqhbdnomb6wm5zzcctbooujftkvyxos2jsyyepek6hyuvi5a.remote.moe/questionario/api/questionario/',
+            {
+                method: 'POST',
+                body: JSON.stringify(this.state),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+            }
+        ).then((response) => response.json());
         // .then((data) => console.log(data));
 
         this.setState({
