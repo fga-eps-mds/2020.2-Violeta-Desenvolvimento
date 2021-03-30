@@ -20,6 +20,6 @@ from questionario import views
 
 urlpatterns = [
     path('questionario/admin/', admin.site.urls),
-    path('questionario/api/', include(router.urls))
+    path('questionario/api/', include(router.urls)),
     path('questionario/resultado/', views.analisa_fluxos)
 ]
