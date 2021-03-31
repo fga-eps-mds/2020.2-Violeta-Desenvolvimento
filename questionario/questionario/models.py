@@ -10,15 +10,15 @@ class CadProfissionais(models.Model):
     def __str__(self):
         return self.nome_profissional
 
-class LevantamentoViolencia(models.Model):
+class ViolenciasCount(models.Model):
     id_contador = models.AutoField(primary_key=True)
     ds_categoria = models.TextField(null=False,
                                     blank=False)
                                     
-    vitimas_categoria = models.IntegerField(default=0)
+    vitimas_categoria_counter = models.IntegerField(default=0)
 
     def __str__(self):
-        return str(self.ds_categoria) + " | " + str(self.vitimas_categoria)
+        return str(self.ds_categoria) + " | " + str(self.vitimas_categoria_counter)
 
 class CategoriaViolencia(models.Model):
     """

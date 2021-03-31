@@ -7,9 +7,9 @@ class CadProfissionaisViewset(viewsets.ModelViewSet):
     queryset = models.CadProfissionais.objects.all()
     serializer_class = serializers.CadProfissionaisSerializer
 
-class LevantamentoViolenciaViewset(viewsets.ModelViewSet):
-    queryset = models.LevantamentoViolencia.objects.all()
-    serializer_class = serializers.LevantamentoViolenciaSerializer
+class ViolenciasCountViewset(viewsets.ModelViewSet):
+    queryset = models.ViolenciasCount.objects.all()
+    serializer_class = serializers.ViolenciasCountSerializer
 
 
 class CadProfissionaisViewset(viewsets.ModelViewSet):

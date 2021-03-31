@@ -1,12 +1,12 @@
 import json
 from django.http import HttpResponse
 from django.http import JsonResponse
-from .models import Questionario, LevantamentoViolencia
+from .models import Questionario, ViolenciasCount
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 
 
-@require_http_methods(["POST", "GET"])
+@require_http_methods(["POST","GET"])
 def analisa_fluxos(request):
     arquivo = open('questionario/entrada.json')
     entrada = json.load(arquivo)
@@ -33,11 +33,12 @@ def analisa_fluxos(request):
     return HttpResponse(html)
     
 @csrf_exempt
-@require_http_methods(["POST", "GET"])
+@require_http_methods(["POST","GET"])
 def add_victims_category(request):
-        data = request.POST
-        counter = LevantamentoViolencia.objects.get(ds_categoria=data["categoria"])
-        counter.vitimas_categoria += 1
-        counter.save()
-        return JsonResponse({"class": contador.ds_categoria,
-                             "counts": counter.vitimas_categoria})
+    body_unicode = request.body.decode('utf-8')
+    body = json.loads(body_unicode)
+    counter = ViolenciasCount.objects.get(ds_categoria=body["categoria"])
+    counter.vitimas_categoria_counter += 1
+    counter.save()
+    return JsonResponse({"class": counter.ds_categoria,
+                        "counts": counter.vitimas_categoria_counter})
