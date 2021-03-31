@@ -31,6 +31,7 @@ services:
       - services
     environment:
       - NODE_ENV=${NODE_ENV}
+      - REACT_APP_ENV=${NODE_ENV}
 
   questionario:
     build: ./questionario
