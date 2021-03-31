@@ -64,6 +64,12 @@ CORS_ORIGIN_WHITELIST = [
        '*',
 ]
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
+
 ROOT_URLCONF = 'api.urls'
 
 TEMPLATES = [
