@@ -6,7 +6,7 @@ from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import csrf_exempt
 
 
-@require_http_methods(["POST","GET"])
+@require_http_methods(["POST", "GET"])
 def analisa_fluxos(request):
     arquivo = open('questionario/entrada.json')
     entrada = json.load(arquivo)
@@ -31,9 +31,10 @@ def analisa_fluxos(request):
     resultado = list(set(resultado))
     html = "<html><body>%s</body></html>" % resultado
     return HttpResponse(html)
-    
+
+
 @csrf_exempt
-@require_http_methods(["POST","GET"])
+@require_http_methods(["POST", "GET"])
 def add_victims_category(request):
     body_unicode = request.body.decode('utf-8')
     body = json.loads(body_unicode)
