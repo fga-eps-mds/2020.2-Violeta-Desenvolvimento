@@ -21,16 +21,22 @@ class CadastrarDepoimento extends React.Component {
 
     // Submit Form
     submitForm(event) {
-        fetch(
-            'http://2mr7cqhbdnomb6wm5zzcctbooujftkvyxos2jsyyepek6hyuvi5a.remote.moe/depoimentos/api/external-depoimento/',
-            {
-                method: 'POST',
-                body: JSON.stringify(this.state),
-                headers: {
-                    'Content-type': 'application/json; charset=UTF-8',
-                },
-            }
-        ).then((response) => response.json());
+        let url;
+        let port = '';
+        if (process.env.NODE_ENV === 'development') {
+            url = process.env.REACT_APP_URL_DEVELOP;
+            port = process.env.REACT_APP_DEPOIMENTOS_PORT;
+        } else {
+            url = process.env.REACT_APP_PRODUCTION;
+        }
+        // console.log(`${url}${port}/depoimentos/api/external-depoimento/`);
+        fetch(`${url}${port}/depoimentos/api/external-depoimento/`, {
+            method: 'POST',
+            body: JSON.stringify(this.state),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        }).then((response) => response.json());
 
         this.setState({
             ds_depoimento: '',
