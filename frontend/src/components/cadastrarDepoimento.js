@@ -23,11 +23,11 @@ class CadastrarDepoimento extends React.Component {
     submitForm(event) {
         let url;
         let port = '';
-        if (process.env.NODE_ENV === 'development') {
+        if (process.env.REACT_APP_ENV === 'development') {
             url = process.env.REACT_APP_URL_DEVELOP;
             port = process.env.REACT_APP_DEPOIMENTOS_PORT;
         } else {
-            url = process.env.REACT_APP_PRODUCTION;
+            url = process.env.REACT_APP_URL_PRODUCTION;
         }
         // console.log(`${url}${port}/depoimentos/api/external-depoimento/`);
         fetch(`${url}${port}/depoimentos/api/external-depoimento/`, {
