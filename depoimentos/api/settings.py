@@ -27,7 +27,10 @@ SECRET_KEY = '8**mi99mqoel27u6&*ud9u=l6ui+pr_gu_lrgj%jez4&y4t89('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '*']
+ALLOWED_HOSTS = [
+    'localhost', '*',
+    "http://2mr7cqhbdnomb6wm5zzcctboouj" +
+    "ftkvyxos2jsyyepek6hyuvi5a.remote.moe/depoimentos/"]
 
 # Application definition
 
@@ -41,7 +44,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'depoimento',
-
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
@@ -86,17 +89,17 @@ WSGI_APPLICATION = 'api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'password',
-        'HOST': 'db',
-        'PORT': 5432,
+        'NAME': os.environ.get("DB_NAME", "postgres"),
+        'USER': os.environ.get("DB_USER", "postgres"),
+        'PASSWORD': os.environ.get("DB_PASSWORD", "password"),
+        'HOST': os.environ.get("DB_HOST", "db"),
+        'PORT': os.environ.get("DB_PORT", 5432),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators

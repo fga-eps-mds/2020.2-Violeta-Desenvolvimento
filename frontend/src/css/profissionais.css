@@ -5,9 +5,20 @@
     font-family: Roboto;
     font-style: normal;
 }
+.container-title-nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
 .container-title{
     max-width: 500px;
     padding: 145px 0px 0px 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-nav{
+    padding-top: 210px;
+    margin-right: 25px;
 }
 #title {
     font-size: 36px;
@@ -15,13 +26,18 @@
 }
 #description{
     font-size: 16px;
+    max-width: 500px;
 }
 /* BOX-CONTATO */
 .container-boxes{
     height: 330px;
-    width: 1350px;
-    flex: wrap;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
     margin-left: 25px;
+    margin-right: 25px;
 }
 .box-contact{
     background-color: #F9B18A;
@@ -58,8 +74,7 @@
     width: auto;
 }
 .nav-profissionais{
-    margin-right: 25px;
-    float: right;
+    align-self: flex-end;
 }
 #button-nav-ongs{
     background-color: #764E7E;
@@ -112,6 +127,7 @@
 }
 /* PAGINATION */
 .pagination{
+    margin-top: 45px;
     margin-right: 55px;
     width: max-content;
     height: max-content;

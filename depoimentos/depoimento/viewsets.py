@@ -1,11 +1,29 @@
 from rest_framework import viewsets
-from . import models
-from . import serializers
+from depoimento.models import (Depoimento)
+from depoimento.serializers import (ExternalDepoimentoSerializer,
+                                    DepoimentoSerializer,)
+
+from drf_yasg.utils import swagger_auto_schema
+
 
 class DepoimentoViewset(viewsets.ModelViewSet):
-    queryset = models.Depoimento.objects.all()
-    serializer_class = serializers.DepoimentoSerializer
+    queryset = Depoimento.objects.all()
+    serializer_class = DepoimentoSerializer
+
+    @swagger_auto_schema(
+        request_body=DepoimentoSerializer,
+        response={200: DepoimentoSerializer},
+        operation_description="Lista detalhada de todos os depoimentos")
+    def perform_create(self, serializer):
+        serializer.save()
+
 
 class ExternalDepoimentoViewset(viewsets.ModelViewSet):
-    queryset = models.Depoimento.objects.filter(aprovado=True)
-    serializer_class = serializers.ExternalDepoimentoSerializer
+    queryset = Depoimento.objects.filter(aprovado=True)
+    serializer_class = ExternalDepoimentoSerializer
+
+    @swagger_auto_schema(request_body=ExternalDepoimentoSerializer,
+                         response={200: ExternalDepoimentoSerializer},
+                         operation_description="Lista todos os depoimentos")
+    def perform_create(self, serializer):
+        serializer.save()

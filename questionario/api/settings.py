@@ -25,7 +25,11 @@ SECRET_KEY = '8**mi99mqoel27u6&*ud9u=l6ui+pr_gu_lrgj%jez4&y4t89('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '*',
+    'http://2mr7cqhbdnomb6wm5zzcctbooujftkvyxos2j' +
+    'syyepek6hyuvi5a.remote.moe/questionario/']
 
 # Application definition
 

@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.postgres.fields import JSONField
+
 
 class Depoimento(models.Model):
     """
@@ -23,4 +23,3 @@ class Depoimento(models.Model):
 
     def __str__(self):
         return self.id_depoimento
-

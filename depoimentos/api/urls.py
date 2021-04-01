@@ -18,6 +18,6 @@ from django.urls import path, include
 from depoimento.router import router
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api/', include(router.urls))
+    path('depoimentos/admin/', admin.site.urls),
+    path('depoimentos/api/', include(router.urls))
 ]
