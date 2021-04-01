@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import './App.css';
+import Adm from './components/adm';
 // import Header from './components/header';
 // import Home from './components/home';
 // import Questionario from './components/questionario';
@@ -20,6 +21,9 @@ class App extends Component {
         return (
             <Router>
                 <Switch>
+                    <Route path="/login/adm">
+                        <Adm />
+                    </Route>
                     <Route path="/login">
                         <Login />
                     </Route>
