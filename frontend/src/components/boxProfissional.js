@@ -52,13 +52,3 @@ class BoxProfissional extends React.Component {
 }
 
 export default BoxProfissional;
-
-// const BoxProfissional = () => {
-//     return (
-//         <div>
-
-//         </div>
-//     )
-// }
-
-// export default BoxProfissional
