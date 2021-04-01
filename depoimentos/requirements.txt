@@ -3,3 +3,4 @@ djangorestframework==3.9.2
 psycopg2==2.7.5
 django-cors-headers==2.5.2
 pytz==2018.9
+drf-yasg==1.15.0

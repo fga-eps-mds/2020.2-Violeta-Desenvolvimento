@@ -21,5 +21,6 @@ from questionario import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('resultado/', views.add_victims_category)
+    path('resultado/', views.analisa_fluxos),
+    path('vitimas/', views.add_victims_category)
 ]
