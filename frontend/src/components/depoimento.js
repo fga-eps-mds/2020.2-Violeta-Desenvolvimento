@@ -45,11 +45,11 @@ class Depoimento extends React.Component {
     componentDidMount() {
         let url;
         let port = '';
-        if (process.env.NODE_ENV === 'development') {
+        if (process.env.REACT_APP_ENV === 'development') {
             url = process.env.REACT_APP_URL_DEVELOP;
             port = process.env.REACT_APP_DEPOIMENTOS_PORT;
         } else {
-            url = process.env.REACT_APP_PRODUCTION;
+            url = process.env.REACT_APP_URL_PRODUCTION;
         }
         fetch(`${url}${port}/depoimentos/api/external-depoimento/`)
             .then((data) => data.json())
