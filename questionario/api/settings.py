@@ -25,7 +25,11 @@ SECRET_KEY = '8**mi99mqoel27u6&*ud9u=l6ui+pr_gu_lrgj%jez4&y4t89('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '*']
+ALLOWED_HOSTS = [
+    'localhost',
+    '*',
+    'http://2mr7cqhbdnomb6wm5zzcctbooujftkvyxos2j' +
+    'syyepek6hyuvi5a.remote.moe/questionario/']
 
 # Application definition
 
@@ -46,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -59,6 +63,12 @@ CORS_ORIGIN_WHITELIST = [
     'localhost:3000',
     '*',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
 
 ROOT_URLCONF = 'api.urls'
 
