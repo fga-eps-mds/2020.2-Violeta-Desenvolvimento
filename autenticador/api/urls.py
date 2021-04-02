@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from user_token.views import CreateUserView
 
 urlpatterns = [
     path('autenticador/admin/', admin.site.urls),
+    path('autenticador/account/register', CreateUserView.as_view()),
 ]
