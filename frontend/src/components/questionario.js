@@ -24,7 +24,15 @@ class Questionario extends React.Component {
 
     // Submit Form
     submitForm(event) {
-        fetch('http://localhost:8001/api/questionario/', {
+        let url;
+        let port = '';
+        if (process.env.REACT_APP_ENV === 'development') {
+            url = process.env.REACT_APP_URL_DEVELOP;
+            port = process.env.REACT_APP_QUESTIONARIO_PORT;
+        } else {
+            url = process.env.REACT_APP_URL_PRODUCTION;
+        }
+        fetch(`${url}${port}/questionario/api/questionario/`, {
             method: 'POST',
             body: JSON.stringify(this.state),
             headers: {
