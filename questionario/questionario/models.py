@@ -16,12 +16,10 @@ class ViolenciasCount(models.Model):
     ds_categoria = models.TextField(null=False,
                                     blank=False)
 
-    vitimas_categoria_counter = models.IntegerField(default=0)
+    categoria_counter = models.IntegerField(default=0)
 
     def __str__(self):
-        return
-        str(self.ds_categoria) + " | " + str(
-            self.vitimas_categoria_counter)
+        return str(self.ds_categoria) + " | " + str(self.categoria_counter)
 
 
 class CategoriaViolencia(models.Model):

@@ -37,7 +37,7 @@ def add_victims_category(request):
     body_unicode = request.body.decode('utf-8')
     body = json.loads(body_unicode)
     counter = ViolenciasCount.objects.get(ds_categoria=body["categoria"])
-    counter.vitimas_categoria_counter += 1
+    counter.categoria_counter += 1
     counter.save()
     return JsonResponse({"class": counter.ds_categoria,
-                        "counts": counter.vitimas_categoria_counter})
+                        "counts": counter.categoria_counter})
