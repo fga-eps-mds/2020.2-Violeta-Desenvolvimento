@@ -19,7 +19,8 @@ class ViolenciasCount(models.Model):
     vitimas_categoria_counter = models.IntegerField(default=0)
 
     def __str__(self):
-        return str(self.ds_categoria) + " | " + str(self.vitimas_categoria_counter)
+        return str(self.ds_categoria) + " | " + 
+        str(self.vitimas_categoria_counter)
 
 
 class CategoriaViolencia(models.Model):
