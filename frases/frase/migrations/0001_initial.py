@@ -14,7 +14,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Frases',
             fields=[
-                ('id_frase', models.AutoField(primary_key=True, serialize=False)),
+                ('id_frase', models.AutoField(primary_key=True,
+                                              serialize=False)),
                 ('ds_frase', models.TextField()),
             ],
         ),

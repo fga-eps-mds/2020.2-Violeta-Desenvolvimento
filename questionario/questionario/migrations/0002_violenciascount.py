@@ -13,9 +13,10 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='ViolenciasCount',
             fields=[
-                ('id_contador', models.AutoField(primary_key=True, serialize=False)),
+                ('id_contador', models.AutoField(primary_key=True,
+                                                 serialize=False)),
                 ('ds_categoria', models.TextField()),
-                ('vitimas_categoria_counter', models.IntegerField(default=0)),
+                ('categoria_counter', models.IntegerField(default=0)),
             ],
         ),
     ]
