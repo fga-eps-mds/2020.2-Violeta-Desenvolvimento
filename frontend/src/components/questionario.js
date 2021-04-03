@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/questionario.css';
 import womanFigura from '../images/woman.png';
+import ShowTree from './ShowTree';
 
 class Questionario extends React.Component {
     constructor() {
@@ -58,7 +59,8 @@ class Questionario extends React.Component {
                 </div>
                 <div id="container-questionario">
                     <div id="formulario">
-                        <p>
+                        <ShowTree />
+                        {/* <p>
                             Sofreu violência física? Seja de modo que ofenda sua
                             integridade ou saúde corporal.
                         </p>
@@ -92,7 +94,7 @@ class Questionario extends React.Component {
                                 name="fname"
                             />
                             <br />
-                        </form>
+                        </form> */}
                     </div>
                     <div id="foto">
                         <img id="img-formulario" src={womanFigura} />

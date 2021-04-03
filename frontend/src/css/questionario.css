@@ -60,6 +60,40 @@
   background-color: #feefe8;
 }
 
+/*Questionario*/
+.graph-ui {
+  background: #FEEFE8;
+  margin: 1rem;
+  padding: 1rem;
+  width: 550px;
+}
+.graph-ui h4 {
+  margin: .25rem;
+}
+
+.graph-ui label {
+  display: block;
+  padding-bottom: .5rem;
+}
+
+.container-btn{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-question{
+  width: 165px;
+  height: 53px;
+  background: #764E7E;
+  color: white;
+  border: none;
+  font-size: 18px;
+}
+
+.btn-question:disabled{
+  background:gray;
+}
+
 @media (max-width: 739px){
   #img-formulario{
     display: none;
