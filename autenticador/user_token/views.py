@@ -12,5 +12,4 @@ class CreateUserView(CreateAPIView):
     serializer_class = UserSerializer
 
 class ObtainTokenPairView(TokenObtainPairView):
-    permission_classes = [IsAdminUser | ServiceAuthenticationDjango]
     serializer_class = TokenObtainPairSerializer

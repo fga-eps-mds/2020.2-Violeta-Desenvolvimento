@@ -5,3 +5,4 @@ django-cors-headers==2.5.2
 pytz==2018.9
 drf-yasg==1.15.0
 PyJWT==1.7.1
+djangorestframework_simplejwt
