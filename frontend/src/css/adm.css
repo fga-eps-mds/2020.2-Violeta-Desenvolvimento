@@ -35,3 +35,30 @@ body{
     flex: 1;
     padding-top: 45px;
 }
+
+#container-depoimento{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 615px;
+    height: 310px;
+}
+
+.container-p-depoimento{
+    width: 580px;
+    height: 175px;
+    padding: 10px;
+    text-align: center;
+    display: table;
+}
+
+.box-depoimento{
+    height: 175px;
+}
+
+.p-depoimento{
+    display: inline-block;
+    vertical-align: middle;
+    display:table-cell;
+    height: 120px;
+}
