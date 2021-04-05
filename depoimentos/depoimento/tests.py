@@ -4,8 +4,8 @@ from .models import (Depoimento)
 from .serializers import (DepoimentoSerializer, ExternalDepoimentoSerializer)
 
 
-urlE = '/api/external-depoimento/'
-url = '/api/depoimento/'
+urlE = 'depoimentos/api/external-depoimento/'
+url = 'depoimentos/api/depoimento/'
 
 
 class DepoimentoTestCase(APITestCase):
