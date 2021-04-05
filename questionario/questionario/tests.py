@@ -10,6 +10,7 @@ from .serializers import (
     QuestionarioSerializer,
     ContatoQuestionarioSerializer)
 
+
 class CadProfissionaisTestCase(APITestCase):
 
     str_url = '/questionario/api/cadastrar-profissionais/'
@@ -67,7 +68,8 @@ class CategoriaViolenciaTestCase(APITestCase):
             'nome_categoria': 'NOME TESTE',
             'ds_categoria': 'DS TESTE'
         }
-        response = self.client.post('/questionario/api/categoria-violencia/', data)
+        response = self.client.post(
+            '/questionario/api/categoria-violencia/', data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
@@ -96,7 +98,8 @@ class CategoriaViolenciaTestCase(APITestCase):
 
     def testDelete(self):
         response = self.client.delete(
-            '/questionario/api/categoria-violencia/' + str(self.cat1.id_categoria) + '/')
+            '/questionario/api/categoria-violencia/' + str(
+                self.cat1.id_categoria) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
@@ -111,7 +114,8 @@ class ContatoViolenciaTestCase(APITestCase):
             'numero_contato': '00000',
             'ds_contato': 'DS TESTE'
         }
-        response = self.client.post('/questionario/api/contato-violencia/', data)
+        response = self.client.post(
+            '/questionario/api/contato-violencia/', data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
@@ -128,7 +132,8 @@ class ContatoViolenciaTestCase(APITestCase):
             'numero_contato': '11111',
             'ds_contato': 'DS MODIFICADO'
         }
-        endereco = '/questionario/api/contato-violencia/' + str(self.cont1.id_contato) + '/'
+        endereco = '/questionario/api/contato-violencia/' + \
+            str(self.cont1.id_contato) + '/'
         response = self.client.put(endereco, data)
         serializer = ContatoViolenciaSerializer(data)
         self.assertEqual(response.data, serializer.data)
@@ -136,7 +141,8 @@ class ContatoViolenciaTestCase(APITestCase):
 
     def testDelete(self):
         response = self.client.delete(
-            '/questionario/api/contato-violencia/' + str(self.cont1.id_contato) + '/')
+            '/questionario/api/contato-violencia/' + str(
+                self.cont1.id_contato) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
@@ -184,7 +190,8 @@ class QuestionarioTestCase(APITestCase):
 
     def testDelete(self):
         response = self.client.delete(
-            '/questionario/api/questionario/' + str(self.quest1.id_questionario) + '/')
+            '/questionario/api/questionario/' + str(
+                self.quest1.id_questionario) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
@@ -204,7 +211,8 @@ class ContatoQuestionarioTestCase(APITestCase):
             'contato_fk': self.contv1.id_contato,
             'questionario_fk': self.quest1.id_questionario
         }
-        response = self.client.post('/questionario/api/contato-questionario/', data)
+        response = self.client.post(
+            '/questionario/api/contato-questionario/', data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
@@ -216,7 +224,8 @@ class ContatoQuestionarioTestCase(APITestCase):
 
     def testDelete(self):
         response = self.client.delete(
-            '/questionario/api/contato-questionario/' + str(self.contq1.pk) + '/')
+            '/questionario/api/contato-questionario/' + str(
+                self.contq1.pk) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
     def testPut(self):
@@ -230,7 +239,8 @@ class ContatoQuestionarioTestCase(APITestCase):
             'contato_fk': self.contv1,
             'questionario_fk': self.quest1
         }
-        endereco = '/questionario/api/contato-questionario/' + str(self.contq1.pk) + '/'
+        endereco = '/questionario/api/contato-questionario/' + \
+            str(self.contq1.pk) + '/'
         response = self.client.put(endereco, data)
         serializer = ContatoQuestionarioSerializer(data_serializer)
         self.assertEqual(response.data, serializer.data)
