@@ -4,6 +4,7 @@ from django.contrib.auth import get_user_model
 
 UserModel = get_user_model()
 
+
 class UserSerializer(serializers.ModelSerializer):
 
     password = serializers.CharField(write_only=True)
@@ -17,14 +18,8 @@ class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = UserModel
-        fields = ( "id", "username", "password", )
+        fields = ("id", "username", "password", )
 
-# class TokenObtainPairSerializer(TokenObtainPairSerializer):
-#     @classmethod
-#     def get_token(cls, user):
-#         token = super(TokenObtainPairSerializer, cls).get_token(user)
-#         token['username'] = user.username
-#         return token
 
 class TokenObtainPairSerializer(TokenObtainPairSerializer):
     def validate(self, attrs):

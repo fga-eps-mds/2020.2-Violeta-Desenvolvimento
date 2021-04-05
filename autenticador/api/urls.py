@@ -16,7 +16,6 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from user_token.views import CreateUserView
-from user_token.urls import urlpatterns
 
 urlpatterns = [
     path('autenticador/admin/', admin.site.urls),

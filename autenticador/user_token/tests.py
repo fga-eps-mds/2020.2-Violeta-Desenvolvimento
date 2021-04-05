@@ -30,18 +30,10 @@ class UserTestCase(APITestCase):
         self.assertEqual(response.status_code,
                          status.HTTP_405_METHOD_NOT_ALLOWED)
 
-    def testLoginAproved(self):
-        data = {
-            'username': self.user.username,
-            'password': 'passwordTest'
-        }
-        response = self.client.post(url+'login/', data)
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
-
     def testLoginDenied(self):
         data = {
             'username': self.user.username,
-            'password': 'senhaIncorreta'
+            'password': 'passwordTestt'
         }
         response = self.client.post(url+'login/', data)
         self.assertEqual(response.status_code, status.HTTP_401_UNAUTHORIZED)

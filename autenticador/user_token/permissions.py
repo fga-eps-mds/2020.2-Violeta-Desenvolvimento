@@ -8,6 +8,7 @@ PATH = "user/login/api/v0/validate/"
 
 class ServiceAuthenticationDjango(BasePermission):
     """ Create new custom permission to use on application."""
+
     def has_object_permission(self, request, view, obj):
         token = {'token': request.token}
         host = socket.gethostbyname('authentication_django')
