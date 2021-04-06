@@ -2,8 +2,8 @@ from rest_framework.permissions import BasePermission
 import requests as rq
 import socket
 
-URL = "http://{}:{}/"
-PATH = "login/validate/"
+URL = "https://{}:{}/"
+PATH = "autenticador/login/validate"
 
 
 class ServiceAuthenticationDjango(BasePermission):
