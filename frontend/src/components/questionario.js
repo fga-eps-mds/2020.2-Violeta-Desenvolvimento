@@ -31,10 +31,10 @@ class Questionario extends React.Component {
             port = process.env.REACT_APP_QUESTIONARIO_PORT;
         } else {
             url = process.env.REACT_APP_URL_PRODUCTION;
-            if(process.env.REACT_APP_ENV === 'deploy'){
-                url = `${url}${port}/questionario-dev/api/questionario/`
-	    } else {
-                url = `${url}${port}/questionario/api/questionario/`
+            if (process.env.REACT_APP_ENV === 'deploy') {
+                url = `${url}${port}/questionario-dev/api/questionario/`;
+            } else {
+                url = `${url}${port}/questionario/api/questionario/`;
             }
         }
         fetch(url, {

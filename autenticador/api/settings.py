@@ -42,8 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'corsheaders',
-    'user_token'
-
+    'user_token',
 ]
 
 MIDDLEWARE = [
@@ -60,8 +59,8 @@ MIDDLEWARE = [
 CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = [
-       'localhost:3000',
-       '*',
+    'localhost:3000',
+    '*',
 ]
 
 REST_FRAMEWORK = {
@@ -71,7 +70,8 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     ),
     'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.AllowAny'
+        'rest_framework.permissions.AllowAny',
+        'rest_framework_simplejwt.authentication.JWTAuthentication'
     )
 }
 
