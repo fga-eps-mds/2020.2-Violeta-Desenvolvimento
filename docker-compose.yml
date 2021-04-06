@@ -17,7 +17,7 @@ services:
     networks:
       - services
     ports:
-      - "5432:5432"
+      - "${DB_PORT}:5432"
 
   frontend:
     container_name: frontend
@@ -26,7 +26,7 @@ services:
       - './frontend:/frontend'
       - '/frontend/node_modules'
     ports:
-      - '3000:3000'
+      - '${FRONTEND_PORT}:3000'
     networks:
       - services
     environment:
@@ -46,7 +46,7 @@ services:
       DB_HOST: ${POSTGRES_HOST}
       DB_PORT: ${POSTGRES_PORT}
     ports:
-      - "8001:8001"
+      - "${QUESTIONARIO_PORT}:8001"
     networks:
       - services
     depends_on:
@@ -60,7 +60,7 @@ services:
     volumes:
       - ./frases:/frases
     ports:
-      - "8002:8002"
+      - "${FRASES_PORT}:8002"
     networks:
       - services
     environment:
@@ -81,7 +81,7 @@ services:
     volumes:
       - ./depoimentos:/depoimentos
     ports:
-      - "8003:8003"
+      - "${DEPOIMENTOS_PORT}:8003"
     networks:
       - services
     environment:
@@ -101,7 +101,7 @@ services:
     volumes:
       - ./autenticador:/autenticador
     ports:
-      - "8004:8004"
+      - "${AUTENTICADOR_PORT}:8004"
     networks:
       - services
     environment:
