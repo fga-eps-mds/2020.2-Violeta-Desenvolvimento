@@ -1,8 +1,17 @@
-# EPS-2020-2-G5-Desenvolvimento
+# Projeto Violeta
+Homolog: [https://rotten-sheep-93.loca.lt/](https://rotten-sheep-93.loca.lt/)
+
+Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/)
+
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=reliability_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=security_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
-[![Build Status](https://509cfd042388.ngrok.io/buildStatus/icon?job=violeta)](https://509cfd042388.ngrok.io/job/violeta/)
+
+### Produção
+[![Build Status](https://b289a42c5af7.ngrok.io/buildStatus/icon?job=violeta)](https://b289a42c5af7.ngrok.io/job/violeta/)
+
+## Homologação
+[![Build Status](https://b289a42c5af7.ngrok.io/buildStatus/icon?job=violeta-dev)](https://b289a42c5af7.ngrok.io/job/violeta-dev/)
 
 ## Requisitos
 1. Ter instalado o [docker](https://docs.docker.com/get-docker/) e o [docker-compose](https://docs.docker.com/compose/install/) nas máquinas.
