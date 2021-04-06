@@ -4,11 +4,9 @@ from .models import (Depoimento)
 from .serializers import (DepoimentoSerializer, ExternalDepoimentoSerializer)
 
 
-urlE = 'depoimentos/api/external-depoimento/'
-url = 'depoimentos/api/depoimento/'
-
-
 class DepoimentoTestCase(APITestCase):
+    url = 'http://localhost:8003/depoimentos/api/depoimento/'
+
     def setUp(self):
         self.depoimento1 = Depoimento.objects.create(
             aprovado=False, ds_depoimento='Este depoimento é falso')
@@ -18,11 +16,11 @@ class DepoimentoTestCase(APITestCase):
             'aprovado': self.depoimento1.aprovado,
             'ds_depoimento': self.depoimento1.ds_depoimento
         }
-        response = self.client.post(url, data)
+        response = self.client.post(self.url, data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
-        response = self.client.get(url)
+        response = self.client.get(self.url)
         posts = Depoimento.objects.all()
         serializer = DepoimentoSerializer(posts, many=True)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -39,19 +37,21 @@ class DepoimentoTestCase(APITestCase):
             'aprovado': True,
             'ds_depoimento': 'Agora é verdadeiro'
         }
-        urlId1 = url + str(self.depoimento1.id_depoimento) + '/'
-        response = self.client.put(urlId1, data)
+        response = self.client.put(
+            self.url + str(self.depoimento1.id_depoimento) + '/', data)
         serializer = DepoimentoSerializer(data_serializer)
         self.assertEqual(response.data, serializer.data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def testDelete(self):
-        urlId2 = url + str(self.depoimento1.id_depoimento) + '/'
-        response = self.client.delete(urlId2)
+        response = self.client.delete(
+            self.url + str(self.depoimento1.id_depoimento) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
 class ExternalDepoimentoTestCase(APITestCase):
+    urlE = 'http://localhost:8003/depoimentos/api/external-depoimento/'
+
     def setUp(self):
         self.depoimento2 = Depoimento.objects.create(
             aprovado=True, ds_depoimento='Este depoimento é verdadeiro')
@@ -61,11 +61,11 @@ class ExternalDepoimentoTestCase(APITestCase):
             'aprovado': self.depoimento2.aprovado,
             'ds_depoimento': self.depoimento2.ds_depoimento
         }
-        response = self.client.post(urlE, data)
+        response = self.client.post(self.urlE, data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
-        response = self.client.get(urlE)
+        response = self.client.get(self.urlE)
         posts = Depoimento.objects.all()
         serializer = ExternalDepoimentoSerializer(posts, many=True)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -80,13 +80,13 @@ class ExternalDepoimentoTestCase(APITestCase):
             'id_depoimento': self.depoimento2.id_depoimento,
             'ds_depoimento': 'Ainda é verdadeiro'
         }
-        urlId1 = urlE + str(self.depoimento2.id_depoimento) + '/'
-        response = self.client.put(urlId1, data)
+        response = self.client.put(
+            self.urlE + str(self.depoimento2.id_depoimento) + '/', data)
         serializer = ExternalDepoimentoSerializer(data_serializer)
         self.assertEqual(response.data, serializer.data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def testDelete(self):
-        urlId2 = urlE + str(self.depoimento2.id_depoimento) + '/'
-        response = self.client.delete(urlId2)
+        response = self.client.delete(
+            self.urlE + str(self.depoimento2.id_depoimento) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
