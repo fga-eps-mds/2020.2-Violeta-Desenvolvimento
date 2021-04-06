@@ -1,6 +1,5 @@
 from rest_framework.test import APITestCase
 from rest_framework import status
-from user_token.serializers import (UserSerializer)
 from django.contrib.auth import get_user_model
 
 UserModel = get_user_model()

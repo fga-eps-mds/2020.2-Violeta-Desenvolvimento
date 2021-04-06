@@ -1,9 +1,9 @@
 from rest_framework.permissions import BasePermission
-import requests
+import requests as rq
 import socket
 
 URL = "http://{}:{}/"
-PATH = "user/login/api/v0/validate/"
+PATH = "login/validate/"
 
 
 class ServiceAuthenticationDjango(BasePermission):
@@ -12,10 +12,10 @@ class ServiceAuthenticationDjango(BasePermission):
     def has_object_permission(self, request, view, obj):
         token = {'token': request.token}
         host = socket.gethostbyname('authentication_django')
-        port = '8090'
+        port = '8004'
         url = URL.format(host, port)
         url += PATH
-        response = request.post(url, data=token)
+        response = rq.post(url, data=token)
         if response.status_code < 300 and response.status_code >= 200:
             return True
         return False
