@@ -7,7 +7,7 @@ networks:
 services:
   db: 
     image: postgres
-    container_name: postgres_db
+    container_name: postgres_db_${ENV}
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -20,7 +20,7 @@ services:
       - "${DB_PORT}:5432"
 
   frontend:
-    container_name: frontend
+    container_name: frontend_${ENV}
     build: ./frontend
     volumes:
       - './frontend:/frontend'
@@ -35,7 +35,7 @@ services:
 
   questionario:
     build: ./questionario
-    container_name: questionario
+    container_name: questionario_${ENV}
     command: ash docker-entrypoint.sh
     volumes:
       - ./questionario:/questionario
@@ -55,7 +55,7 @@ services:
 
   frases:
     build: ./frases
-    container_name: frases
+    container_name: frases_${ENV}
     command: ash docker-entrypoint.sh
     volumes:
       - ./frases:/frases
@@ -76,7 +76,7 @@ services:
 
   depoimentos:
     build: ./depoimentos
-    container_name: depoimentos
+    container_name: depoimentos_${ENV}
     command: ash docker-entrypoint.sh
     volumes:
       - ./depoimentos:/depoimentos
@@ -96,7 +96,7 @@ services:
 
   autenticador:
     build: ./autenticador
-    container_name: autenticador
+    container_name: autenticador_${ENV}
     command: ash docker-entrypoint.sh
     volumes:
       - ./autenticador:/autenticador
