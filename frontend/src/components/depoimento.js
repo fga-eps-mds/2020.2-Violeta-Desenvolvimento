@@ -43,7 +43,20 @@ class Depoimento extends React.Component {
 
     // Get Depoimentos
     componentDidMount() {
-        fetch('http://localhost:8003/depoimentos/api/external-depoimento/')
+        let url;
+        let port = '';
+        if (process.env.REACT_APP_ENV === 'development') {
+            url = process.env.REACT_APP_URL_DEVELOP;
+            port = process.env.REACT_APP_DEPOIMENTOS_PORT;
+        } else {
+            url = process.env.REACT_APP_URL_PRODUCTION;
+            if (process.env.REACT_APP_ENV === 'deploy') {
+                url = `${url}${port}/depoimentos-dev/api/external-depoimento/`;
+            } else {
+                url = `${url}${port}/depoimentos/api/external-depoimento/`;
+            }
+        }
+        fetch(url)
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ depoimentos: result });
