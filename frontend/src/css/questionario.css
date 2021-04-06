@@ -61,6 +61,9 @@
 }
 
 /*Questionario*/
+.title-questions{
+  font-size: 5;
+}
 .graph-ui {
   background: #FEEFE8;
   margin: 1rem;
@@ -92,6 +95,21 @@
 
 .btn-question:disabled{
   background:gray;
+}
+
+.title-questions{
+  font-size: 1.3rem;
+}
+
+.options-questions{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.options-questions input{
+  margin-right: 10px;
 }
 
 @media (max-width: 739px){

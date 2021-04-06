@@ -1,0 +1,209 @@
+{
+  "question_1":{
+    "title":"Já foi ameaçada?",
+    "labels":[
+      {"title":"Sim", "qid":"100", "next":"question_1a_more"},
+      {"title":"Não", "qid":"101"}
+    ],
+    "actual":"105",
+    "category":"quiz",
+    "criterion":"aloe",
+    "type":"radio"
+  },
+  "question_2":{
+    "title":"Alguém próximo a você se feriu de alguma forma?",
+    "labels":[
+      {"title":"Sim", "qid":"200", "next":"question_2a"},
+      {"title":"Não", "qid":"201"}
+    ],
+    "actual":"112",
+    "category":"quiz",
+    "criterion":"aloe",
+    "type":"radio"
+  },
+  "question_3":{
+    "title":"Já foi acusada indevidamente, por traição ou mentiras?",
+    "labels":[
+      {"title":"Sim", "qid":"300", "next":"question_3a"},
+      {"title":"Não", "qid":"301"}
+    ],
+    "actual":"116",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_4":{
+    "title":"Seu parceiro te impediu, em algum momento, de usar seus bens pessoais? Como:  celular, cartões, roupas, dinheiro.",
+    "labels":[
+      {"title":"Sim", "qid":"400", "next":"question_4a"},
+      {"title":"Não", "qid":"401"}
+    ],
+    "actual":"116",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio",
+    "comment":"another chance at agave bracteosa w/a different picture."
+  },
+  "question_1a":{
+    "title":"Essa ameaça foi física?",
+    "labels":[
+      {"title":"Sim", "qid":"103", "next":"question_1a_more"},
+      {"title":"Não", "qid":"104", "next":"question_1b"}
+    ],
+    "actual":"121",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_1a_more":{
+    "title":"Foi concretizada?",
+    "labels":[
+      {"title":"Sim", "qid":"105", "next":"question_1a_final"},
+      {"title":"Não", "qid":"106", "next":"question_1b"}
+    ],
+    "actual":"121",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_1a_final":{
+    "title":"Qual das opções abaixo se aproxima mais? (Relatar situações de exemplo)",
+    "labels":[
+      {"title":"Atirar objetos", "qid":"107", "next":"question_1b"},
+      {"title":"Sacudir e apertar os braços", "qid":"108", "next":"question_1b"},
+      {"title":"Perder a capacidade de respirar", "qid":"109", "next":"question_1b"},
+      {"title":"Lesões com objetos cortantes ou perfurantes", "qid":"110", "next":"question_1b"},
+      {"title":"Ferimentos causados por queimaduras ou armas de fogo", "qid":"111", "next":"question_1b"}
+    ],
+    "actual":"6",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_1b":{
+    "title":"Essa ameaça envolve algum ato sobre seu corpo contra sua vontade?",
+    "labels":[
+      {"title":"Sim", "qid":"112", "next": "question_1b_more" },
+      {"title":"Não", "qid":"113"}
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_1b_more":{
+    "title":"Foi concretizada?",
+    "labels":[
+      {"title":"Sim", "qid":"114", "next": "question_1b_final"},
+      {"title":"Não", "qid":"115"}
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_1b_final":{
+    "title":"Qual das opções abaixo se aproxima mais?",
+    "labels":[
+      {"title":"Relação sexual sem sua autorização ou contra sua vontade", "qid":"116" },
+      {"title":"Te obrigar a fazer atos sexuais que causam desconforto ou desprezo", "qid":"117"},
+      {"title":"Impedir o uso de métodos contraceptivos ou te forçar a abortar", "qid":"118"},
+      {"title":"Forçar matrimônio, gravidez ou prostituição por meio de ameaça, chantagem, suborno ou manipulação", "qid":"119"},      
+      {"title":"Te limitar ou anular o exercício dos direitos sexuais e reprodutivos", "qid":"120"}      
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_2a":{
+    "title":"Qual das opções abaixo se aproxima mais?",
+    "labels":[
+      {"title":"Filho/Filha", "qid":"202", "next":"question_2a_final"},
+      {"title":"Mãe", "qid":"203", "next":"question_2a_final"},
+      {"title":"Pai", "qid":"204", "next":"question_2a_final"},
+      {"title":"Avós", "qid":"205", "next":"question_2a_final"},
+      {"title":"Sogra/Sogro", "qid":"206", "next":"question_2a_final"},
+      {"title":"outros", "qid":"207", "next":"question_2a_final"}
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_2a_final":{
+    "title":"Esse acontecimento é usado contra você como ameaça ou chantagem? ",
+    "labels":[
+      {"title":"Sim", "qid":"208"},
+      {"title":"Não", "qid":"209"}
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_3a":{
+    "title":"Isso lhe causou algum constrangimento como xingamentos, humilhações e/ou exposições?",
+    "labels":[
+      {"title":"Sim", "qid":"302", "next":"question_3a_more"},
+      {"title":"Não", "qid":"303"}
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_3a_more":{
+    "title":"Esse acontecimento foi usado como justificativa para algum tipo de agressão física?",
+    "labels":[
+      {"title":"Sim", "qid":"304", "next":"question_3a_final"},
+      {"title":"Não", "qid":"305"}
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_3a_final":{
+    "title":"Qual das opções abaixo se aproxima mais?",
+    "labels":[
+      {"title":"Atirar objetos", "qid":"306"},
+      {"title":"Sacudir e apertar os braços", "qid":"307"},
+      {"title":"perder a capacidade de respirar", "qid":"308"},
+      {"title":"Lesões com objetos cortantes ou perfurantes", "qid":"309"},
+      {"title":"Ferimentos causados por queimaduras ou armas de fogo", "qid":"310"}
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_4a":{
+    "title":"Já destruiu ou escondeu seus documentos pessoais?",
+    "labels":[
+      {"title":"Sim", "qid":"403", "next":"question_4a_more"},
+      {"title":"Não", "qid":"404", "next":"question_4b"}
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "question_4a_more":{
+    "title":"Isso se deu por alguma acusação contra seu caráter ou humilhação?",
+    "labels":[
+      {"title":"Sim", "qid":"405", "next":"question_4b"},
+      {"title":"Não", "qid":"406"}
+    ],
+    "actual":"126",
+    "category":"quiz",
+    "criterion":"agave",
+    "type":"radio"
+  },
+  "quiz_results":{
+    "title":"A sua situação é considerada",
+    "type":"summary",
+    "qid":"10000"
+  }
+
+}
