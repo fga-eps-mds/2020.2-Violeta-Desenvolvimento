@@ -1,5 +1,5 @@
 # Projeto Violeta
-Homolog: [https://rotten-sheep-93.loca.lt/](https://rotten-sheep-93.loca.lt/)
+Homolog: [http://wicked-snake-30.loca.lt](http://wicked-snake-30.loca.lt)
 
 Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/)
 
