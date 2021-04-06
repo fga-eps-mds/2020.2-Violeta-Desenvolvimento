@@ -8,9 +8,9 @@ class CadProfissionaisViewset(viewsets.ModelViewSet):
     serializer_class = serializers.CadProfissionaisSerializer
 
 
-class SalvarDadosViewset(viewsets.ModelViewSet):
-    queryset = models.SalvarDados.objects.all()
-    serializer_class = serializers.SalvarDadosSerializer
+class ViolenciasCountViewset(viewsets.ModelViewSet):
+    queryset = models.ViolenciasCount.objects.all()
+    serializer_class = serializers.ViolenciasCountSerializer
 
 
 class CategoriaViolenciaViewset(viewsets.ModelViewSet):

@@ -13,7 +13,7 @@ from .serializers import (
 
 class CadProfissionaisTestCase(APITestCase):
 
-    str_url = '/api/cadastrar-profissionais/'
+    str_url = '/questionario/api/cadastrar-profissionais/'
 
     def setUp(self):
         self.cat1 = CadProfissionais.objects.create(
@@ -59,6 +59,9 @@ class CadProfissionaisTestCase(APITestCase):
 
 
 class CategoriaViolenciaTestCase(APITestCase):
+
+    catViolenciaUrl = '/questionario/api/categoria-violencia/'
+
     def setUp(self):
         self.cat1 = CategoriaViolencia.objects.create(
             nome_categoria='TESTE', ds_categoria='TESTE')
@@ -68,12 +71,13 @@ class CategoriaViolenciaTestCase(APITestCase):
             'nome_categoria': 'NOME TESTE',
             'ds_categoria': 'DS TESTE'
         }
-        response = self.client.post('/api/categoria-violencia/', data)
+        response = self.client.post(
+            self.catViolenciaUrl, data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
         # get API response
-        response = self.client.get('/api/categoria-violencia/')
+        response = self.client.get(self.catViolenciaUrl)
         # get data from DB
         posts = CategoriaViolencia.objects.all()
         # convert it to JSON
@@ -88,7 +92,7 @@ class CategoriaViolenciaTestCase(APITestCase):
             'nome_categoria': 'NOME MODIFICADO',
             'ds_categoria': 'DS MODIFICADO'
         }
-        endereco = '/api/categoria-violencia/' + \
+        endereco = self.catViolenciaUrl + \
             str(self.cat1.id_categoria) + '/'
         response = self.client.put(endereco, data)
         serializer = CategoriaViolenciaSerializer(data)
@@ -97,11 +101,15 @@ class CategoriaViolenciaTestCase(APITestCase):
 
     def testDelete(self):
         response = self.client.delete(
-            '/api/categoria-violencia/' + str(self.cat1.id_categoria) + '/')
+            self.catViolenciaUrl + str(
+                self.cat1.id_categoria) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
 class ContatoViolenciaTestCase(APITestCase):
+
+    contatoViolenciaUrl = '/questionario/api/contato-violencia/'
+
     def setUp(self):
         self.cont1 = ContatoViolencia.objects.create(
             nome_contato='TESTE', numero_contato='00000', ds_contato='TESTE')
@@ -112,11 +120,12 @@ class ContatoViolenciaTestCase(APITestCase):
             'numero_contato': '00000',
             'ds_contato': 'DS TESTE'
         }
-        response = self.client.post('/api/contato-violencia/', data)
+        response = self.client.post(
+            self.contatoViolenciaUrl, data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
-        response = self.client.get('/api/contato-violencia/')
+        response = self.client.get(self.contatoViolenciaUrl)
         posts = ContatoViolencia.objects.all()
         serializer = ContatoViolenciaSerializer(posts, many=True)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -129,7 +138,8 @@ class ContatoViolenciaTestCase(APITestCase):
             'numero_contato': '11111',
             'ds_contato': 'DS MODIFICADO'
         }
-        endereco = '/api/contato-violencia/' + str(self.cont1.id_contato) + '/'
+        endereco = self.contatoViolenciaUrl + \
+            str(self.cont1.id_contato) + '/'
         response = self.client.put(endereco, data)
         serializer = ContatoViolenciaSerializer(data)
         self.assertEqual(response.data, serializer.data)
@@ -137,11 +147,15 @@ class ContatoViolenciaTestCase(APITestCase):
 
     def testDelete(self):
         response = self.client.delete(
-            '/api/contato-violencia/' + str(self.cont1.id_contato) + '/')
+            self.contatoViolenciaUrl + str(
+                self.cont1.id_contato) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
 class QuestionarioTestCase(APITestCase):
+
+    questionarioUrl = '/questionario/api/questionario/'
+
     def setUp(self):
         self.cat1 = CategoriaViolencia.objects.create(
             nome_categoria='TESTE', ds_categoria='TESTE')
@@ -155,11 +169,11 @@ class QuestionarioTestCase(APITestCase):
             'categoria_violencia': self.cat1.id_categoria,
             'arvore_decisao': json.dumps('teste')
         }
-        response = self.client.post('/api/questionario/', data)
+        response = self.client.post(self.questionarioUrl, data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
-        response = self.client.get('/api/questionario/')
+        response = self.client.get(self.questionarioUrl)
         posts = Questionario.objects.all()
         serializer = QuestionarioSerializer(posts, many=True)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -176,7 +190,7 @@ class QuestionarioTestCase(APITestCase):
             'categoria_violencia': self.cat1,
             'arvore_decisao': 'teste2'
         }
-        endereco = '/api/questionario/' + \
+        endereco = self.questionarioUrl + \
             str(self.quest1.id_questionario) + '/'
         response = self.client.put(endereco, data)
         serializer = QuestionarioSerializer(data_serializer)
@@ -185,11 +199,15 @@ class QuestionarioTestCase(APITestCase):
 
     def testDelete(self):
         response = self.client.delete(
-            '/api/questionario/' + str(self.quest1.id_questionario) + '/')
+            self.questionarioUrl + str(
+                self.quest1.id_questionario) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
 class ContatoQuestionarioTestCase(APITestCase):
+
+    contatoQuestionarioUrl = '/questionario/api/contato-questionario/'
+
     def setUp(self):
         self.contv1 = ContatoViolencia.objects.create(
             nome_contato='TESTE', numero_contato='00000', ds_contato='TESTE')
@@ -205,11 +223,12 @@ class ContatoQuestionarioTestCase(APITestCase):
             'contato_fk': self.contv1.id_contato,
             'questionario_fk': self.quest1.id_questionario
         }
-        response = self.client.post('/api/contato-questionario/', data)
+        response = self.client.post(
+            self.contatoQuestionarioUrl, data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
-        response = self.client.get('/api/contato-questionario/')
+        response = self.client.get(self.contatoQuestionarioUrl)
         posts = ContatoQuestionario.objects.all()
         serializer = ContatoQuestionarioSerializer(posts, many=True)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -217,7 +236,8 @@ class ContatoQuestionarioTestCase(APITestCase):
 
     def testDelete(self):
         response = self.client.delete(
-            '/api/contato-questionario/' + str(self.contq1.pk) + '/')
+            self.contatoQuestionarioUrl + str(
+                self.contq1.pk) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
     def testPut(self):
@@ -231,7 +251,8 @@ class ContatoQuestionarioTestCase(APITestCase):
             'contato_fk': self.contv1,
             'questionario_fk': self.quest1
         }
-        endereco = '/api/contato-questionario/' + str(self.contq1.pk) + '/'
+        endereco = self.contatoQuestionarioUrl + \
+            str(self.contq1.pk) + '/'
         response = self.client.put(endereco, data)
         serializer = ContatoQuestionarioSerializer(data_serializer)
         self.assertEqual(response.data, serializer.data)
