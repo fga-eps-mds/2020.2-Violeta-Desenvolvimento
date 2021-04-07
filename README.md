@@ -1,5 +1,5 @@
 # Projeto Violeta
-Homolog: [http://wicked-snake-30.loca.lt](http://wicked-snake-30.loca.lt)
+Homolog: [https://modern-treefrog-72.loca.lt/](https://modern-treefrog-72.loca.lt/)
 
 Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/)
 
@@ -8,10 +8,10 @@ Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=security_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
 
 ### Produção
-[![Build Status](https://b289a42c5af7.ngrok.io/buildStatus/icon?job=violeta)](https://b289a42c5af7.ngrok.io/job/violeta/)
+[![Build Status](https://31b691bac021.ngrok.io/buildStatus/icon?job=violeta)](https://31b691bac021.ngrok.io/job/violeta/)
 
 ## Homologação
-[![Build Status](https://b289a42c5af7.ngrok.io/buildStatus/icon?job=violeta-dev)](https://b289a42c5af7.ngrok.io/job/violeta-dev/)
+[![Build Status](http://31b691bac021.ngrok.io/buildStatus/icon?job=violeta-dev)](http://31b691bac021.ngrok.io/job/violeta-dev/)
 
 ## Requisitos
 1. Ter instalado o [docker](https://docs.docker.com/get-docker/) e o [docker-compose](https://docs.docker.com/compose/install/) nas máquinas.
