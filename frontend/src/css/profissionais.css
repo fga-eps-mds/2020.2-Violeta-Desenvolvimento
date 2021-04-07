@@ -143,42 +143,61 @@
     display: none;
 }
 @media (max-width: 739px){
-    .container-title div{
+    .container-title{
         justify-content: center;
         align-items: center;
+        padding-top: 40px;
     }
-    #title{
-        justify-content: center;
-        align-items: center;
+    .container-title-nav{
+        display: inline;
+    }
+    .container-nav{
+        padding-top: 25px;
+        margin: 0 auto;
+        width: 340px;
+    }
+    .nav-profissionais{
+        font-size: 10px;
+    }
+    .list-nav-profissionais{
+        margin: 0 auto;
     }
     #description{
         font-size: 14px;
     }
-    nav{
-    display: none;
-    }
-    .nav-profissionais{
-    font-size: 10px;
+    .container-boxes{
+        display: none;
     }
     #button-nav-ongs{
-        height: 30px;
+        height: 35px;
         width: 85px;
         font-size: 10px;
         border-width: 0px 1px 0px 0px;
     }
     #button-nav{
-        height: 30px;
+        height: 35px;
         width: 85px;
         font-size: 10px;
         border-width: 0px 1px 0px 0px;
     }
     #button-nav-teste{
-        height: 30px;
+        height: 35px;
         width: 85px;
         font-size: 10px; 
     }
     .pagination{
         display: none;
+    }
+    .pagination-mobile{
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        align-content: center;
+    }
+    .pagination-mobile a{
+        color: black;
+        font-size: 24px;
+        margin-left: 40px;
     }
 
 }
