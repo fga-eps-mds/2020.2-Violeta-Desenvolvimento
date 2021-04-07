@@ -5,6 +5,8 @@ import {
     Route,
     //   Link
 } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './store';
 
 import './App.css';
 import Adm from './components/adm';
@@ -19,19 +21,21 @@ import Login from './components/login';
 class App extends Component {
     render() {
         return (
-            <Router>
-                <Switch>
-                    <Route path="/login/adm">
-                        <Adm />
-                    </Route>
-                    <Route path="/login">
-                        <Login />
-                    </Route>
-                    <Route path="/">
-                        <AllComponentes />
-                    </Route>
-                </Switch>
-            </Router>
+            <Provider store={store}>
+                <Router>
+                    <Switch>
+                        <Route path="/login/adm">
+                            <Adm />
+                        </Route>
+                        <Route path="/login">
+                            <Login />
+                        </Route>
+                        <Route path="/">
+                            <AllComponentes />
+                        </Route>
+                    </Switch>
+                </Router>
+            </Provider>
         );
     }
 }
