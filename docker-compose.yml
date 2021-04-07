@@ -43,7 +43,7 @@ services:
       DB_NAME: ${POSTGRES_DB}
       DB_USER: ${POSTGRES_USER}
       DB_PASSWORD: ${POSTGRES_PASSWORD}
-      DB_HOST: ${POSTGRES_HOST}
+      DB_HOST: postgres_db_${ENV}
       DB_PORT: ${POSTGRES_PORT}
     ports:
       - "${QUESTIONARIO_PORT}:8001"
@@ -67,7 +67,7 @@ services:
       DB_NAME: ${POSTGRES_DB}
       DB_USER: ${POSTGRES_USER}
       DB_PASSWORD: ${POSTGRES_PASSWORD}
-      DB_HOST: ${POSTGRES_HOST}
+      DB_HOST: postgres_db_${ENV}
       DB_PORT: ${POSTGRES_PORT}
 
     depends_on:
@@ -88,7 +88,7 @@ services:
       DB_NAME: ${POSTGRES_DB}
       DB_USER: ${POSTGRES_USER}
       DB_PASSWORD: ${POSTGRES_PASSWORD}
-      DB_HOST: ${POSTGRES_HOST}
+      DB_HOST: postgres_db_${ENV}
       DB_PORT: ${POSTGRES_PORT}
     depends_on:
       - db
@@ -108,7 +108,7 @@ services:
       DB_NAME: ${POSTGRES_DB}
       DB_USER: ${POSTGRES_USER}
       DB_PASSWORD: ${POSTGRES_PASSWORD}
-      DB_HOST: ${POSTGRES_HOST}
+      DB_HOST: postgres_db_${ENV}
       DB_PORT: ${POSTGRES_PORT}
     depends_on:
       - db
