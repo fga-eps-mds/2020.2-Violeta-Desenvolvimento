@@ -166,7 +166,6 @@
         font-size: 14px;
     }
     .container-boxes{
-        display: none;
     }
     #button-nav-ongs{
         height: 35px;
@@ -193,11 +192,11 @@
         width: auto;
         justify-content: space-between;
         align-content: center;
+        margin: 40px 40px 0px 40px;
     }
     .pagination-mobile a{
         color: black;
         font-size: 24px;
-        margin-left: 40px;
     }
 
 }

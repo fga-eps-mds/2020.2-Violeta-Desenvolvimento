@@ -54,6 +54,7 @@ class ContatoViolencia(models.Model):
             id_contato: Identidicador único contato;
             nome_contato: Nome do contato;
             ds_contato: Descrição do contato;
+            categoria: Identifica onde o contato trabalha;
     """
     id_contato = models.AutoField(primary_key=True)
 
@@ -68,7 +69,7 @@ class ContatoViolencia(models.Model):
     ds_contato = models.TextField(null=False,
                                   blank=False)
 
-    category = models.TextField(null=False,
+    categoria = models.TextField(null=False,
                                 blank=False,
                                 default="Ongs")
 

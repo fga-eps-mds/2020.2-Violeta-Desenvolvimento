@@ -4,6 +4,7 @@ import React from 'react';
 class Profissionais extends React.Component {
     state = {
         profissionais: [],
+        profissionaisFiltrados: [],
         error: '',
     };
 
@@ -15,6 +16,15 @@ class Profissionais extends React.Component {
             })
             .catch((error) => this.setState({ error }));
     }
+
+    // categoryFilter(categoria) {
+    //     profissionaisFiltrados = this.state.profissionais.filter(categoria);
+    //     return profissionaisFiltrados;
+    // }
+
+    // const profissionaisFiltrados = this.state.profissionais.filter(
+    //     (profissional) => profissional.categoria('teste')
+    //     );
 
     render() {
         return (
@@ -43,21 +53,36 @@ class Profissionais extends React.Component {
                                 </li>
                                 <li>
                                     <a href="#psicologos">
-                                        <button id="button-nav">
+                                        <button
+                                            id="button-nav"
+                                            // onClick={categoryFilter(
+                                            //     'Psicologos'
+                                            // )}
+                                        >
                                             Psicólogos
                                         </button>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#competentes_orgaos">
-                                        <button id="button-nav">
+                                        <button
+                                            id="button-nav"
+                                            // onClick={categoryFilter(
+                                            //     'orgaos-competentes'
+                                            // )}
+                                        >
                                             Órgãos Competentes
                                         </button>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#teste">
-                                        <button id="button-nav-teste">
+                                        <button
+                                            id="button-nav-teste"
+                                            // onClick={categoryFilter(
+                                            //     'teste'
+                                            // )}
+                                        >
                                             Teste
                                         </button>
                                     </a>
@@ -67,34 +92,36 @@ class Profissionais extends React.Component {
                     </div>
                 </div>
                 <div class="container-boxes">
-                    {this.state.profissionais.map((profissional) => (
-                        <div class="box-contact">
-                            <div id="box-contact-logo">
-                                <div id="box-contact-text">
-                                    <div>
-                                        <p
-                                            class="box-contact-name"
-                                            id="nome_contato"
-                                        >
-                                            {profissional.nome_contato}
-                                        </p>
-                                        <p
-                                            class="box-contact-description"
-                                            id="ds_contato"
-                                        >
-                                            {profissional.ds_contato}
-                                        </p>
-                                        <p
-                                            class="box-contact-number"
-                                            id="numero_contato"
-                                        >
-                                            {profissional.numero_contato}
-                                        </p>
+                    {this.state.profissionais
+                        .filter((pessoa) => pessoa.categoria === 'teste')
+                        .map((profissional) => (
+                            <div class="box-contact">
+                                <div id="box-contact-logo">
+                                    <div id="box-contact-text">
+                                        <div>
+                                            <p
+                                                class="box-contact-name"
+                                                id="nome_contato"
+                                            >
+                                                {profissional.nome_contato}
+                                            </p>
+                                            <p
+                                                class="box-contact-description"
+                                                id="ds_contato"
+                                            >
+                                                {profissional.ds_contato}
+                                            </p>
+                                            <p
+                                                class="box-contact-number"
+                                                id="numero_contato"
+                                            >
+                                                {profissional.numero_contato}
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
                 </div>
                 <div class="pagination">
                     <a href="#previous">❮ Anterior </a>
