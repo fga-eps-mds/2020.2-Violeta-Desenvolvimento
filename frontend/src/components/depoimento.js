@@ -66,7 +66,7 @@ class Depoimento extends React.Component {
 
     render() {
         return (
-            <div>
+            <div class="depoimento">
                 <div id="depoimento-container">
                     <h1 id="title-depoimento">Depoimentos</h1>
                     <Carousel>
