@@ -9,10 +9,33 @@ class Profissionais extends React.Component {
             profissionais: [],
             error: '',
             categoria: null,
+            currentSlide: 0,
         };
 
         this.filtercategoria = this.filtercategoria.bind(this);
     }
+
+    next = () => {
+        this.setState((state) => ({
+            currentSlide: state.currentSlide + 1,
+        }));
+    };
+
+    prev = () => {
+        this.setState((state) => ({
+            currentSlide: state.currentSlide - 1,
+        }));
+    };
+
+    updateCurrentSlide = (index) => {
+        const { currentSlide } = this.state;
+
+        if (currentSlide !== index) {
+            this.setState({
+                currentSlide: index,
+            });
+        }
+    };
 
     componentDidMount() {
         fetch('http://localhost:8001/questionario/api/contato-violencia/')
@@ -24,7 +47,7 @@ class Profissionais extends React.Component {
     }
 
     filtercategoria(nameButton) {
-        console.log(nameButton);
+        // console.log(nameButton);
         this.setState({
             categoria: nameButton,
         });
@@ -32,10 +55,10 @@ class Profissionais extends React.Component {
 
     render() {
         return (
-            <section class="profissionais">
+            <section class="profissionais" id="profissionais">
+                <h1 id="profissionais-title">Profissionais</h1>
                 <div class="profissionais-container-title-nav">
                     <div class="profissionais-container-title">
-                        <h1 id="profissionais-title">Profissionais</h1>
                         <p id="profissionais-description">
                             Sed non enim a sapien interdum vulputate quis at
                             diam. Maecenas quis sem erat. Cras tempor dignissim
@@ -49,8 +72,9 @@ class Profissionais extends React.Component {
                         <nav class="nav-profissionais">
                             <ul class="list-nav-profissionais">
                                 <li>
-                                    <a href="#ongs">
+                                    <a href="#profissionais">
                                         <button
+                                            class="profissionais-btn-nav"
                                             id="button-nav-ongs"
                                             onClick={() =>
                                                 this.filtercategoria('ongs')
@@ -61,9 +85,10 @@ class Profissionais extends React.Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#psicologos">
+                                    <a href="#">
                                         <button
-                                            id="button-nav"
+                                            class="profissionais-btn-nav"
+                                            id="button-nav-psicologo"
                                             onClick={() =>
                                                 this.filtercategoria(
                                                     'psicólogos'
@@ -75,20 +100,24 @@ class Profissionais extends React.Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#competentes_orgaos">
+                                    <a href="#">
                                         <button
-                                            id="button-nav"
+                                            class="profissionais-btn-nav"
+                                            id="button-nav-orgaos"
                                             onClick={() =>
                                                 this.filtercategoria('órgãos')
                                             }
                                         >
-                                            Órgãos Competentes
+                                            Órgãos
+                                            <br />
+                                            Competentes
                                         </button>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#teste">
+                                    <a href="#">
                                         <button
+                                            class="profissionais-btn-nav"
                                             id="button-nav-teste"
                                             onClick={() =>
                                                 this.filtercategoria('teste')
@@ -103,7 +132,15 @@ class Profissionais extends React.Component {
                     </div>
                 </div>
                 <div class="carousel-container">
-                    <Carousel infiniteLoop="true">
+                    <Carousel
+                        onChange={this.updateCurrentSlide}
+                        selectedItem={this.state.currentSlide}
+                        infiniteLoop="true"
+                        showArrows="false"
+                        showThumbs="false"
+                        showStatus="false"
+                        showIndicators="false"
+                    >
                         {this.state.profissionais.map((profissional) => {
                             if (
                                 profissional.categoria.toLowerCase() ===
@@ -118,7 +155,7 @@ class Profissionais extends React.Component {
                                                 id="nome_contato"
                                             >
                                                 <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato + 0}
+                                                {profissional.nome_contato}
                                             </p>
                                             <p
                                                 class="box-contact-description"
@@ -262,14 +299,18 @@ class Profissionais extends React.Component {
                             return null;
                         })}
                     </Carousel>
-                </div>
-                <div class="pagination">
-                    <a href="#previous">❮ Anterior </a>
-                    <a href="#next"> Próximo ❯</a>
-                </div>
-                <div class="pagination-mobile">
-                    <a href="#previous">❮ </a>
-                    <a href="#next"> ❯</a>
+                    <div class="pagination">
+                        <button onClick={this.prev} class="profissionais-prev">
+                            ❮ Anterior
+                        </button>
+                        <button onClick={this.next} class="profissionais-next">
+                            Próximo ❯
+                        </button>
+                    </div>
+                    <div class="pagination-mobile">
+                        <a href="#">❮ </a>
+                        <a href="#"> ❯</a>
+                    </div>
                 </div>
             </section>
         );

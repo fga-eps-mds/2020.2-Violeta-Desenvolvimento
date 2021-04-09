@@ -1,6 +1,7 @@
 .profissionais {
     height: 805px;
     background-color: #ece3ee;
+    padding-top: 70px;
 }
 
 .profissionais .carousel-container {
@@ -31,23 +32,26 @@
 
 .profissionais-container-title-nav{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 200px;
-    flex-direction: column;
-    padding-top: 70px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+    height: auto;
+    width: 1300px;
+    margin: 0 auto;
 }
 
 .nav-profissionais{
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
+    /* display: inline-flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
     width: 640px;
     height: 50px;
     background-color: #764E7E;
     border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 50px;
 }
 
 .list-nav-profissionais{
@@ -59,27 +63,78 @@
 .list-nav-profissionais li{
     height: 50px;
     width: 160px;
+    text-align: center;
     list-style: none;
-    background-color: #764E7E;
-    border-radius: 10px;
 }
 .list-nav-profissionais button{
     border-style: none;
 }
 
 #profissionais-description{
-    width: 595px;
-    height: 100px;
-    font-size: 16px;
+    width: auto;
+    height: auto;
     margin-top: 50px;
+    font-size: 16px;
 }
 
 #profissionais-title{
+    width: 210px;
     font-size: 36px;
+    margin: 0 auto;
+}
+
+.profissionais-btn-nav{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #764E7E;
+    border-radius: 10px;
+}
+
+#button-nav-orgaos{
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 0;
+    text-align: left;
+    padding: 0 38px;
+}
+
+#button-nav-psicologo{
+    border-left-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 0;
 }
 
 #button-nav-ongs{
     border-radius: 10px;
+}
+#button-nav-teste{
+    border-radius: 10px;
+}
+
+.pagination{
+    margin-left: 1060px;
+    width: 210px;
+    height: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.profissionais-prev{
+    background-color: #ece3ee;
+    color: black;
+    border: none;    
+}
+.profissionais-next{
+    background-color: #ece3ee;
+    color: black;
+    border: none;
+}
+.pagination-mobile{
+    display: none;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------*/
@@ -88,57 +143,36 @@
 
 .profissionais .carousel .control-arrow,
 .profissionais.carousel.carousel-slider .control-arrow {
-    -webkit-transition: all 0.25s ease-in;
-    -moz-transition: all 0.25s ease-in;
-    -ms-transition: all 0.25s ease-in;
-    -o-transition: all 0.25s ease-in;
-    transition: all 0.25s ease-in;
-    opacity: 0.4;
-    filter: alpha(opacity=40);
-    position: absolute;
-    z-index: 2;
-    top: 20px;
-    background: none;
-    border: 0;
-    font-size: 32px;
-    cursor: pointer;
+    display: none;
 }
 .profissionais .carousel .control-arrow:focus,
 .profissionais.carousel .control-arrow:hover {
-    opacity: 1;
-    filter: alpha(opacity=100);
+    display: none;
 }
 .profissionais .carousel .control-arrow:before,
 .profissionais.carousel.carousel-slider .control-arrow:before {
-    margin: 0 5px;
-    display: inline-block;
-    border-top: 8px solid transparent;
-    border-bottom: 8px solid transparent;
-    content: '';
-}
-.profissionais.profissionais .carousel .control-disabled.control-arrow {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    cursor: inherit;
     display: none;
 }
+.profissionais.profissionais .carousel .control-disabled.control-arrow {
+   display: none;
+}
 .profissionais .carousel .control-prev.control-arrow {
-    left: 0;
+    display: none;
 }
 .profissionais .carousel .control-prev.control-arrow:before {
-    border-right: 8px solid #fff;
+    display: none;
 }
 .profissionais .carousel .control-next.control-arrow {
-    right: 0;
+    display: none;
 }
 .profissionais .carousel .control-next.control-arrow:before {
-    border-left: 8px solid #fff;
+    display: none;
 }
 
 .profissionais .carousel-root {
     outline: none;
     width: 1305px;
-    height: 315px;
+    height: 400px;
 }
 
 .profissionais .carousel {
@@ -159,12 +193,7 @@
     position: relative;
 }
 .profissionais .carousel .control-arrow {
-    outline: 0;
-    border: 0;
-    background: none;
-    top: 50%;
-    margin-top: -13px;
-    font-size: 18px;
+    display: none;
 }
 .profissionais .carousel .thumbs-wrapper {
     display: none;
@@ -184,15 +213,10 @@
     overflow: hidden;
 }
 .profissionais .carousel.carousel-slider .control-arrow {
-    top: 0;
-    color: #fff;
-    font-size: 26px;
-    bottom: 0;
-    margin-top: 0;
-    padding: 5px;
+    display: none;
 }
 .profissionais .carousel.carousel-slider .control-arrow:hover {
-    background: rgba(0, 0, 0, 0.2);
+    display: none;
 }
 .profissionais .carousel .slider-wrapper {
     overflow: hidden;
