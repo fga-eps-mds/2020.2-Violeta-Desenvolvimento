@@ -23,36 +23,27 @@ class Questionario extends React.Component {
     //     });
     // }
 
-
-    submitForm(event) {
-        let url;
-        let port = '';
-        if (process.env.REACT_APP_ENV === 'development') {
-            url = process.env.REACT_APP_URL_DEVELOP;
-            port = process.env.REACT_APP_QUESTIONARIO_PORT;
-        } else {
-            url = process.env.REACT_APP_URL_PRODUCTION;
-            if (process.env.REACT_APP_ENV === 'deploy') {
-                url = `${url}${port}/questionario-dev/api/questionario/`;
-            } else {
-                url = `${url}${port}/questionario/api/questionario/`;
-            }
-        }
-        fetch(url, {
-            method: 'POST',
-            body: JSON.stringify(this.state),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        }).then((response) => response.json());
-        // .then((data) => console.log(data));
-    //     this.setState({
-    //         arvore_decisao: '',
-    //         categoria_violencia: '',
-    //         contact: '',
-    //         address: '',
-    //     });
-    //     event.preventDefault();
+    // submitForm(event) {
+    //     let url;
+    //     let port = '';
+    //     if (process.env.REACT_APP_ENV === 'development') {
+    //         url = process.env.REACT_APP_URL_DEVELOP;
+    //         port = process.env.REACT_APP_QUESTIONARIO_PORT;
+    //     } else {
+    //         url = process.env.REACT_APP_URL_PRODUCTION;
+    //         if (process.env.REACT_APP_ENV === 'deploy') {
+    //             url = `${url}${port}/questionario-dev/api/questionario/`;
+    //         } else {
+    //             url = `${url}${port}/questionario/api/questionario/`;
+    //         }
+    //     }
+    //     fetch(url, {
+    //         method: 'POST',
+    //         body: JSON.stringify(this.state),
+    //         headers: {
+    //             'Content-type': 'application/json; charset=UTF-8',
+    //         },
+    //     }).then((response) => response.json());
     // }
 
     render() {
