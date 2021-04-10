@@ -2,7 +2,7 @@
   "question_1":{
     "title":"Já foi ameaçada?",
     "labels":[
-      {"title":"Sim", "qid":"100", "next":"question_1a_more"},
+      {"title":"Sim", "qid":"100", "next":"question_1a"},
       {"title":"Não", "qid":"101"}
     ],
     "actual":"105",
@@ -75,6 +75,7 @@
       {"title":"Lesões com objetos cortantes ou perfurantes", "qid":"110", "next":"question_1b"},
       {"title":"Ferimentos causados por queimaduras ou armas de fogo", "qid":"111", "next":"question_1b"}
     ],
+    "resultado": "física",
     "actual":"6",
     "category":"quiz",
     "criterion":"agave",
@@ -111,6 +112,7 @@
       {"title":"Forçar matrimônio, gravidez ou prostituição por meio de ameaça, chantagem, suborno ou manipulação", "qid":"119"},      
       {"title":"Te limitar ou anular o exercício dos direitos sexuais e reprodutivos", "qid":"120"}      
     ],
+    "resultado": "Sexual",
     "actual":"126",
     "category":"quiz",
     "criterion":"agave",
@@ -137,6 +139,7 @@
       {"title":"Sim", "qid":"208"},
       {"title":"Não", "qid":"209"}
     ],
+    "resultado": "Psicológica",
     "actual":"126",
     "category":"quiz",
     "criterion":"agave",
@@ -173,6 +176,7 @@
       {"title":"Lesões com objetos cortantes ou perfurantes", "qid":"309"},
       {"title":"Ferimentos causados por queimaduras ou armas de fogo", "qid":"310"}
     ],
+    "resultado": "Moral, Psicológica e Física",
     "actual":"126",
     "category":"quiz",
     "criterion":"agave",
@@ -192,7 +196,7 @@
   "question_4a_more":{
     "title":"Isso se deu por alguma acusação contra seu caráter ou humilhação?",
     "labels":[
-      {"title":"Sim", "qid":"405", "next":"question_4b"},
+      {"title":"Sim", "qid":"405"},
       {"title":"Não", "qid":"406"}
     ],
     "actual":"126",

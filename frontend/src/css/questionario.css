@@ -1,136 +1,242 @@
 #questionario {
-  width: 100%;
-  height: 620px;
-  background: #feefe8;
-  padding: 0 110px;
+    width: 100%;
+    height: 620px;
+    background: #feefe8;
+    padding: 0 110px;
 }
 
 #titulo {
-  width: 100%;
+    width: 100%;
 }
 
 #titulo h1 {
-  font-size: 36px;
-  text-align: center;
-  padding-top: 70px;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 70px;
 }
 
-#questionario p {
-  font-size: 16px;
-  text-align: left;
-  margin-bottom: 15px;
-}
+/* #questionario p {
+    text-align: left;
+    margin-bottom: 15px;
+} */
 
 #btn-enviar {
-  width: 165px;
-  height: 55px;
-  background-color: #764e7e;
-  color: white;
-  font-size: 18px;
-  border: none;
+    width: 165px;
+    height: 55px;
+    background-color: #764e7e;
+    color: white;
+    font-size: 18px;
+    border: none;
 }
 #container-questionario {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
 
 #formulario {
-  flex: 1;
-  align-content: flex-start;
-  margin-top: 50px;
+    flex: 1;
+    align-content: flex-start;
+    margin-top: 50px;
 }
 
 #img-formulario {
-  flex: 1;
-  align-content: flex-end;
-  margin-top: 10px;
+    flex: 1;
+    align-content: flex-end;
+    margin-top: 10px;
 }
 #btn-formulario {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 .input-formulario {
-  width: 400px;
-  height: 30px;
-  border: solid 1px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: #feefe8;
+    width: 400px;
+    height: 30px;
+    border: solid 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #feefe8;
 }
 
 /*Questionario*/
-.title-questions{
-  font-size: 5;
+#title-questions {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    font-weight: 500;
 }
 .graph-ui {
-  background: #FEEFE8;
-  margin: 1rem;
-  padding: 1rem;
-  width: 550px;
+    /* background: #FEEFE8; */
+    /* background: red; */
+    margin: 1rem;
+    padding: 1rem;
+    width: 90%;
+}
+
+#intro-questionarios {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.container-graph {
+    margin-bottom: 1.876rem;
 }
 .graph-ui h4 {
-  margin: .25rem;
+    margin: 0.25rem;
 }
 
 .graph-ui label {
-  display: block;
-  padding-bottom: .5rem;
+    display: block;
+    padding-bottom: 0.5rem;
 }
 
-.container-btn{
-  display: flex;
-  justify-content: space-between;
+.container-btn {
+    display: flex;
+    justify-content: space-between;
 }
 
-.btn-question{
-  width: 165px;
-  height: 53px;
-  background: #764E7E;
-  color: white;
-  border: none;
-  font-size: 18px;
+.btn-question {
+    width: 165px;
+    height: 53px;
+    background: #764e7e;
+    color: white;
+    border: none;
+    font-size: 18px;
 }
 
-.btn-question:disabled{
-  background:gray;
+.btn-question:disabled {
+    background: gray;
 }
 
-.title-questions{
-  font-size: 1.3rem;
+.options-questions {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 1rem;
 }
 
-.options-questions{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: left;
-  font-size: 1rem;
+.options-questions input {
+    margin-right: 10px;
 }
 
-.options-questions input{
-  margin-right: 10px;
-}
-
-@media (max-width: 739px){
-  #img-formulario{
-    display: none;
-  }
-  #btn-formulario {
-    margin-top: 180px;
-  }
-  #questionario {
-    padding: 0 40px;   
-  }
-  #questionario p{
-    display: none;
-  }
-  .input-formulario{
+/*Popup*/
+.popup-result {
+    position: fixed;
+    top: 20px;
+    left: 0;
     width: 100%;
-    font-size: 20px;
-  }
-  #titulo h1 {
-    padding-top: 40px;
-  }
-
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
 }
+
+.popup-inner {
+    position: relative;
+    padding: 36px;
+    width: 73.5rem;
+    height: 34.25rem;
+    max-width: 73.5rem;
+    background-color: #ffda85;
+}
+
+.popup-inner .btnq-popup {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+}
+
+.text-quote{
+    font-size: 1.5rem;
+}
+.text-simple{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.destaqueViolencia{
+    color: #F57029;
+    margin-left: 5px;
+}
+
+#Feedback-Asset {
+    float: right;
+    position: fixed;
+    right: 0;
+    bottom: 10px;
+    z-index: 1;
+    margin-right: 90px;
+    margin-bottom: 50px;
+}
+
+#title-popup-feedback {
+    font-size: 2.25rem;
+}
+
+@media (max-width: 739px) {
+    #img-formulario {
+        display: none;
+    }
+    #btn-formulario {
+        margin-top: 180px;
+    }
+    #questionario {
+        padding: 0 40px;
+    }
+    /* #questionario p {
+        display: none;
+    } */
+    .input-formulario {
+        width: 100%;
+        font-size: 20px;
+    }
+    #titulo h1 {
+        padding-top: 40px;
+    }
+    /*Popup*/
+    .graph-ui{
+        margin: 0 auto;
+        
+    }
+    #container-questionario {
+        display: contents;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    #Feedback-Asset {
+        display: none;
+    }
+    #title-popup-feedback {
+        font-size: 2.25rem;
+        text-align: center;
+    }
+    .text-quote{
+        text-align: center;
+    }
+    /* .popup-inner {   
+        overflow: scroll;
+    } */
+    .popup-inner {
+        height: 900px;
+        padding: 0;
+        padding-top: 170px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+    .popup-result {
+        z-index: 6;
+        overflow: scroll;
+    }
+    .popup-inner .btnq-popup {
+        position: relative;
+        top:-30px;
+        float: right;
+        right: 0;
+    }
+}
+

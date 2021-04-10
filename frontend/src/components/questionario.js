@@ -101,14 +101,14 @@ class Questionario extends React.Component {
                     </div>
                 </div>
                 <div id="btn-formulario">
-                    <button
+                    {/* <button
                         id="btn-enviar"
                         form="quiz"
                         type="submit"
                         onClick={this.submitForm}
                     >
                         Enviar
-                    </button>
+                    </button> */}
                 </div>
             </section>
         );
