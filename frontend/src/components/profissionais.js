@@ -47,7 +47,7 @@ class Profissionais extends React.Component {
     }
 
     filtercategoria(nameButton) {
-        // console.log(nameButton);
+        console.log(nameButton);
         this.setState({
             categoria: nameButton,
         });
@@ -72,7 +72,7 @@ class Profissionais extends React.Component {
                         <nav class="nav-profissionais">
                             <ul class="list-nav-profissionais">
                                 <li>
-                                    <a href="#profissionais">
+                                    <a href="#ongs">
                                         <button
                                             class="profissionais-btn-nav"
                                             id="button-nav-ongs"
@@ -85,7 +85,7 @@ class Profissionais extends React.Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#psicologos">
                                         <button
                                             class="profissionais-btn-nav"
                                             id="button-nav-psicologo"
@@ -100,7 +100,7 @@ class Profissionais extends React.Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#competentes_orgaos">
                                         <button
                                             class="profissionais-btn-nav"
                                             id="button-nav-orgaos"
@@ -115,7 +115,7 @@ class Profissionais extends React.Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#teste">
                                         <button
                                             class="profissionais-btn-nav"
                                             id="button-nav-teste"
@@ -135,11 +135,11 @@ class Profissionais extends React.Component {
                     <Carousel
                         onChange={this.updateCurrentSlide}
                         selectedItem={this.state.currentSlide}
-                        infiniteLoop="true"
-                        showArrows="false"
-                        showThumbs="false"
-                        showStatus="false"
-                        showIndicators="false"
+                        infiniteLoop={false}
+                        showArrows={false}
+                        showThumbs={false}
+                        showStatus={false}
+                        showIndicators={false}
                     >
                         {this.state.profissionais.map((profissional) => {
                             if (
@@ -162,15 +162,14 @@ class Profissionais extends React.Component {
                                                 id="ds_contato"
                                             >
                                                 <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato + 0}
+                                                {profissional.ds_contato}
                                             </p>
                                             <p
                                                 class="box-contact-number"
                                                 id="numero_contato"
                                             >
                                                 <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato +
-                                                    0}
+                                                {profissional.numero_contato}
                                             </p>
                                         </div>
                                         <div class="box-contact" id="2">
@@ -179,22 +178,21 @@ class Profissionais extends React.Component {
                                                 id="nome_contato"
                                             >
                                                 <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato + 1}
+                                                {profissional.nome_contato}
                                             </p>
                                             <p
                                                 class="box-contact-description"
                                                 id="ds_contato"
                                             >
                                                 <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato + 1}
+                                                {profissional.ds_contato}
                                             </p>
                                             <p
                                                 class="box-contact-number"
                                                 id="numero_contato"
                                             >
                                                 <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato +
-                                                    1}
+                                                {profissional.numero_contato}
                                             </p>
                                         </div>
                                         <div class="box-contact" id="3">
@@ -203,22 +201,21 @@ class Profissionais extends React.Component {
                                                 id="nome_contato"
                                             >
                                                 <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato + 2}
+                                                {profissional.nome_contato}
                                             </p>
                                             <p
                                                 class="box-contact-description"
                                                 id="ds_contato"
                                             >
                                                 <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato + 2}
+                                                {profissional.ds_contato}
                                             </p>
                                             <p
                                                 class="box-contact-number"
                                                 id="numero_contato"
                                             >
                                                 <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato +
-                                                    2}
+                                                {profissional.numero_contato}
                                             </p>
                                         </div>
                                         <div class="box-contact" id="4">
@@ -227,22 +224,21 @@ class Profissionais extends React.Component {
                                                 id="nome_contato"
                                             >
                                                 <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato + 3}
+                                                {profissional.nome_contato}
                                             </p>
                                             <p
                                                 class="box-contact-description"
                                                 id="ds_contato"
                                             >
                                                 <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato + 3}
+                                                {profissional.ds_contato}
                                             </p>
                                             <p
                                                 class="box-contact-number"
                                                 id="numero_contato"
                                             >
                                                 <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato +
-                                                    3}
+                                                {profissional.numero_contato}
                                             </p>
                                         </div>
                                         <div class="box-contact" id="5">
@@ -251,22 +247,21 @@ class Profissionais extends React.Component {
                                                 id="nome_contato"
                                             >
                                                 <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato + 4}
+                                                {profissional.nome_contato}
                                             </p>
                                             <p
                                                 class="box-contact-description"
                                                 id="ds_contato"
                                             >
                                                 <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato + 4}
+                                                {profissional.ds_contato}
                                             </p>
                                             <p
                                                 class="box-contact-number"
                                                 id="numero_contato"
                                             >
                                                 <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato +
-                                                    4}
+                                                {profissional.numero_contato}
                                             </p>
                                         </div>
                                         <div class="box-contact" id="6">
@@ -275,22 +270,21 @@ class Profissionais extends React.Component {
                                                 id="nome_contato"
                                             >
                                                 <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato + 5}
+                                                {profissional.nome_contato}
                                             </p>
                                             <p
                                                 class="box-contact-description"
                                                 id="ds_contato"
                                             >
                                                 <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato + 5}
+                                                {profissional.ds_contato}
                                             </p>
                                             <p
                                                 class="box-contact-number"
                                                 id="numero_contato"
                                             >
                                                 <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato +
-                                                    5}
+                                                {profissional.numero_contato}
                                             </p>
                                         </div>
                                     </div>
