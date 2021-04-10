@@ -1,62 +1,33 @@
-import {
-    LOGIN_SUCCESS,
-    LOGIN_FAIL,
-    USER_LOADED_SUCCESS,
-    USER_LOADED_FAIL,
-    AUTH_SUCCESS,
-    AUTH_FAIL,
-    LOGOUT,
-} from '../actions/types';
+import { LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT } from '../actions/types';
 
 const initialState = {
-    token: localStorage.getItem('token'),
-    refresh: localStorage.getItem('refresh'),
-    isAuth: null,
-    user: null,
+    access: localStorage.getItem('access'),
+    refresh: null,
+    username: localStorage.getItem('username'),
 };
 
 export default function reducer(state = initialState, action) {
     const { type, payload } = action;
 
     switch (type) {
-        case AUTH_SUCCESS:
-            return {
-                ...state,
-                isAuth: true,
-            };
         case LOGIN_SUCCESS:
-            localStorage.setItem('token', payload.token);
+            localStorage.setItem('access', payload.access);
+            localStorage.setItem('username', payload.username);
             return {
                 ...state,
-                isAuth: true,
-                token: payload.token,
+                access: payload.access,
                 refresh: payload.refresh,
-            };
-        case USER_LOADED_SUCCESS:
-            return {
-                ...state,
-                user: payload,
-            };
-        case AUTH_FAIL:
-            return {
-                ...state,
-                isAuth: false,
-            };
-        case USER_LOADED_FAIL:
-            return {
-                ...state,
-                user: null,
+                username: payload.username,
             };
         case LOGIN_FAIL:
         case LOGOUT:
-            localStorage.removeItem('token');
-            localStorage.removeItem('refresh');
+            localStorage.removeItem('access');
+            localStorage.removeItem('username');
             return {
                 ...state,
-                token: null,
+                access: null,
                 refresh: null,
-                isAuth: false,
-                user: null,
+                username: null,
             };
         default:
             return state;
