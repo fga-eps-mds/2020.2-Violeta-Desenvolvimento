@@ -1,6 +1,7 @@
 import json
 from django.http import HttpResponse
-from .models import Questionario, CategoriaViolencia
+from django.http import JsonResponse
+from .models import Questionario, ViolenciasCount
 from django.views.decorators.http import require_http_methods
 
 
@@ -31,9 +32,12 @@ def analisa_fluxos(request):
     return HttpResponse(html)
 
 
+@require_http_methods(["POST"])
 def add_victims_category(request):
-    if request.method == "POST":
-        categoria = request.POST["id"]
-        categorias = CategoriaViolencia.objects.get(id_categoria=categoria)
-        categorias.vitimas_categoria += 1
-        categorias.save()
+    body_unicode = request.body.decode('utf-8')
+    body = json.loads(body_unicode)
+    counter = ViolenciasCount.objects.get(ds_categoria=body["categoria"])
+    counter.categoria_counter += 1
+    counter.save()
+    return JsonResponse({"class": counter.ds_categoria,
+                        "counts": counter.categoria_counter})

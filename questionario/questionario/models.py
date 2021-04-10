@@ -11,12 +11,15 @@ class CadProfissionais(models.Model):
         return self.nome_profissional
 
 
-class SalvarDados(models.Model):
-    nome_violencia = models.CharField(max_length=30)
-    id = models.AutoField(primary_key=True)
+class ViolenciasCount(models.Model):
+    id_contador = models.AutoField(primary_key=True)
+    ds_categoria = models.TextField(null=False,
+                                    blank=False)
+
+    categoria_counter = models.IntegerField(default=0)
 
     def __str__(self):
-        return self.nome_violencia
+        return str(self.ds_categoria) + " | " + str(self.categoria_counter)
 
 
 class CategoriaViolencia(models.Model):
@@ -28,7 +31,6 @@ class CategoriaViolencia(models.Model):
             id_categoria: Identificador único da categoria;
             nome_categoria: Nome da categoria;
             ds_categoria: Descrição da categoria;
-            vitimas_categoria: Contador de ocorrências do questionário;
     """
     id_categoria = models.AutoField(primary_key=True)
 
@@ -40,7 +42,7 @@ class CategoriaViolencia(models.Model):
                                     blank=False)
 
     def __str__(self):
-        return self.nome_categoria
+        return self.ds_categoria + " | " + str(self.vitimas_categoria)
 
 
 class ContatoViolencia(models.Model):
