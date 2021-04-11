@@ -1,11 +1,15 @@
+import os
 from rest_framework.test import APITestCase
 from rest_framework import status
 from .models import (Depoimento)
 from .serializers import (DepoimentoSerializer, ExternalDepoimentoSerializer)
 
 
+BASE_URL = os.environ['BASE_URL']
+
+
 class DepoimentoTestCase(APITestCase):
-    url = 'http://localhost:8003/depoimentos/api/depoimento/'
+    url = 'http://localhost:8003/' + BASE_URL + 'api/depoimento/'
 
     def setUp(self):
         self.depoimento1 = Depoimento.objects.create(
