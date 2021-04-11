@@ -1,3 +1,4 @@
+import os
 import json
 from rest_framework.test import APITestCase
 from rest_framework import status
@@ -10,10 +11,12 @@ from .serializers import (
     QuestionarioSerializer,
     ContatoQuestionarioSerializer)
 
+BASE_URL = os.environ['BASE_URL']
+
 
 class CadProfissionaisTestCase(APITestCase):
 
-    str_url = '/questionario/api/cadastrar-profissionais/'
+    str_url = BASE_URL + 'api/cadastrar-profissionais/'
 
     def setUp(self):
         self.cat1 = CadProfissionais.objects.create(
