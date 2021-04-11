@@ -23,7 +23,6 @@ const Adm2 = ({ logout }) => {
     return (
         <div id="adm-container">
             <div class="adm-cadastro">
-                <button onClick={(e) => handleClick(e)}>Logout</button>
                 <h1>Cadastro de Profissional</h1>
                 <input placeholder="Nome" class="input-adm" />
                 <input placeholder="Contato" class="input-adm" />
@@ -32,6 +31,9 @@ const Adm2 = ({ logout }) => {
                 <button type="button" class="btn-login">
                     Cadastrar
                 </button>
+                <div>
+                    <button onClick={(e) => handleClick(e)}>Logout</button>
+                </div>
             </div>
             <div class="adm-depoimento">
                 <h1>Aprovação de Depoimento</h1>
