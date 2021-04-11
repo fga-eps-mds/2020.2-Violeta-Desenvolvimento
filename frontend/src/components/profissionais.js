@@ -7,6 +7,7 @@ class Profissionais extends React.Component {
         super(props);
         this.state = {
             profissionais: [],
+            arrayProfissionais: [],
             error: '',
             categoria: null,
             currentSlide: 0,
@@ -14,6 +15,26 @@ class Profissionais extends React.Component {
 
         this.filtercategoria = this.filtercategoria.bind(this);
     }
+
+    createArrayProfissionais = () => {
+        this.state.arrayProfissionais.length = 0;
+        const arrayBase = this.state.profissionais;
+        const filteredProfissionais = [];
+
+        for (let i = 0; i < arrayBase.length; i += 1) {
+            if (
+                arrayBase[i].categoria.toLowerCase() === this.state.categoria ||
+                this.state.categoria === null
+            ) {
+                filteredProfissionais.push(arrayBase[i]);
+            }
+        }
+
+        for (let i = 0; i < filteredProfissionais.length && i < 6; i += 1) {
+            this.state.arrayProfissionais[i] =
+                filteredProfissionais[this.state.currentSlide + i];
+        }
+    };
 
     next = () => {
         this.setState((state) => ({
@@ -37,6 +58,13 @@ class Profissionais extends React.Component {
         }
     };
 
+    filtercategoria(nameButton) {
+        this.createArrayProfissionais();
+        this.setState({
+            categoria: nameButton,
+        });
+    }
+
     componentDidMount() {
         fetch('http://localhost:8001/questionario/api/contato-violencia/')
             .then((data) => data.json())
@@ -44,13 +72,6 @@ class Profissionais extends React.Component {
                 this.setState({ profissionais: result });
             })
             .catch((error) => this.setState({ error }));
-    }
-
-    filtercategoria(nameButton) {
-        console.log(nameButton);
-        this.setState({
-            categoria: nameButton,
-        });
     }
 
     render() {
@@ -72,7 +93,7 @@ class Profissionais extends React.Component {
                         <nav class="nav-profissionais">
                             <ul class="list-nav-profissionais">
                                 <li>
-                                    <a href="#ongs">
+                                    <a href="#profissionais">
                                         <button
                                             class="profissionais-btn-nav"
                                             id="button-nav-ongs"
@@ -85,7 +106,7 @@ class Profissionais extends React.Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#psicologos">
+                                    <a href="#profissionais">
                                         <button
                                             class="profissionais-btn-nav"
                                             id="button-nav-psicologo"
@@ -100,7 +121,7 @@ class Profissionais extends React.Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#competentes_orgaos">
+                                    <a href="#profissionais">
                                         <button
                                             class="profissionais-btn-nav"
                                             id="button-nav-orgaos"
@@ -115,7 +136,7 @@ class Profissionais extends React.Component {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#teste">
+                                    <a href="#profissionais">
                                         <button
                                             class="profissionais-btn-nav"
                                             id="button-nav-teste"
@@ -135,21 +156,21 @@ class Profissionais extends React.Component {
                     <Carousel
                         onChange={this.updateCurrentSlide}
                         selectedItem={this.state.currentSlide}
-                        infiniteLoop={false}
+                        infiniteLoop={true}
                         showArrows={false}
                         showThumbs={false}
                         showStatus={false}
                         showIndicators={false}
                     >
-                        {this.state.profissionais.map((profissional) => {
-                            if (
-                                profissional.categoria.toLowerCase() ===
-                                    this.state.categoria ||
-                                this.state.categoria === null
-                            ) {
-                                return (
-                                    <div class="box-contact-container">
-                                        <div class="box-contact" id="1">
+                        {console.log(this.state.arrayProfissionais)}
+                        {this.state.arrayProfissionais ? (
+                            <div id="container-profissionais">
+                                {this.state.arrayProfissionais.map(
+                                    (profissional) => (
+                                        <div
+                                            class="box-contact"
+                                            key={profissional.id_contato}
+                                        >
                                             <p
                                                 class="box-contact-name"
                                                 id="nome_contato"
@@ -172,126 +193,12 @@ class Profissionais extends React.Component {
                                                 {profissional.numero_contato}
                                             </p>
                                         </div>
-                                        <div class="box-contact" id="2">
-                                            <p
-                                                class="box-contact-name"
-                                                id="nome_contato"
-                                            >
-                                                <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-description"
-                                                id="ds_contato"
-                                            >
-                                                <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-number"
-                                                id="numero_contato"
-                                            >
-                                                <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato}
-                                            </p>
-                                        </div>
-                                        <div class="box-contact" id="3">
-                                            <p
-                                                class="box-contact-name"
-                                                id="nome_contato"
-                                            >
-                                                <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-description"
-                                                id="ds_contato"
-                                            >
-                                                <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-number"
-                                                id="numero_contato"
-                                            >
-                                                <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato}
-                                            </p>
-                                        </div>
-                                        <div class="box-contact" id="4">
-                                            <p
-                                                class="box-contact-name"
-                                                id="nome_contato"
-                                            >
-                                                <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-description"
-                                                id="ds_contato"
-                                            >
-                                                <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-number"
-                                                id="numero_contato"
-                                            >
-                                                <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato}
-                                            </p>
-                                        </div>
-                                        <div class="box-contact" id="5">
-                                            <p
-                                                class="box-contact-name"
-                                                id="nome_contato"
-                                            >
-                                                <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-description"
-                                                id="ds_contato"
-                                            >
-                                                <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-number"
-                                                id="numero_contato"
-                                            >
-                                                <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato}
-                                            </p>
-                                        </div>
-                                        <div class="box-contact" id="6">
-                                            <p
-                                                class="box-contact-name"
-                                                id="nome_contato"
-                                            >
-                                                <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-description"
-                                                id="ds_contato"
-                                            >
-                                                <strong>Descrição</strong>:{' '}
-                                                {profissional.ds_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-number"
-                                                id="numero_contato"
-                                            >
-                                                <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato}
-                                            </p>
-                                        </div>
-                                    </div>
-                                );
-                            }
-                            return null;
-                        })}
+                                    )
+                                )}
+                            </div>
+                        ) : (
+                            <p>Nenhum contato encontrado :)</p>
+                        )}
                     </Carousel>
                     <div class="pagination">
                         <button onClick={this.prev} class="profissionais-prev">
