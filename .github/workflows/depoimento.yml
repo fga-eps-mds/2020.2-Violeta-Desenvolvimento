@@ -41,7 +41,7 @@ jobs:
         pip install flake8
     - name: Run Tests
       run: |
-        export BASE_URL = depoimentos/
+        export BASE_URL=depoimentos/
         python3 depoimentos/manage.py test
     - name: Run linter
       run: |
