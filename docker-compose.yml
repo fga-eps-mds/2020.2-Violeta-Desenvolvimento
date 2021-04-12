@@ -45,6 +45,7 @@ services:
       DB_PASSWORD: ${POSTGRES_PASSWORD}
       DB_HOST: postgres_db_${ENV}
       DB_PORT: ${POSTGRES_PORT}
+      BASE_URL: ${BASE_URL_QUESTIONARIO}
     ports:
       - "${QUESTIONARIO_PORT}:8001"
     networks:
@@ -69,6 +70,7 @@ services:
       DB_PASSWORD: ${POSTGRES_PASSWORD}
       DB_HOST: postgres_db_${ENV}
       DB_PORT: ${POSTGRES_PORT}
+      BASE_URL: ${BASE_URL_FRASES}
 
     depends_on:
       - db
@@ -90,6 +92,7 @@ services:
       DB_PASSWORD: ${POSTGRES_PASSWORD}
       DB_HOST: postgres_db_${ENV}
       DB_PORT: ${POSTGRES_PORT}
+      BASE_URL: ${BASE_URL_DEPOIMENTOS}
     depends_on:
       - db
       - frontend
@@ -110,6 +113,7 @@ services:
       DB_PASSWORD: ${POSTGRES_PASSWORD}
       DB_HOST: postgres_db_${ENV}
       DB_PORT: ${POSTGRES_PORT}
+      BASE_URL: ${BASE_URL_AUTENTICADOR}
     depends_on:
       - db
       - frontend
