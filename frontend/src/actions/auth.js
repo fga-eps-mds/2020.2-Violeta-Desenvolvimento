@@ -12,7 +12,7 @@ export const login = (username, password) => async (dispatch) => {
 
     try {
         const res = await axios.post(
-            'http://localhost:8004/autenticador/login/',
+            'http://localhost:8004/autenticador/autenticador/login/',
             body,
             config
         );

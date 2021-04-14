@@ -26,16 +26,32 @@ export default class ListaDepoimento extends React.Component {
 
     async handleClick(e) {
         e.preventDefault();
+        let depoimento;
+        let lnk;
         if (this.state.depoimentos.length !== 0) {
-            this.state.depoimentos[0].aprovado = true;
-            const dep = this.state.depoimentos[0];
-            const ind = dep.id_depoimento;
-            const lnk = `http://localhost:8003/depoimentos/api/depoimento/${ind}/`;
-            await axios.put(lnk, dep);
+            for (let i = 0; i < this.state.depoimentos.length; i += 1) {
+                depoimento = this.state.depoimentos[i];
+                if (depoimento.aprovado === true) {
+                    lnk = `http://localhost:8003/depoimentos/api/depoimento/${depoimento.id_depoimento}/`;
+                    await axios.put(lnk, depoimento);
+                }
+            }
+            window.location.reload();
         } else {
             alert('Não há depoimentos para aprovar!');
         }
-        window.location.reload();
+    }
+
+    handleChange(e) {
+        let depoimento;
+        for (let i = 0; i < this.state.depoimentos.length; i += 1) {
+            depoimento = this.state.depoimentos[i];
+            if (String(depoimento.id_depoimento) === e.target.name) {
+                const newDeps = [...this.state.depoimentos];
+                newDeps[i].aprovado = !newDeps[i].aprovado;
+                this.setState({ depoimentos: newDeps });
+            }
+        }
     }
 
     render() {
@@ -46,7 +62,11 @@ export default class ListaDepoimento extends React.Component {
                         <li class="linha-depoimento">
                             <label>
                                 {depoimento.ds_depoimento}
-                                <input type="checkbox"></input>
+                                <input
+                                    type="checkbox"
+                                    name={depoimento.id_depoimento}
+                                    onChange={(e) => this.handleChange(e)}
+                                ></input>
                             </label>
                         </li>
                     </ul>

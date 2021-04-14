@@ -16,6 +16,7 @@ module.exports = {
     "prettier/prettier": "error",
     "no-param-reassign": "off",
     "class-methods-use-this": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "no-await-in-loop": "off"
   },
 };
