@@ -1,19 +1,92 @@
-import React, { Component } from 'react';
-// import axios from 'axios';
+import React, { useState } from 'react';
+import axios from 'axios';
 import '../css/cadastraProfissional.css';
+import { useHistory } from 'react-router-dom';
 
-export default class CadastraProfissional extends Component {
-    render() {
-        return (
+const CadastraProfissional = () => {
+    const initialValue = {
+        nome_contato: '',
+        numero_contato: 0,
+        ds_contato: '',
+        categoria: '',
+    };
+    const [values, setValues] = useState(initialValue);
+    const history = useHistory();
+
+    function onChange(ev) {
+        const { name, value } = ev.target;
+
+        setValues({ ...values, [name]: value });
+    }
+
+    function onSubmit(ev) {
+        ev.preventDefault();
+
+        axios
+            .post(
+                'http://localhost:8001/questionario/api/contato-violencia/',
+                values
+            )
+            .then((response) => {
+                history.push('/login');
+                return response;
+            });
+    }
+
+    return (
+        <form onSubmit={onSubmit}>
             <div class="adm-add-profissional">
-                <input placeholder="Nome" class="input-adm" />
-                <input placeholder="Número" class="input-adm" />
-                <input placeholder="Descrição" class="input-adm" />
-                <textarea placeholder="Categoria" class="input-adm" />
-                <button type="button" class="btn-add-profissional">
+                <label htmlFor="nome_contato">Nome</label>
+                <input
+                    class="input-adm"
+                    id="nome_contato"
+                    name="nome_contato"
+                    type="text"
+                    required
+                    onChange={onChange}
+                />
+                <label htmlFor="numero_contato">Telefone</label>
+                <input
+                    class="input-adm"
+                    id="numero_contato"
+                    name="numero_contato"
+                    type="tel"
+                    placeholder="(61) 1234-56789"
+                    required
+                    pattern="[0-9]{2} [0-9]{4}-[0-9]{5}"
+                    onChange={onChange}
+                />
+                <label htmlFor="ds_contato">Descrição</label>
+                <input
+                    class="input-adm"
+                    id="ds_contato"
+                    name="ds_contato"
+                    type="text"
+                    required
+                    onChange={onChange}
+                />
+                <label htmlFor="categoria">Categoria</label>
+                <select
+                    class="input-adm select-option"
+                    id="categoria"
+                    name="categoria"
+                    onChange={onChange}
+                    required
+                >
+                    <option value="" selected disabled hidden>
+                        Selecione Categoria
+                    </option>
+                    <option value="ongs">Ongs</option>
+                    <option value="psicologo">Psicólogos</option>
+                    <option value="orgao">Órgãos Compotentes</option>
+                </select>
+                <button type="submit" class="btn-add-profissional">
                     Cadastrar
+                    {console.log(values)}
                 </button>
             </div>
-        );
-    }
-}
+        </form>
+    );
+};
+
+export default CadastraProfissional;
