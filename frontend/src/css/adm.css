@@ -41,7 +41,6 @@ body {
 .p-depoimento {
     display: inline-block;
     vertical-align: middle;
-    display: table-cell;
     height: 120px;
 }
 
