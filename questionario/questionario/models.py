@@ -49,11 +49,14 @@ class ContatoViolencia(models.Model):
     """
         Legenda:
             id: Identidicador único;
-            ds: Descrição;
+            ds_contato: Descrição;
+            nome_contato: Nome
+            categoria: Categoria
         Campos:
             id_contato: Identidicador único contato;
             nome_contato: Nome do contato;
             ds_contato: Descrição do contato;
+            categoria: Tipo de contato (Ong, Psicólogos órgãos competentes)
     """
     id_contato = models.AutoField(primary_key=True)
 
@@ -67,6 +70,9 @@ class ContatoViolencia(models.Model):
 
     ds_contato = models.TextField(null=False,
                                   blank=False)
+
+    categoria = models.TextField(null=False,
+                                 blank=False)
 
     def __str__(self):
         return self.nome_contato
