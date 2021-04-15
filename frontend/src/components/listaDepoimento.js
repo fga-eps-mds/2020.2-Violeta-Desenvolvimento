@@ -57,20 +57,25 @@ export default class ListaDepoimento extends React.Component {
     render() {
         return (
             <div>
-                {this.state.depoimentos.map((depoimento) => (
-                    <ul>
+                <ul class="ulDepoimento">
+                    {this.state.depoimentos.map((depoimento) => (
                         <li class="linha-depoimento">
-                            <label>
-                                {depoimento.ds_depoimento}
-                                <input
-                                    type="checkbox"
-                                    name={depoimento.id_depoimento}
-                                    onChange={(e) => this.handleChange(e)}
-                                ></input>
+                            <label className="labelDepoimento">
+                                <div className="divInput">
+                                    <input
+                                        type="checkbox"
+                                        className="inputDepoimento"
+                                        name={depoimento.id_depoimento}
+                                        onChange={(e) => this.handleChange(e)}
+                                    ></input>
+                                </div>
+                                <span class="dsDepoimento">
+                                    {depoimento.ds_depoimento}
+                                </span>
                             </label>
                         </li>
-                    </ul>
-                ))}
+                    ))}
+                </ul>
                 <button
                     type="button"
                     class="btn-login"
