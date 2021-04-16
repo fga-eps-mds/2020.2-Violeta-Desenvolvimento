@@ -3,61 +3,63 @@ import json
 from rest_framework.test import APITestCase
 from rest_framework import status
 from .models import (CadProfissionais, CategoriaViolencia, ContatoViolencia,
-                     Questionario, ContatoQuestionario)
+                     Questionario, ContatoQuestionario, CategoriaContato)
 from .serializers import (
     CadProfissionaisSerializer,
     CategoriaViolenciaSerializer,
     ContatoViolenciaSerializer,
     QuestionarioSerializer,
-    ContatoQuestionarioSerializer)
+    ContatoQuestionarioSerializer,
+    CategoriaContatoSerializer,)
 
 BASE_URL = os.environ['BASE_URL']
 
 
-class CadProfissionaisTestCase(APITestCase):
+class CategoriaViolenciaTestCase(APITestCase):
 
-    str_url = BASE_URL + 'api/cadastrar-profissionais/'
+    catViolenciaUrl = '/questionario/api/categoria-violencia/'
 
     def setUp(self):
-        self.cat1 = CadProfissionais.objects.create(
-            nome_profissional='TESTE', ds_profissional='TESTE')
+        self.cat1 = CategoriaViolencia.objects.create(
+            nome_categoria='TESTE', ds_categoria='TESTE')
 
     def testPost(self):
         data = {
-            'nome_profissional': 'NOME TESTE',
-            'ds_profissional': 'DS TESTE'
+            'nome_categoria': 'NOME TESTE',
+            'ds_categoria': 'DS TESTE'
         }
-        response = self.client.post(self.str_url, data)
+        response = self.client.post(
+            self.catViolenciaUrl, data)
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
 
     def testGet(self):
         # get API response
-        response = self.client.get(self.str_url)
+        response = self.client.get(self.catViolenciaUrl)
         # get data from DB
-        posts = CadProfissionais.objects.all()
+        posts = CategoriaViolencia.objects.all()
         # convert it to JSON
-        serializer = CadProfissionaisSerializer(posts, many=True)
+        serializer = CategoriaViolenciaSerializer(posts, many=True)
         # check the status
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data, serializer.data)
 
     def testPut(self):
         data = {
-            'id_profissional': self.cat1.id_profissional,
-            'nome_profissional': 'NOME MODIFICADO',
-            'ds_profissional': 'DS MODIFICADO'
-
+            'id_categoria': self.cat1.id_categoria,
+            'nome_categoria': 'NOME MODIFICADO',
+            'ds_categoria': 'DS MODIFICADO'
         }
-        endereco = self.str_url + \
-            str(self.cat1.id_profissional) + '/'
+        endereco = self.catViolenciaUrl + \
+            str(self.cat1.id_categoria) + '/'
         response = self.client.put(endereco, data)
-        serializer = CadProfissionaisSerializer(data)
+        serializer = CategoriaViolenciaSerializer(data)
         self.assertEqual(response.data, serializer.data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def testDelete(self):
         response = self.client.delete(
-            self.str_url + str(self.cat1.id_profissional) + '/')
+            self.catViolenciaUrl + str(
+                self.cat1.id_categoria) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
@@ -109,19 +111,67 @@ class CategoriaViolenciaTestCase(APITestCase):
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
 
 
+class CategoriaContatoTestCase(APITestCase):
+
+    str_url = '/questionario/api/categoria-contato/'
+
+    def setUp(self):
+        self.catC = CategoriaContato.objects.create(
+            nome_categoria='TESTE')
+
+    def testPost(self):
+        data = {
+            'nome_categoria': 'NOME TESTE',
+        }
+        response = self.client.post(self.str_url, data)
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+    def testGet(self):
+        # get API response
+        response = self.client.get(self.str_url)
+        # get data from DB
+        posts = CategoriaContato.objects.all()
+        # convert it to JSON
+        serializer = CategoriaContatoSerializer(posts, many=True)
+        # check the status
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data, serializer.data)
+
+    def testPut(self):
+        data = {
+            'id_categoria': self.catC.id_categoria,
+            'nome_categoria': 'CAT MODIFICADA'
+        }
+        endereco = self.str_url + \
+            str(self.catC.id_categoria) + '/'
+        response = self.client.put(endereco, data)
+        serializer = CategoriaContatoSerializer(data)
+        self.assertEqual(response.data, serializer.data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def testDelete(self):
+        response = self.client.delete(
+            self.str_url + str(self.catC.id_categoria) + '/')
+        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
+
+
 class ContatoViolenciaTestCase(APITestCase):
 
     contatoViolenciaUrl = '/questionario/api/contato-violencia/'
 
     def setUp(self):
+        self.catC = CategoriaContato.objects.create(
+            nome_categoria='TESTE')
         self.cont1 = ContatoViolencia.objects.create(
-            nome_contato='TESTE', numero_contato='00000', ds_contato='TESTE')
+            nome_contato='TESTE', numero_contato='00000',
+            ds_contato='TESTE', categoria_fk=self.catC)
 
     def testPost(self):
         data = {
             'nome_contato': 'NOME TESTE',
             'numero_contato': '00000',
-            'ds_contato': 'DS TESTE'
+            'ds_contato': 'DS TESTE',
+            'categoria_fk': self.catC.id_categoria,
         }
         response = self.client.post(
             self.contatoViolenciaUrl, data)
@@ -133,20 +183,6 @@ class ContatoViolenciaTestCase(APITestCase):
         serializer = ContatoViolenciaSerializer(posts, many=True)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data, serializer.data)
-
-    def testPut(self):
-        data = {
-            'id_contato': self.cont1.id_contato,
-            'nome_contato': 'NOME MODIFICADO',
-            'numero_contato': '11111',
-            'ds_contato': 'DS MODIFICADO'
-        }
-        endereco = self.contatoViolenciaUrl + \
-            str(self.cont1.id_contato) + '/'
-        response = self.client.put(endereco, data)
-        serializer = ContatoViolenciaSerializer(data)
-        self.assertEqual(response.data, serializer.data)
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def testDelete(self):
         response = self.client.delete(
@@ -205,58 +241,3 @@ class QuestionarioTestCase(APITestCase):
             self.questionarioUrl + str(
                 self.quest1.id_questionario) + '/')
         self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
-
-
-class ContatoQuestionarioTestCase(APITestCase):
-
-    contatoQuestionarioUrl = '/questionario/api/contato-questionario/'
-
-    def setUp(self):
-        self.contv1 = ContatoViolencia.objects.create(
-            nome_contato='TESTE', numero_contato='00000', ds_contato='TESTE')
-        self.cat1 = CategoriaViolencia.objects.create(
-            nome_categoria='TESTE', ds_categoria='TESTE')
-        self.quest1 = Questionario.objects.create(
-            categoria_violencia=self.cat1, arvore_decisao=json.dumps('teste'))
-        self.contq1 = ContatoQuestionario.objects.create(
-            contato_fk=self.contv1, questionario_fk=self.quest1)
-
-    def testPost(self):
-        data = {
-            'contato_fk': self.contv1.id_contato,
-            'questionario_fk': self.quest1.id_questionario
-        }
-        response = self.client.post(
-            self.contatoQuestionarioUrl, data)
-        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
-
-    def testGet(self):
-        response = self.client.get(self.contatoQuestionarioUrl)
-        posts = ContatoQuestionario.objects.all()
-        serializer = ContatoQuestionarioSerializer(posts, many=True)
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
-        self.assertEqual(response.data, serializer.data)
-
-    def testDelete(self):
-        response = self.client.delete(
-            self.contatoQuestionarioUrl + str(
-                self.contq1.pk) + '/')
-        self.assertEqual(response.status_code, status.HTTP_204_NO_CONTENT)
-
-    def testPut(self):
-        data = {
-            'id': self.contq1.pk,
-            'contato_fk': self.contv1.id_contato,
-            'questionario_fk': self.quest1.id_questionario
-        }
-        data_serializer = {
-            'id': self.contq1.pk,
-            'contato_fk': self.contv1,
-            'questionario_fk': self.quest1
-        }
-        endereco = self.contatoQuestionarioUrl + \
-            str(self.contq1.pk) + '/'
-        response = self.client.put(endereco, data)
-        serializer = ContatoQuestionarioSerializer(data_serializer)
-        self.assertEqual(response.data, serializer.data)
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
