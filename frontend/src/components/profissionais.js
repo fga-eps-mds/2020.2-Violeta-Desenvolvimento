@@ -10,7 +10,7 @@ class Profissionais extends React.Component {
             arrayProfissionais: [],
             error: '',
             categoria: null,
-            currentSlide: 0,
+            currentSlide: 1,
         };
 
         this.filtercategoria = this.filtercategoria.bind(this);
@@ -141,10 +141,10 @@ class Profissionais extends React.Component {
                                             class="profissionais-btn-nav"
                                             id="button-nav-teste"
                                             onClick={() =>
-                                                this.filtercategoria('teste')
+                                                this.filtercategoria(null)
                                             }
                                         >
-                                            Teste
+                                            Todos
                                         </button>
                                     </a>
                                 </li>
@@ -161,9 +161,12 @@ class Profissionais extends React.Component {
                         showThumbs={false}
                         showStatus={false}
                         showIndicators={false}
+                        emulateTouch={true}
+                        autoPlay={false}
+                        swipeable={true}
                     >
                         {console.log(this.state.arrayProfissionais)}
-                        {this.state.arrayProfissionais ? (
+                        {this.state.arrayProfissionais != null ? (
                             <div id="container-profissionais">
                                 {this.state.arrayProfissionais.map(
                                     (profissional) => (
