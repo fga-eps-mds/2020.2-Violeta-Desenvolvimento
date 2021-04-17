@@ -26,10 +26,12 @@ class CategoriaViolenciaSerializer(serializers.ModelSerializer):
         model = CategoriaViolencia
         fields = '__all__'
 
+
 class CategoriaContatoSerializer(serializers.ModelSerializer):
     class Meta:
         model = CategoriaContato
         fields = '__all__'
+
 
 class ContatoViolenciaSerializer(serializers.ModelSerializer):
     class Meta:

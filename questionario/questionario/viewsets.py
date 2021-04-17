@@ -17,9 +17,11 @@ class CategoriaViolenciaViewset(viewsets.ModelViewSet):
     queryset = models.CategoriaViolencia.objects.all()
     serializer_class = serializers.CategoriaViolenciaSerializer
 
+
 class CategoriaContatoViewset(viewsets.ModelViewSet):
     queryset = models.CategoriaContato.objects.all()
     serializer_class = serializers.CategoriaContatoSerializer
+
 
 class ContatoViolenciaViewset(viewsets.ModelViewSet):
     queryset = models.ContatoViolencia.objects.all()

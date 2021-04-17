@@ -59,6 +59,7 @@ class CategoriaContato(models.Model):
     nome_categoria = models.CharField(max_length=15,
                                       null=False,
                                       blank=False)
+
     def __str__(self):
         return self.nome_categoria + " | " + str(self.id_categoria)
 
