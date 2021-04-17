@@ -318,24 +318,30 @@
 }
 
 @media (max-width: 739px) {
-    .container-title {
+    .profissionais-container-title {
         justify-content: center;
         align-items: center;
         padding-top: 40px;
     }
-    .container-title-nav {
-        display: inline;
+    .profissionais-container-title-nav {
+        display: flex;
+        flex-wrap: wrap;
     }
-    .container-nav {
+    #profissionais-description{
+        max-width: 640px;
+        margin-left: 15px;
+    }
+    .profissionais-container-nav {
         padding-top: 25px;
         margin: 0 auto;
         width: 340px;
     }
     .nav-profissionais {
-        font-size: 10px;
+        margin: 0px;
     }
     .list-nav-profissionais {
         margin: 0 auto;
+        font-size: 10px;
     }
     #description {
         font-size: 14px;
@@ -345,19 +351,16 @@
     #button-nav-ongs {
         height: 35px;
         width: 85px;
-        font-size: 10px;
         border-width: 0px 1px 0px 0px;
     }
     #button-nav {
         height: 35px;
         width: 85px;
-        font-size: 10px;
         border-width: 0px 1px 0px 0px;
     }
     #button-nav-teste {
         height: 35px;
         width: 85px;
-        font-size: 10px;
     }
     .pagination {
         display: none;

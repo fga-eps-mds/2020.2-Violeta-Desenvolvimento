@@ -10,14 +10,14 @@ class Profissionais extends React.Component {
             arrayProfissionais: [],
             error: '',
             categoria: null,
-            currentSlide: 1,
+            currentSlide: 0,
         };
 
         this.filtercategoria = this.filtercategoria.bind(this);
     }
 
     createArrayProfissionais = () => {
-        this.state.arrayProfissionais.length = 0;
+        this.state.arrayProfissionais = [];
         const arrayBase = this.state.profissionais;
         const filteredProfissionais = [];
 
@@ -27,12 +27,18 @@ class Profissionais extends React.Component {
                 this.state.categoria === null
             ) {
                 filteredProfissionais.push(arrayBase[i]);
+                this.state.currentSlide = 1;
             }
         }
 
-        for (let i = 0; i < filteredProfissionais.length && i < 6; i += 1) {
-            this.state.arrayProfissionais[i] =
-                filteredProfissionais[this.state.currentSlide + i];
+        for (let j = 0; j < 6; j += 1) {
+            if (
+                filteredProfissionais[this.state.currentSlide * 6 - 1 - j] !==
+                undefined
+            ) {
+                this.state.arrayProfissionais[j] =
+                    filteredProfissionais[this.state.currentSlide * 6 - 1 - j];
+            }
         }
     };
 
@@ -40,12 +46,14 @@ class Profissionais extends React.Component {
         this.setState((state) => ({
             currentSlide: state.currentSlide + 1,
         }));
+        this.createArrayProfissionais();
     };
 
     prev = () => {
         this.setState((state) => ({
             currentSlide: state.currentSlide - 1,
         }));
+        this.createArrayProfissionais();
     };
 
     updateCurrentSlide = (index) => {
@@ -166,6 +174,7 @@ class Profissionais extends React.Component {
                         swipeable={true}
                     >
                         {console.log(this.state.arrayProfissionais)}
+                        {console.log(this.state.currentSlide)}
                         {this.state.arrayProfissionais != null ? (
                             <div id="container-profissionais">
                                 {this.state.arrayProfissionais.map(
