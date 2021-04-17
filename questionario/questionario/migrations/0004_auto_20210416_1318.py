@@ -5,7 +5,7 @@ import django.db.models.deletion
 
 
 class Migration(migrations.Migration):
-
+    deletionCascade = django.db.models.deletion.CASCADE
     dependencies = [
         ('questionario', '0003_contatoviolencia_categoria'),
     ]
@@ -27,7 +27,7 @@ class Migration(migrations.Migration):
             model_name='contatoviolencia',
             name='categoria_fk',
             field=models.ForeignKey(default=0,
-                                    on_delete=django.db.models.deletion.CASCADE,
+                                    on_delete=deletionCascade,
                                     to='questionario.CategoriaContato'),
             preserve_default=False,
         ),
