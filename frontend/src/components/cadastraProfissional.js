@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import '../css/cadastraProfissional.css';
 import { useHistory } from 'react-router-dom';
+import { urlGenerator } from './urls';
 
+const url = urlGenerator('questionario', 'contato-violencia');
 const CadastraProfissional = () => {
     const initialValue = {
         nome_contato: '',
@@ -22,15 +24,10 @@ const CadastraProfissional = () => {
     function onSubmit(ev) {
         ev.preventDefault();
 
-        axios
-            .post(
-                'http://localhost:8001/questionario/api/contato-violencia/',
-                values
-            )
-            .then((response) => {
-                history.push('/login');
-                return response;
-            });
+        axios.post(`${url}/`, values).then((response) => {
+            history.push('/login');
+            return response;
+        });
     }
 
     return (
