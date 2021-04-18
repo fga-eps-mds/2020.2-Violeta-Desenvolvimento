@@ -10,45 +10,48 @@ class Profissionais extends React.Component {
             arrayProfissionais: [],
             error: '',
             categoria: null,
-            currentSlide: 1,
+            currentSlide: 0,
+            filteredProfissionais: [],
+            qtdeItemSlide: 6,
         };
-
-        this.filtercategoria = this.filtercategoria.bind(this);
     }
 
     createArrayProfissionais = () => {
-        this.state.arrayProfissionais.length = 0;
-        const arrayBase = this.state.profissionais;
-        const filteredProfissionais = [];
+        console.log('Log: createArrayProfissionais');
+        this.state.arrayProfissionais = [];
 
-        for (let i = 0; i < arrayBase.length; i += 1) {
-            if (
-                arrayBase[i].categoria.toLowerCase() === this.state.categoria ||
-                this.state.categoria === null
-            ) {
-                filteredProfissionais.push(arrayBase[i]);
-            }
+        for (
+            let i = 0;
+            i <
+                this.state.filteredProfissionais.length -
+                    this.state.currentSlide * this.state.qtdeItemSlide &&
+            i < this.state.qtdeItemSlide;
+            i += 1
+        ) {
+            this.state.arrayProfissionais[i] = this.state.filteredProfissionais[
+                this.state.currentSlide * this.state.qtdeItemSlide + i
+            ];
         }
 
-        for (let i = 0; i < filteredProfissionais.length && i < 6; i += 1) {
-            this.state.arrayProfissionais[i] =
-                filteredProfissionais[this.state.currentSlide + i];
-        }
+        this.setState({
+            arrayProfissionais: this.state.arrayProfissionais,
+        });
     };
 
     next = () => {
-        this.setState((state) => ({
-            currentSlide: state.currentSlide + 1,
-        }));
+        console.log('Log: next');
+        this.state.currentSlide += 1;
+        this.createArrayProfissionais();
     };
 
     prev = () => {
-        this.setState((state) => ({
-            currentSlide: state.currentSlide - 1,
-        }));
+        console.log('Log: prev');
+        this.state.currentSlide -= 1;
+        this.createArrayProfissionais();
     };
 
     updateCurrentSlide = (index) => {
+        console.log('Log: updateCurrentSlide');
         const { currentSlide } = this.state;
 
         if (currentSlide !== index) {
@@ -59,10 +62,26 @@ class Profissionais extends React.Component {
     };
 
     filtercategoria(nameButton) {
+        console.log('Log: filtercategoria');
+
+        const arrayBase = this.state.profissionais;
+        this.state.categoria = nameButton;
+        this.state.filteredProfissionais = [];
+
+        console.log(this.state.categoria);
+
+        for (let i = 0; i < arrayBase.length; i += 1) {
+            if (
+                arrayBase[i].categoria.toLowerCase() === this.state.categoria ||
+                this.state.categoria === null
+            ) {
+                this.state.filteredProfissionais.push(arrayBase[i]);
+            }
+        }
+
+        this.state.currentSlide = 0;
+
         this.createArrayProfissionais();
-        this.setState({
-            categoria: nameButton,
-        });
     }
 
     componentDidMount() {
@@ -70,6 +89,8 @@ class Profissionais extends React.Component {
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ profissionais: result });
+                this.setState({ filteredProfissionais: result });
+                this.createArrayProfissionais();
             })
             .catch((error) => this.setState({ error }));
     }
@@ -112,7 +133,7 @@ class Profissionais extends React.Component {
                                             id="button-nav-psicologo"
                                             onClick={() =>
                                                 this.filtercategoria(
-                                                    'psicólogos'
+                                                    'psicologo'
                                                 )
                                             }
                                         >
@@ -126,12 +147,11 @@ class Profissionais extends React.Component {
                                             class="profissionais-btn-nav"
                                             id="button-nav-orgaos"
                                             onClick={() =>
-                                                this.filtercategoria('órgãos')
+                                                this.filtercategoria('orgao')
                                             }
                                         >
                                             Órgãos
                                             <br />
-                                            Competentes
                                         </button>
                                     </a>
                                 </li>
@@ -153,21 +173,23 @@ class Profissionais extends React.Component {
                     </div>
                 </div>
                 <div class="carousel-container">
-                    <Carousel
-                        onChange={this.updateCurrentSlide}
-                        selectedItem={this.state.currentSlide}
-                        infiniteLoop={true}
-                        showArrows={false}
-                        showThumbs={false}
-                        showStatus={false}
-                        showIndicators={false}
-                        emulateTouch={true}
-                        autoPlay={false}
-                        swipeable={true}
-                    >
-                        {console.log(this.state.arrayProfissionais)}
-                        {this.state.arrayProfissionais != null ? (
+                    {console.log('Log: gerando...')}
+                    {console.log(this.state.arrayProfissionais.length)}
+                    {this.state.arrayProfissionais.length > 0 ? (
+                        <Carousel
+                            onChange={this.updateCurrentSlide}
+                            selectedItem={this.state.currentSlide}
+                            infiniteLoop={false}
+                            showArrows={false}
+                            showThumbs={false}
+                            showStatus={false}
+                            showIndicators={false}
+                            emulateTouch={false}
+                            autoPlay={false}
+                            swipeable={false}
+                        >
                             <div id="container-profissionais">
+                                {console.log('Executando..')}
                                 {this.state.arrayProfissionais.map(
                                     (profissional) => (
                                         <div
@@ -195,19 +217,46 @@ class Profissionais extends React.Component {
                                                 <strong>Contato:</strong>{' '}
                                                 {profissional.numero_contato}
                                             </p>
+                                            <p
+                                                class="box-contact-catogory"
+                                                id="numero_contato"
+                                            >
+                                                <strong>Categoria:</strong>{' '}
+                                                {profissional.categoria}
+                                            </p>
                                         </div>
                                     )
                                 )}
                             </div>
-                        ) : (
-                            <p>Nenhum contato encontrado :)</p>
-                        )}
-                    </Carousel>
+                        </Carousel>
+                    ) : (
+                        <p>Nenhum contato encontrado :)</p>
+                    )}
                     <div class="pagination">
-                        <button onClick={this.prev} class="profissionais-prev">
+                        <button
+                            onClick={this.prev}
+                            class="profissionais-prev"
+                            disabled={
+                                this.state.currentSlide === 0 ? 'true' : ''
+                            }
+                        >
                             ❮ Anterior
                         </button>
-                        <button onClick={this.next} class="profissionais-next">
+                        <button
+                            onClick={this.next}
+                            class="profissionais-next"
+                            disabled={
+                                this.state.currentSlide >=
+                                parseInt(
+                                    (this.state.filteredProfissionais.length -
+                                        1) /
+                                        this.state.qtdeItemSlide,
+                                    10
+                                )
+                                    ? 'true'
+                                    : ''
+                            }
+                        >
                             Próximo ❯
                         </button>
                     </div>
