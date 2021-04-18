@@ -45,16 +45,37 @@ class CategoriaViolencia(models.Model):
         return self.ds_categoria + " | " + str(self.vitimas_categoria)
 
 
-class ContatoViolencia(models.Model):
+class CategoriaContato(models.Model):
     """
         Legenda:
             id: Identidicador único;
             ds: Descrição;
         Campos:
+            id_categoria: Identidicador único de categoria;
+            nome_categoria: Nome da categoria;
+    """
+    id_categoria = models.AutoField(primary_key=True)
+
+    nome_categoria = models.CharField(max_length=15,
+                                      null=False,
+                                      blank=False)
+
+    def __str__(self):
+        return self.nome_categoria + " | " + str(self.id_categoria)
+
+
+class ContatoViolencia(models.Model):
+    """
+        Legenda:
+            id: Identidicador único;
+            ds_contato: Descrição;
+            nome_contato: Nome
+            categoria: Categoria
+        Campos:
             id_contato: Identidicador único contato;
             nome_contato: Nome do contato;
             ds_contato: Descrição do contato;
-            categoria: Identifica onde o contato trabalha;
+            categoria: Tipo de contato (Ong, Psicólogos órgãos competentes)
     """
     id_contato = models.AutoField(primary_key=True)
 
@@ -69,12 +90,11 @@ class ContatoViolencia(models.Model):
     ds_contato = models.TextField(null=False,
                                   blank=False)
 
-    categoria = models.TextField(null=False,
-                                blank=False,
-                                default="Ongs")
+    categoria_fk = models.ForeignKey(CategoriaContato,
+                                     on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.nome_contato
+        return self.nome_contato + " | " + str(self.categoria_fk)
 
 
 class Questionario(models.Model):

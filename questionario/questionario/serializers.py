@@ -3,6 +3,7 @@ from .models import (
     CadProfissionais,
     ViolenciasCount,
     CategoriaViolencia,
+    CategoriaContato,
     ContatoViolencia,
     Questionario,
     ContatoQuestionario)
@@ -23,6 +24,12 @@ class ViolenciasCountSerializer(serializers.ModelSerializer):
 class CategoriaViolenciaSerializer(serializers.ModelSerializer):
     class Meta:
         model = CategoriaViolencia
+        fields = '__all__'
+
+
+class CategoriaContatoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CategoriaContato
         fields = '__all__'
 
 
