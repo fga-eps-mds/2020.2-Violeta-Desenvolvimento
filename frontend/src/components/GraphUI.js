@@ -9,7 +9,7 @@ import ContatosQuiz from './ContatosQuiz';
 const GraphUI = ({
     graph_path,
     question_set_path,
-    intro_text = "Inicie aqui seu diagnostico. Click em 'Proximo' para começar",
+    intro_text = "Inicie aqui seu diagnostico. Clique em 'Próximo' para começar",
 }) => {
     const [decisionTreeInitializing, setDecisionTreeInitializing] = useState();
     const [decisionTreeInitialized, setDecisionTreeInitialized] = useState();

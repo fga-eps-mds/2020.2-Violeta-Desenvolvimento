@@ -82,7 +82,7 @@
     "type":"radio"
   },
   "question_1b":{
-    "title":"Essa ameaça envolve algum ato sobre seu corpo contra sua vontade?",
+    "title":"Essa ameaça envolve algum ato sobre seu corpo contra a sua vontade?",
     "labels":[
       {"title":"Sim", "qid":"112", "next": "question_1b_more" },
       {"title":"Não", "qid":"113"}
@@ -109,7 +109,7 @@
       {"title":"Relação sexual sem sua autorização ou contra sua vontade", "qid":"116" },
       {"title":"Te obrigar a fazer atos sexuais que causam desconforto ou desprezo", "qid":"117"},
       {"title":"Impedir o uso de métodos contraceptivos ou te forçar a abortar", "qid":"118"},
-      {"title":"Forçar matrimônio, gravidez ou prostituição por meio de ameaça, chantagem, suborno ou manipulação", "qid":"119"},      
+      {"title":"Forçar matrimônio, gravidez ou prostituição por meio de ameaça, chantagem, suborno eou manipulação", "qid":"119"},      
       {"title":"Te limitar ou anular o exercício dos direitos sexuais e reprodutivos", "qid":"120"}      
     ],
     "resultado": "Sexual",
