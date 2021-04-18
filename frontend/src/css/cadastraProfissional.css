@@ -1,0 +1,19 @@
+.input-adm {
+    width: 532px;
+    height: 50px;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    padding-left: 10px;
+}
+
+.btn-add-profissional {
+    width: 532px;
+    height: 60px;
+    margin-bottom: 36px;
+    background-color: #472f4c;
+    border-radius: 10px;
+    color: white;
+    font-size: 36px;
+}

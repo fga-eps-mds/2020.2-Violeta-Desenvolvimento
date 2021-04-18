@@ -16,6 +16,8 @@ module.exports = {
     "prettier/prettier": "error",
     "no-param-reassign": "off",
     "class-methods-use-this": "off",
-    "camelcase": ["error", {"properties": "never", ignoreDestructuring: true, ignoreGlobals: true, allow: ["intro_text","graph_path", "question_set_path"]}]
+    "camelcase": ["error", {"properties": "never", ignoreDestructuring: true, ignoreGlobals: true, allow: ["intro_text","graph_path", "question_set_path"]}],
+    "no-shadow": "off",
+    "no-await-in-loop": "off"
   },
 };

@@ -1,10 +1,12 @@
+import os
 from rest_framework.test import APITestCase
 from rest_framework import status
 from django.contrib.auth import get_user_model
 
 UserModel = get_user_model()
 
-url = '/autenticador/'
+BASE_URL = os.environ['BASE_URL']
+url = BASE_URL + 'autenticador/'
 
 
 class UserTestCase(APITestCase):
