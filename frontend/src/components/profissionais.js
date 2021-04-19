@@ -13,12 +13,14 @@ class Profissionais extends React.Component {
             currentSlide: 0,
             filteredProfissionais: [],
             qtdeItemSlide: 6,
+            w: 0,
         };
     }
 
     createArrayProfissionais = () => {
         console.log('Log: createArrayProfissionais');
         this.state.arrayProfissionais = [];
+        this.defineWidth();
 
         for (
             let i = 0;
@@ -37,6 +39,16 @@ class Profissionais extends React.Component {
             arrayProfissionais: this.state.arrayProfissionais,
         });
     };
+
+    defineWidth() {
+        this.state.w = window.innerWidth;
+
+        if (this.state.w <= 739) {
+            this.state.qtdeItemSlide = 2;
+        } else {
+            this.state.qtdeItemSlide = 6;
+        }
+    }
 
     next = () => {
         console.log('Log: next');
