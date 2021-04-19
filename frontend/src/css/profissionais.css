@@ -109,7 +109,7 @@
 #button-nav-ongs{
     border-radius: 10px;
 }
-#button-nav-teste{
+#button-nav-todos{
     border-radius: 10px;
 }
 
@@ -244,7 +244,6 @@
 }
 .profissionais .carousel .slider-wrapper.axis-horizontal .slider .slide {
     flex-direction: column;
-    flex-flow: column;
 }
 .profissionais .carousel .slider-wrapper.axis-vertical {
     -ms-box-orient: horizontal;
@@ -382,7 +381,7 @@
         width: 85px;
         border-width: 0px 1px 0px 0px;
     }
-    #button-nav-teste {
+    #button-nav-todos {
         height: 35px;
         width: 85px;
     }

@@ -18,7 +18,6 @@ class Profissionais extends React.Component {
     }
 
     createArrayProfissionais = () => {
-        console.log('Log: createArrayProfissionais');
         this.state.arrayProfissionais = [];
         this.defineWidth();
 
@@ -51,19 +50,16 @@ class Profissionais extends React.Component {
     }
 
     next = () => {
-        console.log('Log: next');
         this.state.currentSlide += 1;
         this.createArrayProfissionais();
     };
 
     prev = () => {
-        console.log('Log: prev');
         this.state.currentSlide -= 1;
         this.createArrayProfissionais();
     };
 
     updateCurrentSlide = (index) => {
-        console.log('Log: updateCurrentSlide');
         const { currentSlide } = this.state;
 
         if (currentSlide !== index) {
@@ -74,13 +70,9 @@ class Profissionais extends React.Component {
     };
 
     filtercategoria(nameButton) {
-        console.log('Log: filtercategoria');
-
         const arrayBase = this.state.profissionais;
         this.state.categoria = nameButton;
         this.state.filteredProfissionais = [];
-
-        console.log(this.state.categoria);
 
         for (let i = 0; i < arrayBase.length; i += 1) {
             if (
@@ -170,7 +162,7 @@ class Profissionais extends React.Component {
                                     <a href="#profissionais">
                                         <button
                                             class="profissionais-btn-nav"
-                                            id="button-nav-teste"
+                                            id="button-nav-todos"
                                             onClick={() =>
                                                 this.filtercategoria(null)
                                             }
@@ -184,8 +176,6 @@ class Profissionais extends React.Component {
                     </div>
                 </div>
                 <div class="carousel-container">
-                    {console.log('Log: gerando...')}
-                    {console.log(this.state.arrayProfissionais.length)}
                     {this.state.arrayProfissionais.length > 0 ? (
                         <Carousel
                             onChange={this.updateCurrentSlide}
@@ -200,7 +190,6 @@ class Profissionais extends React.Component {
                             swipeable={false}
                         >
                             <div id="container-profissionais">
-                                {console.log('Executando..')}
                                 {this.state.arrayProfissionais.map(
                                     (profissional) => (
                                         <div
