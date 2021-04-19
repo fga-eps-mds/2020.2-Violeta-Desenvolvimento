@@ -72,7 +72,7 @@ class Profissionais extends React.Component {
 
         for (let i = 0; i < arrayBase.length; i += 1) {
             if (
-                arrayBase[i].categoria.toLowerCase() === this.state.categoria ||
+                arrayBase[i].categoria_fk === this.state.categoria ||
                 this.state.categoria === null
             ) {
                 this.state.filteredProfissionais.push(arrayBase[i]);
@@ -119,7 +119,7 @@ class Profissionais extends React.Component {
                                             class="profissionais-btn-nav"
                                             id="button-nav-ongs"
                                             onClick={() =>
-                                                this.filtercategoria('ongs')
+                                                this.filtercategoria(1)
                                             }
                                         >
                                             Ongs
@@ -132,9 +132,7 @@ class Profissionais extends React.Component {
                                             class="profissionais-btn-nav"
                                             id="button-nav-psicologo"
                                             onClick={() =>
-                                                this.filtercategoria(
-                                                    'psicologo'
-                                                )
+                                                this.filtercategoria(2)
                                             }
                                         >
                                             Psicólogos
@@ -147,11 +145,12 @@ class Profissionais extends React.Component {
                                             class="profissionais-btn-nav"
                                             id="button-nav-orgaos"
                                             onClick={() =>
-                                                this.filtercategoria('orgao')
+                                                this.filtercategoria(3)
                                             }
                                         >
                                             Órgãos
                                             <br />
+                                            Competentes
                                         </button>
                                     </a>
                                 </li>
@@ -207,7 +206,7 @@ class Profissionais extends React.Component {
                                                 class="box-contact-description"
                                                 id="ds_contato"
                                             >
-                                                <strong>Descrição</strong>:{' '}
+                                                <strong>Descrição:</strong>{' '}
                                                 {profissional.ds_contato}
                                             </p>
                                             <p
@@ -217,20 +216,15 @@ class Profissionais extends React.Component {
                                                 <strong>Contato:</strong>{' '}
                                                 {profissional.numero_contato}
                                             </p>
-                                            <p
-                                                class="box-contact-catogory"
-                                                id="numero_contato"
-                                            >
-                                                <strong>Categoria:</strong>{' '}
-                                                {profissional.categoria}
-                                            </p>
                                         </div>
                                     )
                                 )}
                             </div>
                         </Carousel>
                     ) : (
-                        <p>Nenhum contato encontrado :)</p>
+                        <p>
+                            Nenhum contato encontrado <strong>:)</strong>
+                        </p>
                     )}
                     <div class="pagination">
                         <button
@@ -261,8 +255,34 @@ class Profissionais extends React.Component {
                         </button>
                     </div>
                     <div class="pagination-mobile">
-                        <a href="#">❮ </a>
-                        <a href="#"> ❯</a>
+                        <button
+                            onClick={this.prev}
+                            class="profissionais-prev"
+                            disabled={
+                                this.state.currentSlide === 0 ? 'true' : ''
+                            }
+                        >
+                            {' '}
+                            ❮
+                        </button>
+                        <button
+                            onClick={this.next}
+                            class="profissionais-next"
+                            disabled={
+                                this.state.currentSlide >=
+                                parseInt(
+                                    (this.state.filteredProfissionais.length -
+                                        1) /
+                                        this.state.qtdeItemSlide,
+                                    10
+                                )
+                                    ? 'true'
+                                    : ''
+                            }
+                        >
+                            {' '}
+                            ❯
+                        </button>
                     </div>
                 </div>
             </section>
