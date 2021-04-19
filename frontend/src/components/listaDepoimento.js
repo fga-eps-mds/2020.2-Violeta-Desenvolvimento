@@ -1,8 +1,9 @@
 import React from 'react';
-
 import axios from 'axios';
-
 import '../css/listaDepoimento.css';
+import { urlGenerator } from './urls';
+
+const url = urlGenerator('depoimentos', 'depoimento/');
 
 export default class ListaDepoimento extends React.Component {
     state = {
@@ -10,18 +11,16 @@ export default class ListaDepoimento extends React.Component {
     };
 
     componentDidMount() {
-        axios
-            .get('http://localhost:8003/depoimentos/api/depoimento/')
-            .then((res) => {
-                const depoimentos = res.data;
-                const depsN = [];
-                for (let i = 0; i < depoimentos.length; i += 1) {
-                    if (depoimentos[i].aprovado === false) {
-                        depsN.push(depoimentos[i]);
-                    }
+        axios.get(url).then((res) => {
+            const depoimentos = res.data;
+            const depsN = [];
+            for (let i = 0; i < depoimentos.length; i += 1) {
+                if (depoimentos[i].aprovado === false) {
+                    depsN.push(depoimentos[i]);
                 }
-                this.setState({ depoimentos: depsN });
-            });
+            }
+            this.setState({ depoimentos: depsN });
+        });
     }
 
     async handleClick(e) {
@@ -32,7 +31,7 @@ export default class ListaDepoimento extends React.Component {
             for (let i = 0; i < this.state.depoimentos.length; i += 1) {
                 depoimento = this.state.depoimentos[i];
                 if (depoimento.aprovado === true) {
-                    lnk = `http://localhost:8003/depoimentos/api/depoimento/${depoimento.id_depoimento}/`;
+                    lnk = `${url}${depoimento.id_depoimento}/`;
                     await axios.put(lnk, depoimento);
                 }
             }

@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { logout } from '../actions/auth';
 import ListaDepoimento from './listaDepoimento';
+import CadastraProfissional from './cadastraProfissional';
 
 const Adm2 = ({ logout }) => {
     const history = useHistory();
@@ -24,16 +25,7 @@ const Adm2 = ({ logout }) => {
         <div id="adm-container">
             <div class="adm-cadastro">
                 <h1>Cadastro de Profissional</h1>
-                <input placeholder="Nome" class="input-adm" />
-                <input placeholder="Contato" class="input-adm" />
-                <input placeholder="Área de atuação" class="input-adm" />
-                <textarea placeholder="Descrição" class="input-adm" />
-                <button type="button" class="btn-login">
-                    Cadastrar
-                </button>
-                <div>
-                    <button onClick={(e) => handleClick(e)}>Logout</button>
-                </div>
+                {<CadastraProfissional />}
             </div>
             <div class="adm-depoimento">
                 <h1>Aprovação de Depoimento</h1>
@@ -42,6 +34,11 @@ const Adm2 = ({ logout }) => {
                         {<ListaDepoimento />}
                     </div>
                 </div>
+            </div>
+            <div>
+                <button class="btn-logout" onClick={(e) => handleClick(e)}>
+                    Logout
+                </button>
             </div>
         </div>
     );

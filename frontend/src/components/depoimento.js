@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/depoimento.css';
 import { Carousel } from 'react-responsive-carousel';
 import CadastrarDepoimento from './cadastrarDepoimento';
+import { urlGenerator } from './urls';
 
 window.onload = function () {
     const modalRequest = document.getElementById('depoimento-modal-request');
@@ -31,6 +32,8 @@ window.onload = function () {
     };
 };
 
+const url = urlGenerator('depoimentos', 'external-depoimento');
+
 class Depoimento extends React.Component {
     constructor() {
         super();
@@ -43,19 +46,6 @@ class Depoimento extends React.Component {
 
     // Get Depoimentos
     componentDidMount() {
-        let url;
-        let port = '';
-        if (process.env.REACT_APP_ENV === 'development') {
-            url = process.env.REACT_APP_URL_DEVELOP;
-            port = process.env.REACT_APP_DEPOIMENTOS_PORT;
-        } else {
-            url = process.env.REACT_APP_URL_PRODUCTION;
-            if (process.env.REACT_APP_ENV === 'deploy') {
-                url = `${url}${port}/depoimentos-dev/api/external-depoimento/`;
-            } else {
-                url = `${url}${port}/depoimentos/api/external-depoimento/`;
-            }
-        }
         fetch(url)
             .then((data) => data.json())
             .then((result) => {
