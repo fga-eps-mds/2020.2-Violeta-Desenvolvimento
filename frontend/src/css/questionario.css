@@ -164,6 +164,20 @@
     margin-left: 5px;
 }
 
+#notAnswer-Container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+}
+
+#notAnswer-Container h1{
+    width: 100%;
+    
+    margin-bottom: 0;
+}
+
 #Feedback-Asset {
     float: right;
     position: fixed;
@@ -224,7 +238,7 @@
     .popup-inner {
         height: 900px;
         padding: 0;
-        padding-top: 170px;
+        padding-top: 200px;
         padding-right: 5px;
         padding-left: 5px;
     }

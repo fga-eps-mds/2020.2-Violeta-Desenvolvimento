@@ -178,48 +178,63 @@ const GraphUI = ({
                                 >
                                     <CloseQuiz className="Close-Quiz" />
                                 </button>
-                                <h1 id="title-popup-feedback">
-                                    Você não está sozinha!
-                                </h1>
-                                <div id="first-side-feedback">
-                                    <p className="text-quote">
-                                        Você está sofrendo um caso de Violência
-                                        {resposta.map((item, i) =>
-                                            i === respostaSize - 1 ? (
-                                                <span
-                                                    key={item}
-                                                    className="destaqueViolencia"
-                                                >
-                                                    {item}.
-                                                </span>
-                                            ) : (
-                                                <span
-                                                    key={item}
-                                                    className="destaqueViolencia"
-                                                >
-                                                    {item},
-                                                </span>
-                                            )
-                                        )}
-                                    </p>
+                                {resposta.length === 0 ? (
+                                    <div id="notAnswer-Container">
+                                        <h1 id="title-popup-feedback">
+                                            Suas resposta não levaram a nenhum
+                                            caso.
+                                        </h1>
+                                    </div>
+                                ) : (
+                                    <div>
+                                        <h1 id="title-popup-feedback">
+                                            Você não está sozinha!
+                                        </h1>
 
-                                    <p className="text-simple">
-                                        O seu caso terá um melhor direcionamento
-                                        com as seguintes instituições:
-                                    </p>
-                                    <ProfissionaisQuiz />
-                                    <p className="text-quote">
-                                        Indicamos fortemente um acompanhamento
-                                        psicológico por conta dos ocorridos{' '}
-                                        <br /> e é de extrema importância para
-                                        seus futuros caminhos.{' '}
-                                    </p>
-                                    <p className="text-simple">
-                                        Entre em contato com os profissionais
-                                        abaixo:
-                                    </p>
-                                    <ContatosQuiz />
-                                </div>
+                                        <div id="first-side-feedback">
+                                            <p className="text-quote">
+                                                Você está sofrendo um caso de
+                                                Violência
+                                                {resposta.map((item, i) =>
+                                                    i === respostaSize - 1 ? (
+                                                        <span
+                                                            key={item}
+                                                            className="destaqueViolencia"
+                                                        >
+                                                            {item}.
+                                                        </span>
+                                                    ) : (
+                                                        <span
+                                                            key={item}
+                                                            className="destaqueViolencia"
+                                                        >
+                                                            {item},
+                                                        </span>
+                                                    )
+                                                )}
+                                            </p>
+
+                                            <p className="text-simple">
+                                                O seu caso terá um melhor
+                                                direcionamento com as seguintes
+                                                instituições:
+                                            </p>
+                                            <ProfissionaisQuiz />
+                                            <p className="text-quote">
+                                                Indicamos fortemente um
+                                                acompanhamento psicológico por
+                                                conta dos ocorridos <br /> e é
+                                                de extrema importância para seus
+                                                futuros caminhos.{' '}
+                                            </p>
+                                            <p className="text-simple">
+                                                Entre em contato com os
+                                                profissionais abaixo:
+                                            </p>
+                                            <ContatosQuiz />
+                                        </div>
+                                    </div>
+                                )}
                                 <FeedbackAsset id="Feedback-Asset" />
                             </PopupQuest>
                         </div>
