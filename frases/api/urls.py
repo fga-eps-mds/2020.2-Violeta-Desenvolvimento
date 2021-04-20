@@ -15,10 +15,12 @@ Including another URLconf
 """
 import os
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from frase.router import router
 
 
 BASE_URL = os.environ['BASE_URL']
 urlpatterns = [
     path(BASE_URL + 'admin/', admin.site.urls),
+    path(BASE_URL + 'api/', include(router.urls))
 ]
