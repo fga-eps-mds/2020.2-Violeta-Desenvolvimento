@@ -4,6 +4,7 @@ import Home from './home';
 import Questionario from './questionario';
 import Depoimento from './depoimento';
 import Footer from './footer';
+import Profissionais from './profissionais';
 
 const AllComponentes = () => (
     <section>
@@ -11,6 +12,7 @@ const AllComponentes = () => (
         <Home />
         <Questionario />
         <Depoimento />
+        <Profissionais />
         <Footer />
     </section>
 );

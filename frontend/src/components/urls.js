@@ -20,7 +20,7 @@ function urlGenerator(microservice, endpoint) {
                 port = '';
                 break;
         }
-        url = `${url}${port}/${microservice}/api/${endpoint}`;
+        url = `${url}${port}/${microservice}/api/${endpoint}/`;
     } else {
         url = process.env.REACT_APP_URL_PRODUCTION;
         if (process.env.REACT_APP_ENV === 'deploy') {
