@@ -1,5 +1,5 @@
 # Projeto Violeta
-Homolog: [https://cbs-silent-recommends-jm.trycloudflare.com/](https://cbs-silent-recommends-jm.trycloudflare.com/)
+Homolog: [http://cbs-silent-recommends-jm.trycloudflare.com/](https://cbs-silent-recommends-jm.trycloudflare.com/)
 
 Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/)
 
