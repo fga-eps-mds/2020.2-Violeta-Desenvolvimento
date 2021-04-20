@@ -1,19 +1,19 @@
-.control-next:before {
+.depoimento .control-next:before {
     content: url('../images/arrowNextDesktop.svg') !important;
 }
 
-.control-prev:after {
+.depoimento .control-prev:after {
     content: url('../images/arrowPrevDesktop.svg') !important;
 }
 
-.slide.selected {
+.depoimento .slide.selected {
     align-items: center;
     height: 305px;
     margin: 32px;
 }
 
-.carousel .control-arrow,
-.carousel.carousel-slider .control-arrow {
+.depoimento .carousel .control-arrow,
+.depoimento .carousel.carousel-slider .control-arrow {
     -webkit-transition: all 0.25s ease-in;
     -moz-transition: all 0.25s ease-in;
     -ms-transition: all 0.25s ease-in;
@@ -27,44 +27,44 @@
     cursor: pointer;
     z-index: 0;
 }
-.carousel .control-arrow:before,
-.carousel.carousel-slider .control-arrow:before {
+.depoimento .carousel .control-arrow:before,
+.depoimento .carousel.carousel-slider .control-arrow:before {
     margin: 0 5px;
     display: inline-block;
     border-top: 8px solid transparent;
     border-bottom: 8px solid transparent;
 }
-.carousel .control-disabled.control-arrow {
+.depoimento .carousel .control-disabled.control-arrow {
     opacity: 0;
     filter: alpha(opacity=0);
     cursor: inherit;
     display: none;
 }
-.carousel .control-prev.control-arrow {
+.depoimento .carousel .control-prev.control-arrow {
     left: 0;
 }
-.carousel .control-next.control-arrow {
+.depoimento .carousel .control-next.control-arrow {
     right: 0;
 }
 
-.carousel {
+.depoimento .carousel {
     position: relative;
     width: 100%;
 }
-.carousel * {
+.depoimento .carousel * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-.carousel img {
+.depoimento .carousel img {
     width: 100%;
     display: inline-block;
     pointer-events: none;
 }
-.carousel .carousel {
+.depoimento .carousel .carousel {
     position: relative;
 }
-.carousel .control-arrow {
+.depoimento .carousel .control-arrow {
     outline: 0;
     border: 0;
     background: none;
@@ -72,24 +72,24 @@
     margin-top: -13px;
     font-size: 18px;
 }
-.carousel.carousel-slider {
+.depoimento .carousel.carousel-slider {
     position: relative;
     margin: 0;
     overflow: hidden;
     z-index: 0;
 }
-.carousel.carousel-slider .control-arrow {
+.depoimento .carousel.carousel-slider .control-arrow {
     top: 0;
     color: #fff;
     font-size: 26px;
     bottom: 0;
     margin-top: 0;
 }
-.carousel.carousel-slider .control-arrow:hover {
+.depoimento .carousel.carousel-slider .control-arrow:hover {
     background: rgba(161, 116, 170, 0.3);
 }
 
-.carousel .slider-wrapper {
+.depoimento .carousel .slider-wrapper {
     overflow: hidden;
     margin: auto;
     width: 1060px;
@@ -99,7 +99,7 @@
     -o-transition: height 0.15s ease-in;
     transition: height 0.15s ease-in;
 }
-.carousel .slider-wrapper.axis-horizontal .slider {
+.depoimento .carousel .slider-wrapper.axis-horizontal .slider {
     -ms-box-orient: horizontal;
     display: -webkit-box;
     display: -moz-box;
@@ -108,10 +108,10 @@
     display: -webkit-flex;
     display: flex;
 }
-.carousel .slider-wrapper.axis-horizontal .slider .slide {
+.depoimento .carousel .slider-wrapper.axis-horizontal .slider .slide {
     flex-direction: column;
 }
-.carousel .slider-wrapper.axis-vertical {
+.depoimento .carousel .slider-wrapper.axis-vertical {
     -ms-box-orient: horizontal;
     display: -webkit-box;
     display: -moz-box;
@@ -120,18 +120,18 @@
     display: -webkit-flex;
     display: flex;
 }
-.carousel .slider-wrapper.axis-vertical .slider {
+.depoimento .carousel .slider-wrapper.axis-vertical .slider {
     -webkit-flex-direction: column;
     flex-direction: column;
 }
-.carousel .slider {
+.depoimento .carousel .slider {
     margin: 0;
     padding: 0;
     position: relative;
     list-style: none;
     width: 100%;
 }
-.carousel .slider.animated {
+.depoimento .carousel .slider.animated {
     height: 310px;
     -webkit-transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
@@ -139,29 +139,29 @@
     -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
 }
-.carousel .slide {
+.depoimento .carousel .slide {
     min-width: 100%;
     margin: 0;
     position: relative;
     text-align: center;
 }
-.carousel .slide img {
+.depoimento .carousel .slide img {
     width: 100%;
     vertical-align: top;
     border: 0;
 }
-.carousel .slide iframe {
+.depoimento .carousel .slide iframe {
     display: inline-block;
     width: calc(100% - 80px);
     border: 0;
 }
 
-.control-dots,
-.carousel-status {
+.depoimento .control-dots,
+.depoimento .carousel-status {
     display: none;
 }
 
-#depoimento-container {
+.depoimento #depoimento-container {
     background-color: #ece3ee;
     display: flex;
     flex-wrap: wrap;
@@ -171,59 +171,59 @@
     height: 790px;
 }
 
-#title-depoimento {
+.depoimento #title-depoimento {
     font-size: 36px;
     margin-top: 120px;
 }
 
-.carousel-root {
+.depoimento .carousel-root {
     outline: none;
     margin-top: 70px;
     height: 305px;
     width: 1260px;
 }
 
-.ds_depoimento {
+.depoimento .ds_depoimento {
     margin: 0 auto;
     width: 1060px;
     z-index: -1;
 }
 
 @media (max-width: 739px) {
-    .ds_depoimento {
+    .depoimento .ds_depoimento {
         width: 17.625rem;
     }
-    .carousel-root {
+    .depoimento .carousel-root {
         margin-top: 1.5rem;
         height: 16.625rem;
         width: 21.25rem;
     }
-    #title-depoimento {
+    .depoimento #title-depoimento {
         font-size: 2rem;
         margin-top: 2.25rem;
     }
-    #depoimento-container {
+    .depoimento #depoimento-container {
         height: 28.5rem;
     }
-    .carousel .slider-wrapper {
+    .depoimento .carousel .slider-wrapper {
         width: 17.625rem;
         height: 14.25rem;
     }
-    .control-next:before {
+    .depoimento .control-next:before {
         content: url('../images/arrowNextMobile.svg') !important;
     }
 
-    .control-prev:after {
+    .depoimento .control-prev:after {
         content: url('../images/arrowPrevMobile.svg') !important;
     }
-    .depoimento-text {
+    .depoimento .depoimento-text {
         height: 14.25rem;
         font-size: 0.75rem;
         margin: auto 2rem;
         align-self: center center;
     }
 
-    .slide.selected {
+    .depoimento .slide.selected {
         align-items: center;
         height: 14.25rem;
     }

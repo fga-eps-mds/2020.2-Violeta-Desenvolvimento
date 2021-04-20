@@ -1,0 +1,41 @@
+.login{
+    width: 600px;
+    height: 420px;
+    margin: 60px auto;
+    padding-right: 34px;
+    padding-left: 34px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 45px;
+}
+
+.input{
+    width: 532px;
+    height: 60px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 36px;
+    padding-left: 33px;
+    border: none;
+    background-color: #c4c4c4;
+    color: white;
+}
+
+.btn-login{
+    width: 532px;
+    height: 60px;
+    margin-bottom: 36px;
+    background-color: #472f4c;
+    border-radius: 10px;
+    color: white;
+    font-size: 36px;
+}
+
+.login h1{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+body{
+    background: #feefe8;
+}
