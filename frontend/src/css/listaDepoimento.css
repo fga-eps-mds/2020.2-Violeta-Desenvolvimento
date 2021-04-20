@@ -1,4 +1,35 @@
-.linha-depoimento {
+.labelDepoimento{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linha-depoimento{
     list-style: none;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.dsDepoimento{
+    height: 110px;
+    text-align: left;
+    overflow-y: scroll;
+}
+
+.ulDepoimento{
+    height: 276px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.divInput{
+    width: 50px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inputDepoimento{
+    width: 20px;
+    height: 20px;
+    border: gray solid 2px  ;
 }
