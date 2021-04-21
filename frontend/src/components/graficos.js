@@ -9,16 +9,59 @@ class Graficos extends React.Component {
     constructor() {
         super();
         this.state = {
+            chartData: [],
+            chartPie: [],
             victims: [],
             error: '',
         };
     }
 
     componentDidMount() {
+        const geral = [];
         fetch(url)
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ victims: result });
+            })
+            .then(() => {
+                const nome = [];
+                const vitimasValue = 'Vitimas';
+                nome.push(vitimasValue);
+                for (
+                    let index = 0;
+                    index < this.state.victims.length;
+                    index += 1
+                ) {
+                    const ds = this.state.victims[index].ds_categoria;
+                    nome.push(ds);
+                }
+                geral.push(nome);
+                console.log(geral);
+            })
+            .then(() => {
+                const valor = [];
+                const inicalValue = null;
+                valor.push(inicalValue);
+                for (let i = 0; i < this.state.victims.length; i += 1) {
+                    const couterVl = this.state.victims[i].categoria_counter;
+                    valor.push(couterVl);
+                }
+                geral.push(valor);
+            })
+            .then(() => {
+                this.setState({ chartData: geral });
+                console.log(this.state.chartData);
+            })
+            .then(() => {
+                const pie = [];
+                pie.push(['Vítimas', 'Quantidade']);
+                for (let j = 0; j < this.state.victims.length; j += 1) {
+                    pie.push([
+                        this.state.victims[j].ds_categoria,
+                        this.state.victims[j].categoria_counter,
+                    ]);
+                }
+                this.setState({ chartPie: pie });
             })
             .catch((error) => this.setState({ error }));
     }
@@ -37,76 +80,43 @@ class Graficos extends React.Component {
                         ))}
                     </div>
                 </div>
-                <div class="container-test">
-                    <div class="container-graficos">
-                        <div>
-                            <Chart
-                                chartType="ColumnChart"
-                                data={[
-                                    [
-                                        'Vitimas',
-                                        'Qnt',
-                                        { role: 'style' },
-                                        { role: 'annotation' },
-                                    ],
-                                    ['Sexual', 255, '#7CB342', '255'],
-                                    ['Psicológica', 55, '#F78A50', '55'],
-                                    ['Moral', 14, '#764E7E', '14'],
-                                    ['Patrimonial', 177, '#1E90FF', '177'],
-                                    ['Física', 99, '#FF6347', '99'],
-                                ]}
-                                width="750px"
-                                height="400px"
-                                options={{
-                                    title: 'Vítimas de Violências',
-                                    backgroundColor: '#FEEFE8',
-                                    titleTextStyle: {
-                                        color: 'black',
-                                        fontSize: 20,
-                                        bold: true,
-                                    },
-                                    fontSize: 18,
-                                    fontName: 'Roboto',
-                                    legend: { position: 'none' },
-                                    annotations: {
-                                        alwaysOutside: 'true',
-                                        textStyle: {
-                                            fontName: 'Roboto',
-                                            fontSize: 18,
-                                            bold: false,
-                                            italic: false,
-                                        },
-                                    },
-                                }}
-                            />
-                        </div>
-                        <div>
-                            <Chart
-                                chartType="PieChart"
-                                data={[
-                                    ['Vitimas', 'Quantidade'],
-                                    ['Sexual', 255],
-                                    ['Psicológica', 55],
-                                    ['Moral', 14],
-                                    ['Patrimonial', 177],
-                                    ['Física', 99],
-                                ]}
-                                width="650px"
-                                height="400px"
-                                options={{
-                                    title: 'Vítimas de Violências',
-                                    backgroundColor: '#FEEFE8',
-                                    titleTextStyle: {
-                                        color: 'black',
-                                        fontSize: 20,
-                                        bold: true,
-                                    },
-                                    fontSize: 18,
-                                    fontName: 'Roboto',
-                                }}
-                            />
-                        </div>
-                    </div>
+                <div id="graphs">
+                    <Chart
+                        chartType="ColumnChart"
+                        data={this.state.chartData}
+                        width="600px"
+                        height="400px"
+                        options={{
+                            title: 'Vítimas de Violências',
+                            backgroundColor: '#FEEFE8',
+                            titleTextStyle: {
+                                color: 'black',
+                                fontSize: 20,
+                                bold: true,
+                            },
+                            fontSize: 18,
+                            fontName: 'Roboto',
+                            legend: { position: 'bottom' },
+                        }}
+                    />
+
+                    <Chart
+                        width={'500px'}
+                        height={'300px'}
+                        chartType="PieChart"
+                        data={this.state.chartPie}
+                        options={{
+                            title: 'Vítimas de Violências',
+                            backgroundColor: '#FEEFE8',
+                            titleTextStyle: {
+                                color: 'black',
+                                fontSize: 20,
+                                bold: true,
+                            },
+                            fontName: 'Roboto',
+                        }}
+                        rootProps={{ 'data-testid': '1' }}
+                    />
                 </div>
             </section>
         );
