@@ -27,3 +27,14 @@
     font-size: 24px;
     font-weight: bold;
 }
+.container-graficos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 80%;
+}
+.container-graficos-test {
+    margin: 0 auto;
+}
