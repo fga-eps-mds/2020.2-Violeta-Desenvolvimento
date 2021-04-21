@@ -9,6 +9,7 @@
 .container-box-violencia{
     flex-direction: row;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: 50px auto 0px auto;
     max-width: 1300px;
@@ -32,10 +33,29 @@
 
 #graphs{
     display: flex;
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding-top: 50px;
+}
+@media (max-width: 739px) {
+    .container-violencia{
+        width: 37.5rem;
+    }
+    .container-box-violencia{
+        flex-wrap: wrap;
+        max-width: 37.5rem;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .box-violencia{
+        width: 7rem;
+    }
+    #graphs{
+        flex-direction: column;
+        margin-left: 0;
+    }
 }
