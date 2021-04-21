@@ -9,16 +9,59 @@ class Graficos extends React.Component {
     constructor() {
         super();
         this.state = {
+            chartData: [],
+            chartPie: [],
             victims: [],
             error: '',
         };
     }
 
     componentDidMount() {
+        const geral = [];
         fetch(url)
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ victims: result });
+            })
+            .then(() => {
+                const nome = [];
+                const vitimasValue = 'Vitimas';
+                nome.push(vitimasValue);
+                for (
+                    let index = 0;
+                    index < this.state.victims.length;
+                    index += 1
+                ) {
+                    const ds = this.state.victims[index].ds_categoria;
+                    nome.push(ds);
+                }
+                geral.push(nome);
+                console.log(geral);
+            })
+            .then(() => {
+                const valor = [];
+                const inicalValue = null;
+                valor.push(inicalValue);
+                for (let i = 0; i < this.state.victims.length; i += 1) {
+                    const couterVl = this.state.victims[i].categoria_counter;
+                    valor.push(couterVl);
+                }
+                geral.push(valor);
+            })
+            .then(() => {
+                this.setState({ chartData: geral });
+                console.log(this.state.chartData);
+            })
+            .then(() => {
+                const pie = [];
+                pie.push(['Task', 'Hours per Day']);
+                for (let j = 0; j < this.state.victims.length; j += 1) {
+                    pie.push([
+                        this.state.victims[j].ds_categoria,
+                        this.state.victims[j].categoria_counter,
+                    ]);
+                }
+                this.setState({ chartPie: pie });
             })
             .catch((error) => this.setState({ error }));
     }
@@ -37,25 +80,29 @@ class Graficos extends React.Component {
                         ))}
                     </div>
                 </div>
-                <Chart
-                    chartType="ColumnChart"
-                    data={[
-                        [
-                            'Vitimas',
-                            'Fisica',
-                            'Moral',
-                            'Psicológica',
-                            'Patrimonial',
-                        ],
-                        [null, 50, 14, 15, 14],
-                    ]}
-                    width="600px"
-                    height="400px"
-                    legendToggle
-                    options={{
-                        backgroundColor: 'FEEFE8',
-                    }}
-                />
+                <div id="graphs">
+                    <Chart
+                        chartType="ColumnChart"
+                        data={this.state.chartData}
+                        width="600px"
+                        height="400px"
+                        legendToggle
+                        options={{
+                            backgroundColor: 'FEEFE8',
+                        }}
+                    />
+
+                    <Chart
+                        width={'500px'}
+                        height={'300px'}
+                        chartType="PieChart"
+                        data={this.state.chartPie}
+                        options={{
+                            backgroundColor: 'FEEFE8',
+                        }}
+                        rootProps={{ 'data-testid': '1' }}
+                    />
+                </div>
             </section>
         );
     }
