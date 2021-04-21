@@ -5,6 +5,7 @@ import { useHistory } from 'react-router-dom';
 import { logout } from '../actions/auth';
 import ListaDepoimento from './listaDepoimento';
 import CadastraProfissional from './cadastraProfissional';
+import CadastrarFrases from './cadastrarFrases';
 
 const Adm2 = ({ logout }) => {
     const history = useHistory();
@@ -22,7 +23,7 @@ const Adm2 = ({ logout }) => {
     }
 
     return (
-        <div id="adm-container">
+        <div id="adm-container" class="adm-container">
             <div class="adm-cadastro">
                 <h1>Cadastro de Profissional</h1>
                 {<CadastraProfissional />}
@@ -35,11 +36,13 @@ const Adm2 = ({ logout }) => {
                     </div>
                 </div>
             </div>
-            <div>
-                <button class="btn-logout" onClick={(e) => handleClick(e)}>
-                    Logout
-                </button>
+            <div id="adm-frase">
+                <h1>Cadastro de Frases</h1>
+                {<CadastrarFrases />}
             </div>
+            <button class="btn-logout" onClick={(e) => handleClick(e)}>
+                Logout
+            </button>
         </div>
     );
 };

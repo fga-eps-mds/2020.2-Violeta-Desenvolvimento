@@ -50,7 +50,6 @@ body {
     border-radius: 10px;
     color: white;
     font-size: 16px;
-    margin: auto;
 }
 
 .adm-cadastro {
@@ -62,3 +61,18 @@ body {
 .adm-cadastro h1 {
     text-align: left;
 }
+
+#adm-frase {
+    width: 535px;
+    height: 400px;
+    display: inline-block;
+}
+
+.adm-container h1 {
+    margin-bottom: 25px;
+}
+
+.adm-container input{
+    margin-top: 10px;
+}
+
