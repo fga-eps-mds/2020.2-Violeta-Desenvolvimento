@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/graficos.css';
+import { Chart } from 'react-google-charts';
 import { urlGenerator } from './urls';
 
 const url = urlGenerator('questionario', 'vitimas-categoria');
@@ -36,6 +37,25 @@ class Graficos extends React.Component {
                         ))}
                     </div>
                 </div>
+                <Chart
+                    chartType="ColumnChart"
+                    data={[
+                        [
+                            'Vitimas',
+                            'Fisica',
+                            'Moral',
+                            'Psicológica',
+                            'Patrimonial',
+                        ],
+                        [null, 50, 14, 15, 14],
+                    ]}
+                    width="600px"
+                    height="400px"
+                    legendToggle
+                    options={{
+                        backgroundColor: 'FEEFE8',
+                    }}
+                />
             </section>
         );
     }
