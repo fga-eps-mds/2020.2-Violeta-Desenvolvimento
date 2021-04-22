@@ -22,6 +22,7 @@ class Graficos extends React.Component {
             method: 'GET',
             headers: {
                 Accept: 'application/json',
+                Origin: '',
                 'Content-type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
                 'Access-Control-Allow-Headers': 'Content-Type, Accept',
