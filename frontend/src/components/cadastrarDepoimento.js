@@ -3,7 +3,7 @@ import '../css/cadastrarDepoimento.css';
 import womanTexting from '../images/womanTexting.svg';
 import { urlGenerator } from './urls';
 
-const url = urlGenerator('depoimentos', 'external-depoimento');
+const url = urlGenerator('depoimentos', 'external-depoimento/');
 
 class CadastrarDepoimento extends React.Component {
     constructor() {
@@ -29,7 +29,7 @@ class CadastrarDepoimento extends React.Component {
     submitForm(event) {
         this.setState({ depoimento_modal_confirm_style: { display: 'block' } });
         this.setState({ depoimento_modal_style: { display: 'none' } });
-        fetch(`${url}/`, {
+        fetch(`${url}`, {
             method: 'POST',
             body: JSON.stringify(this.state),
             headers: {
