@@ -18,7 +18,16 @@ class Depoimento extends React.Component {
 
     // Get Depoimentos
     componentDidMount() {
-        fetch(url)
+        fetch(url, {
+            method: 'GET',
+            headers: {
+                Accept: 'application/json',
+                'Content-type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers':
+                    'Origin, X-Requested-With, Content-Type, Accept',
+            },
+        })
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ depoimentos: result });

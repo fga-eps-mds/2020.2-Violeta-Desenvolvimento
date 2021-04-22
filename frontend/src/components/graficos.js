@@ -18,7 +18,16 @@ class Graficos extends React.Component {
 
     componentDidMount() {
         const geral = [];
-        fetch(url)
+        fetch(url, {
+            method: 'GET',
+            headers: {
+                Accept: 'application/json',
+                'Content-type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers':
+                    'Origin, X-Requested-With, Content-Type, Accept',
+            },
+        })
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ victims: result });
