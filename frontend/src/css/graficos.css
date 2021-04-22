@@ -3,24 +3,22 @@
     background-color: #FEEFE8;
 }
 .container-violencia{
-    width: 1300px;
     margin: 0 auto;
 }
 .container-box-violencia{
-    flex-direction: row;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin: 50px auto 0px auto;
-    max-width: 1300px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
 }
 .box-violencia{
     width: 160px;
     height: 100px;
     background-color: #F78A50;
     text-align: center;
+    margin: 5px;
 }
 #counter{
     font-size: 36px;
@@ -33,7 +31,7 @@
 
 #graphs{
     display: flex;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -42,17 +40,25 @@
 }
 @media (max-width: 739px) {
     .container-violencia{
-        width: 37.5rem;
+        padding: 20px;
     }
     .container-box-violencia{
+        display: flex;
         flex-wrap: wrap;
-        max-width: 37.5rem;
         align-items: center;
         margin: 0 auto;
         padding: 0;
     }
     .box-violencia{
         width: 7rem;
+    }
+    .box-violencia:nth-of-type(1){
+        width: 11rem;
+        margin-left: 30px;
+    }
+    .box-violencia:nth-of-type(2){
+        width: 11rem;
+        margin-right: 30px;
     }
     #graphs{
         flex-direction: column;
