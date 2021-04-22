@@ -51,7 +51,7 @@
   background-color: rgba(71, 47, 76, 0.3);
 }
 
-@media(max-width:800px){
+@media(max-width:739px){
   #home{
     height: 380px;
   }

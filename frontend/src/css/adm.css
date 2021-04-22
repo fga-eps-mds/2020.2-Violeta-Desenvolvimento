@@ -3,8 +3,8 @@ body {
 }
 
 .adm-depoimento {
-    width: 615px;
-    height: 500px;
+    width: 535px;
+    height: 550px;
     float: right;
 }
 
@@ -22,8 +22,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 615px;
-    height: 310px;
 }
 
 .container-p-depoimento {
@@ -50,6 +48,10 @@ body {
     border-radius: 10px;
     color: white;
     font-size: 16px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .adm-cadastro {
@@ -75,4 +77,3 @@ body {
 .adm-container input{
     margin-top: 10px;
 }
-
