@@ -24,8 +24,7 @@ class Graficos extends React.Component {
                 Accept: 'application/json',
                 'Content-type': 'application/json',
                 'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Headers':
-                    'Origin, X-Requested-With, Content-Type, Accept',
+                'Access-Control-Allow-Headers': 'Content-Type, Accept',
             },
         })
             .then((data) => data.json())
