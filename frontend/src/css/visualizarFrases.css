@@ -1,0 +1,26 @@
+.frases {
+  height: 140px;
+  background-color: #fa9189;
+  display: flex;
+  align-items: center;
+}
+
+.frases p {
+  color: #fafafa;
+  justify-content: center;
+  font-size: 20px;
+  width: 935px;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 739px) {
+  .frases {
+      height: auto;
+  }
+  .frases p {
+      font-size: 0.75rem;
+      width: 14.0625rem;
+      margin: 1.25rem auto;  
+  }
+}
