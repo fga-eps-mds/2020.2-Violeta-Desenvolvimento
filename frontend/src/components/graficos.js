@@ -21,7 +21,7 @@ class Graficos extends React.Component {
         const geral = [];
         axios
             .get(url)
-            .then((data) => data.json())
+            .then((data) => data.data)
             .then((result) => {
                 this.setState({ victims: result });
             })
