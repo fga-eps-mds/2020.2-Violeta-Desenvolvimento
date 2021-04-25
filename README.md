@@ -1,5 +1,5 @@
 # Projeto Violeta
-Homolog: [https://aids-working-ask-queue.trycloudflare.com/](https://aids-working-ask-queue.trycloudflare.com/)
+Homolog: [http://aids-working-ask-queue.trycloudflare.com/](http://aids-working-ask-queue.trycloudflare.com/)
 
 Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/)
 
