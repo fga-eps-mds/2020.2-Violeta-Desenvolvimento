@@ -4,7 +4,7 @@ import '../css/cadastraProfissional.css';
 import { useHistory } from 'react-router-dom';
 import { urlGenerator } from './urls';
 
-const url = urlGenerator('questionario', 'contato-violencia');
+const url = urlGenerator('questionario', 'contato-violencia/');
 const CadastraProfissional = () => {
     const initialValue = {
         nome_contato: '',
@@ -24,7 +24,7 @@ const CadastraProfissional = () => {
     function onSubmit(ev) {
         ev.preventDefault();
 
-        axios.post(`${url}/`, values).then((response) => {
+        axios.post(`${url}`, values).then((response) => {
             history.push('/login');
             return response;
         });

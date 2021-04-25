@@ -1,9 +1,10 @@
 import React from 'react';
+import axios from 'axios';
 import '../css/graficos.css';
 import { Chart } from 'react-google-charts';
 import { urlGenerator } from './urls';
 
-const url = urlGenerator('questionario', 'vitimas-categoria');
+const url = urlGenerator('questionario', 'vitimas-categoria/');
 
 class Graficos extends React.Component {
     constructor() {
@@ -18,17 +19,9 @@ class Graficos extends React.Component {
 
     componentDidMount() {
         const geral = [];
-        fetch(url, {
-            method: 'GET',
-            headers: {
-                Accept: 'application/json',
-                Origin: '',
-                'Content-type': 'application/json',
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Headers': 'Content-Type, Accept',
-            },
-        })
-            .then((data) => data.json())
+        axios
+            .get(url)
+            .then((data) => data.data)
             .then((result) => {
                 this.setState({ victims: result });
             })
