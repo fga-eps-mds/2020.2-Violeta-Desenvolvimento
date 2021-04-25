@@ -1,9 +1,10 @@
-import '../css/profissionais.css';
 import React from 'react';
+import axios from 'axios';
+import '../css/profissionais.css';
 import { Carousel } from 'react-responsive-carousel';
 import { urlGenerator } from './urls';
 
-const url = urlGenerator('questionario', 'contato-violencia');
+const url = urlGenerator('questionario', 'contato-violencia/');
 
 class Profissionais extends React.Component {
     constructor(props) {
@@ -92,11 +93,12 @@ class Profissionais extends React.Component {
     }
 
     componentDidMount() {
-        fetch(url)
-            .then((data) => data.json())
+        axios
+            .get(url)
             .then((result) => {
-                this.setState({ profissionais: result });
-                this.setState({ filteredProfissionais: result });
+                const profs = result.data;
+                this.setState({ profissionais: profs });
+                this.setState({ filteredProfissionais: profs });
                 this.createArrayProfissionais();
             })
             .catch((error) => this.setState({ error }));
