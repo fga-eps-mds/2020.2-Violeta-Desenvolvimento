@@ -26,10 +26,24 @@ const selecionaFrases = () => {
             await axios.get(url).then((res) => {
                 const frase = res.data;
                 shuffle(frase);
+                console.log(frase);
 
-                setFrase0(frase['0'].ds_frase);
-                setFrase1(frase['1'].ds_frase);
-                setFrase2(frase['2'].ds_frase);
+                const textaux = 'Não há frases cadastradas';
+                if (frase['0'] === undefined) {
+                    setFrase0(textaux);
+                } else {
+                    setFrase0(frase['0'].ds_frase);
+                }
+                if (frase['1'] === undefined) {
+                    setFrase1(textaux);
+                } else {
+                    setFrase1(frase['1'].ds_frase);
+                }
+                if (frase['2'] === undefined) {
+                    setFrase2(textaux);
+                } else {
+                    setFrase2(frase['2'].ds_frase);
+                }
             });
         }
 

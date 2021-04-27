@@ -1,5 +1,6 @@
 .visualizar-frases {
-  height: 140px;
+  min-height: 140px;
+  padding: 15px;
   background-color: #fa9189;
   display: flex;
   align-items: center;
