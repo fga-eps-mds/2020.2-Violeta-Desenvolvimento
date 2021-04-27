@@ -5,7 +5,7 @@
 }
 
 .profissionais .carousel-container {
-    width: 1300px;
+    width: 100%;
     height: 315px;
     margin: 55px auto;
 }
@@ -37,7 +37,7 @@
     justify-content:space-between;
     align-items: flex-end;
     height: auto;
-    width: 1300px;
+    /* width: ; */
     margin: 0 auto;
 }
 
@@ -295,7 +295,7 @@
 .profissionais .carousel .control-dots {
     display: none;
 }
-@media (min-width: 960px) {
+@media (max-width: 739px) {
     .profissionais .carousel .control-dots {
         bottom: 0;
     }
@@ -314,18 +314,22 @@
     display: none;
 }
 
-@media (max-width: 739px) {
+@media (max-width: 960px) {
+    .profissionais-container-title-nav{
+        text-align: center;
+    }
     .profissionais-container-title {
         justify-content: center;
         align-items: center;
         padding-top: 40px;
     }
     .profissionais-container-title-nav {
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
+        /* width: 800px; */
+        /* flex-wrap: wrap;
         flex-direction: column;
         align-items: flex-start;
-        width: auto;
+        width: auto; */
     }
     #container-profissionais{
         display: flex;
@@ -335,20 +339,24 @@
         align-items: center;
     }
     #profissionais-description{
-        width: 520px;
-        margin-left: 15px;
+        /* width: 520px;
+        margin-left: 15px; */
+        padding: 0 15px 0;
     }
     #button-nav-orgaos{
         padding: 0 20px;
     }
     .profissionais-container-nav {
-        padding-top: 25px;
-        margin: 0;
-        align-content: center;
+        /* padding-top: 25px;
+        margin: 0; */
+        justify-content: center;
     }
     .nav-profissionais {
-        margin: 25px;
+        align-content: center;
         width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
     .list-nav-profissionais li{
         width: 125px;
@@ -364,8 +372,7 @@
     .profissionais .carousel-container {
         width: 500px;
         height: 315px;
-        margin: 0px;
-        margin-left: 25px;
+        margin: 0 auto;
     }
     .profissionais .carousel-root{
         width: 500px;
