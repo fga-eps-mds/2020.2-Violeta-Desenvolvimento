@@ -9,6 +9,8 @@
 }
 
 .frases .input-adm{
+    padding: 10px;
+    resize: none;
     height: 150px;
     vertical-align: text-top;
 }
