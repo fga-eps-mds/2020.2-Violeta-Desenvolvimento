@@ -52,8 +52,8 @@
         margin: 0 auto;
         padding: 0;
     }
-    .box-violencia {
-        width: 7rem;
+    .box-violencia{
+        min-width: 7rem;
     }
     .box-violencia:nth-of-type(1) {
         width: 11rem;
