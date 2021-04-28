@@ -1,10 +1,11 @@
 import React from 'react';
+import axios from 'axios';
 import '../css/depoimento.css';
 import { Carousel } from 'react-responsive-carousel';
 import CadastrarDepoimento from './cadastrarDepoimento';
 import { urlGenerator } from './urls';
 
-const url = urlGenerator('depoimentos', 'external-depoimento');
+const url = urlGenerator('depoimentos', 'external-depoimento/');
 
 class Depoimento extends React.Component {
     constructor() {
@@ -18,17 +19,15 @@ class Depoimento extends React.Component {
 
     // Get Depoimentos
     componentDidMount() {
-        fetch(url)
-            .then((data) => data.json())
-            .then((result) => {
-                this.setState({ depoimentos: result });
-            })
-            .catch((error) => this.setState({ error }));
+        axios.get(url).then((res) => {
+            const deps = res.data;
+            this.setState({ depoimentos: deps });
+        });
     }
 
     render() {
         return (
-            <div>
+            <div class="depoimento" id="depoimentos">
                 <div id="depoimento-container">
                     <h1 id="title-depoimento">Depoimentos</h1>
                     <Carousel>

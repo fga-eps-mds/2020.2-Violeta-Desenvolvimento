@@ -17,3 +17,7 @@
     color: white;
     font-size: 36px;
 }
+
+.adm-add-profissional select {
+    margin-top: 10px;
+}

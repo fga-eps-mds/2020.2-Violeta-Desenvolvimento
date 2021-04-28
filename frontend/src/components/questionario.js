@@ -4,7 +4,7 @@ import womanFigura from '../images/woman.png';
 import ShowTree from './ShowTree';
 // import { urlGenerator } from './urls';
 
-// const url = urlGenerator('questionario', 'questionario');
+const url = urlGenerator('questionario', 'questionario/');
 
 class Questionario extends React.Component {
     // constructor() {

@@ -77,7 +77,7 @@ export default class ListaDepoimento extends React.Component {
                 </ul>
                 <button
                     type="button"
-                    class="btn-login"
+                    class="btn-aprova-depoimento"
                     onClick={(e) => this.handleClick(e)}
                 >
                     Aprovar

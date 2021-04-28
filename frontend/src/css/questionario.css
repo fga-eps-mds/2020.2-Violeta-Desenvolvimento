@@ -125,6 +125,28 @@
     position: fixed;
     top: 20px;
     left: 0;
+  width: 400px;
+  height: 30px;
+  border: solid 1px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #feefe8;
+}
+
+@media (max-width: 960px){
+  #img-formulario{
+    display: none;
+  }
+  #btn-formulario {
+    margin-top: 180px;
+  }
+  #questionario {
+    padding: 0 40px;   
+  }
+  #questionario p{
+    display: none;
+  }
+  .input-formulario{
     width: 100%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);

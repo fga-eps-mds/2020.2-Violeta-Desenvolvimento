@@ -10,19 +10,20 @@
 
 .dsDepoimento{
     height: 110px;
-    text-align: left;
+    width: 100%;
+    text-align: center;
     overflow-y: scroll;
 }
 
 .ulDepoimento{
-    height: 276px;
+    height: 365px;
     overflow: scroll;
     overflow-x: hidden;
+    margin-bottom: 20px;
 }
 
 .divInput{
     width: 50px;
-    margin-right: 20px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -31,5 +32,16 @@
 .inputDepoimento{
     width: 20px;
     height: 20px;
+    margin: 0 auto;
     border: gray solid 2px  ;
+}
+
+.btn-aprova-depoimento{
+    width: 532px;
+    height: 60px;
+    background-color: #472f4c;
+    margin-bottom: 36px;
+    border-radius: 10px;
+    color: white;
+    font-size: 36px;
 }
