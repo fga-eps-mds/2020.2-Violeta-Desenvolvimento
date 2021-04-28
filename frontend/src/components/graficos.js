@@ -83,42 +83,45 @@ class Graficos extends React.Component {
                     </div>
                 </div>
                 <div id="graphs">
-                    <Chart
-                        chartType="ColumnChart"
-                        data={this.state.chartData}
-                        width="600px"
-                        height="400px"
-                        options={{
-                            title: 'Vítimas de Violências',
-                            backgroundColor: '#FEEFE8',
-                            titleTextStyle: {
-                                color: 'black',
-                                fontSize: 20,
-                                bold: true,
-                            },
-                            fontSize: 18,
-                            fontName: 'Roboto',
-                            legend: { position: 'bottom' },
-                        }}
-                    />
-
-                    <Chart
-                        width={'500px'}
-                        height={'300px'}
-                        chartType="PieChart"
-                        data={this.state.chartPie}
-                        options={{
-                            title: 'Vítimas de Violências',
-                            backgroundColor: '#FEEFE8',
-                            titleTextStyle: {
-                                color: 'black',
-                                fontSize: 20,
-                                bold: true,
-                            },
-                            fontName: 'Roboto',
-                        }}
-                        rootProps={{ 'data-testid': '1' }}
-                    />
+                    <div id="columnGraph">
+                        <Chart
+                            chartType="ColumnChart"
+                            data={this.state.chartData}
+                            width="600px"
+                            height="400px"
+                            options={{
+                                title: 'Vítimas de Violências',
+                                backgroundColor: '#FEEFE8',
+                                titleTextStyle: {
+                                    color: 'black',
+                                    fontSize: 20,
+                                    bold: true,
+                                },
+                                fontSize: 18,
+                                fontName: 'Roboto',
+                                legend: { position: 'bottom' },
+                            }}
+                        />
+                    </div>
+                    <div id="pieGraph">
+                        <Chart
+                            width={'500px'}
+                            height={'300px'}
+                            chartType="PieChart"
+                            data={this.state.chartPie}
+                            options={{
+                                title: 'Vítimas de Violências',
+                                backgroundColor: '#FEEFE8',
+                                titleTextStyle: {
+                                    color: 'black',
+                                    fontSize: 20,
+                                    bold: true,
+                                },
+                                fontName: 'Roboto',
+                            }}
+                            rootProps={{ 'data-testid': '1' }}
+                        />
+                    </div>
                 </div>
             </section>
         );

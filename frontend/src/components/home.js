@@ -15,7 +15,9 @@ const Home = () => (
                 abuso, responda o questionário.
                 <br />
             </p>
-            <button id="btn">Responda o Questionário</button>
+            <button id="btn">
+                <a href="#questionario">Responda o Questionário</a>
+            </button>
         </div>
     </section>
 );
