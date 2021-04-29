@@ -1,5 +1,8 @@
 import axios from 'axios';
 import { LOGIN_SUCCESS, LOGIN_FAIL, LOGOUT } from './types';
+import { urlGen } from '../components/urls';
+
+const url = urlGen('autenticador', 'autenticador/login/');
 
 export const login = (username, password) => async (dispatch) => {
     const config = {
@@ -11,11 +14,7 @@ export const login = (username, password) => async (dispatch) => {
     const body = JSON.stringify({ username, password });
 
     try {
-        const res = await axios.post(
-            'http://localhost:8004/autenticador/autenticador/login/',
-            body,
-            config
-        );
+        const res = await axios.post(url, body, config);
 
         dispatch({
             type: LOGIN_SUCCESS,

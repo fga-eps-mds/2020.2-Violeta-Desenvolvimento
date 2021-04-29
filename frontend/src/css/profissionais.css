@@ -1,0 +1,400 @@
+.profissionais {
+    height: 805px;
+    background-color: #ece3ee;
+    padding-top: 70px;
+}
+
+.profissionais .carousel-container {
+    width: 1300px;
+    height: 315px;
+    margin: 55px auto;
+}
+
+.box-contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.box-contact {
+    width: 400px;
+    height: 140px;
+    background-color: #f9b18a;
+    border-radius: 10px;
+    margin-bottom: 35px;
+    padding: 15px 15px 15px 125px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.profissionais-container-title-nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: flex-end;
+    height: auto;
+    margin: 0 auto;
+    width: 1300px;
+}
+
+.nav-profissionais{
+    width: 640px;
+    height: 50px;
+    background-color: #764E7E;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+.list-nav-profissionais{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.list-nav-profissionais li{
+    height: 50px;
+    width: 160px;
+    text-align: center;
+    list-style: none;
+}
+.list-nav-profissionais button{
+    border-style: none;
+}
+
+#profissionais-description{
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+#profissionais-title{
+    width: 210px;
+    font-size: 36px;
+    margin: 0 auto;
+}
+
+.profissionais-btn-nav{
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #764E7E;
+    border-radius: 10px;
+}
+
+#button-nav-orgaos{
+    border-left-style: solid;
+    border-right-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 0;
+    text-align: left;
+    padding: 0 38px;
+}
+
+#button-nav-psicologo{
+    border-left-style: solid;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 0;
+}
+
+#button-nav-ongs{
+    border-radius: 10px;
+}
+#button-nav-todos{
+    border-radius: 10px;
+}
+
+.pagination{
+    margin-left: 1060px;
+    width: 210px;
+    height: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.profissionais-prev{
+    background-color: #ece3ee;
+    color: black;
+    border: none;    
+}
+.profissionais-next{
+    background-color: #ece3ee;
+    color: black;
+    border: none;
+}
+.pagination-mobile{
+    display: none;
+}
+
+#container-profissionais{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+.profissionais .carousel .control-arrow,
+.profissionais.carousel.carousel-slider .control-arrow {
+    display: none;
+}
+.profissionais .carousel .control-arrow:focus,
+.profissionais.carousel .control-arrow:hover {
+    display: none;
+}
+.profissionais .carousel .control-arrow:before,
+.profissionais.carousel.carousel-slider .control-arrow:before {
+    display: none;
+}
+.profissionais.profissionais .carousel .control-disabled.control-arrow {
+   display: none;
+}
+.profissionais .carousel .control-prev.control-arrow {
+    display: none;
+}
+.profissionais .carousel .control-prev.control-arrow:before {
+    display: none;
+}
+.profissionais .carousel .control-next.control-arrow {
+    display: none;
+}
+.profissionais .carousel .control-next.control-arrow:before {
+    display: none;
+}
+
+.profissionais .carousel-root {
+    outline: none;
+    width: 1305px;
+    height: 400px;
+}
+
+.profissionais .carousel {
+    position: relative;
+    width: 100%;
+}
+.profissionais .carousel * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.profissionais .carousel img {
+    width: 100%;
+    display: inline-block;
+    pointer-events: none;
+}
+.profissionais .carousel .carousel {
+    position: relative;
+}
+.profissionais .carousel .control-arrow {
+    display: none;
+}
+.profissionais .carousel .thumbs-wrapper {
+    display: none;
+}
+.profissionais .carousel .thumbs {
+    display: none;
+}
+.profissionais .carousel .thumb {
+    display: none;
+}
+.profissionais .carousel .thumb img {
+    display: none;
+}
+.profissionais .carousel.carousel-slider {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+.profissionais .carousel.carousel-slider .control-arrow {
+    display: none;
+}
+.profissionais .carousel.carousel-slider .control-arrow:hover {
+    display: none;
+}
+.profissionais .carousel .slider-wrapper {
+    overflow: hidden;
+    margin: auto;
+    -webkit-transition: height 0.15s ease-in;
+    -moz-transition: height 0.15s ease-in;
+    -ms-transition: height 0.15s ease-in;
+    -o-transition: height 0.15s ease-in;
+    transition: height 0.15s ease-in;
+    width: 100%;
+    height: 100%;
+}
+.profissionais .carousel .slider-wrapper.axis-horizontal .slider {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+.profissionais .carousel .slider-wrapper.axis-horizontal .slider .slide {
+    flex-direction: column;
+}
+.profissionais .carousel .slider-wrapper.axis-vertical {
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+.profissionais .carousel .slider-wrapper.axis-vertical .slider {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+.profissionais .carousel .slider {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    width: 100%;
+}
+.profissionais .carousel .slider.animated {
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.profissionais .carousel .slide {
+    min-width: 100%;
+    margin: 0;
+    position: relative;
+    text-align: center;
+}
+.profissionais .carousel .slide img {
+    width: 100%;
+    vertical-align: top;
+    border: 0;
+}
+.profissionais .carousel .slide iframe {
+    display: inline-block;
+    width: calc(100% - 80px);
+    margin: 0 40px 40px;
+    border: 0;
+}
+.profissionais .carousel .slide .legend {
+    display: none;
+}
+.profissionais .carousel .control-dots {
+    display: none;
+}
+@media (max-width: 739px) {
+    .profissionais .carousel .control-dots {
+        bottom: 0;
+    }
+}
+.profissionais .carousel .control-dots .dot {
+    display: none;
+}
+.profissionais .carousel .control-dots .dot.selected,
+.profissionais.carousel .control-dots .dot:hover {
+    display: none;
+}
+.profissionais .carousel .carousel-status {
+    display: none;
+}
+.profissionais .carousel:hover .slide .legend {
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .profissionais{
+        height: 53rem;
+    }
+    .profissionais-container-title-nav{
+        text-align: center;
+    }
+    .profissionais-container-title {
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+    }
+    .profissionais-container-title-nav {
+        width: auto;
+        display: block;
+    }
+    #container-profissionais{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #profissionais-description{
+        padding: 0 15px 0;
+    }
+    #button-nav-orgaos{
+        padding: 0 20px;
+    }
+    .profissionais-container-nav {
+        justify-content: center;
+    }
+    .nav-profissionais {
+        align-content: center;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .list-nav-profissionais li{
+        width: 125px;
+    }
+    .list-nav-profissionais {
+        margin: 0 auto;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    #description {
+        font-size: 14px;
+    }
+    .profissionais .carousel-container {
+        width: 500px;
+        height: 315px;
+        margin: 0 auto;
+    }
+    .profissionais .carousel-root{
+        width: 500px;
+        height: 350px;
+    }
+    #button-nav-ongs {
+        height: 35px;
+        width: 85px;
+        border-width: 0px 1px 0px 0px;
+    }
+    #button-nav {
+        height: 35px;
+        width: 85px;
+        border-width: 0px 1px 0px 0px;
+    }
+    #button-nav-todos {
+        height: 35px;
+        width: 85px;
+    }
+    .pagination {
+        display: none;
+    }
+    .pagination-mobile {
+        display: flex;
+        width: auto;
+        justify-content: space-between;
+        align-content: center;
+        margin: 20px 20px 0px 20px;
+    }
+    .pagination-mobile button {
+        color: black;
+        font-size: 24px;
+    }
+}

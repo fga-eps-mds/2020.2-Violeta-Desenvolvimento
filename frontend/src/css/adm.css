@@ -3,8 +3,8 @@ body {
 }
 
 .adm-depoimento {
-    width: 615px;
-    height: 500px;
+    width: 535px;
+    height: 550px;
     float: right;
 }
 
@@ -22,8 +22,6 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 615px;
-    height: 310px;
 }
 
 .container-p-depoimento {
@@ -31,7 +29,6 @@ body {
     height: 175px;
     padding: 10px;
     text-align: center;
-    display: table;
 }
 
 .box-depoimento {
@@ -51,7 +48,10 @@ body {
     border-radius: 10px;
     color: white;
     font-size: 16px;
-    margin: auto;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .adm-cadastro {
@@ -62,4 +62,18 @@ body {
 
 .adm-cadastro h1 {
     text-align: left;
+}
+
+#adm-frase {
+    width: 535px;
+    height: 400px;
+    display: inline-block;
+}
+
+.adm-container h1 {
+    margin-bottom: 25px;
+}
+
+.adm-container input{
+    margin-top: 10px;
 }

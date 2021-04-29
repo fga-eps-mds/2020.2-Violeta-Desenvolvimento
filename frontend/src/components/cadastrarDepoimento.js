@@ -3,16 +3,19 @@ import '../css/cadastrarDepoimento.css';
 import womanTexting from '../images/womanTexting.svg';
 import { urlGenerator } from './urls';
 
-const url = urlGenerator('depoimentos', 'external-depoimento');
+const url = urlGenerator('depoimentos', 'external-depoimento/');
 
 class CadastrarDepoimento extends React.Component {
     constructor() {
         super();
         this.state = {
             ds_depoimento: '',
+            depoimento_modal_style: { display: 'none' },
+            depoimento_modal_confirm_style: { display: 'none' },
         };
         this.changeHandler = this.changeHandler.bind(this);
         this.submitForm = this.submitForm.bind(this);
+        this.handlerOnClickRequest = this.handlerOnClickRequest.bind(this);
     }
 
     // Input Change Handler
@@ -24,7 +27,9 @@ class CadastrarDepoimento extends React.Component {
 
     // Submit Form
     submitForm(event) {
-        fetch(`${url}/`, {
+        this.setState({ depoimento_modal_confirm_style: { display: 'block' } });
+        this.setState({ depoimento_modal_style: { display: 'none' } });
+        fetch(`${url}`, {
             method: 'POST',
             body: JSON.stringify(this.state),
             headers: {
@@ -38,12 +43,22 @@ class CadastrarDepoimento extends React.Component {
         event.preventDefault();
     }
 
+    handlerOnClickRequest() {
+        this.setState({ depoimento_modal_style: { display: 'block' } });
+    }
+
     render() {
         return (
             <div>
-                <button id="depoimento-enviar">Cadastrar Depoimento</button>
+                <button
+                    id="depoimento-enviar"
+                    onClick={this.handlerOnClickRequest}
+                >
+                    Cadastrar Depoimento
+                </button>
                 <div
                     id="depoimento-modal-request"
+                    style={this.state.depoimento_modal_style}
                     class="depoimento-modal-request"
                 >
                     <div class="depoimento-modal-content">
@@ -69,12 +84,18 @@ class CadastrarDepoimento extends React.Component {
                         >
                             Cadastrar Depoimento
                         </button>
-                        <button id="depoimento-btn-voltar">Voltar</button>
+                        <button
+                            id="depoimento-btn-voltar"
+                            onClick={() => window.location.reload(false)}
+                        >
+                            Voltar
+                        </button>
                     </div>
                 </div>
 
                 <div
                     id="depoimento-modal-confirm"
+                    style={this.state.depoimento_modal_confirm_style}
                     class="depoimento-modal-confirm"
                 >
                     <div class="depoimento-modal-content">
@@ -89,7 +110,11 @@ class CadastrarDepoimento extends React.Component {
                                 e nos ajudará a fortelecer essa rede de apoio.
                             </p>
                         </div>
-                        <button id="depoimento-confirm-close">
+                        <button
+                            id="depoimento-confirm-close"
+                            style={this.state.depoimento_modal_confirm_style}
+                            onClick={() => window.location.reload(false)}
+                        >
                             Voltar para depoimentos
                         </button>
                     </div>

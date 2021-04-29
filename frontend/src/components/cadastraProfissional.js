@@ -4,13 +4,13 @@ import '../css/cadastraProfissional.css';
 import { useHistory } from 'react-router-dom';
 import { urlGenerator } from './urls';
 
-const url = urlGenerator('questionario', 'contato-violencia');
+const url = urlGenerator('questionario', 'contato-violencia/');
 const CadastraProfissional = () => {
     const initialValue = {
         nome_contato: '',
         numero_contato: 0,
         ds_contato: '',
-        categoria: '',
+        categoria_fk: '',
     };
     const [values, setValues] = useState(initialValue);
     const history = useHistory();
@@ -24,7 +24,7 @@ const CadastraProfissional = () => {
     function onSubmit(ev) {
         ev.preventDefault();
 
-        axios.post(`${url}/`, values).then((response) => {
+        axios.post(`${url}`, values).then((response) => {
             history.push('/login');
             return response;
         });
@@ -62,20 +62,20 @@ const CadastraProfissional = () => {
                     required
                     onChange={onChange}
                 />
-                <label htmlFor="categoria">Categoria</label>
+                <label htmlFor="categoria_fk">Categoria</label>
                 <select
                     class="input-adm select-option"
-                    id="categoria"
-                    name="categoria"
+                    id="categoria_fk"
+                    name="categoria_fk"
                     onChange={onChange}
                     required
                 >
                     <option value="" selected disabled hidden>
                         Selecione Categoria
                     </option>
-                    <option value="ongs">Ongs</option>
-                    <option value="psicologo">Psicólogos</option>
-                    <option value="orgao">Órgãos Compotentes</option>
+                    <option value="1">Ongs</option>
+                    <option value="2">Psicólogos</option>
+                    <option value="3">Órgãos Compotentes</option>
                 </select>
                 <button type="submit" class="btn-add-profissional">
                     Cadastrar

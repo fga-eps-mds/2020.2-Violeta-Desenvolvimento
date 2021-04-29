@@ -3,7 +3,7 @@ import axios from 'axios';
 import '../css/listaDepoimento.css';
 import { urlGenerator } from './urls';
 
-const url = urlGenerator('depoimentos', 'depoimento');
+const url = urlGenerator('depoimentos', 'depoimento/');
 
 export default class ListaDepoimento extends React.Component {
     state = {
@@ -31,7 +31,7 @@ export default class ListaDepoimento extends React.Component {
             for (let i = 0; i < this.state.depoimentos.length; i += 1) {
                 depoimento = this.state.depoimentos[i];
                 if (depoimento.aprovado === true) {
-                    lnk = `${url}/${depoimento.id_depoimento}/`;
+                    lnk = `${url}${depoimento.id_depoimento}/`;
                     await axios.put(lnk, depoimento);
                 }
             }
@@ -56,23 +56,28 @@ export default class ListaDepoimento extends React.Component {
     render() {
         return (
             <div>
-                {this.state.depoimentos.map((depoimento) => (
-                    <ul>
+                <ul class="ulDepoimento">
+                    {this.state.depoimentos.map((depoimento) => (
                         <li class="linha-depoimento">
-                            <label>
-                                {depoimento.ds_depoimento}
-                                <input
-                                    type="checkbox"
-                                    name={depoimento.id_depoimento}
-                                    onChange={(e) => this.handleChange(e)}
-                                ></input>
+                            <label className="labelDepoimento">
+                                <div className="divInput">
+                                    <input
+                                        type="checkbox"
+                                        className="inputDepoimento"
+                                        name={depoimento.id_depoimento}
+                                        onChange={(e) => this.handleChange(e)}
+                                    ></input>
+                                </div>
+                                <span class="dsDepoimento">
+                                    {depoimento.ds_depoimento}
+                                </span>
                             </label>
                         </li>
-                    </ul>
-                ))}
+                    ))}
+                </ul>
                 <button
                     type="button"
-                    class="btn-login"
+                    class="btn-aprova-depoimento"
                     onClick={(e) => this.handleClick(e)}
                 >
                     Aprovar

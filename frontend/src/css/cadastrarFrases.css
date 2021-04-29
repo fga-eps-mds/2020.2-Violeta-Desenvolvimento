@@ -1,0 +1,16 @@
+.btn-add-frases {
+    width: 532px;
+    height: 60px;
+    margin-bottom: 36px;
+    background-color: #472f4c;
+    border-radius: 10px;
+    color: white;
+    font-size: 36px;
+}
+
+.frases .input-adm{
+    padding: 10px;
+    resize: none;
+    height: 150px;
+    vertical-align: text-top;
+}
