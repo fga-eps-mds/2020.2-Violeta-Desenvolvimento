@@ -5,7 +5,7 @@
 }
 
 .profissionais .carousel-container {
-    width: 100%;
+    width: 1300px;
     height: 315px;
     margin: 55px auto;
 }
@@ -37,15 +37,11 @@
     justify-content:space-between;
     align-items: flex-end;
     height: auto;
-    /* width: ; */
     margin: 0 auto;
+    width: 1300px;
 }
 
 .nav-profissionais{
-    /* display: inline-flex; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: column; */
-    /* justify-content: space-between; */
     width: 640px;
     height: 50px;
     background-color: #764E7E;
@@ -315,6 +311,9 @@
 }
 
 @media (max-width: 960px) {
+    .profissionais{
+        height: 53rem;
+    }
     .profissionais-container-title-nav{
         text-align: center;
     }
@@ -324,6 +323,7 @@
         padding-top: 40px;
     }
     .profissionais-container-title-nav {
+        width: auto;
         display: block;
         /* width: 800px; */
         /* flex-wrap: wrap;
