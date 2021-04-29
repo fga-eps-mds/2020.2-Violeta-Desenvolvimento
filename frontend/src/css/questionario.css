@@ -192,7 +192,7 @@
     font-size: 2.25rem;
 }
 
-@media (max-width: 739px) {
+@media (max-width: 960px) {
     #img-formulario {
         display: none;
     }
