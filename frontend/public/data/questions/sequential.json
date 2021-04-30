@@ -6,8 +6,6 @@
       {"title":"Não", "qid":"101"}
     ],
     "actual":"105",
-    "category":"quiz",
-    "criterion":"aloe",
     "type":"radio"
   },
   "question_2":{
@@ -17,8 +15,6 @@
       {"title":"Não", "qid":"201"}
     ],
     "actual":"112",
-    "category":"quiz",
-    "criterion":"aloe",
     "type":"radio"
   },
   "question_3":{
@@ -28,8 +24,6 @@
       {"title":"Não", "qid":"301"}
     ],
     "actual":"116",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_4":{
@@ -39,8 +33,6 @@
       {"title":"Não", "qid":"401"}
     ],
     "actual":"116",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio",
     "comment":"another chance at agave bracteosa w/a different picture."
   },
@@ -51,8 +43,6 @@
       {"title":"Não", "qid":"104", "next":"question_1b"}
     ],
     "actual":"121",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_1a_more":{
@@ -62,8 +52,6 @@
       {"title":"Não", "qid":"106", "next":"question_1b"}
     ],
     "actual":"121",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_1a_final":{
@@ -77,8 +65,6 @@
     ],
     "resultado": "física",
     "actual":"6",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_1b":{
@@ -88,8 +74,6 @@
       {"title":"Não", "qid":"113"}
     ],
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_1b_more":{
@@ -99,8 +83,6 @@
       {"title":"Não", "qid":"115"}
     ],
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_1b_final":{
@@ -114,8 +96,6 @@
     ],
     "resultado": "Sexual",
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_2a":{
@@ -129,8 +109,6 @@
       {"title":"outros", "qid":"207", "next":"question_2a_final"}
     ],
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_2a_final":{
@@ -141,8 +119,6 @@
     ],
     "resultado": "Psicológica",
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_3a":{
@@ -152,8 +128,6 @@
       {"title":"Não", "qid":"303"}
     ],
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_3a_more":{
@@ -163,8 +137,6 @@
       {"title":"Não", "qid":"305"}
     ],
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_3a_final":{
@@ -178,8 +150,6 @@
     ],
     "resultado": "Moral, Psicológica e Física",
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_4a":{
@@ -189,8 +159,6 @@
       {"title":"Não", "qid":"404", "next":"question_4b"}
     ],
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "question_4a_more":{
@@ -200,8 +168,6 @@
       {"title":"Não", "qid":"406"}
     ],
     "actual":"126",
-    "category":"quiz",
-    "criterion":"agave",
     "type":"radio"
   },
   "quiz_results":{

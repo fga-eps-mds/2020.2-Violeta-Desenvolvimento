@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import DecisionTree from 'question-tree-core';
 import PopupQuest from './PopupQuest';
 import { ReactComponent as FeedbackAsset } from '../images/popup-feedback-person.svg';
 import { ReactComponent as CloseQuiz } from '../images/closequiz.svg';
 import ProfissionaisQuiz from './ProfissionaisQuiz';
 import ContatosQuiz from './ContatosQuiz';
+// var json = require('questionario/questionario/decision_tree.json');
 
 const GraphUI = ({
     graph_path,
@@ -32,10 +34,28 @@ const GraphUI = ({
         }
     }, [graph_path, question_set_path, decisionTreeInitializing]);
 
+    // const data = 'questionario/questionario/decision_tree.json';
+    const getData = () => {
+        fetch('http://localhost:8001/questionario/api/vitimas-categoria', {
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json',
+            },
+        })
+            .then((response) => {
+                console.log(response);
+                return response.json();
+            })
+            .then((myJson) => {
+                console.log(myJson);
+            });
+    };
+
     useEffect(() => {
         if (decisionTreeInitialized) {
             console.log('GraphUI question-tree graph files fetched.');
         }
+        getData();
     }, [decisionTreeInitialized]);
 
     useEffect(() => {
@@ -65,6 +85,18 @@ const GraphUI = ({
         if (idx >= 0) {
             siblingResponses.splice(idx, 1);
         }
+    };
+
+    async function postAwnser(tiposValue) {
+        // const value = tiposValue.charAt(0).toUpperCase() + tiposValue.slice(1);
+        const value = `VIOLÊNCIA ${tiposValue.toUpperCase()}`;
+        await axios.post('http://localhost:8001/questionario/vitimas/', {
+            categoria: value,
+        });
+    }
+
+    const postRespostas = () => {
+        resposta.map((a) => postAwnser(a));
     };
 
     const saveAnwser = () => {
@@ -169,6 +201,7 @@ const GraphUI = ({
                                 trigger={buttonPopup}
                                 setTrigger={setButtonPopup}
                             >
+                                {postRespostas()}
                                 <button
                                     className="btnq-popup"
                                     onClick={() => {
