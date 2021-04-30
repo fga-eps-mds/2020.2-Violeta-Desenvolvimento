@@ -14,8 +14,8 @@
     padding-left: 60px;
 }
 .box-violencia {
-    width: 160px;
-    height: 100px;
+    width: 170px;
+    min-height: 105px;
     background-color: #f78a50;
     text-align: center;
     margin: 5px;
@@ -29,14 +29,12 @@
     font-weight: bold;
 }
 
-
 #graphs {
     display: flex;
     width: 90%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
     padding-top: 50px;
     padding-left: 60px;
     padding-right: 60px;
