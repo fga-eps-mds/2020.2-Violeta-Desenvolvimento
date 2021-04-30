@@ -27,21 +27,23 @@ class Depoimento extends React.Component {
 
     render() {
         return (
-            <div class="depoimento" id="depoimentos">
-                <div id="depoimento-container">
-                    <h1 id="title-depoimento">Depoimentos</h1>
-                    <Carousel>
-                        {this.state.depoimentos.map((depoimento) => (
-                            <div>
-                                <p class="ds-depoimento" id="ds_depoimento">
-                                    {depoimento.ds_depoimento}
-                                </p>
-                            </div>
-                        ))}
-                    </Carousel>
-                    <CadastrarDepoimento />
+            <section id="depoimentos">
+                <div class="depoimento">
+                    <div id="depoimento-container">
+                        <h1 id="title-depoimento">Depoimentos</h1>
+                        <Carousel>
+                            {this.state.depoimentos.map((depoimento) => (
+                                <div>
+                                    <p class="ds-depoimento" id="ds_depoimento">
+                                        {depoimento.ds_depoimento}
+                                    </p>
+                                </div>
+                            ))}
+                        </Carousel>
+                        <CadastrarDepoimento />
+                    </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }
