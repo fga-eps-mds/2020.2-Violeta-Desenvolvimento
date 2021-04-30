@@ -26,14 +26,14 @@ const CadastrarFrases = () => {
         <form onSubmit={onSubmit}>
             <div class="frases">
                 <label htmlFor="ds_frase">Frase</label>
-                <input
+                <textarea
                     class="input-adm"
                     id="ds_frase"
                     name="ds_frase"
                     type="text"
                     required
                     onChange={onChange}
-                />
+                ></textarea>
             </div>
             <button type="submit" class="btn-add-frases">
                 Cadastrar

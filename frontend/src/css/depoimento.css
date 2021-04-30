@@ -189,14 +189,15 @@
     z-index: -1;
 }
 
-@media (max-width: 739px) {
+@media (max-width: 960px) {
     .depoimento .ds_depoimento {
         width: 17.625rem;
     }
     .depoimento .carousel-root {
+        width: 100%;
         margin-top: 1.5rem;
         height: 16.625rem;
-        width: 21.25rem;
+        /* width: 21.25rem; */
     }
     .depoimento #title-depoimento {
         font-size: 2rem;

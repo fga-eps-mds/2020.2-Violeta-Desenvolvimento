@@ -46,7 +46,7 @@ class Profissionais extends React.Component {
     defineWidth() {
         this.state.w = window.innerWidth;
 
-        if (this.state.w <= 739) {
+        if (this.state.w <= 800) {
             this.state.qtdeItemSlide = 2;
         } else {
             this.state.qtdeItemSlide = 6;

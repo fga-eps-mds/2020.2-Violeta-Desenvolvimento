@@ -6,17 +6,25 @@ import Depoimento from './depoimento';
 import Footer from './footer';
 import Profissionais from './profissionais';
 import Graficos from './graficos';
+import Frases from './visualizarFrases';
+import { selecionaFrases } from './selecionaFrase';
 
-const AllComponentes = () => (
-    <section>
-        <Header />
-        <Home />
-        <Questionario />
-        <Depoimento />
-        <Graficos />
-        <Profissionais />
-        <Footer />
-    </section>
-);
+const AllComponentes = () => {
+    const frases = selecionaFrases();
+    return (
+        <section>
+            <Header />
+            <Home />
+            <Questionario />
+            <Frases frase={frases[0]} />
+            <Depoimento />
+            <Frases frase={frases[1]} />
+            <Graficos />
+            <Frases frase={frases[2]} />
+            <Profissionais />
+            <Footer />
+        </section>
+    );
+};
 
 export default AllComponentes;
