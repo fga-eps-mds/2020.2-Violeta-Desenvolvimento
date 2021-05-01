@@ -67,7 +67,8 @@ class QuestionarioViewset(viewsets.ModelViewSet):
     @swagger_auto_schema(
         request_body=QuestionarioSerializer,
         response={200: QuestionarioSerializer},
-        operation_description="Armazenamento da árvore de decisões do questionário")
+        operation_description="Armazenamento da árvore de decisões do \
+        questionário")
     def perform_create(self, serializer):
         serializer.save()
 
@@ -79,6 +80,7 @@ class ContatoQuestionarioViewset(viewsets.ModelViewSet):
     @swagger_auto_schema(
         request_body=ContatoQuestionarioSerializer,
         response={200: ContatoQuestionarioSerializer},
-        operation_description="Lista de contatos indicados ao responder o questionário")
+        operation_description="Lista de contatos indicados ao responder o \
+            questionário")
     def perform_create(self, serializer):
         serializer.save()

@@ -97,6 +97,7 @@ const GraphUI = ({
 
     const postRespostas = () => {
         resposta.map((a) => postAwnser(a));
+        return true;
     };
 
     const saveAnwser = () => {
