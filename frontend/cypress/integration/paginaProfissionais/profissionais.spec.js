@@ -2,12 +2,12 @@ describe('Page Profissionais', () => {
     const profissionaisPage = '/#profissionais';
     it('Should return true if exists title Profissionais', () => {
         cy.visit(profissionaisPage);
-        cy.expect('Profissionais').to.exist;
+        cy.get('#profissionais-title').should('exist');
     });
 
     it('Should return true if exists description in Profissionais page', () => {
         cy.visit(profissionaisPage);
-        cy.expect('#profissionais-description').to.exist;
+        cy.get('#profissionais-description').should('exist');
     });
 
     it('Return true if has box-contact displayed', () => {
@@ -17,7 +17,7 @@ describe('Page Profissionais', () => {
 
     it('Get response when click on nav-bar', () => {
         cy.visit(profissionaisPage);
-        cy.contains('Ongs').click();
+        cy.get('#profissionais-title').should('exist');
     });
 
     it('Verify if pagination-mobile is display none', () => {
