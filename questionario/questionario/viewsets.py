@@ -3,11 +3,6 @@ from . import models
 from . import serializers
 
 
-class CadProfissionaisViewset(viewsets.ModelViewSet):
-    queryset = models.CadProfissionais.objects.all()
-    serializer_class = serializers.CadProfissionaisSerializer
-
-
 class ViolenciasCountViewset(viewsets.ModelViewSet):
     queryset = models.ViolenciasCount.objects.all()
     serializer_class = serializers.ViolenciasCountSerializer

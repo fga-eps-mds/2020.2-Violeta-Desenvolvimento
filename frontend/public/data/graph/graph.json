@@ -1,0 +1,21 @@
+{
+  "meta":{
+    "graph_id":"1"
+  },
+  "module_plantId":{
+    "title":"Plant Identification (Detour/Compound)",
+    "questions": [
+      {"id":"question_1", "next":"question_2"},
+      {"id":"question_2", "next":"question_3"},
+      {"id":"question_3", "next":"question_4"},
+      {"id":"question_4"}
+    ],
+    "next":"module_final"
+  },
+  "module_final":{
+    "title":"What's Next",
+    "questions": [
+      { "id":"quiz_results"}
+    ]
+  }
+}

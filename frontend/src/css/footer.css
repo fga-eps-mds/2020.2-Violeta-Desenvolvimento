@@ -5,6 +5,7 @@
     color: white;
     text-align: center;
     background-color: #472f4c;
+    padding-bottom: 1px;
   }
   
   .container-footer {
@@ -41,7 +42,7 @@
   }
   
 
-  @media(max-width:739px){   
+  @media(max-width:960px){   
   
     .footer-banner ul img{
       height: 22px;
@@ -57,7 +58,7 @@
     .footer-banner a{
       margin: 6px;      
     }
-    .container-footer{
+    /* .container-footer{
       margin: 0;
-    }
+    } */
   }
