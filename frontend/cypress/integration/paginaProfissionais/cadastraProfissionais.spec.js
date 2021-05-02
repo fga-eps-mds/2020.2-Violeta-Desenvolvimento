@@ -1,12 +1,19 @@
 describe('Add Profissionais', () => {
     before(() => {
+        Cypress.env('userLogin', 'testandoTeste');
+        const userTest = [
+            {
+                username: Cypress.env('userLogin'),
+                password: Cypress.env('userLogin'),
+            },
+        ];
         cy.visit('/login/');
         cy.request({
             method: 'POST',
             url: 'http://localhost:8004/autenticador/autenticador/login/',
             body: {
-                username: 'testandoteste',
-                password: 'testandoteste',
+                username: userTest[0].username,
+                password: userTest[0].password,
             },
             failOnStatusCode: false,
         }).then((response) => {
@@ -17,8 +24,8 @@ describe('Add Profissionais', () => {
                     method: 'POST',
                     url: 'http://localhost:8004/autenticador/account/register',
                     body: {
-                        username: 'testandoteste',
-                        password: 'testandoteste',
+                        username: userTest[0].username,
+                        password: userTest[0].password,
                     },
                 }).then((response) => {
                     expect(response.body).has.property('username');
