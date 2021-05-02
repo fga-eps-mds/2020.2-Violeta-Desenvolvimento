@@ -2,8 +2,9 @@
 
 describe('admin', () => {
     before(() => {
+        Cypress.env('userLogin', 'testandoTeste')
         const userTest = [
-            { username: 'testandoteste', password: 'testandoteste' },
+            { username: Cypress.env('userLogin'), password: Cypress.env('userLogin') },
         ];
         cy.visit('/login/');
         cy.request({
