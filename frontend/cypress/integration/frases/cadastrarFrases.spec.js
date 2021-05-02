@@ -2,13 +2,16 @@
 
 describe('admin', () => {
     before(() => {
+        const userTest = [
+            { username: 'testandoteste', password: 'testandoteste' },
+        ];
         cy.visit('/login/');
         cy.request({
             method: 'POST',
             url: 'http://localhost:8004/autenticador/autenticador/login/',
             body: {
-                username: 'testandoteste',
-                password: 'testandoteste',
+                username: userTest[0].username,
+                password: userTest[0].password,
             },
             failOnStatusCode: false,
         }).then((response) => {
@@ -19,14 +22,14 @@ describe('admin', () => {
                     method: 'POST',
                     url: 'http://localhost:8004/autenticador/account/register',
                     body: {
-                        username: 'testandoteste',
-                        password: 'testandoteste',
+                        username: userTest[0].username,
+                        password: userTest[0].password,
                     },
-                }).then((response) => {
-                    expect(response.body).has.property('username');
-                    expect(response.body.username).is.not.null;
-                    cy.log(response.body.username);
-                    Cypress.env('createUsarioID', response.body.username);
+                }).then((resp) => {
+                    expect(resp.body).has.property('username');
+                    expect(resp.body.username).is.not.null;
+                    cy.log(resp.body.username);
+                    Cypress.env('createUsarioID', resp.body.username);
                 });
                 cy.visit('/login/');
                 cy.get('[type="text"]').type('testandoteste');
