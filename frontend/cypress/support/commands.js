@@ -23,20 +23,3 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-// Cypress.Commands.add('createUsuario', () => {
-//     cy.request({
-//         method: 'POST',
-//         url: 'http://localhost:8004/autenticador/account/register/',
-//         body: {
-//             username: 'testandoteste',
-//             password: 'testandoteste',
-//         },
-//     }).then((response) => {
-//         expect(response.body).has.property('username');
-//         expect(response.body.username).is.not.null;
-//         cy.log(response.body.username);
-
-//         Cypress.env('createUsarioID', response.body.username);
-//     });
-// });
