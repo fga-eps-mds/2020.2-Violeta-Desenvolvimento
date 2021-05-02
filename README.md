@@ -1,5 +1,5 @@
 # Projeto Violeta
-Homolog: [http://deutsch-government-sense-appraisal.trycloudflare.com](http://deutsch-government-sense-appraisal.trycloudflare.com)
+Homolog: [http://submitted-indiana-island-quotations.trycloudflare.com](http://submitted-indiana-island-quotations.trycloudflare.com)
 
 Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/)
 
@@ -8,9 +8,9 @@ Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=security_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
 
 ### Produção
-[![Build Status](https://e03ef3e24673.ngrok.io/buildStatus/icon?job=violeta)](https://e03ef3e24673.ngrok.io/job/violeta/)
+[![Build Status](https://b8bd9c66d9e7.ngrok.io/buildStatus/icon?job=violeta)](https://b8bd9c66d9e7.ngrok.io/job/violeta/)
 ## Homologação
-[![Build Status](https://e03ef3e24673.ngrok.io/buildStatus/icon?job=violeta-dev)](https://e03ef3e24673.ngrok.io/job/violeta-dev/)
+[![Build Status](https://b8bd9c66d9e7.ngrok.io/buildStatus/icon?job=violeta-dev)](https://b8bd9c66d9e7.ngrok.io/job/violeta-dev/)
 ## Requisitos
 1. Ter instalado o [docker](https://docs.docker.com/get-docker/) e o [docker-compose](https://docs.docker.com/compose/install/) nas máquinas.
 
