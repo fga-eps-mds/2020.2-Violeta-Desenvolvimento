@@ -1,49 +1,53 @@
 import React from 'react';
 import '../css/questionario.css';
 import womanFigura from '../images/woman.png';
-import { urlGenerator } from './urls';
+import ShowTree from './ShowTree';
+// import { urlGenerator } from './urls';
 
-const url = urlGenerator('questionario', 'questionario/');
+// const url = urlGenerator('questionario', 'questionario');
 
 class Questionario extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            arvore_decisao: '',
-            categoria_violencia: '',
-            contact: '',
-            address: '',
-        };
-        this.changeHandler = this.changeHandler.bind(this);
-        this.submitForm = this.submitForm.bind(this);
-    }
+    // constructor() {
+    //     super();
+    //     this.state = {
+    //         arvore_decisao: '',
+    //         categoria_violencia: '',
+    //         contact: '',
+    //         address: '',
+    //     };
+    //     this.changeHandler = this.changeHandler.bind(this);
+    //     this.submitForm = this.submitForm.bind(this);
+    // }
 
-    // Input Change Handler
-    changeHandler(event) {
-        this.setState({
-            [event.target.name]: event.target.value,
-        });
-    }
+    // // Input Change Handler
+    // changeHandler(event) {
+    //     this.setState({
+    //         [event.target.name]: event.target.value,
+    //     });
+    // }
 
-    // Submit Form
-    submitForm(event) {
-        fetch(url, {
-            method: 'POST',
-            body: JSON.stringify(this.state),
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-        }).then((response) => response.json());
-        // .then((data) => console.log(data));
-
-        this.setState({
-            arvore_decisao: '',
-            categoria_violencia: '',
-            contact: '',
-            address: '',
-        });
-        event.preventDefault();
-    }
+    // submitForm(event) {
+    //     let url;
+    //     let port = '';
+    //     if (process.env.REACT_APP_ENV === 'development') {
+    //         url = process.env.REACT_APP_URL_DEVELOP;
+    //         port = process.env.REACT_APP_QUESTIONARIO_PORT;
+    //     } else {
+    //         url = process.env.REACT_APP_URL_PRODUCTION;
+    //         if (process.env.REACT_APP_ENV === 'deploy') {
+    //             url = `${url}${port}/questionario-dev/api/questionario/`;
+    //         } else {
+    //             url = `${url}${port}/questionario/api/questionario/`;
+    //         }
+    //     }
+    //     fetch(url, {
+    //         method: 'POST',
+    //         body: JSON.stringify(this.state),
+    //         headers: {
+    //             'Content-type': 'application/json; charset=UTF-8',
+    //         },
+    //     }).then((response) => response.json());
+    // }
 
     render() {
         return (
@@ -53,7 +57,8 @@ class Questionario extends React.Component {
                 </div>
                 <div id="container-questionario">
                     <div id="formulario">
-                        <p>
+                        <ShowTree />
+                        {/* <p>
                             Sofreu violência física? Seja de modo que ofenda sua
                             integridade ou saúde corporal.
                         </p>
@@ -87,21 +92,21 @@ class Questionario extends React.Component {
                                 name="fname"
                             />
                             <br />
-                        </form>
+                        </form> */}
                     </div>
                     <div id="foto">
                         <img id="img-formulario" src={womanFigura} />
                     </div>
                 </div>
                 <div id="btn-formulario">
-                    <button
+                    {/* <button
                         id="btn-enviar"
                         form="quiz"
                         type="submit"
                         onClick={this.submitForm}
                     >
                         Enviar
-                    </button>
+                    </button> */}
                 </div>
             </section>
         );

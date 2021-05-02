@@ -1,18 +1,11 @@
 from rest_framework import serializers
 from .models import (
-    CadProfissionais,
     ViolenciasCount,
     CategoriaViolencia,
     CategoriaContato,
     ContatoViolencia,
     Questionario,
     ContatoQuestionario)
-
-
-class CadProfissionaisSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = CadProfissionais
-        fields = '__all__'
 
 
 class ViolenciasCountSerializer(serializers.ModelSerializer):
