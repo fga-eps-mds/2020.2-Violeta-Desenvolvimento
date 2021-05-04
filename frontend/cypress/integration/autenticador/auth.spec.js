@@ -35,19 +35,13 @@ describe('Autenticador Page', () => {
                     cy.log(response.body.username);
                     Cypress.env('createUsarioID', response.body.username);
                 });
-                cy.visit('/login/');
-                cy.get('[type="text"]').type('testandoTeste');
-                cy.get('[type="password"]').type('testandoTeste');
-                cy.get('.btn-login').click();
+                loginAsUser('testandoTeste', 'testandoTeste');
             } else {
-                cy.visit('/login/');
-                cy.get('[type="text"]').type('testandoTeste');
-                cy.get('[type="password"]').type('testandoTeste');
-                cy.get('.btn-login').click();
+                loginAsUser('testandoTeste', 'testandoTeste');
             }
             cy.get('.btn-logout').click();
         });
-    })
+    });
     it('Should return 401 error when non-authorized login tryes to login', () => {
         cy.visit('/login/');
         cy.get('[type="text"]').type('testandoTeste');
@@ -58,4 +52,13 @@ describe('Autenticador Page', () => {
                 cy.expect(response.status === 401);
             });
     });
+
+    function loginAsUser(username, password) {
+        cy.visit('/login/');
+        cy.get('[type="text"]').type(username);
+        cy.get('[type="password"]').type(password);
+        cy.get('.btn-login').click();
+    }
 });
+
+
