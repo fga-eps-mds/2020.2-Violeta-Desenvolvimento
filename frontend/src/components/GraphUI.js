@@ -6,7 +6,11 @@ import { ReactComponent as FeedbackAsset } from '../images/popup-feedback-person
 import { ReactComponent as CloseQuiz } from '../images/closequiz.svg';
 import ProfissionaisQuiz from './ProfissionaisQuiz';
 import ContatosQuiz from './ContatosQuiz';
-// var json = require('questionario/questionario/decision_tree.json');
+
+import { urlGenerator, urlGen } from './urls';
+
+const url = urlGenerator('questionario', 'vitimas-categoria/');
+const urlPost = urlGen('questionario', 'vitimas/');
 
 const GraphUI = ({
     graph_path,
@@ -34,9 +38,8 @@ const GraphUI = ({
         }
     }, [graph_path, question_set_path, decisionTreeInitializing]);
 
-    // const data = 'questionario/questionario/decision_tree.json';
     const getData = () => {
-        fetch('http://localhost:8001/questionario/api/vitimas-categoria', {
+        fetch(url, {
             headers: {
                 'Content-Type': 'application/json',
                 Accept: 'application/json',
@@ -88,9 +91,9 @@ const GraphUI = ({
     };
 
     async function postAwnser(tiposValue) {
-        // const value = tiposValue.charAt(0).toUpperCase() + tiposValue.slice(1);
         const value = `VIOLÊNCIA ${tiposValue.toUpperCase()}`;
-        await axios.post('http://localhost:8001/questionario/vitimas/', {
+
+        await axios.post(urlPost, {
             categoria: value,
         });
     }
