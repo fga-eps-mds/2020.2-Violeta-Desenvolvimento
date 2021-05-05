@@ -1,10 +1,11 @@
-/// <reference types="cypress" />
-
-describe('admin', () => {
+describe('Depoimentos admin page', () => {
     before(() => {
-        Cypress.env('userLogin', 'testandoTeste')
+        Cypress.env('userLogin', 'testandoTeste');
         const userTest = [
-            { username: Cypress.env('userLogin'), password: Cypress.env('userLogin') },
+            {
+                username: Cypress.env('userLogin'),
+                password: Cypress.env('userLogin'),
+            },
         ];
         cy.visit('/login/');
         cy.request({
@@ -26,11 +27,11 @@ describe('admin', () => {
                         username: userTest[0].username,
                         password: userTest[0].password,
                     },
-                }).then((resp) => {
-                    expect(resp.body).has.property('username');
-                    expect(resp.body.username).is.not.null;
-                    cy.log(resp.body.username);
-                    Cypress.env('createUsarioID', resp.body.username);
+                }).then((response) => {
+                    expect(response.body).has.property('username');
+                    expect(response.body.username).is.not.null;
+                    cy.log(response.body.username);
+                    Cypress.env('createUsarioID', response.body.username);
                 });
                 cy.visit('/login/');
                 cy.get('[type="text"]').type('testandoTeste');
@@ -45,16 +46,13 @@ describe('admin', () => {
         });
     });
 
-    it('Deve poder realizar o cadastro de frase', () => {
-        cy.intercept({
-            method: 'POST',
-            url: 'http://localhost:8002/frases/api/frases-motivacionais/',
-        }).as('postFrase');
+    it('Should be possible to approve a depoimento and logout', () => {
+        cy.get(
+            ':nth-child(1) > .labelDepoimento > .divInput > .inputDepoimento'
+        ).check();
 
-        cy.get('#ds_frase').type('Frase cadastrada agora');
-        cy.get('.btn-add-frases').click();
+        cy.get('.btn-aprova-depoimento').click();
 
-        cy.wait('@postFrase').its('response.statusCode').should('eq', 201);
         cy.get('.btn-logout').click();
     });
 });
