@@ -35,7 +35,7 @@ class ContatoViolenciaSerializer(serializers.ModelSerializer):
 class QuestionarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Questionario
-        fields = '__all__'
+        fields = ['arvore_decisao',]
 
 
 class ContatoQuestionarioSerializer(serializers.ModelSerializer):
