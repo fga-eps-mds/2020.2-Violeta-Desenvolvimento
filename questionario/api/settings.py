@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'questionario'
-
+    'questionario',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [

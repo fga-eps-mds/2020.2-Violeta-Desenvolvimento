@@ -19,7 +19,7 @@ const CadastrarFrases = () => {
         ev.preventDefault();
 
         await axios.post(url, values);
-        window.location.reload();
+        ev.target.reset();
     }
 
     return (
