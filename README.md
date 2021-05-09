@@ -1,5 +1,5 @@
 # Projeto Violeta
-Homolog: [http://handbags-perfume-ks-float.trycloudflare.com](http://handbags-perfume-ks-float.trycloudflare.com)
+Homolog: [http://desirable-asbestos-fundamental-mysimon.trycloudflare.com](http://desirable-asbestos-fundamental-mysimon.trycloudflare.com)
 
 Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/)
 
@@ -8,9 +8,9 @@ Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=security_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
 
 ### Produção
-[![Build Status](https://f6c06a6f28ac.ngrok.io/buildStatus/icon?job=violeta)](https://f6c06a6f28ac.ngrok.io/job/violeta/)
+[![Build Status](https://649c27060cf4.ngrok.io/buildStatus/icon?job=violeta)](https://649c27060cf4.ngrok.io/job/violeta/)
 ## Homologação
-[![Build Status](https://f6c06a6f28ac.ngrok.io/buildStatus/icon?job=violeta-dev)](https://f6c06a6f28ac.ngrok.io/job/violeta-dev/)
+[![Build Status](https://649c27060cf4.ngrok.io/buildStatus/icon?job=violeta-dev)](https://649c27060cf4.ngrok.io/job/violeta-dev/)
 ## Requisitos
 1. Ter instalado o [docker](https://docs.docker.com/get-docker/) e o [docker-compose](https://docs.docker.com/compose/install/) nas máquinas.
 
