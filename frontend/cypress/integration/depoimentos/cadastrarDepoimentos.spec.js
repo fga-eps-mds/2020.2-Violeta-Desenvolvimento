@@ -33,15 +33,9 @@ describe('Depoimentos admin page', () => {
                     cy.log(response.body.username);
                     Cypress.env('createUsarioID', response.body.username);
                 });
-                cy.visit('/login/');
-                cy.get('[type="text"]').type('testandoTeste');
-                cy.get('[type="password"]').type('testandoTeste');
-                cy.get('.btn-login').click();
+                loginAsUser('testandoTeste', 'testandoTeste');
             } else {
-                cy.visit('/login/');
-                cy.get('[type="text"]').type('testandoTeste');
-                cy.get('[type="password"]').type('testandoTeste');
-                cy.get('.btn-login').click();
+                loginAsUser('testandoTeste', 'testandoTeste');
             }
         });
     });
@@ -55,4 +49,11 @@ describe('Depoimentos admin page', () => {
 
         cy.get('.btn-logout').click();
     });
+
+    function loginAsUser(username, password) {
+        cy.visit('/login/');
+        cy.get('[type="text"]').type(username);
+        cy.get('[type="password"]').type(password);
+        cy.get('.btn-login').click();
+    }
 });
