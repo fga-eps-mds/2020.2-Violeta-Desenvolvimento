@@ -36,7 +36,7 @@ const GraphUI = ({
 
     // const data = 'questionario/questionario/decision_tree.json';
     const getData = () => {
-        fetch('http://localhost:8001/questionario/api/vitimas-categoria', {
+        fetch('http://localhost:8001/questionario/api/vitimas-categoria/', {
             headers: {
                 'Content-Type': 'application/json',
                 Accept: 'application/json',

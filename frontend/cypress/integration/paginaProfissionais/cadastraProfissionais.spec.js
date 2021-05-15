@@ -34,13 +34,13 @@ describe('Add Profissionais', () => {
                     Cypress.env('createUsarioID', response.body.username);
                 });
                 cy.visit('/login/');
-                cy.get('[type="text"]').type('testandoteste');
-                cy.get('[type="password"]').type('testandoteste');
+                cy.get('[type="text"]').type(userTest[0].username);
+                cy.get('[type="password"]').type(userTest[0].password);
                 cy.get('.btn-login').click();
             } else {
                 cy.visit('/login/');
-                cy.get('[type="text"]').type('testandoteste');
-                cy.get('[type="password"]').type('testandoteste');
+                cy.get('[type="text"]').type(userTest[0].username);
+                cy.get('[type="password"]').type(userTest[0].password);
                 cy.get('.btn-login').click();
             }
         });
