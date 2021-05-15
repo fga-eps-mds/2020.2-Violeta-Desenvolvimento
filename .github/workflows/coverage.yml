@@ -11,17 +11,36 @@ on:
     types: [opened, synchronize, reopened]
     
 jobs:
-  tests:
+  generate_coverage:
     runs-on: ubuntu-latest
-  
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Tests check
-      run: docker-compose up --build  "npm" "start"
-
-    - name: SonarCloud Scan
-      uses: sonarsource/sonarcloud-github-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      - uses: actions/checkout@v2
+      - name: Run coverage
+      - run: docker-compose up 
+      - name: Run cypress
+      - run: npx cypress open
+      - name: Upload code coverage results
+        uses: actions/upload-artifact@v1
+        with:
+          name: coverage-report
+          path: ./coverage.xml
+  sonarcloud:
+    needs: [generate_coverage]
+    name: SonarCloud
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Shallow clones should be disabled for a better relevancy of analysis
+      - name: Download coverage results
+        uses: actions/download-artifact@v2
+        with:
+          name: coverage-report
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        with:
+          args: >
+            -Dsonar.test.exclusions=project/tests/**
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
