@@ -16,9 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run coverage
-      - run: docker-compose up 
+        run: docker-compose up 
       - name: Run cypress
-      - run: npx cypress open
+        run: npx cypress open
       - name: Upload code coverage results
         uses: actions/upload-artifact@v1
         with:
@@ -38,9 +38,7 @@ jobs:
           name: coverage-report
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
-        with:
-          args: >
-            -Dsonar.test.exclusions=project/tests/**
+        
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
