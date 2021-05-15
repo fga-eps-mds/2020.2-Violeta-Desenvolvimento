@@ -13,4 +13,4 @@ describe('Graph Display', () => {
             .its('response.statusCode')
             .should('eq', 200);
     });
-});   
+});
