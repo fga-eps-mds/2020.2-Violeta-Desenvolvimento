@@ -8,7 +8,8 @@ on:
     branches: [ main, develop  ]
   pull_request:
     branches: [ main, develop ]
-
+    types: [opened, synchronize, reopened]
+    
 jobs:
   tests:
     runs-on: ubuntu-latest
