@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run coverage
-        run: docker-compose up 
+        run: npm i cypress
       - name: Run cypress
         run: npx cypress open
       - name: Upload code coverage results
