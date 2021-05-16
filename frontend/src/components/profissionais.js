@@ -33,8 +33,9 @@ class Profissionais extends React.Component {
             i < this.state.qtdeItemSlide;
             i += 1
         ) {
-            this.state.arrayProfissionais[i] = this.state.filteredProfissionais[
-                this.state.currentSlide * this.state.qtdeItemSlide + i
+            this.state.arrayProfissionais[i] =
+                this.state.filteredProfissionais[
+                    this.state.currentSlide * this.state.qtdeItemSlide + i
             ];
         }
 
