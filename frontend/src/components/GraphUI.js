@@ -54,6 +54,7 @@ const GraphUI = ({
     useEffect(() => {
         if (decisionTreeInitialized) {
             console.log('GraphUI question-tree graph files fetched.');
+            console.log(question_set_path);
         }
         getData();
     }, [decisionTreeInitialized]);
