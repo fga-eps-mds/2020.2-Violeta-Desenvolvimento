@@ -43,5 +43,6 @@ urlpatterns = [
     path(BASE_URL + 'vitimas/', views.add_victims_category),
     path(BASE_URL + '', schema_view.with_ui('swagger', cache_timeout=0)),
     path(BASE_URL + 'redoc/', schema_view.with_ui('redoc', cache_timeout=0)),
-    url(r'{}{}'.format(BASE_URL, 'getQuestionario/.json'), views.get_questionario)
+    url(r'{}{}'.format(BASE_URL, 'getQuestionario/.json'),
+        views.get_questionario)
 ]

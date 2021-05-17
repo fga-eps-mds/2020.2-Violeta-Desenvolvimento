@@ -1,6 +1,4 @@
 import json
-import io
-from django.http import FileResponse
 from django.http import HttpResponse
 from django.http import JsonResponse
 from .models import Questionario, ViolenciasCount

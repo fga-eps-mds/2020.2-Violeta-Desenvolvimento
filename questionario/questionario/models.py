@@ -1,7 +1,4 @@
-import requests
 from django.db import models
-from django.contrib.postgres.fields import JSONField
-from django.http import JsonResponse
 
 
 class ViolenciasCount(models.Model):
