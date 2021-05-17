@@ -36,7 +36,7 @@ const GraphUI = ({
 
     // const data = 'questionario/questionario/decision_tree.json';
     const getData = () => {
-        fetch('http://localhost:8001/questionario/api/vitimas-categoria', {
+        fetch('http://localhost:8001/questionario/api/vitimas-categoria/', {
             headers: {
                 'Content-Type': 'application/json',
                 Accept: 'application/json',
@@ -54,6 +54,7 @@ const GraphUI = ({
     useEffect(() => {
         if (decisionTreeInitialized) {
             console.log('GraphUI question-tree graph files fetched.');
+            console.log(question_set_path);
         }
         getData();
     }, [decisionTreeInitialized]);

@@ -1,5 +1,7 @@
+import requests
 from django.db import models
 from django.contrib.postgres.fields import JSONField
+from django.http import JsonResponse
 
 
 class ViolenciasCount(models.Model):
@@ -101,15 +103,15 @@ class Questionario(models.Model):
 
     id_questionario = models.AutoField(primary_key=True)
 
-    categoria_violencia = models.ForeignKey(CategoriaViolencia,
-                                            on_delete=models.CASCADE)
+    # categoria_violencia = models.ForeignKey(CategoriaViolencia,
+    #                                         on_delete=models.CASCADE)
 
-    arvore_decisao = JSONField(null=False,
-                               blank=False)
+    arvore_decisao = models.TextField(null=False, blank=False)
+    # arvore_decisao = JSONField(null=False,
+    #                            blank=False)
 
     def __str__(self):
-        return str(self.id_questionario) + " | " + str(
-            self.categoria_violencia)
+        return str(self.id_questionario)
 
 
 class ContatoQuestionario(models.Model):
