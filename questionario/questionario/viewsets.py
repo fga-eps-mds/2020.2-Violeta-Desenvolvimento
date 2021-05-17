@@ -73,6 +73,7 @@ class QuestionarioViewset(viewsets.ModelViewSet):
         questionário")
     def list(self, request):
         return HttpResponse(json.dumps(self.queryset[0].arvore_decisao))
+
     def perform_create(self, serializer):
         serializer.save()
 
