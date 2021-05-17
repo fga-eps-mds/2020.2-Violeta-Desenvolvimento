@@ -6,7 +6,9 @@ import { ReactComponent as FeedbackAsset } from '../images/popup-feedback-person
 import { ReactComponent as CloseQuiz } from '../images/closequiz.svg';
 import ProfissionaisQuiz from './ProfissionaisQuiz';
 import ContatosQuiz from './ContatosQuiz';
-// var json = require('questionario/questionario/decision_tree.json');
+import { urlGen } from './urls';
+
+const urlVitmas = urlGen('questionario', 'vitimas/');
 
 const GraphUI = ({
     graph_path,
@@ -35,27 +37,28 @@ const GraphUI = ({
     }, [graph_path, question_set_path, decisionTreeInitializing]);
 
     // const data = 'questionario/questionario/decision_tree.json';
-    const getData = () => {
-        fetch('http://localhost:8001/questionario/api/vitimas-categoria', {
-            headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json',
-            },
-        })
-            .then((response) => {
-                console.log(response);
-                return response.json();
-            })
-            .then((myJson) => {
-                console.log(myJson);
-            });
-    };
+    // const getData = () => {
+    //     fetch('http://localhost:8001/questionario/api/vitimas-categoria/', {
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //             Accept: 'application/json',
+    //         },
+    //     })
+    //         .then((response) => {
+    //             console.log(response);
+    //             return response.json();
+    //         })
+    //         .then((myJson) => {
+    //             console.log(myJson);
+    //         });
+    // };
 
     useEffect(() => {
         if (decisionTreeInitialized) {
             console.log('GraphUI question-tree graph files fetched.');
+            console.log(question_set_path);
         }
-        getData();
+        // getData();
     }, [decisionTreeInitialized]);
 
     useEffect(() => {
@@ -90,7 +93,7 @@ const GraphUI = ({
     async function postAwnser(tiposValue) {
         // const value = tiposValue.charAt(0).toUpperCase() + tiposValue.slice(1);
         const value = `VIOLÊNCIA ${tiposValue.toUpperCase()}`;
-        await axios.post('http://localhost:8001/questionario/vitimas/', {
+        await axios.post(urlVitmas, {
             categoria: value,
         });
     }

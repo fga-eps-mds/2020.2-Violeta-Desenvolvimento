@@ -170,6 +170,7 @@
     justify-content: center;
     flex-direction: column;
     height: 350px;
+    text-align: center;
 }
 
 #notAnswer-Container h1{

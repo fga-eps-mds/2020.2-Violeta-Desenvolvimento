@@ -41,3 +41,12 @@ def add_victims_category(request):
     counter.save()
     return JsonResponse({"class": counter.ds_categoria,
                         "counts": counter.categoria_counter})
+
+
+@require_http_methods(["GET"])
+def get_questionario(request):
+    question = Questionario.objects.all()
+    # print(question[0].arvore_decisao)
+    # f = io.BytesIO(bytes(json.dumps(question[0].arvore_decisao), 'utf-8'))
+    print(question[0].arvore_decisao)
+    return HttpResponse(json.dumps(json.loads(question[0].arvore_decisao)))
