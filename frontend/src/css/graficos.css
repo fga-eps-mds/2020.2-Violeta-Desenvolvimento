@@ -1,5 +1,8 @@
 .graficos {
-    min-height: 610px;
+    min-height: 620px;
+    width: 1050px;
+    margin: 0 auto;
+    padding-top: 80px;
     background-color: #feefe8;
 }
 .container-violencia {
@@ -9,70 +12,81 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 50px auto 0px auto;
-    padding-right: 60px;
-    padding-left: 60px;
+    margin-bottom: 20px;
 }
 .box-violencia {
+    display: flex;
+    flex-direction: column;
     width: 170px;
     min-height: 105px;
     background-color: #f78a50;
     text-align: center;
-    margin: 5px;
+    /* margin: 5px; */
 }
 #counter {
+    margin-top: 10px;
     font-size: 36px;
     text-shadow: 1px 2px 3px black;
 }
 #ds-categoria {
     font-size: 24px;
     font-weight: bold;
+    padding-bottom: 10px;
 }
 
 #graphs {
     display: flex;
-    width: 90%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    padding-top: 50px;
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-bottom: 30px;
 }
 @media (max-width: 960px) {
-    .container-violencia {
-        padding: 20px;
+    .graficos {
+        min-height: 320px;
+        padding-top: 2rem;
+        width: auto;
     }
     .container-box-violencia {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 0 auto;
-        padding: 0;
+        margin-bottom: 1rem;
+        padding: 1rem ;
     }
-    .box-violencia{
-        min-width: 7rem;
+
+    .box-violencia {
+        width: 6rem;
+        margin-bottom: 1.4rem;
+        min-height: 6rem;
+        margin: 0.5rem;
+    }
+
+    #counter {
+        font-size: 1.5rem;
+    }
+    #ds-categoria {
+        font-size: 0.8rem;
+        margin: 0 auto;
+        width: 5.5rem;
+    }
+
+    #graphs {
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
     .box-violencia:nth-of-type(1) {
-        width: 11rem;
-        margin-left: 30px;
+        width: 8rem;
+        height: 8rem;
+        margin-left: 2rem;
+        padding-top: 1rem;
     }
+    .box-violencia:nth-of-type(1)#ds-categoria{
+        font-size: 2rem;
+    }
+
     .box-violencia:nth-of-type(2) {
-        width: 11rem;
-        margin-right: 30px;
-    }
-    #graphs {
-        flex-direction: column;
-        align-items: center;
-    }
-    #columnGraph{
-        margin: 0 auto;
-        padding-left: 50px;
-    }
-    #pieGraph{
-        margin: 0 auto;
-        padding-left: 120px;
+        padding-top: 1rem;
+        width: 8rem;
+        height: 8rem;
+        margin-right: 2rem;
     }
 }
-
- 

@@ -87,17 +87,18 @@ class Graficos extends React.Component {
                         <Chart
                             chartType="ColumnChart"
                             data={this.state.chartData}
-                            width="600px"
-                            height="400px"
+                            width={'25rem'}
+                            height={'25rem'}
+                            legendToggle
                             options={{
                                 title: 'Vítimas de Violências',
                                 backgroundColor: '#FEEFE8',
                                 titleTextStyle: {
                                     color: 'black',
                                     fontSize: 20,
-                                    bold: true,
+                                    bold: false,
                                 },
-                                fontSize: 18,
+                                fontSize: 16,
                                 fontName: 'Roboto',
                                 legend: { position: 'bottom' },
                             }}
@@ -105,19 +106,22 @@ class Graficos extends React.Component {
                     </div>
                     <div id="pieGraph">
                         <Chart
-                            width={'500px'}
-                            height={'300px'}
+                            width={'25rem'}
+                            height={'25rem'}
                             chartType="PieChart"
                             data={this.state.chartPie}
+                            legendToggle
                             options={{
                                 title: 'Vítimas de Violências',
                                 backgroundColor: '#FEEFE8',
                                 titleTextStyle: {
                                     color: 'black',
                                     fontSize: 20,
-                                    bold: true,
+                                    bold: false,
                                 },
+                                fontSize: 16,
                                 fontName: 'Roboto',
+                                legend: { position: 'bottom' },
                             }}
                             rootProps={{ 'data-testid': '1' }}
                         />
