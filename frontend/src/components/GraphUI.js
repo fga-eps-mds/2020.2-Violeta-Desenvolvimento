@@ -24,6 +24,7 @@ const GraphUI = ({
     const [isFinalModule, setIsFinalModule] = useState();
     const [buttonPopup, setButtonPopup] = useState(true);
     const [resposta, setResposta] = useState([]);
+    const [respostaCopy, setRespostaCopy] = useState([]);
     const [respostaSize, setRespostaSize] = useState();
 
     useEffect(() => {
@@ -91,7 +92,6 @@ const GraphUI = ({
     };
 
     async function postAwnser(tiposValue) {
-        // const value = tiposValue.charAt(0).toUpperCase() + tiposValue.slice(1);
         const value = `VIOLÊNCIA ${tiposValue.toUpperCase()}`;
         await axios.post(urlVitmas, {
             categoria: value,
@@ -109,6 +109,14 @@ const GraphUI = ({
         return true;
     };
 
+    const removeDuplicateAwnser = () => {
+        const cleanArr = resposta.filter(
+            (este, i) => resposta.indexOf(este) === i
+        );
+        setRespostaCopy(cleanArr);
+        setRespostaSize(cleanArr.length);
+    };
+
     const saveAnwser = () => {
         if (currentQuestion.resultado !== undefined) {
             const anwser = resposta;
@@ -118,6 +126,7 @@ const GraphUI = ({
             setRespostaSize(resposta.length);
             console.log(respostaSize);
         }
+        removeDuplicateAwnser();
     };
 
     const resetAll = () => {
@@ -131,6 +140,7 @@ const GraphUI = ({
         setButtonPopup(true);
         setResposta([]);
         setRespostaSize();
+        setRespostaCopy([]);
     };
 
     const handleNextClick = () => {
@@ -210,6 +220,7 @@ const GraphUI = ({
                                     inCorrectResponses.length}
                             </b>{' '}
                             questions correct. */}
+
                             <PopupQuest
                                 trigger={buttonPopup}
                                 setTrigger={setButtonPopup}
@@ -241,7 +252,7 @@ const GraphUI = ({
                                             <p className="text-quote">
                                                 Você está sofrendo um caso de
                                                 Violência
-                                                {resposta.map((item, i) =>
+                                                {respostaCopy.map((item, i) =>
                                                     i === respostaSize - 1 ? (
                                                         <span
                                                             key={item}
