@@ -87,8 +87,8 @@ class Graficos extends React.Component {
                         <Chart
                             chartType="ColumnChart"
                             data={this.state.chartData}
-                            width={'25rem'}
-                            height={'25rem'}
+                            width={'23rem'}
+                            height={'23rem'}
                             legendToggle
                             options={{
                                 title: 'Vítimas de Violências',
@@ -106,8 +106,8 @@ class Graficos extends React.Component {
                     </div>
                     <div id="pieGraph">
                         <Chart
-                            width={'25rem'}
-                            height={'25rem'}
+                            width={'23rem'}
+                            height={'23rem'}
                             chartType="PieChart"
                             data={this.state.chartPie}
                             legendToggle
