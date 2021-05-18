@@ -54,9 +54,9 @@
 
     .box-violencia {
         width: 6rem;
+        margin: 0.5rem;
         margin-bottom: 1.4rem;
         min-height: 6rem;
-        margin: 0.5rem;
     }
 
     #counter {
