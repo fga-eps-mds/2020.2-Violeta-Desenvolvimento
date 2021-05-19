@@ -1,0 +1,9236 @@
+{
+  "/frontend/src/actions/types.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/actions/types.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 1,
+          "column": 29
+        },
+        "end": {
+          "line": 1,
+          "column": 44
+        }
+      },
+      "1": {
+        "start": {
+          "line": 2,
+          "column": 26
+        },
+        "end": {
+          "line": 2,
+          "column": 38
+        }
+      },
+      "2": {
+        "start": {
+          "line": 3,
+          "column": 22
+        },
+        "end": {
+          "line": 3,
+          "column": 30
+        }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 18,
+      "2": 18
+    },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "d70be4aa30e69a8d99fa122b67f3a7782d598cbc"
+  },
+  "/frontend/src/reducers/auth.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/reducers/auth.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 3,
+          "column": 21
+        },
+        "end": {
+          "line": 7,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 10,
+          "column": 30
+        },
+        "end": {
+          "line": 10,
+          "column": 36
+        }
+      },
+      "2": {
+        "start": {
+          "line": 12,
+          "column": 4
+        },
+        "end": {
+          "line": 34,
+          "column": 5
+        }
+      },
+      "3": {
+        "start": {
+          "line": 14,
+          "column": 12
+        },
+        "end": {
+          "line": 14,
+          "column": 59
+        }
+      },
+      "4": {
+        "start": {
+          "line": 15,
+          "column": 12
+        },
+        "end": {
+          "line": 15,
+          "column": 63
+        }
+      },
+      "5": {
+        "start": {
+          "line": 16,
+          "column": 12
+        },
+        "end": {
+          "line": 21,
+          "column": 14
+        }
+      },
+      "6": {
+        "start": {
+          "line": 24,
+          "column": 12
+        },
+        "end": {
+          "line": 24,
+          "column": 46
+        }
+      },
+      "7": {
+        "start": {
+          "line": 25,
+          "column": 12
+        },
+        "end": {
+          "line": 25,
+          "column": 48
+        }
+      },
+      "8": {
+        "start": {
+          "line": 26,
+          "column": 12
+        },
+        "end": {
+          "line": 31,
+          "column": 14
+        }
+      },
+      "9": {
+        "start": {
+          "line": 33,
+          "column": 12
+        },
+        "end": {
+          "line": 33,
+          "column": 25
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "reducer",
+        "decl": {
+          "start": {
+            "line": 9,
+            "column": 24
+          },
+          "end": {
+            "line": 9,
+            "column": 31
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 62
+          },
+          "end": {
+            "line": 35,
+            "column": 1
+          }
+        },
+        "line": 9
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 32
+          },
+          "end": {
+            "line": 9,
+            "column": 52
+          }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": {
+              "line": 9,
+              "column": 40
+            },
+            "end": {
+              "line": 9,
+              "column": 52
+            }
+          }
+        ],
+        "line": 9
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 4
+          },
+          "end": {
+            "line": 34,
+            "column": 5
+          }
+        },
+        "type": "switch",
+        "locations": [
+          {
+            "start": {
+              "line": 13,
+              "column": 8
+            },
+            "end": {
+              "line": 21,
+              "column": 14
+            }
+          },
+          {
+            "start": {
+              "line": 22,
+              "column": 8
+            },
+            "end": {
+              "line": 22,
+              "column": 24
+            }
+          },
+          {
+            "start": {
+              "line": 23,
+              "column": 8
+            },
+            "end": {
+              "line": 31,
+              "column": 14
+            }
+          },
+          {
+            "start": {
+              "line": 32,
+              "column": 8
+            },
+            "end": {
+              "line": 33,
+              "column": 25
+            }
+          }
+        ],
+        "line": 12
+      }
+    },
+    "s": {
+      "0": 18,
+      "1": 58,
+      "2": 58,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 54
+    },
+    "f": {
+      "0": 58
+    },
+    "b": {
+      "0": [
+        54
+      ],
+      "1": [
+        3,
+        0,
+        1,
+        54
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "233a4866d67980e007645ba6498e2753b76fa8aa"
+  },
+  "/frontend/src/reducers/index.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/reducers/index.js",
+    "statementMap": {},
+    "fnMap": {},
+    "branchMap": {},
+    "s": {},
+    "f": {},
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a0b2d76dc047cf70f73b1c2379f970024cbadd65"
+  },
+  "/frontend/src/store.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/store.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 21
+        },
+        "end": {
+          "line": 6,
+          "column": 23
+        }
+      },
+      "1": {
+        "start": {
+          "line": 8,
+          "column": 19
+        },
+        "end": {
+          "line": 8,
+          "column": 26
+        }
+      },
+      "2": {
+        "start": {
+          "line": 10,
+          "column": 14
+        },
+        "end": {
+          "line": 14,
+          "column": 1
+        }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 18,
+      "2": 18
+    },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "b72d5cc4721aa8cf22915beb3f603b611c0146dd"
+  },
+  "/frontend/src/actions/auth.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/actions/auth.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 12
+        },
+        "end": {
+          "line": 5,
+          "column": 57
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 21
+        },
+        "end": {
+          "line": 30,
+          "column": 1
+        }
+      },
+      "2": {
+        "start": {
+          "line": 7,
+          "column": 45
+        },
+        "end": {
+          "line": 30,
+          "column": 1
+        }
+      },
+      "3": {
+        "start": {
+          "line": 8,
+          "column": 19
+        },
+        "end": {
+          "line": 12,
+          "column": 5
+        }
+      },
+      "4": {
+        "start": {
+          "line": 14,
+          "column": 17
+        },
+        "end": {
+          "line": 14,
+          "column": 55
+        }
+      },
+      "5": {
+        "start": {
+          "line": 16,
+          "column": 4
+        },
+        "end": {
+          "line": 29,
+          "column": 5
+        }
+      },
+      "6": {
+        "start": {
+          "line": 17,
+          "column": 20
+        },
+        "end": {
+          "line": 17,
+          "column": 55
+        }
+      },
+      "7": {
+        "start": {
+          "line": 19,
+          "column": 8
+        },
+        "end": {
+          "line": 22,
+          "column": 11
+        }
+      },
+      "8": {
+        "start": {
+          "line": 24,
+          "column": 8
+        },
+        "end": {
+          "line": 24,
+          "column": 26
+        }
+      },
+      "9": {
+        "start": {
+          "line": 25,
+          "column": 8
+        },
+        "end": {
+          "line": 27,
+          "column": 11
+        }
+      },
+      "10": {
+        "start": {
+          "line": 28,
+          "column": 8
+        },
+        "end": {
+          "line": 28,
+          "column": 34
+        }
+      },
+      "11": {
+        "start": {
+          "line": 32,
+          "column": 22
+        },
+        "end": {
+          "line": 36,
+          "column": 1
+        }
+      },
+      "12": {
+        "start": {
+          "line": 32,
+          "column": 28
+        },
+        "end": {
+          "line": 36,
+          "column": 1
+        }
+      },
+      "13": {
+        "start": {
+          "line": 33,
+          "column": 4
+        },
+        "end": {
+          "line": 35,
+          "column": 7
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 21
+          },
+          "end": {
+            "line": 7,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 45
+          },
+          "end": {
+            "line": 30,
+            "column": 1
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 45
+          },
+          "end": {
+            "line": 7,
+            "column": 46
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 65
+          },
+          "end": {
+            "line": 30,
+            "column": 1
+          }
+        },
+        "line": 7
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 32,
+            "column": 22
+          },
+          "end": {
+            "line": 32,
+            "column": 23
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 32,
+            "column": 28
+          },
+          "end": {
+            "line": 36,
+            "column": 1
+          }
+        },
+        "line": 32
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 32,
+            "column": 28
+          },
+          "end": {
+            "line": 32,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 32,
+            "column": 42
+          },
+          "end": {
+            "line": 36,
+            "column": 1
+          }
+        },
+        "line": 32
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 18,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 3,
+      "6": 3,
+      "7": 3,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 18,
+      "12": 1,
+      "13": 1
+    },
+    "f": {
+      "0": 3,
+      "1": 3,
+      "2": 1,
+      "3": 1
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "a54ba8d4eed034803dbbd9c7f651d08bad6c558f"
+  },
+  "/frontend/src/components/listaDepoimento.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/listaDepoimento.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 12
+        },
+        "end": {
+          "line": 6,
+          "column": 54
+        }
+      },
+      "1": {
+        "start": {
+          "line": 9,
+          "column": 12
+        },
+        "end": {
+          "line": 11,
+          "column": 5
+        }
+      },
+      "2": {
+        "start": {
+          "line": 14,
+          "column": 8
+        },
+        "end": {
+          "line": 23,
+          "column": 11
+        }
+      },
+      "3": {
+        "start": {
+          "line": 15,
+          "column": 32
+        },
+        "end": {
+          "line": 15,
+          "column": 40
+        }
+      },
+      "4": {
+        "start": {
+          "line": 16,
+          "column": 26
+        },
+        "end": {
+          "line": 16,
+          "column": 28
+        }
+      },
+      "5": {
+        "start": {
+          "line": 17,
+          "column": 12
+        },
+        "end": {
+          "line": 21,
+          "column": 13
+        }
+      },
+      "6": {
+        "start": {
+          "line": 17,
+          "column": 25
+        },
+        "end": {
+          "line": 17,
+          "column": 26
+        }
+      },
+      "7": {
+        "start": {
+          "line": 18,
+          "column": 16
+        },
+        "end": {
+          "line": 20,
+          "column": 17
+        }
+      },
+      "8": {
+        "start": {
+          "line": 19,
+          "column": 20
+        },
+        "end": {
+          "line": 19,
+          "column": 47
+        }
+      },
+      "9": {
+        "start": {
+          "line": 22,
+          "column": 12
+        },
+        "end": {
+          "line": 22,
+          "column": 50
+        }
+      },
+      "10": {
+        "start": {
+          "line": 27,
+          "column": 8
+        },
+        "end": {
+          "line": 27,
+          "column": 27
+        }
+      },
+      "11": {
+        "start": {
+          "line": 30,
+          "column": 8
+        },
+        "end": {
+          "line": 41,
+          "column": 9
+        }
+      },
+      "12": {
+        "start": {
+          "line": 31,
+          "column": 12
+        },
+        "end": {
+          "line": 37,
+          "column": 13
+        }
+      },
+      "13": {
+        "start": {
+          "line": 31,
+          "column": 25
+        },
+        "end": {
+          "line": 31,
+          "column": 26
+        }
+      },
+      "14": {
+        "start": {
+          "line": 32,
+          "column": 16
+        },
+        "end": {
+          "line": 32,
+          "column": 55
+        }
+      },
+      "15": {
+        "start": {
+          "line": 33,
+          "column": 16
+        },
+        "end": {
+          "line": 36,
+          "column": 17
+        }
+      },
+      "16": {
+        "start": {
+          "line": 34,
+          "column": 20
+        },
+        "end": {
+          "line": 34,
+          "column": 63
+        }
+      },
+      "17": {
+        "start": {
+          "line": 35,
+          "column": 20
+        },
+        "end": {
+          "line": 35,
+          "column": 53
+        }
+      },
+      "18": {
+        "start": {
+          "line": 38,
+          "column": 12
+        },
+        "end": {
+          "line": 38,
+          "column": 37
+        }
+      },
+      "19": {
+        "start": {
+          "line": 40,
+          "column": 12
+        },
+        "end": {
+          "line": 40,
+          "column": 54
+        }
+      },
+      "20": {
+        "start": {
+          "line": 46,
+          "column": 8
+        },
+        "end": {
+          "line": 53,
+          "column": 9
+        }
+      },
+      "21": {
+        "start": {
+          "line": 46,
+          "column": 21
+        },
+        "end": {
+          "line": 46,
+          "column": 22
+        }
+      },
+      "22": {
+        "start": {
+          "line": 47,
+          "column": 12
+        },
+        "end": {
+          "line": 47,
+          "column": 51
+        }
+      },
+      "23": {
+        "start": {
+          "line": 48,
+          "column": 12
+        },
+        "end": {
+          "line": 52,
+          "column": 13
+        }
+      },
+      "24": {
+        "start": {
+          "line": 49,
+          "column": 32
+        },
+        "end": {
+          "line": 49,
+          "column": 59
+        }
+      },
+      "25": {
+        "start": {
+          "line": 50,
+          "column": 16
+        },
+        "end": {
+          "line": 50,
+          "column": 59
+        }
+      },
+      "26": {
+        "start": {
+          "line": 51,
+          "column": 16
+        },
+        "end": {
+          "line": 51,
+          "column": 56
+        }
+      },
+      "27": {
+        "start": {
+          "line": 57,
+          "column": 8
+        },
+        "end": {
+          "line": 86,
+          "column": 10
+        }
+      },
+      "28": {
+        "start": {
+          "line": 61,
+          "column": 24
+        },
+        "end": {
+          "line": 75,
+          "column": 29
+        }
+      },
+      "29": {
+        "start": {
+          "line": 68,
+          "column": 57
+        },
+        "end": {
+          "line": 68,
+          "column": 77
+        }
+      },
+      "30": {
+        "start": {
+          "line": 81,
+          "column": 36
+        },
+        "end": {
+          "line": 81,
+          "column": 55
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 4
+          },
+          "end": {
+            "line": 13,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 24
+          },
+          "end": {
+            "line": 24,
+            "column": 5
+          }
+        },
+        "line": 13
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 28
+          },
+          "end": {
+            "line": 14,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 37
+          },
+          "end": {
+            "line": 23,
+            "column": 9
+          }
+        },
+        "line": 14
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 26,
+            "column": 4
+          },
+          "end": {
+            "line": 26,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 25
+          },
+          "end": {
+            "line": 42,
+            "column": 5
+          }
+        },
+        "line": 26
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 44,
+            "column": 4
+          },
+          "end": {
+            "line": 44,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 44,
+            "column": 20
+          },
+          "end": {
+            "line": 54,
+            "column": 5
+          }
+        },
+        "line": 44
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 56,
+            "column": 4
+          },
+          "end": {
+            "line": 56,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 56,
+            "column": 13
+          },
+          "end": {
+            "line": 87,
+            "column": 5
+          }
+        },
+        "line": 56
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 60,
+            "column": 48
+          },
+          "end": {
+            "line": 60,
+            "column": 49
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 61,
+            "column": 24
+          },
+          "end": {
+            "line": 75,
+            "column": 29
+          }
+        },
+        "line": 61
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": {
+            "line": 68,
+            "column": 50
+          },
+          "end": {
+            "line": 68,
+            "column": 51
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 68,
+            "column": 57
+          },
+          "end": {
+            "line": 68,
+            "column": 77
+          }
+        },
+        "line": 68
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": {
+            "line": 81,
+            "column": 29
+          },
+          "end": {
+            "line": 81,
+            "column": 30
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 81,
+            "column": 36
+          },
+          "end": {
+            "line": 81,
+            "column": 55
+          }
+        },
+        "line": 81
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 16
+          },
+          "end": {
+            "line": 20,
+            "column": 17
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 18,
+              "column": 16
+            },
+            "end": {
+              "line": 20,
+              "column": 17
+            }
+          },
+          {
+            "start": {
+              "line": 18,
+              "column": 16
+            },
+            "end": {
+              "line": 20,
+              "column": 17
+            }
+          }
+        ],
+        "line": 18
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 8
+          },
+          "end": {
+            "line": 41,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 30,
+              "column": 8
+            },
+            "end": {
+              "line": 41,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 30,
+              "column": 8
+            },
+            "end": {
+              "line": 41,
+              "column": 9
+            }
+          }
+        ],
+        "line": 30
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 33,
+            "column": 16
+          },
+          "end": {
+            "line": 36,
+            "column": 17
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 33,
+              "column": 16
+            },
+            "end": {
+              "line": 36,
+              "column": 17
+            }
+          },
+          {
+            "start": {
+              "line": 33,
+              "column": 16
+            },
+            "end": {
+              "line": 36,
+              "column": 17
+            }
+          }
+        ],
+        "line": 33
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 48,
+            "column": 12
+          },
+          "end": {
+            "line": 52,
+            "column": 13
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 48,
+              "column": 12
+            },
+            "end": {
+              "line": 52,
+              "column": 13
+            }
+          },
+          {
+            "start": {
+              "line": 48,
+              "column": 12
+            },
+            "end": {
+              "line": 52,
+              "column": 13
+            }
+          }
+        ],
+        "line": 48
+      }
+    },
+    "s": {
+      "0": 18,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
+      "5": 5,
+      "6": 5,
+      "7": 0,
+      "8": 0,
+      "9": 5,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 0,
+      "16": 0,
+      "17": 0,
+      "18": 0,
+      "19": 0,
+      "20": 0,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 10,
+      "28": 0,
+      "29": 0,
+      "30": 0
+    },
+    "f": {
+      "0": 5,
+      "1": 5,
+      "2": 0,
+      "3": 0,
+      "4": 10,
+      "5": 0,
+      "6": 0,
+      "7": 0
+    },
+    "b": {
+      "0": [
+        0,
+        0
+      ],
+      "1": [
+        0,
+        0
+      ],
+      "2": [
+        0,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "5056dbf3d958d85a79698bb8a5492120528bfadf"
+  },
+  "/frontend/src/components/cadastraProfissional.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/cadastraProfissional.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 12
+        },
+        "end": {
+          "line": 7,
+          "column": 62
+        }
+      },
+      "1": {
+        "start": {
+          "line": 8,
+          "column": 29
+        },
+        "end": {
+          "line": 87,
+          "column": 1
+        }
+      },
+      "2": {
+        "start": {
+          "line": 9,
+          "column": 25
+        },
+        "end": {
+          "line": 14,
+          "column": 5
+        }
+      },
+      "3": {
+        "start": {
+          "line": 15,
+          "column": 32
+        },
+        "end": {
+          "line": 15,
+          "column": 54
+        }
+      },
+      "4": {
+        "start": {
+          "line": 16,
+          "column": 20
+        },
+        "end": {
+          "line": 16,
+          "column": 32
+        }
+      },
+      "5": {
+        "start": {
+          "line": 19,
+          "column": 32
+        },
+        "end": {
+          "line": 19,
+          "column": 41
+        }
+      },
+      "6": {
+        "start": {
+          "line": 21,
+          "column": 8
+        },
+        "end": {
+          "line": 21,
+          "column": 48
+        }
+      },
+      "7": {
+        "start": {
+          "line": 25,
+          "column": 8
+        },
+        "end": {
+          "line": 25,
+          "column": 28
+        }
+      },
+      "8": {
+        "start": {
+          "line": 27,
+          "column": 8
+        },
+        "end": {
+          "line": 30,
+          "column": 11
+        }
+      },
+      "9": {
+        "start": {
+          "line": 28,
+          "column": 12
+        },
+        "end": {
+          "line": 28,
+          "column": 35
+        }
+      },
+      "10": {
+        "start": {
+          "line": 29,
+          "column": 12
+        },
+        "end": {
+          "line": 29,
+          "column": 28
+        }
+      },
+      "11": {
+        "start": {
+          "line": 33,
+          "column": 4
+        },
+        "end": {
+          "line": 86,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 8,
+            "column": 29
+          },
+          "end": {
+            "line": 8,
+            "column": 30
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 35
+          },
+          "end": {
+            "line": 87,
+            "column": 1
+          }
+        },
+        "line": 8
+      },
+      "1": {
+        "name": "onChange",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 13
+          },
+          "end": {
+            "line": 18,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 26
+          },
+          "end": {
+            "line": 22,
+            "column": 5
+          }
+        },
+        "line": 18
+      },
+      "2": {
+        "name": "onSubmit",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 13
+          },
+          "end": {
+            "line": 24,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 24,
+            "column": 26
+          },
+          "end": {
+            "line": 31,
+            "column": 5
+          }
+        },
+        "line": 24
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 27,
+            "column": 42
+          },
+          "end": {
+            "line": 27,
+            "column": 43
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 27,
+            "column": 56
+          },
+          "end": {
+            "line": 30,
+            "column": 9
+          }
+        },
+        "line": 27
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 18,
+      "2": 120,
+      "3": 120,
+      "4": 117,
+      "5": 112,
+      "6": 112,
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "11": 117
+    },
+    "f": {
+      "0": 120,
+      "1": 112,
+      "2": 2,
+      "3": 2
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "45309a6298a024441843fedea69e5bc05a3a4d9f"
+  },
+  "/frontend/src/components/cadastrarFrases.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/cadastrarFrases.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 12
+        },
+        "end": {
+          "line": 6,
+          "column": 59
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 24
+        },
+        "end": {
+          "line": 44,
+          "column": 1
+        }
+      },
+      "2": {
+        "start": {
+          "line": 8,
+          "column": 25
+        },
+        "end": {
+          "line": 10,
+          "column": 5
+        }
+      },
+      "3": {
+        "start": {
+          "line": 11,
+          "column": 32
+        },
+        "end": {
+          "line": 11,
+          "column": 54
+        }
+      },
+      "4": {
+        "start": {
+          "line": 14,
+          "column": 32
+        },
+        "end": {
+          "line": 14,
+          "column": 41
+        }
+      },
+      "5": {
+        "start": {
+          "line": 15,
+          "column": 8
+        },
+        "end": {
+          "line": 15,
+          "column": 48
+        }
+      },
+      "6": {
+        "start": {
+          "line": 19,
+          "column": 8
+        },
+        "end": {
+          "line": 19,
+          "column": 28
+        }
+      },
+      "7": {
+        "start": {
+          "line": 21,
+          "column": 8
+        },
+        "end": {
+          "line": 21,
+          "column": 38
+        }
+      },
+      "8": {
+        "start": {
+          "line": 22,
+          "column": 8
+        },
+        "end": {
+          "line": 22,
+          "column": 26
+        }
+      },
+      "9": {
+        "start": {
+          "line": 25,
+          "column": 4
+        },
+        "end": {
+          "line": 43,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 24
+          },
+          "end": {
+            "line": 7,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 30
+          },
+          "end": {
+            "line": 44,
+            "column": 1
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "onChange",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 13
+          },
+          "end": {
+            "line": 13,
+            "column": 21
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 26
+          },
+          "end": {
+            "line": 16,
+            "column": 5
+          }
+        },
+        "line": 13
+      },
+      "2": {
+        "name": "onSubmit",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 19
+          },
+          "end": {
+            "line": 18,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 32
+          },
+          "end": {
+            "line": 23,
+            "column": 5
+          }
+        },
+        "line": 18
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 18,
+      "2": 27,
+      "3": 27,
+      "4": 22,
+      "5": 22,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 27
+    },
+    "f": {
+      "0": 27,
+      "1": 22,
+      "2": 1
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "1e992e53e2ed740d4d1a8fde801a22b7b2b0ad79"
+  },
+  "/frontend/src/components/adm.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/adm.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 10,
+          "column": 13
+        },
+        "end": {
+          "line": 50,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 11,
+          "column": 20
+        },
+        "end": {
+          "line": 11,
+          "column": 32
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 4
+        },
+        "end": {
+          "line": 15,
+          "column": 5
+        }
+      },
+      "3": {
+        "start": {
+          "line": 14,
+          "column": 8
+        },
+        "end": {
+          "line": 14,
+          "column": 31
+        }
+      },
+      "4": {
+        "start": {
+          "line": 18,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": 27
+        }
+      },
+      "5": {
+        "start": {
+          "line": 19,
+          "column": 8
+        },
+        "end": {
+          "line": 19,
+          "column": 23
+        }
+      },
+      "6": {
+        "start": {
+          "line": 20,
+          "column": 8
+        },
+        "end": {
+          "line": 22,
+          "column": 9
+        }
+      },
+      "7": {
+        "start": {
+          "line": 21,
+          "column": 12
+        },
+        "end": {
+          "line": 21,
+          "column": 35
+        }
+      },
+      "8": {
+        "start": {
+          "line": 25,
+          "column": 4
+        },
+        "end": {
+          "line": 49,
+          "column": 6
+        }
+      },
+      "9": {
+        "start": {
+          "line": 45,
+          "column": 55
+        },
+        "end": {
+          "line": 45,
+          "column": 69
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 13
+          },
+          "end": {
+            "line": 10,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 29
+          },
+          "end": {
+            "line": 50,
+            "column": 1
+          }
+        },
+        "line": 10
+      },
+      "1": {
+        "name": "handleClick",
+        "decl": {
+          "start": {
+            "line": 17,
+            "column": 19
+          },
+          "end": {
+            "line": 17,
+            "column": 30
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 34
+          },
+          "end": {
+            "line": 23,
+            "column": 5
+          }
+        },
+        "line": 17
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 45,
+            "column": 48
+          },
+          "end": {
+            "line": 45,
+            "column": 49
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 45,
+            "column": 55
+          },
+          "end": {
+            "line": 45,
+            "column": 69
+          }
+        },
+        "line": 45
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 13,
+            "column": 4
+          },
+          "end": {
+            "line": 15,
+            "column": 5
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 13,
+              "column": 4
+            },
+            "end": {
+              "line": 15,
+              "column": 5
+            }
+          },
+          {
+            "start": {
+              "line": 13,
+              "column": 4
+            },
+            "end": {
+              "line": 15,
+              "column": 5
+            }
+          }
+        ],
+        "line": 13
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 8
+          },
+          "end": {
+            "line": 22,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 20,
+              "column": 8
+            },
+            "end": {
+              "line": 22,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 20,
+              "column": 8
+            },
+            "end": {
+              "line": 22,
+              "column": 9
+            }
+          }
+        ],
+        "line": 20
+      }
+    },
+    "s": {
+      "0": 18,
+      "1": 5,
+      "2": 5,
+      "3": 0,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 5,
+      "9": 1
+    },
+    "f": {
+      "0": 5,
+      "1": 1,
+      "2": 1
+    },
+    "b": {
+      "0": [
+        0,
+        5
+      ],
+      "1": [
+        1,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "feb01640265b1dd35fbce193007c5dfef74fecdc"
+  },
+  "/frontend/src/components/header.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/header.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 8,
+          "column": 15
+        },
+        "end": {
+          "line": 45,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 9,
+          "column": 30
+        },
+        "end": {
+          "line": 9,
+          "column": 45
+        }
+      },
+      "2": {
+        "start": {
+          "line": 10,
+          "column": 24
+        },
+        "end": {
+          "line": 10,
+          "column": 46
+        }
+      },
+      "3": {
+        "start": {
+          "line": 10,
+          "column": 30
+        },
+        "end": {
+          "line": 10,
+          "column": 46
+        }
+      },
+      "4": {
+        "start": {
+          "line": 11,
+          "column": 28
+        },
+        "end": {
+          "line": 11,
+          "column": 49
+        }
+      },
+      "5": {
+        "start": {
+          "line": 11,
+          "column": 34
+        },
+        "end": {
+          "line": 11,
+          "column": 49
+        }
+      },
+      "6": {
+        "start": {
+          "line": 12,
+          "column": 4
+        },
+        "end": {
+          "line": 44,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 8,
+            "column": 15
+          },
+          "end": {
+            "line": 8,
+            "column": 16
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 21
+          },
+          "end": {
+            "line": 45,
+            "column": 1
+          }
+        },
+        "line": 8
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 24
+          },
+          "end": {
+            "line": 10,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 30
+          },
+          "end": {
+            "line": 10,
+            "column": 46
+          }
+        },
+        "line": 10
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 28
+          },
+          "end": {
+            "line": 11,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 34
+          },
+          "end": {
+            "line": 11,
+            "column": 49
+          }
+        },
+        "line": 11
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 27
+          },
+          "end": {
+            "line": 21,
+            "column": 71
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 21,
+              "column": 35
+            },
+            "end": {
+              "line": 21,
+              "column": 55
+            }
+          },
+          {
+            "start": {
+              "line": 21,
+              "column": 58
+            },
+            "end": {
+              "line": 21,
+              "column": 71
+            }
+          }
+        ],
+        "line": 21
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 37,
+            "column": 17
+          },
+          "end": {
+            "line": 41,
+            "column": 17
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 38,
+              "column": 20
+            },
+            "end": {
+              "line": 38,
+              "column": 51
+            }
+          },
+          {
+            "start": {
+              "line": 40,
+              "column": 20
+            },
+            "end": {
+              "line": 40,
+              "column": 50
+            }
+          }
+        ],
+        "line": 37
+      }
+    },
+    "s": {
+      "0": 18,
+      "1": 75,
+      "2": 60,
+      "3": 0,
+      "4": 60,
+      "5": 0,
+      "6": 60
+    },
+    "f": {
+      "0": 75,
+      "1": 0,
+      "2": 0
+    },
+    "b": {
+      "0": [
+        0,
+        60
+      ],
+      "1": [
+        0,
+        60
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "cf53f5754a2545b1560ae9ccb8e3377650352682"
+  },
+  "/frontend/src/components/home.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/home.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 13
+        },
+        "end": {
+          "line": 23,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 4
+        },
+        "end": {
+          "line": 22,
+          "column": 14
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 13
+          },
+          "end": {
+            "line": 4,
+            "column": 14
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 4
+          },
+          "end": {
+            "line": 22,
+            "column": 14
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 60
+    },
+    "f": {
+      "0": 60
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "c1f3daef71d6b7e56d1739062a3b0a816d1cfbe3"
+  },
+  "/frontend/src/components/PopupQuest.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/PopupQuest.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 4
+        },
+        "end": {
+          "line": 10,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "PopupQuest",
+        "decl": {
+          "start": {
+            "line": 3,
+            "column": 9
+          },
+          "end": {
+            "line": 3,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 27
+          },
+          "end": {
+            "line": 11,
+            "column": 1
+          }
+        },
+        "line": 3
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 11
+          },
+          "end": {
+            "line": 10,
+            "column": 5
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 5,
+              "column": 8
+            },
+            "end": {
+              "line": 7,
+              "column": 14
+            }
+          },
+          {
+            "start": {
+              "line": 9,
+              "column": 8
+            },
+            "end": {
+              "line": 9,
+              "column": 10
+            }
+          }
+        ],
+        "line": 4
+      }
+    },
+    "s": {
+      "0": 7
+    },
+    "f": {
+      "0": 7
+    },
+    "b": {
+      "0": [
+        4,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "bc6e9be81b2a1052165b7bd2f311687d9d201374"
+  },
+  "/frontend/src/components/ProfissionaisQuiz.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/ProfissionaisQuiz.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 12
+        },
+        "end": {
+          "line": 5,
+          "column": 62
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 12
+        },
+        "end": {
+          "line": 10,
+          "column": 5
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": 56
+        }
+      },
+      "3": {
+        "start": {
+          "line": 14,
+          "column": 28
+        },
+        "end": {
+          "line": 14,
+          "column": 39
+        }
+      },
+      "4": {
+        "start": {
+          "line": 16,
+          "column": 16
+        },
+        "end": {
+          "line": 16,
+          "column": 57
+        }
+      },
+      "5": {
+        "start": {
+          "line": 18,
+          "column": 30
+        },
+        "end": {
+          "line": 18,
+          "column": 54
+        }
+      },
+      "6": {
+        "start": {
+          "line": 22,
+          "column": 8
+        },
+        "end": {
+          "line": 53,
+          "column": 10
+        }
+      },
+      "7": {
+        "start": {
+          "line": 25,
+          "column": 20
+        },
+        "end": {
+          "line": 50,
+          "column": 26
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 4
+          },
+          "end": {
+            "line": 12,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 24
+          },
+          "end": {
+            "line": 19,
+            "column": 5
+          }
+        },
+        "line": 12
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 18
+          },
+          "end": {
+            "line": 14,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 28
+          },
+          "end": {
+            "line": 14,
+            "column": 39
+          }
+        },
+        "line": 14
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 18
+          },
+          "end": {
+            "line": 15,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 30
+          },
+          "end": {
+            "line": 17,
+            "column": 13
+          }
+        },
+        "line": 15
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 19
+          },
+          "end": {
+            "line": 18,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 30
+          },
+          "end": {
+            "line": 18,
+            "column": 54
+          }
+        },
+        "line": 18
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 21,
+            "column": 4
+          },
+          "end": {
+            "line": 21,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 13
+          },
+          "end": {
+            "line": 54,
+            "column": 5
+          }
+        },
+        "line": 21
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 58
+          },
+          "end": {
+            "line": 24,
+            "column": 59
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 20
+          },
+          "end": {
+            "line": 50,
+            "column": 26
+          }
+        },
+        "line": 25
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 0,
+      "6": 6,
+      "7": 6
+    },
+    "f": {
+      "0": 3,
+      "1": 3,
+      "2": 3,
+      "3": 0,
+      "4": 6,
+      "5": 6
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "901bd4092f35ff15a0ea0a8d4d72dbb396077846"
+  },
+  "/frontend/src/components/ContatosQuiz.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/ContatosQuiz.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 12
+        },
+        "end": {
+          "line": 5,
+          "column": 62
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 12
+        },
+        "end": {
+          "line": 10,
+          "column": 5
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": 56
+        }
+      },
+      "3": {
+        "start": {
+          "line": 14,
+          "column": 28
+        },
+        "end": {
+          "line": 14,
+          "column": 39
+        }
+      },
+      "4": {
+        "start": {
+          "line": 16,
+          "column": 16
+        },
+        "end": {
+          "line": 16,
+          "column": 57
+        }
+      },
+      "5": {
+        "start": {
+          "line": 18,
+          "column": 30
+        },
+        "end": {
+          "line": 18,
+          "column": 54
+        }
+      },
+      "6": {
+        "start": {
+          "line": 22,
+          "column": 8
+        },
+        "end": {
+          "line": 53,
+          "column": 10
+        }
+      },
+      "7": {
+        "start": {
+          "line": 25,
+          "column": 20
+        },
+        "end": {
+          "line": 50,
+          "column": 26
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 4
+          },
+          "end": {
+            "line": 12,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 24
+          },
+          "end": {
+            "line": 19,
+            "column": 5
+          }
+        },
+        "line": 12
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 14,
+            "column": 18
+          },
+          "end": {
+            "line": 14,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 14,
+            "column": 28
+          },
+          "end": {
+            "line": 14,
+            "column": 39
+          }
+        },
+        "line": 14
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 15,
+            "column": 18
+          },
+          "end": {
+            "line": 15,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 15,
+            "column": 30
+          },
+          "end": {
+            "line": 17,
+            "column": 13
+          }
+        },
+        "line": 15
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 18,
+            "column": 19
+          },
+          "end": {
+            "line": 18,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 18,
+            "column": 30
+          },
+          "end": {
+            "line": 18,
+            "column": 54
+          }
+        },
+        "line": 18
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 21,
+            "column": 4
+          },
+          "end": {
+            "line": 21,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 13
+          },
+          "end": {
+            "line": 54,
+            "column": 5
+          }
+        },
+        "line": 21
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 58
+          },
+          "end": {
+            "line": 24,
+            "column": 59
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 20
+          },
+          "end": {
+            "line": 50,
+            "column": 26
+          }
+        },
+        "line": 25
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 3,
+      "2": 3,
+      "3": 3,
+      "4": 3,
+      "5": 0,
+      "6": 5,
+      "7": 2
+    },
+    "f": {
+      "0": 3,
+      "1": 3,
+      "2": 3,
+      "3": 0,
+      "4": 5,
+      "5": 2
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "51bd7646a9614afd6724c44134dd63a34a6918a5"
+  },
+  "/frontend/src/components/GraphUI.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/GraphUI.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 11,
+          "column": 18
+        },
+        "end": {
+          "line": 11,
+          "column": 52
+        }
+      },
+      "1": {
+        "start": {
+          "line": 13,
+          "column": 16
+        },
+        "end": {
+          "line": 308,
+          "column": 1
+        }
+      },
+      "2": {
+        "start": {
+          "line": 18,
+          "column": 68
+        },
+        "end": {
+          "line": 18,
+          "column": 78
+        }
+      },
+      "3": {
+        "start": {
+          "line": 19,
+          "column": 66
+        },
+        "end": {
+          "line": 19,
+          "column": 76
+        }
+      },
+      "4": {
+        "start": {
+          "line": 20,
+          "column": 50
+        },
+        "end": {
+          "line": 20,
+          "column": 60
+        }
+      },
+      "5": {
+        "start": {
+          "line": 21,
+          "column": 50
+        },
+        "end": {
+          "line": 21,
+          "column": 60
+        }
+      },
+      "6": {
+        "start": {
+          "line": 22,
+          "column": 52
+        },
+        "end": {
+          "line": 22,
+          "column": 64
+        }
+      },
+      "7": {
+        "start": {
+          "line": 23,
+          "column": 56
+        },
+        "end": {
+          "line": 23,
+          "column": 68
+        }
+      },
+      "8": {
+        "start": {
+          "line": 24,
+          "column": 46
+        },
+        "end": {
+          "line": 24,
+          "column": 56
+        }
+      },
+      "9": {
+        "start": {
+          "line": 25,
+          "column": 42
+        },
+        "end": {
+          "line": 25,
+          "column": 56
+        }
+      },
+      "10": {
+        "start": {
+          "line": 26,
+          "column": 36
+        },
+        "end": {
+          "line": 26,
+          "column": 48
+        }
+      },
+      "11": {
+        "start": {
+          "line": 27,
+          "column": 44
+        },
+        "end": {
+          "line": 27,
+          "column": 54
+        }
+      },
+      "12": {
+        "start": {
+          "line": 29,
+          "column": 4
+        },
+        "end": {
+          "line": 37,
+          "column": 66
+        }
+      },
+      "13": {
+        "start": {
+          "line": 30,
+          "column": 8
+        },
+        "end": {
+          "line": 36,
+          "column": 9
+        }
+      },
+      "14": {
+        "start": {
+          "line": 31,
+          "column": 22
+        },
+        "end": {
+          "line": 31,
+          "column": 75
+        }
+      },
+      "15": {
+        "start": {
+          "line": 32,
+          "column": 12
+        },
+        "end": {
+          "line": 32,
+          "column": 46
+        }
+      },
+      "16": {
+        "start": {
+          "line": 33,
+          "column": 12
+        },
+        "end": {
+          "line": 35,
+          "column": 13
+        }
+      },
+      "17": {
+        "start": {
+          "line": 34,
+          "column": 16
+        },
+        "end": {
+          "line": 34,
+          "column": 51
+        }
+      },
+      "18": {
+        "start": {
+          "line": 56,
+          "column": 4
+        },
+        "end": {
+          "line": 62,
+          "column": 34
+        }
+      },
+      "19": {
+        "start": {
+          "line": 57,
+          "column": 8
+        },
+        "end": {
+          "line": 60,
+          "column": 9
+        }
+      },
+      "20": {
+        "start": {
+          "line": 58,
+          "column": 12
+        },
+        "end": {
+          "line": 58,
+          "column": 70
+        }
+      },
+      "21": {
+        "start": {
+          "line": 64,
+          "column": 4
+        },
+        "end": {
+          "line": 70,
+          "column": 26
+        }
+      },
+      "22": {
+        "start": {
+          "line": 65,
+          "column": 8
+        },
+        "end": {
+          "line": 69,
+          "column": 9
+        }
+      },
+      "23": {
+        "start": {
+          "line": 66,
+          "column": 12
+        },
+        "end": {
+          "line": 66,
+          "column": 35
+        }
+      },
+      "24": {
+        "start": {
+          "line": 68,
+          "column": 12
+        },
+        "end": {
+          "line": 68,
+          "column": 36
+        }
+      },
+      "25": {
+        "start": {
+          "line": 73,
+          "column": 8
+        },
+        "end": {
+          "line": 73,
+          "column": 64
+        }
+      },
+      "26": {
+        "start": {
+          "line": 75,
+          "column": 28
+        },
+        "end": {
+          "line": 91,
+          "column": 5
+        }
+      },
+      "27": {
+        "start": {
+          "line": 76,
+          "column": 8
+        },
+        "end": {
+          "line": 83,
+          "column": 9
+        }
+      },
+      "28": {
+        "start": {
+          "line": 76,
+          "column": 41
+        },
+        "end": {
+          "line": 76,
+          "column": 71
+        }
+      },
+      "29": {
+        "start": {
+          "line": 77,
+          "column": 34
+        },
+        "end": {
+          "line": 77,
+          "column": 48
+        }
+      },
+      "30": {
+        "start": {
+          "line": 78,
+          "column": 33
+        },
+        "end": {
+          "line": 80,
+          "column": 14
+        }
+      },
+      "31": {
+        "start": {
+          "line": 81,
+          "column": 12
+        },
+        "end": {
+          "line": 81,
+          "column": 45
+        }
+      },
+      "32": {
+        "start": {
+          "line": 82,
+          "column": 12
+        },
+        "end": {
+          "line": 82,
+          "column": 40
+        }
+      },
+      "33": {
+        "start": {
+          "line": 85,
+          "column": 20
+        },
+        "end": {
+          "line": 87,
+          "column": 9
+        }
+      },
+      "34": {
+        "start": {
+          "line": 86,
+          "column": 22
+        },
+        "end": {
+          "line": 86,
+          "column": 52
+        }
+      },
+      "35": {
+        "start": {
+          "line": 88,
+          "column": 8
+        },
+        "end": {
+          "line": 90,
+          "column": 9
+        }
+      },
+      "36": {
+        "start": {
+          "line": 89,
+          "column": 12
+        },
+        "end": {
+          "line": 89,
+          "column": 44
+        }
+      },
+      "37": {
+        "start": {
+          "line": 95,
+          "column": 22
+        },
+        "end": {
+          "line": 95,
+          "column": 61
+        }
+      },
+      "38": {
+        "start": {
+          "line": 96,
+          "column": 8
+        },
+        "end": {
+          "line": 98,
+          "column": 11
+        }
+      },
+      "39": {
+        "start": {
+          "line": 101,
+          "column": 26
+        },
+        "end": {
+          "line": 105,
+          "column": 5
+        }
+      },
+      "40": {
+        "start": {
+          "line": 102,
+          "column": 8
+        },
+        "end": {
+          "line": 104,
+          "column": 9
+        }
+      },
+      "41": {
+        "start": {
+          "line": 103,
+          "column": 12
+        },
+        "end": {
+          "line": 103,
+          "column": 27
+        }
+      },
+      "42": {
+        "start": {
+          "line": 107,
+          "column": 26
+        },
+        "end": {
+          "line": 110,
+          "column": 5
+        }
+      },
+      "43": {
+        "start": {
+          "line": 108,
+          "column": 8
+        },
+        "end": {
+          "line": 108,
+          "column": 43
+        }
+      },
+      "44": {
+        "start": {
+          "line": 108,
+          "column": 28
+        },
+        "end": {
+          "line": 108,
+          "column": 41
+        }
+      },
+      "45": {
+        "start": {
+          "line": 109,
+          "column": 8
+        },
+        "end": {
+          "line": 109,
+          "column": 20
+        }
+      },
+      "46": {
+        "start": {
+          "line": 112,
+          "column": 23
+        },
+        "end": {
+          "line": 121,
+          "column": 5
+        }
+      },
+      "47": {
+        "start": {
+          "line": 113,
+          "column": 8
+        },
+        "end": {
+          "line": 120,
+          "column": 9
+        }
+      },
+      "48": {
+        "start": {
+          "line": 114,
+          "column": 27
+        },
+        "end": {
+          "line": 114,
+          "column": 35
+        }
+      },
+      "49": {
+        "start": {
+          "line": 115,
+          "column": 12
+        },
+        "end": {
+          "line": 115,
+          "column": 51
+        }
+      },
+      "50": {
+        "start": {
+          "line": 116,
+          "column": 12
+        },
+        "end": {
+          "line": 116,
+          "column": 32
+        }
+      },
+      "51": {
+        "start": {
+          "line": 117,
+          "column": 12
+        },
+        "end": {
+          "line": 117,
+          "column": 34
+        }
+      },
+      "52": {
+        "start": {
+          "line": 118,
+          "column": 12
+        },
+        "end": {
+          "line": 118,
+          "column": 45
+        }
+      },
+      "53": {
+        "start": {
+          "line": 119,
+          "column": 12
+        },
+        "end": {
+          "line": 119,
+          "column": 38
+        }
+      },
+      "54": {
+        "start": {
+          "line": 123,
+          "column": 21
+        },
+        "end": {
+          "line": 134,
+          "column": 5
+        }
+      },
+      "55": {
+        "start": {
+          "line": 124,
+          "column": 8
+        },
+        "end": {
+          "line": 124,
+          "column": 38
+        }
+      },
+      "56": {
+        "start": {
+          "line": 125,
+          "column": 8
+        },
+        "end": {
+          "line": 125,
+          "column": 37
+        }
+      },
+      "57": {
+        "start": {
+          "line": 126,
+          "column": 8
+        },
+        "end": {
+          "line": 126,
+          "column": 29
+        }
+      },
+      "58": {
+        "start": {
+          "line": 127,
+          "column": 8
+        },
+        "end": {
+          "line": 127,
+          "column": 29
+        }
+      },
+      "59": {
+        "start": {
+          "line": 128,
+          "column": 8
+        },
+        "end": {
+          "line": 128,
+          "column": 32
+        }
+      },
+      "60": {
+        "start": {
+          "line": 129,
+          "column": 8
+        },
+        "end": {
+          "line": 129,
+          "column": 34
+        }
+      },
+      "61": {
+        "start": {
+          "line": 130,
+          "column": 8
+        },
+        "end": {
+          "line": 130,
+          "column": 27
+        }
+      },
+      "62": {
+        "start": {
+          "line": 131,
+          "column": 8
+        },
+        "end": {
+          "line": 131,
+          "column": 29
+        }
+      },
+      "63": {
+        "start": {
+          "line": 132,
+          "column": 8
+        },
+        "end": {
+          "line": 132,
+          "column": 24
+        }
+      },
+      "64": {
+        "start": {
+          "line": 133,
+          "column": 8
+        },
+        "end": {
+          "line": 133,
+          "column": 26
+        }
+      },
+      "65": {
+        "start": {
+          "line": 136,
+          "column": 28
+        },
+        "end": {
+          "line": 158,
+          "column": 5
+        }
+      },
+      "66": {
+        "start": {
+          "line": 137,
+          "column": 8
+        },
+        "end": {
+          "line": 153,
+          "column": 9
+        }
+      },
+      "67": {
+        "start": {
+          "line": 138,
+          "column": 12
+        },
+        "end": {
+          "line": 152,
+          "column": 13
+        }
+      },
+      "68": {
+        "start": {
+          "line": 141,
+          "column": 16
+        },
+        "end": {
+          "line": 145,
+          "column": 18
+        }
+      },
+      "69": {
+        "start": {
+          "line": 147,
+          "column": 16
+        },
+        "end": {
+          "line": 151,
+          "column": 18
+        }
+      },
+      "70": {
+        "start": {
+          "line": 155,
+          "column": 8
+        },
+        "end": {
+          "line": 155,
+          "column": 77
+        }
+      },
+      "71": {
+        "start": {
+          "line": 157,
+          "column": 8
+        },
+        "end": {
+          "line": 157,
+          "column": 29
+        }
+      },
+      "72": {
+        "start": {
+          "line": 159,
+          "column": 28
+        },
+        "end": {
+          "line": 162,
+          "column": 5
+        }
+      },
+      "73": {
+        "start": {
+          "line": 160,
+          "column": 8
+        },
+        "end": {
+          "line": 160,
+          "column": 48
+        }
+      },
+      "74": {
+        "start": {
+          "line": 161,
+          "column": 8
+        },
+        "end": {
+          "line": 161,
+          "column": 24
+        }
+      },
+      "75": {
+        "start": {
+          "line": 163,
+          "column": 30
+        },
+        "end": {
+          "line": 163,
+          "column": 68
+        }
+      },
+      "76": {
+        "start": {
+          "line": 163,
+          "column": 37
+        },
+        "end": {
+          "line": 163,
+          "column": 68
+        }
+      },
+      "77": {
+        "start": {
+          "line": 165,
+          "column": 4
+        },
+        "end": {
+          "line": 307,
+          "column": 6
+        }
+      },
+      "78": {
+        "start": {
+          "line": 189,
+          "column": 28
+        },
+        "end": {
+          "line": 201,
+          "column": 36
+        }
+      },
+      "79": {
+        "start": {
+          "line": 221,
+          "column": 40
+        },
+        "end": {
+          "line": 221,
+          "column": 62
+        }
+      },
+      "80": {
+        "start": {
+          "line": 222,
+          "column": 40
+        },
+        "end": {
+          "line": 222,
+          "column": 51
+        }
+      },
+      "81": {
+        "start": {
+          "line": 245,
+          "column": 52
+        },
+        "end": {
+          "line": 259,
+          "column": 53
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 13,
+            "column": 16
+          },
+          "end": {
+            "line": 13,
+            "column": 17
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 6
+          },
+          "end": {
+            "line": 308,
+            "column": 1
+          }
+        },
+        "line": 17
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 29,
+            "column": 14
+          },
+          "end": {
+            "line": 29,
+            "column": 15
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 29,
+            "column": 20
+          },
+          "end": {
+            "line": 37,
+            "column": 5
+          }
+        },
+        "line": 29
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 56,
+            "column": 14
+          },
+          "end": {
+            "line": 56,
+            "column": 15
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 56,
+            "column": 20
+          },
+          "end": {
+            "line": 62,
+            "column": 5
+          }
+        },
+        "line": 56
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 64,
+            "column": 14
+          },
+          "end": {
+            "line": 64,
+            "column": 15
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 64,
+            "column": 20
+          },
+          "end": {
+            "line": 70,
+            "column": 5
+          }
+        },
+        "line": 64
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 75,
+            "column": 28
+          },
+          "end": {
+            "line": 75,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 75,
+            "column": 75
+          },
+          "end": {
+            "line": 91,
+            "column": 5
+          }
+        },
+        "line": 75
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 76,
+            "column": 28
+          },
+          "end": {
+            "line": 76,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 76,
+            "column": 41
+          },
+          "end": {
+            "line": 76,
+            "column": 71
+          }
+        },
+        "line": 76
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": {
+            "line": 86,
+            "column": 12
+          },
+          "end": {
+            "line": 86,
+            "column": 13
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 86,
+            "column": 22
+          },
+          "end": {
+            "line": 86,
+            "column": 52
+          }
+        },
+        "line": 86
+      },
+      "7": {
+        "name": "postAwnser",
+        "decl": {
+          "start": {
+            "line": 93,
+            "column": 19
+          },
+          "end": {
+            "line": 93,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 93,
+            "column": 42
+          },
+          "end": {
+            "line": 99,
+            "column": 5
+          }
+        },
+        "line": 93
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": {
+            "line": 101,
+            "column": 26
+          },
+          "end": {
+            "line": 101,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 101,
+            "column": 32
+          },
+          "end": {
+            "line": 105,
+            "column": 5
+          }
+        },
+        "line": 101
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": {
+          "start": {
+            "line": 107,
+            "column": 26
+          },
+          "end": {
+            "line": 107,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 107,
+            "column": 32
+          },
+          "end": {
+            "line": 110,
+            "column": 5
+          }
+        },
+        "line": 107
+      },
+      "10": {
+        "name": "(anonymous_10)",
+        "decl": {
+          "start": {
+            "line": 108,
+            "column": 21
+          },
+          "end": {
+            "line": 108,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 108,
+            "column": 28
+          },
+          "end": {
+            "line": 108,
+            "column": 41
+          }
+        },
+        "line": 108
+      },
+      "11": {
+        "name": "(anonymous_11)",
+        "decl": {
+          "start": {
+            "line": 112,
+            "column": 23
+          },
+          "end": {
+            "line": 112,
+            "column": 24
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 112,
+            "column": 29
+          },
+          "end": {
+            "line": 121,
+            "column": 5
+          }
+        },
+        "line": 112
+      },
+      "12": {
+        "name": "(anonymous_12)",
+        "decl": {
+          "start": {
+            "line": 123,
+            "column": 21
+          },
+          "end": {
+            "line": 123,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 123,
+            "column": 27
+          },
+          "end": {
+            "line": 134,
+            "column": 5
+          }
+        },
+        "line": 123
+      },
+      "13": {
+        "name": "(anonymous_13)",
+        "decl": {
+          "start": {
+            "line": 136,
+            "column": 28
+          },
+          "end": {
+            "line": 136,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 136,
+            "column": 34
+          },
+          "end": {
+            "line": 158,
+            "column": 5
+          }
+        },
+        "line": 136
+      },
+      "14": {
+        "name": "(anonymous_14)",
+        "decl": {
+          "start": {
+            "line": 159,
+            "column": 28
+          },
+          "end": {
+            "line": 159,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 159,
+            "column": 34
+          },
+          "end": {
+            "line": 162,
+            "column": 5
+          }
+        },
+        "line": 159
+      },
+      "15": {
+        "name": "(anonymous_15)",
+        "decl": {
+          "start": {
+            "line": 163,
+            "column": 30
+          },
+          "end": {
+            "line": 163,
+            "column": 31
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 163,
+            "column": 37
+          },
+          "end": {
+            "line": 163,
+            "column": 68
+          }
+        },
+        "line": 163
+      },
+      "16": {
+        "name": "(anonymous_16)",
+        "decl": {
+          "start": {
+            "line": 188,
+            "column": 51
+          },
+          "end": {
+            "line": 188,
+            "column": 52
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 189,
+            "column": 28
+          },
+          "end": {
+            "line": 201,
+            "column": 36
+          }
+        },
+        "line": 189
+      },
+      "17": {
+        "name": "(anonymous_17)",
+        "decl": {
+          "start": {
+            "line": 220,
+            "column": 45
+          },
+          "end": {
+            "line": 220,
+            "column": 46
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 220,
+            "column": 51
+          },
+          "end": {
+            "line": 223,
+            "column": 37
+          }
+        },
+        "line": 220
+      },
+      "18": {
+        "name": "(anonymous_18)",
+        "decl": {
+          "start": {
+            "line": 244,
+            "column": 62
+          },
+          "end": {
+            "line": 244,
+            "column": 63
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 245,
+            "column": 52
+          },
+          "end": {
+            "line": 259,
+            "column": 53
+          }
+        },
+        "line": 245
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 16,
+            "column": 4
+          },
+          "end": {
+            "line": 16,
+            "column": 80
+          }
+        },
+        "type": "default-arg",
+        "locations": [
+          {
+            "start": {
+              "line": 16,
+              "column": 17
+            },
+            "end": {
+              "line": 16,
+              "column": 80
+            }
+          }
+        ],
+        "line": 16
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 8
+          },
+          "end": {
+            "line": 36,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 30,
+              "column": 8
+            },
+            "end": {
+              "line": 36,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 30,
+              "column": 8
+            },
+            "end": {
+              "line": 36,
+              "column": 9
+            }
+          }
+        ],
+        "line": 30
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 33,
+            "column": 12
+          },
+          "end": {
+            "line": 35,
+            "column": 13
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 33,
+              "column": 12
+            },
+            "end": {
+              "line": 35,
+              "column": 13
+            }
+          },
+          {
+            "start": {
+              "line": 33,
+              "column": 12
+            },
+            "end": {
+              "line": 35,
+              "column": 13
+            }
+          }
+        ],
+        "line": 33
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 57,
+            "column": 8
+          },
+          "end": {
+            "line": 60,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 57,
+              "column": 8
+            },
+            "end": {
+              "line": 60,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 57,
+              "column": 8
+            },
+            "end": {
+              "line": 60,
+              "column": 9
+            }
+          }
+        ],
+        "line": 57
+      },
+      "4": {
+        "loc": {
+          "start": {
+            "line": 65,
+            "column": 8
+          },
+          "end": {
+            "line": 69,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 65,
+              "column": 8
+            },
+            "end": {
+              "line": 69,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 65,
+              "column": 8
+            },
+            "end": {
+              "line": 69,
+              "column": 9
+            }
+          }
+        ],
+        "line": 65
+      },
+      "5": {
+        "loc": {
+          "start": {
+            "line": 65,
+            "column": 12
+          },
+          "end": {
+            "line": 65,
+            "column": 72
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 65,
+              "column": 12
+            },
+            "end": {
+              "line": 65,
+              "column": 27
+            }
+          },
+          {
+            "start": {
+              "line": 65,
+              "column": 31
+            },
+            "end": {
+              "line": 65,
+              "column": 72
+            }
+          }
+        ],
+        "line": 65
+      },
+      "6": {
+        "loc": {
+          "start": {
+            "line": 73,
+            "column": 8
+          },
+          "end": {
+            "line": 73,
+            "column": 64
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 73,
+              "column": 8
+            },
+            "end": {
+              "line": 73,
+              "column": 24
+            }
+          },
+          {
+            "start": {
+              "line": 73,
+              "column": 29
+            },
+            "end": {
+              "line": 73,
+              "column": 44
+            }
+          },
+          {
+            "start": {
+              "line": 73,
+              "column": 48
+            },
+            "end": {
+              "line": 73,
+              "column": 63
+            }
+          }
+        ],
+        "line": 73
+      },
+      "7": {
+        "loc": {
+          "start": {
+            "line": 76,
+            "column": 8
+          },
+          "end": {
+            "line": 83,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 76,
+              "column": 8
+            },
+            "end": {
+              "line": 83,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 76,
+              "column": 8
+            },
+            "end": {
+              "line": 83,
+              "column": 9
+            }
+          }
+        ],
+        "line": 76
+      },
+      "8": {
+        "loc": {
+          "start": {
+            "line": 88,
+            "column": 8
+          },
+          "end": {
+            "line": 90,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 88,
+              "column": 8
+            },
+            "end": {
+              "line": 90,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 88,
+              "column": 8
+            },
+            "end": {
+              "line": 90,
+              "column": 9
+            }
+          }
+        ],
+        "line": 88
+      },
+      "9": {
+        "loc": {
+          "start": {
+            "line": 102,
+            "column": 8
+          },
+          "end": {
+            "line": 104,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 102,
+              "column": 8
+            },
+            "end": {
+              "line": 104,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 102,
+              "column": 8
+            },
+            "end": {
+              "line": 104,
+              "column": 9
+            }
+          }
+        ],
+        "line": 102
+      },
+      "10": {
+        "loc": {
+          "start": {
+            "line": 113,
+            "column": 8
+          },
+          "end": {
+            "line": 120,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 113,
+              "column": 8
+            },
+            "end": {
+              "line": 120,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 113,
+              "column": 8
+            },
+            "end": {
+              "line": 120,
+              "column": 9
+            }
+          }
+        ],
+        "line": 113
+      },
+      "11": {
+        "loc": {
+          "start": {
+            "line": 137,
+            "column": 8
+          },
+          "end": {
+            "line": 153,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 137,
+              "column": 8
+            },
+            "end": {
+              "line": 153,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 137,
+              "column": 8
+            },
+            "end": {
+              "line": 153,
+              "column": 9
+            }
+          }
+        ],
+        "line": 137
+      },
+      "12": {
+        "loc": {
+          "start": {
+            "line": 138,
+            "column": 12
+          },
+          "end": {
+            "line": 152,
+            "column": 13
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 138,
+              "column": 12
+            },
+            "end": {
+              "line": 152,
+              "column": 13
+            }
+          },
+          {
+            "start": {
+              "line": 138,
+              "column": 12
+            },
+            "end": {
+              "line": 152,
+              "column": 13
+            }
+          }
+        ],
+        "line": 138
+      },
+      "13": {
+        "loc": {
+          "start": {
+            "line": 139,
+            "column": 37
+          },
+          "end": {
+            "line": 139,
+            "column": 78
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 139,
+              "column": 37
+            },
+            "end": {
+              "line": 139,
+              "column": 52
+            }
+          },
+          {
+            "start": {
+              "line": 139,
+              "column": 56
+            },
+            "end": {
+              "line": 139,
+              "column": 78
+            }
+          }
+        ],
+        "line": 139
+      },
+      "14": {
+        "loc": {
+          "start": {
+            "line": 168,
+            "column": 13
+          },
+          "end": {
+            "line": 170,
+            "column": 13
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 168,
+              "column": 13
+            },
+            "end": {
+              "line": 168,
+              "column": 29
+            }
+          },
+          {
+            "start": {
+              "line": 169,
+              "column": 16
+            },
+            "end": {
+              "line": 169,
+              "column": 64
+            }
+          }
+        ],
+        "line": 168
+      },
+      "15": {
+        "loc": {
+          "start": {
+            "line": 172,
+            "column": 13
+          },
+          "end": {
+            "line": 289,
+            "column": 13
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 172,
+              "column": 13
+            },
+            "end": {
+              "line": 172,
+              "column": 28
+            }
+          },
+          {
+            "start": {
+              "line": 173,
+              "column": 16
+            },
+            "end": {
+              "line": 288,
+              "column": 22
+            }
+          }
+        ],
+        "line": 172
+      },
+      "16": {
+        "loc": {
+          "start": {
+            "line": 187,
+            "column": 21
+          },
+          "end": {
+            "line": 202,
+            "column": 26
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 187,
+              "column": 21
+            },
+            "end": {
+              "line": 187,
+              "column": 43
+            }
+          },
+          {
+            "start": {
+              "line": 188,
+              "column": 24
+            },
+            "end": {
+              "line": 202,
+              "column": 26
+            }
+          }
+        ],
+        "line": 187
+      },
+      "17": {
+        "loc": {
+          "start": {
+            "line": 203,
+            "column": 21
+          },
+          "end": {
+            "line": 287,
+            "column": 21
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 203,
+              "column": 21
+            },
+            "end": {
+              "line": 203,
+              "column": 34
+            }
+          },
+          {
+            "start": {
+              "line": 204,
+              "column": 24
+            },
+            "end": {
+              "line": 286,
+              "column": 30
+            }
+          }
+        ],
+        "line": 203
+      },
+      "18": {
+        "loc": {
+          "start": {
+            "line": 227,
+            "column": 33
+          },
+          "end": {
+            "line": 283,
+            "column": 33
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 228,
+              "column": 36
+            },
+            "end": {
+              "line": 233,
+              "column": 42
+            }
+          },
+          {
+            "start": {
+              "line": 235,
+              "column": 36
+            },
+            "end": {
+              "line": 282,
+              "column": 42
+            }
+          }
+        ],
+        "line": 227
+      },
+      "19": {
+        "loc": {
+          "start": {
+            "line": 245,
+            "column": 52
+          },
+          "end": {
+            "line": 259,
+            "column": 53
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 246,
+              "column": 56
+            },
+            "end": {
+              "line": 251,
+              "column": 63
+            }
+          },
+          {
+            "start": {
+              "line": 253,
+              "column": 56
+            },
+            "end": {
+              "line": 258,
+              "column": 63
+            }
+          }
+        ],
+        "line": 245
+      }
+    },
+    "s": {
+      "0": 18,
+      "1": 18,
+      "2": 289,
+      "3": 289,
+      "4": 289,
+      "5": 289,
+      "6": 289,
+      "7": 289,
+      "8": 289,
+      "9": 289,
+      "10": 289,
+      "11": 289,
+      "12": 289,
+      "13": 38,
+      "14": 19,
+      "15": 19,
+      "16": 19,
+      "17": 19,
+      "18": 289,
+      "19": 37,
+      "20": 18,
+      "21": 289,
+      "22": 84,
+      "23": 4,
+      "24": 80,
+      "25": 289,
+      "26": 289,
+      "27": 58,
+      "28": 468,
+      "29": 58,
+      "30": 58,
+      "31": 58,
+      "32": 58,
+      "33": 58,
+      "34": 0,
+      "35": 58,
+      "36": 0,
+      "37": 18,
+      "38": 18,
+      "39": 289,
+      "40": 3,
+      "41": 3,
+      "42": 289,
+      "43": 4,
+      "44": 18,
+      "45": 4,
+      "46": 289,
+      "47": 58,
+      "48": 18,
+      "49": 18,
+      "50": 18,
+      "51": 18,
+      "52": 18,
+      "53": 18,
+      "54": 289,
+      "55": 4,
+      "56": 4,
+      "57": 4,
+      "58": 4,
+      "59": 4,
+      "60": 4,
+      "61": 4,
+      "62": 4,
+      "63": 4,
+      "64": 4,
+      "65": 289,
+      "66": 62,
+      "67": 58,
+      "68": 0,
+      "69": 58,
+      "70": 62,
+      "71": 62,
+      "72": 289,
+      "73": 3,
+      "74": 3,
+      "75": 289,
+      "76": 58,
+      "77": 289,
+      "78": 477,
+      "79": 4,
+      "80": 4,
+      "81": 18
+    },
+    "f": {
+      "0": 289,
+      "1": 38,
+      "2": 37,
+      "3": 84,
+      "4": 58,
+      "5": 468,
+      "6": 0,
+      "7": 18,
+      "8": 3,
+      "9": 4,
+      "10": 18,
+      "11": 58,
+      "12": 4,
+      "13": 62,
+      "14": 3,
+      "15": 58,
+      "16": 477,
+      "17": 4,
+      "18": 18
+    },
+    "b": {
+      "0": [
+        289
+      ],
+      "1": [
+        19,
+        19
+      ],
+      "2": [
+        19,
+        0
+      ],
+      "3": [
+        18,
+        19
+      ],
+      "4": [
+        4,
+        80
+      ],
+      "5": [
+        84,
+        65
+      ],
+      "6": [
+        289,
+        188,
+        188
+      ],
+      "7": [
+        58,
+        0
+      ],
+      "8": [
+        0,
+        58
+      ],
+      "9": [
+        3,
+        0
+      ],
+      "10": [
+        18,
+        40
+      ],
+      "11": [
+        58,
+        4
+      ],
+      "12": [
+        0,
+        58
+      ],
+      "13": [
+        58,
+        58
+      ],
+      "14": [
+        289,
+        101
+      ],
+      "15": [
+        289,
+        188
+      ],
+      "16": [
+        188,
+        180
+      ],
+      "17": [
+        188,
+        4
+      ],
+      "18": [
+        1,
+        3
+      ],
+      "19": [
+        3,
+        15
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "41a3f2d4c3e7e767b1fef4a7422043b8860c0e89"
+  },
+  "/frontend/src/components/ShowTree.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/ShowTree.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 12
+        },
+        "end": {
+          "line": 4,
+          "column": 59
+        }
+      },
+      "1": {
+        "start": {
+          "line": 6,
+          "column": 17
+        },
+        "end": {
+          "line": 10,
+          "column": 1
+        }
+      },
+      "2": {
+        "start": {
+          "line": 7,
+          "column": 4
+        },
+        "end": {
+          "line": 9,
+          "column": 10
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 17
+          },
+          "end": {
+            "line": 6,
+            "column": 18
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 4
+          },
+          "end": {
+            "line": 9,
+            "column": 10
+          }
+        },
+        "line": 7
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 18,
+      "2": 63
+    },
+    "f": {
+      "0": 63
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "3026ae944f76595db3193ea41df2b27b4cd51154"
+  },
+  "/frontend/src/components/questionario.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/questionario.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 53,
+          "column": 8
+        },
+        "end": {
+          "line": 112,
+          "column": 10
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 52,
+            "column": 4
+          },
+          "end": {
+            "line": 52,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 52,
+            "column": 13
+          },
+          "end": {
+            "line": 113,
+            "column": 5
+          }
+        },
+        "line": 52
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 60
+    },
+    "f": {
+      "0": 60
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "3e4356d752359d4902b5e01e6674939eba43bfb8"
+  },
+  "/frontend/src/components/cadastrarDepoimento.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/cadastrarDepoimento.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 12
+        },
+        "end": {
+          "line": 6,
+          "column": 63
+        }
+      },
+      "1": {
+        "start": {
+          "line": 10,
+          "column": 8
+        },
+        "end": {
+          "line": 10,
+          "column": 16
+        }
+      },
+      "2": {
+        "start": {
+          "line": 11,
+          "column": 8
+        },
+        "end": {
+          "line": 15,
+          "column": 10
+        }
+      },
+      "3": {
+        "start": {
+          "line": 16,
+          "column": 8
+        },
+        "end": {
+          "line": 16,
+          "column": 59
+        }
+      },
+      "4": {
+        "start": {
+          "line": 17,
+          "column": 8
+        },
+        "end": {
+          "line": 17,
+          "column": 53
+        }
+      },
+      "5": {
+        "start": {
+          "line": 18,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": 75
+        }
+      },
+      "6": {
+        "start": {
+          "line": 23,
+          "column": 8
+        },
+        "end": {
+          "line": 25,
+          "column": 11
+        }
+      },
+      "7": {
+        "start": {
+          "line": 30,
+          "column": 8
+        },
+        "end": {
+          "line": 30,
+          "column": 80
+        }
+      },
+      "8": {
+        "start": {
+          "line": 31,
+          "column": 8
+        },
+        "end": {
+          "line": 31,
+          "column": 71
+        }
+      },
+      "9": {
+        "start": {
+          "line": 32,
+          "column": 8
+        },
+        "end": {
+          "line": 38,
+          "column": 47
+        }
+      },
+      "10": {
+        "start": {
+          "line": 38,
+          "column": 30
+        },
+        "end": {
+          "line": 38,
+          "column": 45
+        }
+      },
+      "11": {
+        "start": {
+          "line": 40,
+          "column": 8
+        },
+        "end": {
+          "line": 42,
+          "column": 11
+        }
+      },
+      "12": {
+        "start": {
+          "line": 43,
+          "column": 8
+        },
+        "end": {
+          "line": 43,
+          "column": 31
+        }
+      },
+      "13": {
+        "start": {
+          "line": 47,
+          "column": 8
+        },
+        "end": {
+          "line": 47,
+          "column": 72
+        }
+      },
+      "14": {
+        "start": {
+          "line": 51,
+          "column": 8
+        },
+        "end": {
+          "line": 123,
+          "column": 10
+        }
+      },
+      "15": {
+        "start": {
+          "line": 89,
+          "column": 43
+        },
+        "end": {
+          "line": 89,
+          "column": 72
+        }
+      },
+      "16": {
+        "start": {
+          "line": 116,
+          "column": 43
+        },
+        "end": {
+          "line": 116,
+          "column": 72
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 9,
+            "column": 4
+          },
+          "end": {
+            "line": 9,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 18
+          },
+          "end": {
+            "line": 19,
+            "column": 5
+          }
+        },
+        "line": 9
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 22,
+            "column": 4
+          },
+          "end": {
+            "line": 22,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 25
+          },
+          "end": {
+            "line": 26,
+            "column": 5
+          }
+        },
+        "line": 22
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 29,
+            "column": 4
+          },
+          "end": {
+            "line": 29,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 29,
+            "column": 22
+          },
+          "end": {
+            "line": 44,
+            "column": 5
+          }
+        },
+        "line": 29
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 38,
+            "column": 16
+          },
+          "end": {
+            "line": 38,
+            "column": 17
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 38,
+            "column": 30
+          },
+          "end": {
+            "line": 38,
+            "column": 45
+          }
+        },
+        "line": 38
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 46,
+            "column": 4
+          },
+          "end": {
+            "line": 46,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 46,
+            "column": 28
+          },
+          "end": {
+            "line": 48,
+            "column": 5
+          }
+        },
+        "line": 46
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 50,
+            "column": 4
+          },
+          "end": {
+            "line": 50,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 50,
+            "column": 13
+          },
+          "end": {
+            "line": 124,
+            "column": 5
+          }
+        },
+        "line": 50
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": {
+            "line": 89,
+            "column": 37
+          },
+          "end": {
+            "line": 89,
+            "column": 38
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 89,
+            "column": 43
+          },
+          "end": {
+            "line": 89,
+            "column": 72
+          }
+        },
+        "line": 89
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": {
+            "line": 116,
+            "column": 37
+          },
+          "end": {
+            "line": 116,
+            "column": 38
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 116,
+            "column": 43
+          },
+          "end": {
+            "line": 116,
+            "column": 72
+          }
+        },
+        "line": 116
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 75,
+      "15": 0,
+      "16": 0
+    },
+    "f": {
+      "0": 15,
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 75,
+      "6": 0,
+      "7": 0
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "2241fb2910c6b0041eed3211469a94ef532fdaea"
+  },
+  "/frontend/src/components/depoimento.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/depoimento.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 8,
+          "column": 12
+        },
+        "end": {
+          "line": 8,
+          "column": 63
+        }
+      },
+      "1": {
+        "start": {
+          "line": 12,
+          "column": 8
+        },
+        "end": {
+          "line": 12,
+          "column": 16
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 8
+        },
+        "end": {
+          "line": 17,
+          "column": 10
+        }
+      },
+      "3": {
+        "start": {
+          "line": 22,
+          "column": 8
+        },
+        "end": {
+          "line": 25,
+          "column": 11
+        }
+      },
+      "4": {
+        "start": {
+          "line": 23,
+          "column": 25
+        },
+        "end": {
+          "line": 23,
+          "column": 33
+        }
+      },
+      "5": {
+        "start": {
+          "line": 24,
+          "column": 12
+        },
+        "end": {
+          "line": 24,
+          "column": 49
+        }
+      },
+      "6": {
+        "start": {
+          "line": 29,
+          "column": 8
+        },
+        "end": {
+          "line": 47,
+          "column": 10
+        }
+      },
+      "7": {
+        "start": {
+          "line": 36,
+          "column": 32
+        },
+        "end": {
+          "line": 40,
+          "column": 38
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 11,
+            "column": 4
+          },
+          "end": {
+            "line": 11,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 18
+          },
+          "end": {
+            "line": 18,
+            "column": 5
+          }
+        },
+        "line": 11
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 21,
+            "column": 4
+          },
+          "end": {
+            "line": 21,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 21,
+            "column": 24
+          },
+          "end": {
+            "line": 26,
+            "column": 5
+          }
+        },
+        "line": 21
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 22,
+            "column": 28
+          },
+          "end": {
+            "line": 22,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 37
+          },
+          "end": {
+            "line": 25,
+            "column": 9
+          }
+        },
+        "line": 22
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 28,
+            "column": 4
+          },
+          "end": {
+            "line": 28,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 13
+          },
+          "end": {
+            "line": 48,
+            "column": 5
+          }
+        },
+        "line": 28
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 35,
+            "column": 56
+          },
+          "end": {
+            "line": 35,
+            "column": 57
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 36,
+            "column": 32
+          },
+          "end": {
+            "line": 40,
+            "column": 38
+          }
+        },
+        "line": 36
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 75,
+      "7": 0
+    },
+    "f": {
+      "0": 15,
+      "1": 15,
+      "2": 15,
+      "3": 75,
+      "4": 0
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "682b18826d2bdf39596d331841da9f72e7f2f639"
+  },
+  "/frontend/src/components/footer.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/footer.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 6,
+          "column": 15
+        },
+        "end": {
+          "line": 57,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 7,
+          "column": 4
+        },
+        "end": {
+          "line": 56,
+          "column": 13
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 6,
+            "column": 15
+          },
+          "end": {
+            "line": 6,
+            "column": 16
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 4
+          },
+          "end": {
+            "line": 56,
+            "column": 13
+          }
+        },
+        "line": 7
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 60
+    },
+    "f": {
+      "0": 60
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "fb86248a9e6e9e83077bfb1e499a677ab895f434"
+  },
+  "/frontend/src/components/profissionais.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/profissionais.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 12
+        },
+        "end": {
+          "line": 7,
+          "column": 62
+        }
+      },
+      "1": {
+        "start": {
+          "line": 11,
+          "column": 8
+        },
+        "end": {
+          "line": 11,
+          "column": 21
+        }
+      },
+      "2": {
+        "start": {
+          "line": 12,
+          "column": 8
+        },
+        "end": {
+          "line": 21,
+          "column": 10
+        }
+      },
+      "3": {
+        "start": {
+          "line": 24,
+          "column": 31
+        },
+        "end": {
+          "line": 45,
+          "column": 5
+        }
+      },
+      "4": {
+        "start": {
+          "line": 25,
+          "column": 8
+        },
+        "end": {
+          "line": 25,
+          "column": 43
+        }
+      },
+      "5": {
+        "start": {
+          "line": 26,
+          "column": 8
+        },
+        "end": {
+          "line": 26,
+          "column": 27
+        }
+      },
+      "6": {
+        "start": {
+          "line": 28,
+          "column": 8
+        },
+        "end": {
+          "line": 40,
+          "column": 9
+        }
+      },
+      "7": {
+        "start": {
+          "line": 29,
+          "column": 20
+        },
+        "end": {
+          "line": 29,
+          "column": 21
+        }
+      },
+      "8": {
+        "start": {
+          "line": 36,
+          "column": 12
+        },
+        "end": {
+          "line": 39,
+          "column": 18
+        }
+      },
+      "9": {
+        "start": {
+          "line": 42,
+          "column": 8
+        },
+        "end": {
+          "line": 44,
+          "column": 11
+        }
+      },
+      "10": {
+        "start": {
+          "line": 48,
+          "column": 8
+        },
+        "end": {
+          "line": 48,
+          "column": 41
+        }
+      },
+      "11": {
+        "start": {
+          "line": 50,
+          "column": 8
+        },
+        "end": {
+          "line": 54,
+          "column": 9
+        }
+      },
+      "12": {
+        "start": {
+          "line": 51,
+          "column": 12
+        },
+        "end": {
+          "line": 51,
+          "column": 41
+        }
+      },
+      "13": {
+        "start": {
+          "line": 53,
+          "column": 12
+        },
+        "end": {
+          "line": 53,
+          "column": 41
+        }
+      },
+      "14": {
+        "start": {
+          "line": 57,
+          "column": 11
+        },
+        "end": {
+          "line": 60,
+          "column": 5
+        }
+      },
+      "15": {
+        "start": {
+          "line": 58,
+          "column": 8
+        },
+        "end": {
+          "line": 58,
+          "column": 37
+        }
+      },
+      "16": {
+        "start": {
+          "line": 59,
+          "column": 8
+        },
+        "end": {
+          "line": 59,
+          "column": 40
+        }
+      },
+      "17": {
+        "start": {
+          "line": 62,
+          "column": 11
+        },
+        "end": {
+          "line": 65,
+          "column": 5
+        }
+      },
+      "18": {
+        "start": {
+          "line": 63,
+          "column": 8
+        },
+        "end": {
+          "line": 63,
+          "column": 37
+        }
+      },
+      "19": {
+        "start": {
+          "line": 64,
+          "column": 8
+        },
+        "end": {
+          "line": 64,
+          "column": 40
+        }
+      },
+      "20": {
+        "start": {
+          "line": 67,
+          "column": 25
+        },
+        "end": {
+          "line": 75,
+          "column": 5
+        }
+      },
+      "21": {
+        "start": {
+          "line": 68,
+          "column": 33
+        },
+        "end": {
+          "line": 68,
+          "column": 43
+        }
+      },
+      "22": {
+        "start": {
+          "line": 70,
+          "column": 8
+        },
+        "end": {
+          "line": 74,
+          "column": 9
+        }
+      },
+      "23": {
+        "start": {
+          "line": 71,
+          "column": 12
+        },
+        "end": {
+          "line": 73,
+          "column": 15
+        }
+      },
+      "24": {
+        "start": {
+          "line": 78,
+          "column": 26
+        },
+        "end": {
+          "line": 78,
+          "column": 50
+        }
+      },
+      "25": {
+        "start": {
+          "line": 79,
+          "column": 8
+        },
+        "end": {
+          "line": 79,
+          "column": 42
+        }
+      },
+      "26": {
+        "start": {
+          "line": 80,
+          "column": 8
+        },
+        "end": {
+          "line": 80,
+          "column": 46
+        }
+      },
+      "27": {
+        "start": {
+          "line": 82,
+          "column": 8
+        },
+        "end": {
+          "line": 89,
+          "column": 9
+        }
+      },
+      "28": {
+        "start": {
+          "line": 82,
+          "column": 21
+        },
+        "end": {
+          "line": 82,
+          "column": 22
+        }
+      },
+      "29": {
+        "start": {
+          "line": 83,
+          "column": 12
+        },
+        "end": {
+          "line": 88,
+          "column": 13
+        }
+      },
+      "30": {
+        "start": {
+          "line": 87,
+          "column": 16
+        },
+        "end": {
+          "line": 87,
+          "column": 68
+        }
+      },
+      "31": {
+        "start": {
+          "line": 91,
+          "column": 8
+        },
+        "end": {
+          "line": 91,
+          "column": 36
+        }
+      },
+      "32": {
+        "start": {
+          "line": 93,
+          "column": 8
+        },
+        "end": {
+          "line": 93,
+          "column": 40
+        }
+      },
+      "33": {
+        "start": {
+          "line": 97,
+          "column": 8
+        },
+        "end": {
+          "line": 105,
+          "column": 56
+        }
+      },
+      "34": {
+        "start": {
+          "line": 100,
+          "column": 30
+        },
+        "end": {
+          "line": 100,
+          "column": 41
+        }
+      },
+      "35": {
+        "start": {
+          "line": 101,
+          "column": 16
+        },
+        "end": {
+          "line": 101,
+          "column": 56
+        }
+      },
+      "36": {
+        "start": {
+          "line": 102,
+          "column": 16
+        },
+        "end": {
+          "line": 102,
+          "column": 64
+        }
+      },
+      "37": {
+        "start": {
+          "line": 103,
+          "column": 16
+        },
+        "end": {
+          "line": 103,
+          "column": 48
+        }
+      },
+      "38": {
+        "start": {
+          "line": 105,
+          "column": 30
+        },
+        "end": {
+          "line": 105,
+          "column": 54
+        }
+      },
+      "39": {
+        "start": {
+          "line": 109,
+          "column": 8
+        },
+        "end": {
+          "line": 296,
+          "column": 10
+        }
+      },
+      "40": {
+        "start": {
+          "line": 132,
+          "column": 48
+        },
+        "end": {
+          "line": 132,
+          "column": 71
+        }
+      },
+      "41": {
+        "start": {
+          "line": 145,
+          "column": 48
+        },
+        "end": {
+          "line": 145,
+          "column": 71
+        }
+      },
+      "42": {
+        "start": {
+          "line": 158,
+          "column": 48
+        },
+        "end": {
+          "line": 158,
+          "column": 71
+        }
+      },
+      "43": {
+        "start": {
+          "line": 173,
+          "column": 48
+        },
+        "end": {
+          "line": 173,
+          "column": 74
+        }
+      },
+      "44": {
+        "start": {
+          "line": 201,
+          "column": 40
+        },
+        "end": {
+          "line": 226,
+          "column": 46
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 4
+          },
+          "end": {
+            "line": 10,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 23
+          },
+          "end": {
+            "line": 22,
+            "column": 5
+          }
+        },
+        "line": 10
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 31
+          },
+          "end": {
+            "line": 24,
+            "column": 32
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 24,
+            "column": 37
+          },
+          "end": {
+            "line": 45,
+            "column": 5
+          }
+        },
+        "line": 24
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 47,
+            "column": 4
+          },
+          "end": {
+            "line": 47,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 47,
+            "column": 18
+          },
+          "end": {
+            "line": 55,
+            "column": 5
+          }
+        },
+        "line": 47
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 57,
+            "column": 11
+          },
+          "end": {
+            "line": 57,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 57,
+            "column": 17
+          },
+          "end": {
+            "line": 60,
+            "column": 5
+          }
+        },
+        "line": 57
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 62,
+            "column": 11
+          },
+          "end": {
+            "line": 62,
+            "column": 12
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 62,
+            "column": 17
+          },
+          "end": {
+            "line": 65,
+            "column": 5
+          }
+        },
+        "line": 62
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 67,
+            "column": 25
+          },
+          "end": {
+            "line": 67,
+            "column": 26
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 67,
+            "column": 36
+          },
+          "end": {
+            "line": 75,
+            "column": 5
+          }
+        },
+        "line": 67
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": {
+            "line": 77,
+            "column": 4
+          },
+          "end": {
+            "line": 77,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 77,
+            "column": 32
+          },
+          "end": {
+            "line": 94,
+            "column": 5
+          }
+        },
+        "line": 77
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": {
+            "line": 96,
+            "column": 4
+          },
+          "end": {
+            "line": 96,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 96,
+            "column": 24
+          },
+          "end": {
+            "line": 106,
+            "column": 5
+          }
+        },
+        "line": 96
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": {
+            "line": 99,
+            "column": 18
+          },
+          "end": {
+            "line": 99,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 99,
+            "column": 30
+          },
+          "end": {
+            "line": 104,
+            "column": 13
+          }
+        },
+        "line": 99
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": {
+          "start": {
+            "line": 105,
+            "column": 19
+          },
+          "end": {
+            "line": 105,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 105,
+            "column": 30
+          },
+          "end": {
+            "line": 105,
+            "column": 54
+          }
+        },
+        "line": 105
+      },
+      "10": {
+        "name": "(anonymous_10)",
+        "decl": {
+          "start": {
+            "line": 108,
+            "column": 4
+          },
+          "end": {
+            "line": 108,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 108,
+            "column": 13
+          },
+          "end": {
+            "line": 297,
+            "column": 5
+          }
+        },
+        "line": 108
+      },
+      "11": {
+        "name": "(anonymous_11)",
+        "decl": {
+          "start": {
+            "line": 131,
+            "column": 53
+          },
+          "end": {
+            "line": 131,
+            "column": 54
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 132,
+            "column": 48
+          },
+          "end": {
+            "line": 132,
+            "column": 71
+          }
+        },
+        "line": 132
+      },
+      "12": {
+        "name": "(anonymous_12)",
+        "decl": {
+          "start": {
+            "line": 144,
+            "column": 53
+          },
+          "end": {
+            "line": 144,
+            "column": 54
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 145,
+            "column": 48
+          },
+          "end": {
+            "line": 145,
+            "column": 71
+          }
+        },
+        "line": 145
+      },
+      "13": {
+        "name": "(anonymous_13)",
+        "decl": {
+          "start": {
+            "line": 157,
+            "column": 53
+          },
+          "end": {
+            "line": 157,
+            "column": 54
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 158,
+            "column": 48
+          },
+          "end": {
+            "line": 158,
+            "column": 71
+          }
+        },
+        "line": 158
+      },
+      "14": {
+        "name": "(anonymous_14)",
+        "decl": {
+          "start": {
+            "line": 172,
+            "column": 53
+          },
+          "end": {
+            "line": 172,
+            "column": 54
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 173,
+            "column": 48
+          },
+          "end": {
+            "line": 173,
+            "column": 74
+          }
+        },
+        "line": 173
+      },
+      "15": {
+        "name": "(anonymous_15)",
+        "decl": {
+          "start": {
+            "line": 200,
+            "column": 36
+          },
+          "end": {
+            "line": 200,
+            "column": 37
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 201,
+            "column": 40
+          },
+          "end": {
+            "line": 226,
+            "column": 46
+          }
+        },
+        "line": 201
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 30,
+            "column": 12
+          },
+          "end": {
+            "line": 33,
+            "column": 40
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 30,
+              "column": 12
+            },
+            "end": {
+              "line": 32,
+              "column": 70
+            }
+          },
+          {
+            "start": {
+              "line": 33,
+              "column": 12
+            },
+            "end": {
+              "line": 33,
+              "column": 40
+            }
+          }
+        ],
+        "line": 30
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 50,
+            "column": 8
+          },
+          "end": {
+            "line": 54,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 50,
+              "column": 8
+            },
+            "end": {
+              "line": 54,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 50,
+              "column": 8
+            },
+            "end": {
+              "line": 54,
+              "column": 9
+            }
+          }
+        ],
+        "line": 50
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 70,
+            "column": 8
+          },
+          "end": {
+            "line": 74,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 70,
+              "column": 8
+            },
+            "end": {
+              "line": 74,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 70,
+              "column": 8
+            },
+            "end": {
+              "line": 74,
+              "column": 9
+            }
+          }
+        ],
+        "line": 70
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 83,
+            "column": 12
+          },
+          "end": {
+            "line": 88,
+            "column": 13
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 83,
+              "column": 12
+            },
+            "end": {
+              "line": 88,
+              "column": 13
+            }
+          },
+          {
+            "start": {
+              "line": 83,
+              "column": 12
+            },
+            "end": {
+              "line": 88,
+              "column": 13
+            }
+          }
+        ],
+        "line": 83
+      },
+      "4": {
+        "loc": {
+          "start": {
+            "line": 84,
+            "column": 16
+          },
+          "end": {
+            "line": 85,
+            "column": 45
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 84,
+              "column": 16
+            },
+            "end": {
+              "line": 84,
+              "column": 66
+            }
+          },
+          {
+            "start": {
+              "line": 85,
+              "column": 16
+            },
+            "end": {
+              "line": 85,
+              "column": 45
+            }
+          }
+        ],
+        "line": 84
+      },
+      "5": {
+        "loc": {
+          "start": {
+            "line": 185,
+            "column": 21
+          },
+          "end": {
+            "line": 235,
+            "column": 21
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 186,
+              "column": 24
+            },
+            "end": {
+              "line": 230,
+              "column": 35
+            }
+          },
+          {
+            "start": {
+              "line": 232,
+              "column": 24
+            },
+            "end": {
+              "line": 234,
+              "column": 28
+            }
+          }
+        ],
+        "line": 185
+      },
+      "6": {
+        "loc": {
+          "start": {
+            "line": 241,
+            "column": 32
+          },
+          "end": {
+            "line": 241,
+            "column": 75
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 241,
+              "column": 64
+            },
+            "end": {
+              "line": 241,
+              "column": 70
+            }
+          },
+          {
+            "start": {
+              "line": 241,
+              "column": 73
+            },
+            "end": {
+              "line": 241,
+              "column": 75
+            }
+          }
+        ],
+        "line": 241
+      },
+      "7": {
+        "loc": {
+          "start": {
+            "line": 250,
+            "column": 32
+          },
+          "end": {
+            "line": 258,
+            "column": 40
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 257,
+              "column": 38
+            },
+            "end": {
+              "line": 257,
+              "column": 44
+            }
+          },
+          {
+            "start": {
+              "line": 258,
+              "column": 38
+            },
+            "end": {
+              "line": 258,
+              "column": 40
+            }
+          }
+        ],
+        "line": 250
+      },
+      "8": {
+        "loc": {
+          "start": {
+            "line": 269,
+            "column": 32
+          },
+          "end": {
+            "line": 269,
+            "column": 75
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 269,
+              "column": 64
+            },
+            "end": {
+              "line": 269,
+              "column": 70
+            }
+          },
+          {
+            "start": {
+              "line": 269,
+              "column": 73
+            },
+            "end": {
+              "line": 269,
+              "column": 75
+            }
+          }
+        ],
+        "line": 269
+      },
+      "9": {
+        "loc": {
+          "start": {
+            "line": 279,
+            "column": 32
+          },
+          "end": {
+            "line": 287,
+            "column": 40
+          }
+        },
+        "type": "cond-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 286,
+              "column": 38
+            },
+            "end": {
+              "line": 286,
+              "column": 44
+            }
+          },
+          {
+            "start": {
+              "line": 287,
+              "column": 38
+            },
+            "end": {
+              "line": 287,
+              "column": 40
+            }
+          }
+        ],
+        "line": 279
+      }
+    },
+    "s": {
+      "0": 18,
+      "1": 30,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 90,
+      "9": 15,
+      "10": 15,
+      "11": 15,
+      "12": 0,
+      "13": 15,
+      "14": 15,
+      "15": 0,
+      "16": 0,
+      "17": 15,
+      "18": 0,
+      "19": 0,
+      "20": 15,
+      "21": 0,
+      "22": 0,
+      "23": 0,
+      "24": 0,
+      "25": 0,
+      "26": 0,
+      "27": 0,
+      "28": 0,
+      "29": 0,
+      "30": 0,
+      "31": 0,
+      "32": 0,
+      "33": 15,
+      "34": 15,
+      "35": 15,
+      "36": 15,
+      "37": 15,
+      "38": 0,
+      "39": 105,
+      "40": 0,
+      "41": 0,
+      "42": 0,
+      "43": 0,
+      "44": 252
+    },
+    "f": {
+      "0": 30,
+      "1": 15,
+      "2": 15,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 15,
+      "8": 15,
+      "9": 0,
+      "10": 105,
+      "11": 0,
+      "12": 0,
+      "13": 0,
+      "14": 0,
+      "15": 252
+    },
+    "b": {
+      "0": [
+        105,
+        105
+      ],
+      "1": [
+        0,
+        15
+      ],
+      "2": [
+        0,
+        0
+      ],
+      "3": [
+        0,
+        0
+      ],
+      "4": [
+        0,
+        0
+      ],
+      "5": [
+        42,
+        63
+      ],
+      "6": [
+        105,
+        0
+      ],
+      "7": [
+        48,
+        57
+      ],
+      "8": [
+        105,
+        0
+      ],
+      "9": [
+        48,
+        57
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "6421cecf912b8d1f96ce4ca8c35dd666a2bf798c"
+  },
+  "/frontend/src/components/graficos.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/graficos.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 12
+        },
+        "end": {
+          "line": 7,
+          "column": 62
+        }
+      },
+      "1": {
+        "start": {
+          "line": 11,
+          "column": 8
+        },
+        "end": {
+          "line": 11,
+          "column": 16
+        }
+      },
+      "2": {
+        "start": {
+          "line": 12,
+          "column": 8
+        },
+        "end": {
+          "line": 17,
+          "column": 10
+        }
+      },
+      "3": {
+        "start": {
+          "line": 21,
+          "column": 22
+        },
+        "end": {
+          "line": 21,
+          "column": 24
+        }
+      },
+      "4": {
+        "start": {
+          "line": 22,
+          "column": 8
+        },
+        "end": {
+          "line": 68,
+          "column": 56
+        }
+      },
+      "5": {
+        "start": {
+          "line": 24,
+          "column": 28
+        },
+        "end": {
+          "line": 24,
+          "column": 37
+        }
+      },
+      "6": {
+        "start": {
+          "line": 26,
+          "column": 16
+        },
+        "end": {
+          "line": 26,
+          "column": 51
+        }
+      },
+      "7": {
+        "start": {
+          "line": 29,
+          "column": 29
+        },
+        "end": {
+          "line": 29,
+          "column": 31
+        }
+      },
+      "8": {
+        "start": {
+          "line": 30,
+          "column": 37
+        },
+        "end": {
+          "line": 30,
+          "column": 46
+        }
+      },
+      "9": {
+        "start": {
+          "line": 31,
+          "column": 16
+        },
+        "end": {
+          "line": 31,
+          "column": 40
+        }
+      },
+      "10": {
+        "start": {
+          "line": 32,
+          "column": 16
+        },
+        "end": {
+          "line": 39,
+          "column": 17
+        }
+      },
+      "11": {
+        "start": {
+          "line": 33,
+          "column": 32
+        },
+        "end": {
+          "line": 33,
+          "column": 33
+        }
+      },
+      "12": {
+        "start": {
+          "line": 37,
+          "column": 31
+        },
+        "end": {
+          "line": 37,
+          "column": 69
+        }
+      },
+      "13": {
+        "start": {
+          "line": 38,
+          "column": 20
+        },
+        "end": {
+          "line": 38,
+          "column": 34
+        }
+      },
+      "14": {
+        "start": {
+          "line": 40,
+          "column": 16
+        },
+        "end": {
+          "line": 40,
+          "column": 33
+        }
+      },
+      "15": {
+        "start": {
+          "line": 44,
+          "column": 30
+        },
+        "end": {
+          "line": 44,
+          "column": 32
+        }
+      },
+      "16": {
+        "start": {
+          "line": 45,
+          "column": 36
+        },
+        "end": {
+          "line": 45,
+          "column": 40
+        }
+      },
+      "17": {
+        "start": {
+          "line": 46,
+          "column": 16
+        },
+        "end": {
+          "line": 46,
+          "column": 40
+        }
+      },
+      "18": {
+        "start": {
+          "line": 47,
+          "column": 16
+        },
+        "end": {
+          "line": 50,
+          "column": 17
+        }
+      },
+      "19": {
+        "start": {
+          "line": 47,
+          "column": 29
+        },
+        "end": {
+          "line": 47,
+          "column": 30
+        }
+      },
+      "20": {
+        "start": {
+          "line": 48,
+          "column": 37
+        },
+        "end": {
+          "line": 48,
+          "column": 76
+        }
+      },
+      "21": {
+        "start": {
+          "line": 49,
+          "column": 20
+        },
+        "end": {
+          "line": 49,
+          "column": 41
+        }
+      },
+      "22": {
+        "start": {
+          "line": 51,
+          "column": 16
+        },
+        "end": {
+          "line": 51,
+          "column": 34
+        }
+      },
+      "23": {
+        "start": {
+          "line": 54,
+          "column": 16
+        },
+        "end": {
+          "line": 54,
+          "column": 52
+        }
+      },
+      "24": {
+        "start": {
+          "line": 58,
+          "column": 28
+        },
+        "end": {
+          "line": 58,
+          "column": 30
+        }
+      },
+      "25": {
+        "start": {
+          "line": 59,
+          "column": 16
+        },
+        "end": {
+          "line": 59,
+          "column": 52
+        }
+      },
+      "26": {
+        "start": {
+          "line": 60,
+          "column": 16
+        },
+        "end": {
+          "line": 65,
+          "column": 17
+        }
+      },
+      "27": {
+        "start": {
+          "line": 60,
+          "column": 29
+        },
+        "end": {
+          "line": 60,
+          "column": 30
+        }
+      },
+      "28": {
+        "start": {
+          "line": 61,
+          "column": 20
+        },
+        "end": {
+          "line": 64,
+          "column": 23
+        }
+      },
+      "29": {
+        "start": {
+          "line": 66,
+          "column": 16
+        },
+        "end": {
+          "line": 66,
+          "column": 49
+        }
+      },
+      "30": {
+        "start": {
+          "line": 68,
+          "column": 30
+        },
+        "end": {
+          "line": 68,
+          "column": 54
+        }
+      },
+      "31": {
+        "start": {
+          "line": 72,
+          "column": 8
+        },
+        "end": {
+          "line": 127,
+          "column": 10
+        }
+      },
+      "32": {
+        "start": {
+          "line": 77,
+          "column": 28
+        },
+        "end": {
+          "line": 81,
+          "column": 34
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 10,
+            "column": 4
+          },
+          "end": {
+            "line": 10,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 18
+          },
+          "end": {
+            "line": 18,
+            "column": 5
+          }
+        },
+        "line": 10
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 20,
+            "column": 4
+          },
+          "end": {
+            "line": 20,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 20,
+            "column": 24
+          },
+          "end": {
+            "line": 69,
+            "column": 5
+          }
+        },
+        "line": 20
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 18
+          },
+          "end": {
+            "line": 24,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 24,
+            "column": 28
+          },
+          "end": {
+            "line": 24,
+            "column": 37
+          }
+        },
+        "line": 24
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 25,
+            "column": 18
+          },
+          "end": {
+            "line": 25,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 30
+          },
+          "end": {
+            "line": 27,
+            "column": 13
+          }
+        },
+        "line": 25
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 28,
+            "column": 18
+          },
+          "end": {
+            "line": 28,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 28,
+            "column": 24
+          },
+          "end": {
+            "line": 42,
+            "column": 13
+          }
+        },
+        "line": 28
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 43,
+            "column": 18
+          },
+          "end": {
+            "line": 43,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 43,
+            "column": 24
+          },
+          "end": {
+            "line": 52,
+            "column": 13
+          }
+        },
+        "line": 43
+      },
+      "6": {
+        "name": "(anonymous_6)",
+        "decl": {
+          "start": {
+            "line": 53,
+            "column": 18
+          },
+          "end": {
+            "line": 53,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 53,
+            "column": 24
+          },
+          "end": {
+            "line": 56,
+            "column": 13
+          }
+        },
+        "line": 53
+      },
+      "7": {
+        "name": "(anonymous_7)",
+        "decl": {
+          "start": {
+            "line": 57,
+            "column": 18
+          },
+          "end": {
+            "line": 57,
+            "column": 19
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 57,
+            "column": 24
+          },
+          "end": {
+            "line": 67,
+            "column": 13
+          }
+        },
+        "line": 57
+      },
+      "8": {
+        "name": "(anonymous_8)",
+        "decl": {
+          "start": {
+            "line": 68,
+            "column": 19
+          },
+          "end": {
+            "line": 68,
+            "column": 20
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 68,
+            "column": 30
+          },
+          "end": {
+            "line": 68,
+            "column": 54
+          }
+        },
+        "line": 68
+      },
+      "9": {
+        "name": "(anonymous_9)",
+        "decl": {
+          "start": {
+            "line": 71,
+            "column": 4
+          },
+          "end": {
+            "line": 71,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 71,
+            "column": 13
+          },
+          "end": {
+            "line": 128,
+            "column": 5
+          }
+        },
+        "line": 71
+      },
+      "10": {
+        "name": "(anonymous_10)",
+        "decl": {
+          "start": {
+            "line": 76,
+            "column": 48
+          },
+          "end": {
+            "line": 76,
+            "column": 49
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 77,
+            "column": 28
+          },
+          "end": {
+            "line": 81,
+            "column": 34
+          }
+        },
+        "line": 77
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 30,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 15,
+      "9": 15,
+      "10": 15,
+      "11": 15,
+      "12": 75,
+      "13": 75,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
+      "19": 15,
+      "20": 75,
+      "21": 75,
+      "22": 15,
+      "23": 15,
+      "24": 15,
+      "25": 15,
+      "26": 15,
+      "27": 15,
+      "28": 75,
+      "29": 15,
+      "30": 0,
+      "31": 105,
+      "32": 450
+    },
+    "f": {
+      "0": 30,
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 15,
+      "8": 0,
+      "9": 105,
+      "10": 450
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "3d0173646ec3a9cfb22959761ab2f4e5bd871713"
+  },
+  "/frontend/src/components/visualizarFrases.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/visualizarFrases.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 4,
+          "column": 28
+        },
+        "end": {
+          "line": 10,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 5,
+          "column": 4
+        },
+        "end": {
+          "line": 9,
+          "column": 14
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 4,
+            "column": 28
+          },
+          "end": {
+            "line": 4,
+            "column": 29
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 4
+          },
+          "end": {
+            "line": 9,
+            "column": 14
+          }
+        },
+        "line": 5
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 180
+    },
+    "f": {
+      "0": 180
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "29e1bdef48211303db90289aed06c4aa360c8922"
+  },
+  "/frontend/src/components/selecionaFrase.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/selecionaFrase.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 5,
+          "column": 12
+        },
+        "end": {
+          "line": 5,
+          "column": 59
+        }
+      },
+      "1": {
+        "start": {
+          "line": 8,
+          "column": 19
+        },
+        "end": {
+          "line": 8,
+          "column": 51
+        }
+      },
+      "2": {
+        "start": {
+          "line": 9,
+          "column": 16
+        },
+        "end": {
+          "line": 9,
+          "column": 34
+        }
+      },
+      "3": {
+        "start": {
+          "line": 10,
+          "column": 4
+        },
+        "end": {
+          "line": 10,
+          "column": 32
+        }
+      },
+      "4": {
+        "start": {
+          "line": 11,
+          "column": 19
+        },
+        "end": {
+          "line": 11,
+          "column": 36
+        }
+      },
+      "5": {
+        "start": {
+          "line": 13,
+          "column": 4
+        },
+        "end": {
+          "line": 16,
+          "column": 5
+        }
+      },
+      "6": {
+        "start": {
+          "line": 13,
+          "column": 17
+        },
+        "end": {
+          "line": 13,
+          "column": 33
+        }
+      },
+      "7": {
+        "start": {
+          "line": 14,
+          "column": 18
+        },
+        "end": {
+          "line": 14,
+          "column": 46
+        }
+      },
+      "8": {
+        "start": {
+          "line": 15,
+          "column": 8
+        },
+        "end": {
+          "line": 15,
+          "column": 52
+        }
+      },
+      "9": {
+        "start": {
+          "line": 19,
+          "column": 24
+        },
+        "end": {
+          "line": 53,
+          "column": 1
+        }
+      },
+      "10": {
+        "start": {
+          "line": 20,
+          "column": 32
+        },
+        "end": {
+          "line": 20,
+          "column": 42
+        }
+      },
+      "11": {
+        "start": {
+          "line": 21,
+          "column": 32
+        },
+        "end": {
+          "line": 21,
+          "column": 42
+        }
+      },
+      "12": {
+        "start": {
+          "line": 22,
+          "column": 32
+        },
+        "end": {
+          "line": 22,
+          "column": 42
+        }
+      },
+      "13": {
+        "start": {
+          "line": 24,
+          "column": 4
+        },
+        "end": {
+          "line": 51,
+          "column": 11
+        }
+      },
+      "14": {
+        "start": {
+          "line": 26,
+          "column": 12
+        },
+        "end": {
+          "line": 47,
+          "column": 15
+        }
+      },
+      "15": {
+        "start": {
+          "line": 27,
+          "column": 30
+        },
+        "end": {
+          "line": 27,
+          "column": 38
+        }
+      },
+      "16": {
+        "start": {
+          "line": 28,
+          "column": 16
+        },
+        "end": {
+          "line": 28,
+          "column": 31
+        }
+      },
+      "17": {
+        "start": {
+          "line": 29,
+          "column": 16
+        },
+        "end": {
+          "line": 29,
+          "column": 35
+        }
+      },
+      "18": {
+        "start": {
+          "line": 31,
+          "column": 32
+        },
+        "end": {
+          "line": 31,
+          "column": 59
+        }
+      },
+      "19": {
+        "start": {
+          "line": 32,
+          "column": 16
+        },
+        "end": {
+          "line": 36,
+          "column": 17
+        }
+      },
+      "20": {
+        "start": {
+          "line": 33,
+          "column": 20
+        },
+        "end": {
+          "line": 33,
+          "column": 39
+        }
+      },
+      "21": {
+        "start": {
+          "line": 35,
+          "column": 20
+        },
+        "end": {
+          "line": 35,
+          "column": 51
+        }
+      },
+      "22": {
+        "start": {
+          "line": 37,
+          "column": 16
+        },
+        "end": {
+          "line": 41,
+          "column": 17
+        }
+      },
+      "23": {
+        "start": {
+          "line": 38,
+          "column": 20
+        },
+        "end": {
+          "line": 38,
+          "column": 39
+        }
+      },
+      "24": {
+        "start": {
+          "line": 40,
+          "column": 20
+        },
+        "end": {
+          "line": 40,
+          "column": 51
+        }
+      },
+      "25": {
+        "start": {
+          "line": 42,
+          "column": 16
+        },
+        "end": {
+          "line": 46,
+          "column": 17
+        }
+      },
+      "26": {
+        "start": {
+          "line": 43,
+          "column": 20
+        },
+        "end": {
+          "line": 43,
+          "column": 39
+        }
+      },
+      "27": {
+        "start": {
+          "line": 45,
+          "column": 20
+        },
+        "end": {
+          "line": 45,
+          "column": 51
+        }
+      },
+      "28": {
+        "start": {
+          "line": 50,
+          "column": 8
+        },
+        "end": {
+          "line": 50,
+          "column": 20
+        }
+      },
+      "29": {
+        "start": {
+          "line": 52,
+          "column": 4
+        },
+        "end": {
+          "line": 52,
+          "column": 47
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "shuffle",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 9
+          },
+          "end": {
+            "line": 7,
+            "column": 16
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 24
+          },
+          "end": {
+            "line": 17,
+            "column": 1
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 19,
+            "column": 24
+          },
+          "end": {
+            "line": 19,
+            "column": 25
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 19,
+            "column": 30
+          },
+          "end": {
+            "line": 53,
+            "column": 1
+          }
+        },
+        "line": 19
+      },
+      "2": {
+        "name": "(anonymous_2)",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 14
+          },
+          "end": {
+            "line": 24,
+            "column": 15
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 24,
+            "column": 20
+          },
+          "end": {
+            "line": 51,
+            "column": 5
+          }
+        },
+        "line": 24
+      },
+      "3": {
+        "name": "setFrases",
+        "decl": {
+          "start": {
+            "line": 25,
+            "column": 23
+          },
+          "end": {
+            "line": 25,
+            "column": 32
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 25,
+            "column": 35
+          },
+          "end": {
+            "line": 48,
+            "column": 9
+          }
+        },
+        "line": 25
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 26,
+            "column": 38
+          },
+          "end": {
+            "line": 26,
+            "column": 39
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 26,
+            "column": 47
+          },
+          "end": {
+            "line": 47,
+            "column": 13
+          }
+        },
+        "line": 26
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 19
+          },
+          "end": {
+            "line": 8,
+            "column": 51
+          }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": {
+              "line": 8,
+              "column": 19
+            },
+            "end": {
+              "line": 8,
+              "column": 32
+            }
+          },
+          {
+            "start": {
+              "line": 8,
+              "column": 36
+            },
+            "end": {
+              "line": 8,
+              "column": 51
+            }
+          }
+        ],
+        "line": 8
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 32,
+            "column": 16
+          },
+          "end": {
+            "line": 36,
+            "column": 17
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 32,
+              "column": 16
+            },
+            "end": {
+              "line": 36,
+              "column": 17
+            }
+          },
+          {
+            "start": {
+              "line": 32,
+              "column": 16
+            },
+            "end": {
+              "line": 36,
+              "column": 17
+            }
+          }
+        ],
+        "line": 32
+      },
+      "2": {
+        "loc": {
+          "start": {
+            "line": 37,
+            "column": 16
+          },
+          "end": {
+            "line": 41,
+            "column": 17
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 37,
+              "column": 16
+            },
+            "end": {
+              "line": 41,
+              "column": 17
+            }
+          },
+          {
+            "start": {
+              "line": 37,
+              "column": 16
+            },
+            "end": {
+              "line": 41,
+              "column": 17
+            }
+          }
+        ],
+        "line": 37
+      },
+      "3": {
+        "loc": {
+          "start": {
+            "line": 42,
+            "column": 16
+          },
+          "end": {
+            "line": 46,
+            "column": 17
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 42,
+              "column": 16
+            },
+            "end": {
+              "line": 46,
+              "column": 17
+            }
+          },
+          {
+            "start": {
+              "line": 42,
+              "column": 16
+            },
+            "end": {
+              "line": 46,
+              "column": 17
+            }
+          }
+        ],
+        "line": 42
+      }
+    },
+    "s": {
+      "0": 18,
+      "1": 15,
+      "2": 15,
+      "3": 15,
+      "4": 15,
+      "5": 15,
+      "6": 15,
+      "7": 795,
+      "8": 795,
+      "9": 18,
+      "10": 75,
+      "11": 60,
+      "12": 60,
+      "13": 60,
+      "14": 15,
+      "15": 15,
+      "16": 15,
+      "17": 15,
+      "18": 15,
+      "19": 15,
+      "20": 0,
+      "21": 15,
+      "22": 15,
+      "23": 0,
+      "24": 15,
+      "25": 15,
+      "26": 0,
+      "27": 15,
+      "28": 15,
+      "29": 60
+    },
+    "f": {
+      "0": 15,
+      "1": 75,
+      "2": 15,
+      "3": 15,
+      "4": 15
+    },
+    "b": {
+      "0": [
+        15,
+        0
+      ],
+      "1": [
+        0,
+        15
+      ],
+      "2": [
+        0,
+        15
+      ],
+      "3": [
+        0,
+        15
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "8f2102c14c8ca353376bc215ab08ea153cf8720e"
+  },
+  "/frontend/src/components/AllComponentes.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/AllComponentes.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 12,
+          "column": 23
+        },
+        "end": {
+          "line": 28,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 13,
+          "column": 19
+        },
+        "end": {
+          "line": 13,
+          "column": 36
+        }
+      },
+      "2": {
+        "start": {
+          "line": 14,
+          "column": 4
+        },
+        "end": {
+          "line": 27,
+          "column": 6
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 12,
+            "column": 23
+          },
+          "end": {
+            "line": 12,
+            "column": 24
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 12,
+            "column": 29
+          },
+          "end": {
+            "line": 28,
+            "column": 1
+          }
+        },
+        "line": 12
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 75,
+      "2": 60
+    },
+    "f": {
+      "0": 75
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "f83ce860246188e6a7995f340d4c785aca565e35"
+  },
+  "/frontend/src/components/login.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/components/login.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 14
+        },
+        "end": {
+          "line": 64,
+          "column": 1
+        }
+      },
+      "1": {
+        "start": {
+          "line": 8,
+          "column": 36
+        },
+        "end": {
+          "line": 11,
+          "column": 6
+        }
+      },
+      "2": {
+        "start": {
+          "line": 13,
+          "column": 32
+        },
+        "end": {
+          "line": 13,
+          "column": 40
+        }
+      },
+      "3": {
+        "start": {
+          "line": 15,
+          "column": 20
+        },
+        "end": {
+          "line": 15,
+          "column": 32
+        }
+      },
+      "4": {
+        "start": {
+          "line": 17,
+          "column": 4
+        },
+        "end": {
+          "line": 19,
+          "column": 5
+        }
+      },
+      "5": {
+        "start": {
+          "line": 18,
+          "column": 8
+        },
+        "end": {
+          "line": 18,
+          "column": 35
+        }
+      },
+      "6": {
+        "start": {
+          "line": 21,
+          "column": 21
+        },
+        "end": {
+          "line": 22,
+          "column": 69
+        }
+      },
+      "7": {
+        "start": {
+          "line": 22,
+          "column": 8
+        },
+        "end": {
+          "line": 22,
+          "column": 69
+        }
+      },
+      "8": {
+        "start": {
+          "line": 25,
+          "column": 8
+        },
+        "end": {
+          "line": 25,
+          "column": 27
+        }
+      },
+      "9": {
+        "start": {
+          "line": 26,
+          "column": 8
+        },
+        "end": {
+          "line": 26,
+          "column": 37
+        }
+      },
+      "10": {
+        "start": {
+          "line": 27,
+          "column": 8
+        },
+        "end": {
+          "line": 31,
+          "column": 9
+        }
+      },
+      "11": {
+        "start": {
+          "line": 28,
+          "column": 12
+        },
+        "end": {
+          "line": 28,
+          "column": 39
+        }
+      },
+      "12": {
+        "start": {
+          "line": 30,
+          "column": 12
+        },
+        "end": {
+          "line": 30,
+          "column": 39
+        }
+      },
+      "13": {
+        "start": {
+          "line": 34,
+          "column": 4
+        },
+        "end": {
+          "line": 63,
+          "column": 6
+        }
+      },
+      "14": {
+        "start": {
+          "line": 38,
+          "column": 39
+        },
+        "end": {
+          "line": 38,
+          "column": 50
+        }
+      },
+      "15": {
+        "start": {
+          "line": 45,
+          "column": 41
+        },
+        "end": {
+          "line": 45,
+          "column": 52
+        }
+      },
+      "16": {
+        "start": {
+          "line": 54,
+          "column": 41
+        },
+        "end": {
+          "line": 54,
+          "column": 52
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 7,
+            "column": 14
+          },
+          "end": {
+            "line": 7,
+            "column": 15
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 7,
+            "column": 29
+          },
+          "end": {
+            "line": 64,
+            "column": 1
+          }
+        },
+        "line": 7
+      },
+      "1": {
+        "name": "(anonymous_1)",
+        "decl": {
+          "start": {
+            "line": 21,
+            "column": 21
+          },
+          "end": {
+            "line": 21,
+            "column": 22
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 8
+          },
+          "end": {
+            "line": 22,
+            "column": 69
+          }
+        },
+        "line": 22
+      },
+      "2": {
+        "name": "onSubmit",
+        "decl": {
+          "start": {
+            "line": 24,
+            "column": 19
+          },
+          "end": {
+            "line": 24,
+            "column": 27
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 24,
+            "column": 31
+          },
+          "end": {
+            "line": 32,
+            "column": 5
+          }
+        },
+        "line": 24
+      },
+      "3": {
+        "name": "(anonymous_3)",
+        "decl": {
+          "start": {
+            "line": 38,
+            "column": 32
+          },
+          "end": {
+            "line": 38,
+            "column": 33
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 38,
+            "column": 39
+          },
+          "end": {
+            "line": 38,
+            "column": 50
+          }
+        },
+        "line": 38
+      },
+      "4": {
+        "name": "(anonymous_4)",
+        "decl": {
+          "start": {
+            "line": 45,
+            "column": 34
+          },
+          "end": {
+            "line": 45,
+            "column": 35
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 45,
+            "column": 41
+          },
+          "end": {
+            "line": 45,
+            "column": 52
+          }
+        },
+        "line": 45
+      },
+      "5": {
+        "name": "(anonymous_5)",
+        "decl": {
+          "start": {
+            "line": 54,
+            "column": 34
+          },
+          "end": {
+            "line": 54,
+            "column": 35
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 54,
+            "column": 41
+          },
+          "end": {
+            "line": 54,
+            "column": 52
+          }
+        },
+        "line": 54
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": {
+            "line": 17,
+            "column": 4
+          },
+          "end": {
+            "line": 19,
+            "column": 5
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 17,
+              "column": 4
+            },
+            "end": {
+              "line": 19,
+              "column": 5
+            }
+          },
+          {
+            "start": {
+              "line": 17,
+              "column": 4
+            },
+            "end": {
+              "line": 19,
+              "column": 5
+            }
+          }
+        ],
+        "line": 17
+      },
+      "1": {
+        "loc": {
+          "start": {
+            "line": 27,
+            "column": 8
+          },
+          "end": {
+            "line": 31,
+            "column": 9
+          }
+        },
+        "type": "if",
+        "locations": [
+          {
+            "start": {
+              "line": 27,
+              "column": 8
+            },
+            "end": {
+              "line": 31,
+              "column": 9
+            }
+          },
+          {
+            "start": {
+              "line": 27,
+              "column": 8
+            },
+            "end": {
+              "line": 31,
+              "column": 9
+            }
+          }
+        ],
+        "line": 27
+      }
+    },
+    "s": {
+      "0": 18,
+      "1": 84,
+      "2": 84,
+      "3": 84,
+      "4": 84,
+      "5": 2,
+      "6": 84,
+      "7": 78,
+      "8": 3,
+      "9": 3,
+      "10": 3,
+      "11": 3,
+      "12": 0,
+      "13": 84,
+      "14": 3,
+      "15": 39,
+      "16": 39
+    },
+    "f": {
+      "0": 84,
+      "1": 78,
+      "2": 3,
+      "3": 3,
+      "4": 39,
+      "5": 39
+    },
+    "b": {
+      "0": [
+        2,
+        82
+      ],
+      "1": [
+        3,
+        0
+      ]
+    },
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "1ad26cb00f498e6f5e78178fc80da8adec7f2584"
+  },
+  "/frontend/src/App.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/App.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 23,
+          "column": 8
+        },
+        "end": {
+          "line": 39,
+          "column": 10
+        }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": {
+            "line": 22,
+            "column": 4
+          },
+          "end": {
+            "line": 22,
+            "column": 5
+          }
+        },
+        "loc": {
+          "start": {
+            "line": 22,
+            "column": 13
+          },
+          "end": {
+            "line": 40,
+            "column": 5
+          }
+        },
+        "line": 22
+      }
+    },
+    "branchMap": {},
+    "s": {
+      "0": 18
+    },
+    "f": {
+      "0": 18
+    },
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "6fa8108f98556274bcfa5a34b5b7ad2eb6c292fe"
+  },
+  "/frontend/src/index.js": {
+    "path": "/home/serafim/Documentos/2020.2/MDS/2020.2-Violeta-Desenvolvimento/frontend/src/index.js",
+    "statementMap": {
+      "0": {
+        "start": {
+          "line": 7,
+          "column": 0
+        },
+        "end": {
+          "line": 7,
+          "column": 58
+        }
+      },
+      "1": {
+        "start": {
+          "line": 12,
+          "column": 0
+        },
+        "end": {
+          "line": 12,
+          "column": 27
+        }
+      }
+    },
+    "fnMap": {},
+    "branchMap": {},
+    "s": {
+      "0": 18,
+      "1": 18
+    },
+    "f": {},
+    "b": {},
+    "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    "hash": "5387f870c8b1abcfd40be3d33f4ef4d22aec50a6"
+  }
+}
