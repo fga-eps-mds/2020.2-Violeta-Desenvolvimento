@@ -8,5 +8,5 @@ router.register('categoria-violencia', viewsets.CategoriaViolenciaViewset)
 router.register('categoria-contato', viewsets.CategoriaContatoViewset)
 router.register('contato-violencia', viewsets.ContatoViolenciaViewset)
 
-router.register('questionario', viewsets.QuestionarioViewset)
+router.register('questionario/.json', viewsets.QuestionarioViewset)
 router.register('contato-questionario', viewsets.ContatoQuestionarioViewset)

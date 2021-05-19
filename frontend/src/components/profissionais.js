@@ -11,36 +11,36 @@ class Profissionais extends React.Component {
         super(props);
         this.state = {
             profissionais: [],
-            arrayProfissionais: [],
+            arrayProfs: [],
             error: '',
             categoria: null,
             currentSlide: 0,
-            filteredProfissionais: [],
+            filteredProfs: [],
             qtdeItemSlide: 6,
             w: 0,
         };
     }
 
-    createArrayProfissionais = () => {
-        this.state.arrayProfissionais = [];
+    createarrayProfs = () => {
+        this.state.arrayProfs = [];
         this.defineWidth();
 
         for (
             let i = 0;
             i <
-                this.state.filteredProfissionais.length -
+                this.state.filteredProfs.length -
                     this.state.currentSlide * this.state.qtdeItemSlide &&
             i < this.state.qtdeItemSlide;
             i += 1
         ) {
-            this.state.arrayProfissionais[i] =
-                this.state.filteredProfissionais[
+            this.state.arrayProfs[i] =
+                this.state.filteredProfs[
                     this.state.currentSlide * this.state.qtdeItemSlide + i
                 ];
         }
 
         this.setState({
-            arrayProfissionais: this.state.arrayProfissionais,
+            arrayProfs: this.state.arrayProfs,
         });
     };
 
@@ -56,12 +56,12 @@ class Profissionais extends React.Component {
 
     next = () => {
         this.state.currentSlide += 1;
-        this.createArrayProfissionais();
+        this.createarrayProfs();
     };
 
     prev = () => {
         this.state.currentSlide -= 1;
-        this.createArrayProfissionais();
+        this.createarrayProfs();
     };
 
     updateCurrentSlide = (index) => {
@@ -77,20 +77,20 @@ class Profissionais extends React.Component {
     filtercategoria(nameButton) {
         const arrayBase = this.state.profissionais;
         this.state.categoria = nameButton;
-        this.state.filteredProfissionais = [];
+        this.state.filteredProfs = [];
 
         for (let i = 0; i < arrayBase.length; i += 1) {
             if (
                 arrayBase[i].categoria_fk === this.state.categoria ||
                 this.state.categoria === null
             ) {
-                this.state.filteredProfissionais.push(arrayBase[i]);
+                this.state.filteredProfs.push(arrayBase[i]);
             }
         }
 
         this.state.currentSlide = 0;
 
-        this.createArrayProfissionais();
+        this.createarrayProfs();
     }
 
     componentDidMount() {
@@ -99,8 +99,8 @@ class Profissionais extends React.Component {
             .then((result) => {
                 const profs = result.data;
                 this.setState({ profissionais: profs });
-                this.setState({ filteredProfissionais: profs });
-                this.createArrayProfissionais();
+                this.setState({ filteredProfs: profs });
+                this.createarrayProfs();
             })
             .catch((error) => this.setState({ error }));
     }
@@ -111,13 +111,13 @@ class Profissionais extends React.Component {
                 <h1 id="profissionais-title">Profissionais</h1>
                 <div class="profissionais-container-title-nav">
                     <div class="profissionais-container-title">
-                        <p id="profissionais-description">
-                            Sed non enim a sapien interdum vulputate quis at
-                            diam. Maecenas quis sem erat. Cras tempor dignissim
-                            faucibus. Quisque egestas felis facilisis,
-                            scelerisque velit vel, posuere velit. Sed at elit
-                            vitae augue viverra lobortis. Etiam eget lectus non
-                            nulla sodales.
+                        <p class="profissionais-description">
+                            Lembre-se! Você não está sozinha. Criamos esse
+                            ambiente para que possamos te ajudar.
+                        </p>
+                        <p class="profissionais-description">
+                            Aqui você pode encontrar contatos de profissionais e
+                            órgãos competentes que podem lhe ajudar.
                         </p>
                     </div>
                     <div class="profissionais-container-nav">
@@ -182,7 +182,7 @@ class Profissionais extends React.Component {
                     </div>
                 </div>
                 <div class="carousel-container">
-                    {this.state.arrayProfissionais.length > 0 ? (
+                    {this.state.arrayProfs.length > 0 ? (
                         <Carousel
                             onChange={this.updateCurrentSlide}
                             selectedItem={this.state.currentSlide}
@@ -196,36 +196,34 @@ class Profissionais extends React.Component {
                             swipeable={false}
                         >
                             <div id="container-profissionais">
-                                {this.state.arrayProfissionais.map(
-                                    (profissional) => (
-                                        <div
-                                            class="box-contact"
-                                            key={profissional.id_contato}
+                                {this.state.arrayProfs.map((profissional) => (
+                                    <div
+                                        class="box-contact"
+                                        key={profissional.id_contato}
+                                    >
+                                        <p
+                                            class="box-contact-name"
+                                            id="nome_contato"
                                         >
-                                            <p
-                                                class="box-contact-name"
-                                                id="nome_contato"
-                                            >
-                                                <strong>Nome:</strong>{' '}
-                                                {profissional.nome_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-description"
-                                                id="ds_contato"
-                                            >
-                                                <strong>Descrição:</strong>{' '}
-                                                {profissional.ds_contato}
-                                            </p>
-                                            <p
-                                                class="box-contact-number"
-                                                id="numero_contato"
-                                            >
-                                                <strong>Contato:</strong>{' '}
-                                                {profissional.numero_contato}
-                                            </p>
-                                        </div>
-                                    )
-                                )}
+                                            <strong>Nome:</strong>{' '}
+                                            {profissional.nome_contato}
+                                        </p>
+                                        <p
+                                            class="box-contact-description"
+                                            id="ds_contato"
+                                        >
+                                            <strong>Descrição:</strong>{' '}
+                                            {profissional.ds_contato}
+                                        </p>
+                                        <p
+                                            class="box-contact-number"
+                                            id="numero_contato"
+                                        >
+                                            <strong>Contato:</strong>{' '}
+                                            {profissional.numero_contato}
+                                        </p>
+                                    </div>
+                                ))}
                             </div>
                         </Carousel>
                     ) : (
@@ -249,8 +247,7 @@ class Profissionais extends React.Component {
                             disabled={
                                 this.state.currentSlide >=
                                 parseInt(
-                                    (this.state.filteredProfissionais.length -
-                                        1) /
+                                    (this.state.filteredProfs.length - 1) /
                                         this.state.qtdeItemSlide,
                                     10
                                 )
@@ -278,8 +275,7 @@ class Profissionais extends React.Component {
                             disabled={
                                 this.state.currentSlide >=
                                 parseInt(
-                                    (this.state.filteredProfissionais.length -
-                                        1) /
+                                    (this.state.filteredProfs.length - 1) /
                                         this.state.qtdeItemSlide,
                                     10
                                 )

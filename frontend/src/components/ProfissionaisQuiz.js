@@ -1,6 +1,8 @@
-import '../css/profissionaisQuiz.css';
 import React from 'react';
+import '../css/profissionaisQuiz.css';
+import { urlGenerator } from './urls';
 
+const url = urlGenerator('questionario', 'contato-violencia/');
 class Profissionais extends React.Component {
     state = {
         profissionais: [],
@@ -8,7 +10,7 @@ class Profissionais extends React.Component {
     };
 
     componentDidMount() {
-        fetch('http://localhost:8001/questionario/api/contato-violencia/')
+        fetch(url)
             .then((data) => data.json())
             .then((result) => {
                 this.setState({ profissionais: result });

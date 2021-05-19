@@ -6,10 +6,9 @@ import { ReactComponent as FeedbackAsset } from '../images/popup-feedback-person
 import { ReactComponent as CloseQuiz } from '../images/closequiz.svg';
 import ProfissionaisQuiz from './ProfissionaisQuiz';
 import ContatosQuiz from './ContatosQuiz';
-import { urlGenerator, urlGen } from './urls';
+import { urlGen } from './urls';
 
-const url = urlGenerator('questionario', 'vitimas-categoria/');
-const urlPost = urlGen('questionario', 'vitimas/');
+const urlVitmas = urlGen('questionario', 'vitimas/');
 
 const GraphUI = ({
     graph_path,
@@ -25,6 +24,7 @@ const GraphUI = ({
     const [isFinalModule, setIsFinalModule] = useState();
     const [buttonPopup, setButtonPopup] = useState(true);
     const [resposta, setResposta] = useState([]);
+    const [respostaCopy, setRespostaCopy] = useState([]);
     const [respostaSize, setRespostaSize] = useState();
 
     useEffect(() => {
@@ -37,27 +37,29 @@ const GraphUI = ({
         }
     }, [graph_path, question_set_path, decisionTreeInitializing]);
 
-    const getData = () => {
-        fetch(url, {
-            headers: {
-                'Content-Type': 'application/json',
-                Accept: 'application/json',
-            },
-        })
-            .then((response) => {
-                console.log(response);
-                return response.json();
-            })
-            .then((myJson) => {
-                console.log(myJson);
-            });
-    };
+    // const data = 'questionario/questionario/decision_tree.json';
+    // const getData = () => {
+    //     fetch('http://localhost:8001/questionario/api/vitimas-categoria/', {
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //             Accept: 'application/json',
+    //         },
+    //     })
+    //         .then((response) => {
+    //             console.log(response);
+    //             return response.json();
+    //         })
+    //         .then((myJson) => {
+    //             console.log(myJson);
+    //         });
+    // };
 
     useEffect(() => {
         if (decisionTreeInitialized) {
             console.log('GraphUI question-tree graph files fetched.');
+            // console.log(question_set_path);
         }
-        getData();
+        // getData();
     }, [decisionTreeInitialized]);
 
     useEffect(() => {
@@ -91,14 +93,28 @@ const GraphUI = ({
 
     async function postAwnser(tiposValue) {
         const value = `VIOLÊNCIA ${tiposValue.toUpperCase()}`;
-        await axios.post(urlPost, {
+        await axios.post(urlVitmas, {
             categoria: value,
         });
     }
 
+    const backButtomPop = () => {
+        if (currentQuestion.resultado === resposta[resposta.length - 1]) {
+            resposta.pop();
+        }
+    };
+
     const postRespostas = () => {
         resposta.map((a) => postAwnser(a));
         return true;
+    };
+
+    const removeDuplicateAwnser = () => {
+        const cleanArr = resposta.filter(
+            (este, i) => resposta.indexOf(este) === i
+        );
+        setRespostaCopy(cleanArr);
+        setRespostaSize(cleanArr.length);
     };
 
     const saveAnwser = () => {
@@ -110,6 +126,7 @@ const GraphUI = ({
             setRespostaSize(resposta.length);
             console.log(respostaSize);
         }
+        removeDuplicateAwnser();
     };
 
     const resetAll = () => {
@@ -123,6 +140,7 @@ const GraphUI = ({
         setButtonPopup(true);
         setResposta([]);
         setRespostaSize();
+        setRespostaCopy([]);
     };
 
     const handleNextClick = () => {
@@ -148,7 +166,10 @@ const GraphUI = ({
 
         setCurrentAnswerId();
     };
-    const handlePrevClick = () => setCurrentQuestion(DecisionTree.prev());
+    const handlePrevClick = () => {
+        setCurrentQuestion(DecisionTree.prev());
+        backButtomPop();
+    };
     const handleInputChange = (e) => setCurrentAnswerId(e.target.id);
 
     return (
@@ -199,6 +220,7 @@ const GraphUI = ({
                                     inCorrectResponses.length}
                             </b>{' '}
                             questions correct. */}
+
                             <PopupQuest
                                 trigger={buttonPopup}
                                 setTrigger={setButtonPopup}
@@ -230,7 +252,7 @@ const GraphUI = ({
                                             <p className="text-quote">
                                                 Você está sofrendo um caso de
                                                 Violência
-                                                {resposta.map((item, i) =>
+                                                {respostaCopy.map((item, i) =>
                                                     i === respostaSize - 1 ? (
                                                         <span
                                                             key={item}
