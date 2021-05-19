@@ -38,7 +38,7 @@ class Graficos extends React.Component {
                     nome.push(ds);
                 }
                 geral.push(nome);
-                console.log(geral);
+                // console.log(geral);
             })
             .then(() => {
                 const valor = [];
@@ -52,7 +52,7 @@ class Graficos extends React.Component {
             })
             .then(() => {
                 this.setState({ chartData: geral });
-                console.log(this.state.chartData);
+                // console.log(this.state.chartData);
             })
             .then(() => {
                 const pie = [];

@@ -61,6 +61,9 @@
     "eslint-plugin-react": "^7.22.0"
   },
   "nyc": {
-    "exclude": "src/serviceWorker.js"
+    "exclude": [
+      "src/serviceWorker.js",
+      "src/components/urls.js"
+    ]
   }
 }

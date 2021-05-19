@@ -57,7 +57,7 @@ const GraphUI = ({
     useEffect(() => {
         if (decisionTreeInitialized) {
             console.log('GraphUI question-tree graph files fetched.');
-            console.log(question_set_path);
+            // console.log(question_set_path);
         }
         // getData();
     }, [decisionTreeInitialized]);
@@ -97,6 +97,12 @@ const GraphUI = ({
             categoria: value,
         });
     }
+
+    const backButtomPop = () => {
+        if (currentQuestion.resultado === resposta[resposta.length - 1]) {
+            resposta.pop();
+        }
+    };
 
     const postRespostas = () => {
         resposta.map((a) => postAwnser(a));
@@ -160,7 +166,10 @@ const GraphUI = ({
 
         setCurrentAnswerId();
     };
-    const handlePrevClick = () => setCurrentQuestion(DecisionTree.prev());
+    const handlePrevClick = () => {
+        setCurrentQuestion(DecisionTree.prev());
+        backButtomPop();
+    };
     const handleInputChange = (e) => setCurrentAnswerId(e.target.id);
 
     return (
