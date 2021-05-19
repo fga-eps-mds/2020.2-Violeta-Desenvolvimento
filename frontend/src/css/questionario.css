@@ -170,6 +170,7 @@
     justify-content: center;
     flex-direction: column;
     height: 350px;
+    text-align: center;
 }
 
 #notAnswer-Container h1{
@@ -180,12 +181,10 @@
 
 #Feedback-Asset {
     float: right;
-    position: fixed;
-    right: 0;
-    bottom: 10px;
-    z-index: 1;
-    margin-right: 90px;
-    margin-bottom: 50px;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1;    
 }
 
 #title-popup-feedback {
@@ -201,6 +200,7 @@
     }
     #questionario {
         padding: 0 40px;
+        height: auto;
     }
     /* #questionario p {
         display: none;
@@ -231,14 +231,17 @@
     }
     .text-quote{
         text-align: center;
+        display: flex;
+        flex-wrap: wrap;
     }
     /* .popup-inner {   
         overflow: scroll;
     } */
     .popup-inner {
         height: 900px;
+        width: 100vw;
         padding: 0;
-        padding-top: 200px;
+        padding-top: 20%;
         padding-right: 5px;
         padding-left: 5px;
     }

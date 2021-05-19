@@ -1,4 +1,6 @@
+import json
 from rest_framework import viewsets
+from django.http import HttpResponse
 from . import models
 from .serializers import (
     ViolenciasCountSerializer,
@@ -69,6 +71,9 @@ class QuestionarioViewset(viewsets.ModelViewSet):
         response={200: QuestionarioSerializer},
         operation_description="Armazenamento da árvore de decisões do \
         questionário")
+    def list(self, request):
+        return HttpResponse(json.dumps(self.queryset[0].arvore_decisao))
+
     def perform_create(self, serializer):
         serializer.save()
 
