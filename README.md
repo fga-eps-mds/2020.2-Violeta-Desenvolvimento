@@ -1,5 +1,5 @@
 # Projeto Violeta
-Homolog: [http://wedding-mount-discount-baths.trycloudflare.com](http://wedding-mount-discount-baths.trycloudflare.com)
+Homolog: [http://honor-serious-ranks-coat.trycloudflare.com](http://honor-serious-ranks-coat.trycloudflare.com)
 
 Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/)
 
@@ -8,9 +8,9 @@ Prod: [http://f67ysdm2s22yrtgfmnetoufnuz7jrfvblbconyhn2ht4c6fnnudq.remote.moe/](
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fga-eps-mds_Violeta-Desenvolvimento&metric=security_rating)](https://sonarcloud.io/dashboard?id=fga-eps-mds_Violeta-Desenvolvimento)
 
 ### Produção
-[![Build Status](https://48b8056a9b59.ngrok.io/buildStatus/icon?job=violeta)](https://48b8056a9b59.ngrok.io/job/violeta/)
+[![Build Status](https://f9309a909aea.ngrok.io/buildStatus/icon?job=violeta)](https://f9309a909aea.ngrok.io/job/violeta/)
 ## Homologação
-[![Build Status](https://48b8056a9b59.ngrok.io/buildStatus/icon?job=violeta-dev)](https://48b8056a9b59.ngrok.io/job/violeta-dev/)
+[![Build Status](https://f9309a909aea.ngrok.io/buildStatus/icon?job=violeta-dev)](https://f9309a909aea.ngrok.io/job/violeta-dev/)
 ## Requisitos
 1. Ter instalado o [docker](https://docs.docker.com/get-docker/) e o [docker-compose](https://docs.docker.com/compose/install/) nas máquinas.
 
